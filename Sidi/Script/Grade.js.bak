@@ -1,0 +1,56 @@
+﻿var Data = require("Data");
+var Relatorios = require("Relatorios");
+var Validacoes = require("Validacoes");
+var App = require("App");
+var Principal = require("Principal");
+var Visualizacoes = require("Visualizacoes");
+
+function cadastraGrade()
+{
+  abreTela();  
+  Principal.clicaNovo();  
+  insereDescricao("Z", "38 AO 43");  
+  insereGrade();  
+  confirma();
+  Principal.clicaEditar();
+  confirma();  
+  Principal.fechaTela();   
+}
+
+
+function abreTela()
+{
+  Principal.abreTelas(Aliases.SIDI.frmPrincipal.btnGrades,
+  Aliases.SIDI.frmPrincipal.MDIClient.frmGrade,
+  "Grades");
+}
+
+function insereDescricao(sigla, descricao)
+{
+  var dbGridGrade = Aliases.SIDI.frmPrincipal.MDIClient.frmGrade.PageControlGRID.tsPesquisaGrade.PanelGridGrade.dbGridGrade;
+  dbGridGrade.Keys("[Home]");
+  dbGridGrade.Keys("[Right]");
+  dbGridGrade.Keys(sigla);
+  dbGridGrade.Keys("[Right]");
+  dbGridGrade.Keys(descricao);
+ 
+}
+
+function insereGrade()
+{
+  var GroupGrades = Aliases.SIDI.frmPrincipal.MDIClient.frmGrade.PageControlGRID.tsPesquisaGrade.PanelGridGrade.GroupGrades;
+  GroupGrades.Keys("[Home]");
+  for(i = 0; i < Project.Variables.Grade.RowCount; i++){
+    GroupGrades.GridGradesTamanhos.Keys(Project.Variables.Grade.tamanho() + "[Down]");
+  } 
+}
+
+function confirma()
+{
+  Principal.confirma(Aliases.SIDI.frmPrincipal.MDIClient.frmGrade.Panel1.PanelBotoes.btnConfirma, "Grade");
+}
+module.exports.abreTela = abreTela;
+module.exports.insereDescricao = insereDescricao;
+module.exports.insereGrade = insereGrade;
+module.exports.confirma = confirma;
+module.exports.cadastraGrade = cadastraGrade;

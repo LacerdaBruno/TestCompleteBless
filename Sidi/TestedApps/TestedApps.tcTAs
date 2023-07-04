@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Root signature="{90D101C8-80C7-48D4-9055-2E451B9BCD75}" version="1140" key="{5C6E7D03-EE47-4F0C-8600-287DEFDEF6F8}" type="Tested Applications" typeId="{90D101C8-80C7-48D4-9055-2E451B9BCD75}">
+	<config nodeName="TestedApps" />
+	<testData />
+	<data />
+	<children>
+		<child key="{3B9B5BAF-DE95-43A9-B2DD-3EBC778E2068}" type="Tested Application" typeId="{FD30A383-63C2-4C25-948C-2595C0F81320}">
+			<config nodeName="SIDI" autorunOnRecording="True" enabled="True" count="1" useFeaturedRuntimeObject="True" userChangeName="True">
+				<runModeParams activeRunMode="Simple">
+					<param name="RunAs" parameters="/Usuario:SYSDBA /Senha:pmpsyfwr" workFolder="" userName="" password="" domain="" />
+					<param name="Profile" parameters="/Usuario:SYSDBA /Senha:pmpsyfwr" workFolder="" useProject="False" projectFileName="" overrideProfiler="False" profilerName="" profileRunMode="Silent" AQtimeVersion="0" forceRunMode="False" />
+					<param name="Debug" parameters="/Usuario:SYSDBA /Senha:pmpsyfwr" workFolder="" />
+					<param name="Simple" fileName="SIDI.exe" filePath="C:\bless\SIDI\" parameters="/Usuario:SYSDBA /Senha:pmpsyfwr" workFolder="" />
+				</runModeParams>
+			</config>
+			<testData />
+			<data />
+		</child>
+	</children>
+	<folders />
+</Root>

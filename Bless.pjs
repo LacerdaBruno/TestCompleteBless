@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Root signature="{24B6FA0B-0143-461A-9758-AEB9E9A9428B}" version="12.0" key="{BF2C75E3-97F5-4D77-8A55-0F325CEE6B70}">
+	<children>
+		<child name="Sidi" key="{AF427052-55EC-4B73-86EC-91EBAD1C1E73}" type="Project" typeId="{362A8EE5-675E-43A9-869D-06ECE80B0CB4}" pluginName="">
+			<data path="Sidi\Sidi.mds" />
+		</child>
+	</children>
+	<folders />
+	<testItems key="{93340D1B-B870-4BEC-9605-437C349A6A86}">
+		<children>
+			<testItem key="{AF427052-55EC-4B73-86EC-91EBAD1C1E73}" enabled="True" timeout="0" stopOnError="True" description="" />
+		</children>
+	</testItems>
+	<variables key="{B77D9176-4B27-4603-A514-917D9411446F}">
+		<data Version="3">
+			<Items>
+				<Variable Name="nome" Type="{123F0C0F-44B4-4BAF-B0E6-F3F89FD873B5}" Local="True">
+					<DefValue StrValue="5300650074006F00720065007300" />
+				</Variable>
+				<Variable Name="Var1" Type="{123F0C0F-44B4-4BAF-B0E6-F3F89FD873B5}" Local="False">
+					<DefValue StrValue="730065007400" />
+				</Variable>
+			</Items>
+		</data>
+	</variables>
+	<analysis key="{6B38ADD9-CB90-4298-8BC9-8C0D166A09C5}" />
+	<scc key="{00000000-0000-0000-0000-000000000000}" name="">
+		<data />
+	</scc>
+	<extender key="{1A3FC97E-9A66-4716-B166-35D10B4146E0}" />
+</Root>

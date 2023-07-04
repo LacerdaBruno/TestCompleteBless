@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Root signature="{9252F941-DB23-4FCA-AA50-858B33BB4A19}" version="11.40">
+	<children>
+		<child name="Fabricas" key="{2F96AC4A-5B10-4C32-8949-9624A21970FD}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="Fabricas.js" />
+		</child>
+		<child name="Principal" key="{A812C9B4-A487-4B08-8F0F-F1353D0E9CC0}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="Principal.js" />
+		</child>
+		<child name="Validacoes" key="{FE7EFFE5-2942-4A9A-8296-B5C548A3C355}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="Validacoes.js" />
+		</child>
+		<child name="Setores" key="{4DCC9650-EEA8-4156-BC1F-426B4D6FBEE0}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="Setores.js" />
+		</child>
+		<child name="App" key="{BE518A54-5715-4E89-A82A-A88E2096817D}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="App.js" />
+		</child>
+		<child name="Data" key="{51C47889-BC0A-4664-8E9D-2C0384BCCC2A}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="Data.js" />
+		</child>
+		<child name="Relatorios" key="{51DAC472-3837-4F0E-8E62-7CAB258F161D}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="Relatorios.js" />
+		</child>
+		<child name="Visualizacoes" key="{F5D29606-32CB-4FF1-8588-59224E7FE86B}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="Visualizacoes.js" />
+		</child>
+		<child name="CondicaoPagamento" key="{908ED210-70E9-474E-BA9D-38D7EFCFF99E}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="CondicaoPagamento.js" />
+		</child>
+		<child name="TesteGeral" key="{58F796DF-8924-4822-AD37-ABD965737474}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="TesteGeral.js" />
+		</child>
+		<child name="GrupoClientes" key="{9283B5C6-779A-4B46-A1FD-7CA28356857C}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="GrupoClientes.js" />
+		</child>
+		<child name="PessoaServico" key="{C2603EA5-B76E-453F-8E21-BB91B567EC64}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="PessoaServico.js" />
+		</child>
+		<child name="PrestadorServico" key="{57D03BCB-AA40-471A-9630-EBEBBBB41B72}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="PrestadorServico.js" />
+		</child>
+		<child name="Cores" key="{E28A1FBB-8D67-4AA4-B88E-222074689048}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="Cores.js" />
+		</child>
+		<child name="Formas" key="{DEBC4ECD-BA95-4CD9-AF1A-0B8F8345D803}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="Formas.js" />
+		</child>
+		<child name="Grade" key="{B18A80EE-B741-4B28-A216-6FB02DA00592}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="Grade.js" />
+		</child>
+		<child name="UnidadesPorVolume" key="{497CC71D-BB31-416C-B0B3-DEFBDF580E2B}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="UnidadesPorVolume.js" />
+		</child>
+		<child name="ContaBancaria" key="{AD584C7A-E86D-4665-A253-D997B3FE1B20}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="ContaBancaria.js" />
+		</child>
+		<child name="Materiais" key="{F4A05E74-AB1D-41FC-A18C-203C94CD7427}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="Materiais.js" />
+		</child>
+		<child name="Produtos" key="{20EA13E4-7805-45FA-B78C-9715BED7AF3B}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="Produtos.js" />
+		</child>
+		<child name="ProdutosMateriais" key="{A9F6AEE9-27CC-4018-A08B-CC0DFC6EF692}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="ProdutosMateriais.js" />
+		</child>
+		<child name="Video" key="{A32035A1-4E05-407C-A8BC-93D48A30B14D}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="Video.js" />
+		</child>
+	</children>
+	<folders>
+		<folder caption="Cadastros" description="A logical folder that is used to organize project items and elements." moniker="">
+			<references>
+				<ref key="{908ED210-70E9-474E-BA9D-38D7EFCFF99E}" />
+				<ref key="{AD584C7A-E86D-4665-A253-D997B3FE1B20}" />
+				<ref key="{E28A1FBB-8D67-4AA4-B88E-222074689048}" />
+				<ref key="{2F96AC4A-5B10-4C32-8949-9624A21970FD}" />
+				<ref key="{DEBC4ECD-BA95-4CD9-AF1A-0B8F8345D803}" />
+				<ref key="{B18A80EE-B741-4B28-A216-6FB02DA00592}" />
+				<ref key="{9283B5C6-779A-4B46-A1FD-7CA28356857C}" />
+				<ref key="{C2603EA5-B76E-453F-8E21-BB91B567EC64}" />
+				<ref key="{57D03BCB-AA40-471A-9630-EBEBBBB41B72}" />
+				<ref key="{4DCC9650-EEA8-4156-BC1F-426B4D6FBEE0}" />
+				<ref key="{497CC71D-BB31-416C-B0B3-DEFBDF580E2B}" />
+			</references>
+		</folder>
+		<folder caption="Teste" description="A logical folder that is used to organize project items and elements." moniker="">
+			<references>
+				<ref key="{BE518A54-5715-4E89-A82A-A88E2096817D}" />
+				<ref key="{A812C9B4-A487-4B08-8F0F-F1353D0E9CC0}" />
+				<ref key="{A32035A1-4E05-407C-A8BC-93D48A30B14D}" />
+				<ref key="{FE7EFFE5-2942-4A9A-8296-B5C548A3C355}" />
+				<ref key="{F5D29606-32CB-4FF1-8588-59224E7FE86B}" />
+				<ref key="{58F796DF-8924-4822-AD37-ABD965737474}" />
+				<ref key="{51DAC472-3837-4F0E-8E62-7CAB258F161D}" />
+				<ref key="{51C47889-BC0A-4664-8E9D-2C0384BCCC2A}" />
+			</references>
+		</folder>
+		<folder caption="Suprimentos" description="A logical folder that is used to organize project items and elements." moniker="">
+			<references>
+				<ref key="{F4A05E74-AB1D-41FC-A18C-203C94CD7427}" />
+			</references>
+		</folder>
+		<folder caption="Producao" description="A logical folder that is used to organize project items and elements." moniker="">
+			<references>
+				<ref key="{20EA13E4-7805-45FA-B78C-9715BED7AF3B}" />
+			</references>
+		</folder>
+		<folder caption="Financeiro" description="A logical folder that is used to organize project items and elements." moniker="">
+			<references>
+				<ref key="{A9F6AEE9-27CC-4018-A08B-CC0DFC6EF692}" />
+			</references>
+		</folder>
+	</folders>
+</Root>

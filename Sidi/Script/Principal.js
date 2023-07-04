@@ -1,0 +1,117 @@
+﻿var Validacoes = require("Validacoes");
+var sidi;
+  TestedApps.SIDI.Run();
+  sidi = Aliases.SIDI;
+  //sidi.TMessageForm.OK.Click(); Quando aparece alguma mensagem antes de abrir o sistema
+function abreTelas(botao, tela, nomeTela){
+  // Clica para abrir a tela de pedidos
+  botao.Click();
+//  Principal.confirmaAviso();
+//  Principal.confirmaAviso();
+  // inicia o cronometro
+  aqPerformance.Start();
+  
+  // Verifica se a tela de pedidos abriu 
+  if(Validacoes.CheckExists(tela, 2000))
+  {   
+    // verifica se a tela abriu em menos de 3 segundos
+    aqPerformance.Check(3000,"A tela de " + nomeTela + " abriu em " + aqPerformance.Value() + "ms.");
+  }
+  else
+  {
+    Log.Error(" Tela "+nomeTela+" não abriu");
+    aqPerformance.Check(5000);
+  }
+}
+
+function insereDropDownValue(dropDown, value)
+{
+  //currentvalue = dropDown.Text;
+  //while(currentvalue != value && aqString.Find(currentvalue, value) != 0){
+    dropDown.Keys(value);
+    dropDown.Keys("[Tab]");
+  //currentvalue = dropDown.Text;
+  //}
+}
+
+function clicaNovo()
+{
+  Aliases.SIDI.frmPrincipal.sbNovo.Click();
+}
+
+
+
+module.exports.abreTelas = abreTelas;
+
+
+module.exports.clicaNovo = clicaNovo;
+
+function clicaEditar()
+{
+  Aliases.SIDI.frmPrincipal.sbEditar.Click();
+}
+
+function confirma(botao, regeistro)
+{
+  // Clica em Confirmar
+  botao.ClickButton();
+
+}
+
+
+function verificaConfirmado(botao, regeistro){
+  // Verifica se foi confirmado
+  Delay(1000);
+  if (botao.Enabled == false){
+    Log.Checkpoint("O registro " + regeistro + " foi inserido corretamente!",'', 500, null, Sys.Desktop);
+  } else {
+    Log.Warning("O registro " + regeistro + " Não foi inserido corretamente!",'', 500, null, Sys.Desktop)
+  }
+}
+
+
+module.exports.clicaEditar = clicaEditar;
+module.exports.confirma = confirma;
+
+function confirmaAviso()
+{
+  if(Validacoes.CheckExists(Aliases.SIDI.TMessageForm, 100)){
+    Log.Message("AVISO " + Aliases.SIDI.TMessageForm.Message.Caption);
+    Aliases.SIDI.TMessageForm.Yes.ClickButton(); 
+  }
+  if(Validacoes.CheckExists(Aliases.SIDI.TMessageForm2, 100)){
+    Log.Message("AVISO " + Aliases.SIDI.TMessageForm2.Message.Caption);
+    Aliases.SIDI.TMessageForm2.Yes.ClickButton();
+  }
+  if(Validacoes.CheckExists(Aliases.SIDI.TMessageForm3, 100)){
+    Log.Message("AVISO " + Aliases.SIDI.TMessageForm3.Message.Caption);
+    Aliases.SIDI.TMessageForm3.OK.ClickButton();
+  }
+}
+
+function visualizarRelatorio(){
+  Aliases.SIDI.frmPrincipal.sbVisualizar.Click()
+}
+module.exports.confirmaAviso = confirmaAviso;
+
+function fechaTela()
+{
+  Aliases.SIDI.frmPrincipal.sbSair.Click();
+}
+module.exports.fechaTela = fechaTela;
+module.exports.verificaConfirmado = verificaConfirmado;
+
+function alteraAba(aba){
+  Aliases.SIDI.frmPrincipal.Panel2.PageControl1.ClickTab(aba);
+}
+module.exports.alteraAba = alteraAba;
+
+function excluir()
+{
+  Aliases.SIDI.frmPrincipal.sbExcluir.Click();
+  Aliases.SIDI.TMessageForm.Yes.ClickButton();
+}
+module.exports.excluir = excluir;
+module.exports.insereDropDownValue = insereDropDownValue;
+
+module.exports.visualizarRelatorio = visualizarRelatorio;
