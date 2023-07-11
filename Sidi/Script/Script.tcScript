@@ -73,6 +73,12 @@
 		<child name="ClassificacoesFiscais" key="{F7894DC7-A3EE-41B0-AAA2-8F975B2DB120}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
 			<data path="ClassificacoesFiscais.js" />
 		</child>
+		<child name="GrupoDeMateriais" key="{2752B4CC-2B3B-4883-8793-BAB5660F1B60}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="GrupoDeMateriais.js" />
+		</child>
+		<child name="SubgrupoDeMateriais" key="{7E5FFE56-4F5F-4114-BF39-5ADA8932DA80}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="SubgrupoDeMateriais.js" />
+		</child>
 	</children>
 	<folders>
 		<folder caption="Cadastros" description="A logical folder that is used to organize project items and elements." moniker="">
@@ -107,6 +113,8 @@
 		<folder caption="Suprimentos" description="A logical folder that is used to organize project items and elements." moniker="">
 			<references>
 				<ref key="{F4A05E74-AB1D-41FC-A18C-203C94CD7427}" />
+				<ref key="{2752B4CC-2B3B-4883-8793-BAB5660F1B60}" />
+				<ref key="{7E5FFE56-4F5F-4114-BF39-5ADA8932DA80}" />
 			</references>
 		</folder>
 		<folder caption="Producao" description="A logical folder that is used to organize project items and elements." moniker="">

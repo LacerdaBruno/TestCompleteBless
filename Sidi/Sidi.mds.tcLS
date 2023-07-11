@@ -38,6 +38,12 @@
 					<Node name="var11">
 						<Prp name="name" type="S" value="ClassificacaoFiscal"/>
 					</Node>
+					<Node name="var12">
+						<Prp name="name" type="S" value="GrupoDeMateriais"/>
+					</Node>
+					<Node name="var13">
+						<Prp name="name" type="S" value="SubGrupoMateriais"/>
+					</Node>
 					<Node name="var2">
 						<Prp name="name" type="S" value="DadosPessoasServicos"/>
 					</Node>

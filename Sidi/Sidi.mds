@@ -38,6 +38,14 @@
 						<testParameters />
 						<children />
 					</testItem>
+					<testItem name="TestarUnidadeMedida" key="{8EA86414-0960-47EB-8F96-D8C26E105625}" group="False" enabled="True" testMoniker="{BDA6040D-16F9-46F3-8EFD-22A56B1B9C58}cadastraUnidadeMedidas" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+						<testParameters />
+						<children />
+					</testItem>
+					<testItem name="TestarClassificacaoFiscal" key="{220C80CB-8334-4B93-87E7-0EB1BFB79FDE}" group="False" enabled="True" testMoniker="{F7894DC7-A3EE-41B0-AAA2-8F975B2DB120}cadastrarClassificacaoFiscal" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+						<testParameters />
+						<children />
+					</testItem>
 					<testItem name="TestarCores" key="{F63777FA-A18D-4577-A0F3-A1DA0927C703}" group="False" enabled="True" testMoniker="{E28A1FBB-8D67-4AA4-B88E-222074689048}insereCor" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
 						<testParameters />
 						<children />
@@ -54,11 +62,31 @@
 						<testParameters />
 						<children />
 					</testItem>
+					<testItem name="TestarContaBancaria" key="{31CB1F4D-0812-4880-AF33-99ABE204763D}" group="False" enabled="True" testMoniker="{AD584C7A-E86D-4665-A253-D997B3FE1B20}cadastraConta" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+						<testParameters />
+						<children />
+					</testItem>
 					<testItem name="TestarFormas" key="{2D094E61-6383-44B1-9DAF-D8293001FE0E}" group="False" enabled="True" testMoniker="{DEBC4ECD-BA95-4CD9-AF1A-0B8F8345D803}cadastraForma" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
 						<testParameters />
 						<children />
 					</testItem>
+					<testItem name="TestarGrade" key="{86222F47-781F-495E-A5DE-DA42C9A8DF6D}" group="False" enabled="True" testMoniker="{B18A80EE-B741-4B28-A216-6FB02DA00592}cadastraGrade" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+						<testParameters />
+						<children />
+					</testItem>
+					<testItem name="TestarUnidadePorVolume" key="{6F40B518-5E51-4616-9690-0F49940F511E}" group="False" enabled="True" testMoniker="{497CC71D-BB31-416C-B0B3-DEFBDF580E2B}cadastraUnidadePorVolume" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+						<testParameters />
+						<children />
+					</testItem>
 					<testItem name="TestarPrestadorServico" key="{8508BB29-0EAF-4F95-94D1-763E60981FF9}" group="False" enabled="True" testMoniker="{57D03BCB-AA40-471A-9630-EBEBBBB41B72}cadastraBanca" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+						<testParameters />
+						<children />
+					</testItem>
+					<testItem name="TestarGrupoMateriais" key="{128C74F5-FE5C-496D-A3D7-BD69D61F5E86}" group="False" enabled="True" testMoniker="{2752B4CC-2B3B-4883-8793-BAB5660F1B60}cadastrarGrupoDeMateriais" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+						<testParameters />
+						<children />
+					</testItem>
+					<testItem name="TestarSubgrupoMateriais" key="{EE418551-D0A8-4452-9C91-62ABD56DA515}" group="False" enabled="True" testMoniker="{7E5FFE56-4F5F-4114-BF39-5ADA8932DA80}cadastrarSubgrupoDeMateriais" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
 						<testParameters />
 						<children />
 					</testItem>
@@ -173,6 +201,42 @@
 						<Row No="7" Cell0="36003200300036003400300030003000" Cell1="430041004D004900530041002000450053005400" />
 						<Row No="8" Cell0="36003200300039003200300030003000" Cell1="42004F004400590020004D004300200058004100" />
 						<Row No="9" Cell0="36003200300035003300300030003000" Cell1="50004F004C004F00" />
+					</DefValue>
+				</Variable>
+				<Variable Name="GrupoDeMateriais" Type="{4AD4881B-176C-4C96-8288-FBBB7E3D1FE3}" Local="False">
+					<DefValue RowCount="9" ColumnCount="1">
+						<Columns ColumnName0="Descricao" />
+						<Row No="0" Cell0="4D0041004C00480041005300" />
+						<Row No="1" Cell0="41005600490041004D0045004E0054004F005300" />
+						<Row No="2" Cell0="52004900420041004E004100" />
+						<Row No="3" Cell0="540045004300490044004F00" />
+						<Row No="4" Cell0="500052004F004400550054004F00200045004D002000500052004F0043004500530053004F00" />
+						<Row No="5" Cell0="45004E00540052004500540045004C0041005300" />
+						<Row No="6" Cell0="45004D00420041004C004100470045004E005300" />
+						<Row No="7" Cell0="500052004F004400550054004F0020004100430041004200410044004F00" />
+						<Row No="8" Cell0="550053004F0020004500200043004F004E00530055004D004F00" />
+					</DefValue>
+				</Variable>
+				<Variable Name="SubGrupoMateriais" Type="{4AD4881B-176C-4C96-8288-FBBB7E3D1FE3}" Local="False">
+					<DefValue RowCount="17" ColumnCount="4">
+						<Columns ColumnName0="Codigo_Grupo" ColumnName1="Descricao" ColumnName2="Unidade_Estoque" ColumnName3="Unidade_Consumo" />
+						<Row No="0" Cell0="3100" Cell1="4D0045004900410020004D0041004C0048004100" Cell2="4B004700" Cell3="4D005400" />
+						<Row No="1" Cell0="3100" Cell1="500049005100550045005400" Cell2="4B004700" Cell3="4D005400" />
+						<Row No="2" Cell0="3200" Cell1="5300450052004100460049004E004500" Cell2="55004E00" Cell3="55004E00" />
+						<Row No="3" Cell0="3200" Cell1="450054004900510055004500540041005300" Cell2="55004E00" Cell3="55004E00" />
+						<Row No="4" Cell0="3300" Cell1="52004900420041004E004100200043004F004E0046004F005200540020004A0045005400" Cell2="4B004700" Cell3="4D005400" />
+						<Row No="5" Cell0="3300" Cell1="4D0041004C0048004100530020004400490046004500520045004E00430049004100440041005300" Cell2="4B004700" Cell3="4D005400" />
+						<Row No="6" Cell0="3400" Cell1="41004C0047004F00440041004F00" Cell2="4B004700" Cell3="4D005400" />
+						<Row No="7" Cell0="3400" Cell1="530049004E00540045005400490043004F00" Cell2="4B004700" Cell3="4D005400" />
+						<Row No="8" Cell0="3500" Cell1="500052004F004400550054004F00200045004D002000500052004F0043004500530053004F00" Cell2="55004E00" Cell3="55004E00" />
+						<Row No="9" Cell0="3600" Cell1="43004F004C004100520049004E0048004F00" Cell2="55004E00" Cell3="55004E00" />
+						<Row No="10" Cell0="3600" Cell1="500055004E0048004F00" Cell2="55004E00" Cell3="55004E00" />
+						<Row No="11" Cell0="3700" Cell1="43004100490058004100" Cell2="55004E00" Cell3="55004E00" />
+						<Row No="12" Cell0="3700" Cell1="5300410043004F004C004100" Cell2="55004E00" Cell3="55004E00" />
+						<Row No="13" Cell0="3800" Cell1="47004F004C004100" Cell2="55004E00" Cell3="55004E00" />
+						<Row No="14" Cell0="3800" Cell1="500055004E0048004F00" Cell2="55004E00" Cell3="55004E00" />
+						<Row No="15" Cell0="3900" Cell1="4C0049004D00500045005A004100200045002000480049004700490045004E004500" Cell2="55004E00" Cell3="55004E00" />
+						<Row No="16" Cell0="3900" Cell1="4500530043005200490054004F00520049004F00" Cell2="55004E00" Cell3="55004E00" />
 					</DefValue>
 				</Variable>
 			</Items>

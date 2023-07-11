@@ -25,7 +25,7 @@
 				<Node name="{8ee82d46-af98-4371-988c-39e367c94873}"/>
 			</Node>
 			<Node name="{24b6fa0b-0143-461a-9758-aeb9e9a9428b}">
-				<Prp name="activity" type="S" value="{43774757-A41D-4838-87E4-FFF18EEAF1D0}"/>
+				<Prp name="activity" type="S" value="{AF427052-55EC-4B73-86EC-91EBAD1C1E73}"/>
 			</Node>
 			<Node name="{2c786620-2489-4cbb-9c1e-1a94437a9245}">
 				<Node name="{aaa0867d-244d-42a8-be88-04cd1e4871f2}">
@@ -36,13 +36,65 @@
 				<Node name="workspace">
 					<Node name="0">
 						<Node name="editor">
-							<Prp name="editor" type="S" value="{463FC58F-919E-4BB7-A9F5-98D24872AA09}"/>
-							<Prp name="focused" type="S" value="{9DFCEFEE-B513-4C63-A2D7-3AABD489ED9A}"/>
+							<Node name="{531ace08-e68e-400b-9eb9-e24763725fd8}">
+								<Prp name="key" type="S" value="{47F98C54-B0FF-46A2-94A4-DC350D450B34}"/>
+							</Node>
+							<Node name="{9185a4c3-0780-497d-b02d-ad3af4e9cf98}">
+								<Prp name="key" type="S" value="{5BA8E5D5-7116-4F5F-9E45-C663E0608B0D}"/>
+							</Node>
+							<Prp name="editor" type="S" value="{23B62723-30EF-4601-8952-9D48CB4FFB31}"/>
+							<Prp name="focused" type="S" value="{47F98C54-B0FF-46A2-94A4-DC350D450B34}"/>
+						</Node>
+						<Prp name="edititem" type="S" value="{AF427052-55EC-4B73-86EC-91EBAD1C1E73}"/>
+					</Node>
+					<Node name="1">
+						<Node name="editor">
+							<Node name="{93765269-c25d-4cd5-b6bf-5d7454869c93}">
+								<Prp name="key" type="S" value="{AA626944-3C6D-476D-92D1-46EC304BC08E}"/>
+							</Node>
+							<Prp name="editor" type="S" value="{C0646611-9207-4874-B4A8-BA5ECFE2B09A}"/>
+							<Prp name="focused" type="S" value="{AA626944-3C6D-476D-92D1-46EC304BC08E}"/>
+						</Node>
+						<Prp name="edititem" type="S" value="{D0ED1C8E-0F41-492E-846C-8C3E321451E3}"/>
+					</Node>
+					<Node name="2">
+						<Node name="editor">
+							<Node name="{8c45957c-f4b3-4dd7-9212-49cbd350f69f}">
+								<Prp name="key" type="S" value="{9C9DA402-961A-4FDC-9A67-C5D564F2AECA}"/>
+							</Node>
+							<Node name="{d0151f8e-51fe-49da-8534-008b9f1b7c45}">
+								<Prp name="col" type="I" value="1"/>
+								<Prp name="key" type="S" value="{683BAB1F-AC10-4218-8BCD-5ABCCA4D5E6B}"/>
+								<Prp name="line" type="I" value="6"/>
+								<Prp name="sellength" type="I" value="0"/>
+								<Prp name="selstart" type="I" value="199"/>
+								<Prp name="windowchar" type="I" value="0"/>
+								<Prp name="windowline" type="I" value="2"/>
+							</Node>
+							<Prp name="editor" type="S" value="{EE7DB743-0675-4B6F-A8DD-B2B4B1A4FFD9}"/>
+							<Prp name="focused" type="S" value="{683BAB1F-AC10-4218-8BCD-5ABCCA4D5E6B}"/>
+						</Node>
+						<Prp name="edititem" type="S" value="{7E5FFE56-4F5F-4114-BF39-5ADA8932DA80}"/>
+					</Node>
+					<Node name="3">
+						<Node name="editor">
+							<Node name="{fdf3932b-fcdb-4512-87e9-fa5e5d91def4}">
+								<Prp name="key" type="S" value="{558F0F37-0671-4401-A6B2-0F39C61B73BE}"/>
+							</Node>
+							<Prp name="editor" type="S" value="{9C14FF0C-A541-4114-93DB-8C1ACBDFC319}"/>
+							<Prp name="focused" type="S" value="{558F0F37-0671-4401-A6B2-0F39C61B73BE}"/>
+						</Node>
+						<Prp name="edititem" type="S" value="{43774757-A41D-4838-87E4-FFF18EEAF1D0}"/>
+					</Node>
+					<Node name="4">
+						<Node name="editor">
+							<Prp name="editor" type="S" value="{2125BEE5-F0EA-40D4-B064-DBDBF890D660}"/>
+							<Prp name="focused" type="S" value="{281F9962-615C-4D57-A94D-DD3C47E6243E}"/>
 						</Node>
 						<Prp name="edititem" type="S" value="{25C37806-ADF4-46DA-8ACE-9899FCA45EC6}"/>
 					</Node>
-					<Prp name="docking" type="H" value="617162696E00000001000000D20100007801730C74F177F6E66680023120FD969581A19D1926828FEE6484C8DEF17EF6DEBDF5A3F3E2CEEB574ADFC8723206002540264C9B9C56DCB15DD46BAF5DE401EF99BFB63C616360A8068A5FE46160788369050B3ECB4072FFA1E010D0FC1358F878F5278064412E5E0B620041FF517BB77913B77BAFFC3AE39247D12ACEE740D74D078A9F01BAEE05B2EBB88082C10C250C890C454052812100C84A6748058AD2C1C5405B4802009D144FFE"/>
-					<Prp name="editorscount" type="I" value="1"/>
+					<Prp name="docking" type="H" value="617162696E00000001000000D00400007801730C74F177F6E66680023120CDC4C6C0D0CE0C13C147B7B34064EF783F7BEFDEFAD17971E7F52BA56F643919FD80122013B2CA2B42B7599E749D1A7165D1F11D966EE781465703C52FF23030BCC1B4026A1C6E2BFF43C121460686134065E87CDC3A813209205956205E0B6200C1D37DAA8AAF3E5C71D89072FBF68F09D7122E015D371D287E06E8BA17C8AEE3020A063394302432140149058600202B9D2115284A0717036D5908C420A0ACBE4DF9BD01A35B67D05C8FD3FEBF0D713A18E4AC60864C861420A69723F7835C0804CEDB6BDF95B2E57BAFB8BB69CBC625FF6FE274A43050713043294312302C8B807401433E830B30547D81A15B02A48B808E4F04E262A03AFA84F37D90FB8140302DE500FBA4128F2D2B76C59D7FB461164E2F280315073324839D5A004E1A2140871783593E40EFA403134B34014FEA318020BDBCB81EE43F20E0F92F32C771A988E3E4DB3D52A7EF1F96C4E94550D1E0078C875C68CC1400E32993210FE8357A391998D7890700EF5DE854"/>
+					<Prp name="editorscount" type="I" value="5"/>
 					<Prp name="enabled" type="B" value="-1"/>
 				</Node>
 			</Node>
@@ -365,6 +417,31 @@
 						<Prp name="collapsed" type="B" value="0"/>
 						<Prp name="top" type="I" value="0"/>
 					</Node>
+					<Node name="{2752b4cc-2b3b-4883-8793-bab5660f1b60}">
+						<Node name="0">
+							<Prp name="bottom" type="I" value="13"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="5"/>
+						</Node>
+						<Node name="1">
+							<Prp name="bottom" type="I" value="18"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="15"/>
+						</Node>
+						<Node name="2">
+							<Prp name="bottom" type="I" value="31"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="19"/>
+						</Node>
+						<Node name="3">
+							<Prp name="bottom" type="I" value="37"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="33"/>
+						</Node>
+						<Prp name="bottom" type="I" value="37"/>
+						<Prp name="collapsed" type="B" value="0"/>
+						<Prp name="top" type="I" value="0"/>
+					</Node>
 					<Node name="{2f96ac4a-5b10-4c32-8949-9624a21970fd}">
 						<Node name="0">
 							<Prp name="bottom" type="I" value="10"/>
@@ -582,6 +659,31 @@
 							<Prp name="top" type="I" value="38"/>
 						</Node>
 						<Prp name="bottom" type="I" value="87"/>
+						<Prp name="collapsed" type="B" value="0"/>
+						<Prp name="top" type="I" value="0"/>
+					</Node>
+					<Node name="{7e5ffe56-4f5f-4114-bf39-5ada8932da80}">
+						<Node name="0">
+							<Prp name="bottom" type="I" value="13"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="5"/>
+						</Node>
+						<Node name="1">
+							<Prp name="bottom" type="I" value="18"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="15"/>
+						</Node>
+						<Node name="2">
+							<Prp name="bottom" type="I" value="42"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="19"/>
+						</Node>
+						<Node name="3">
+							<Prp name="bottom" type="I" value="47"/>
+							<Prp name="collapsed" type="B" value="0"/>
+							<Prp name="top" type="I" value="44"/>
+						</Node>
+						<Prp name="bottom" type="I" value="47"/>
 						<Prp name="collapsed" type="B" value="0"/>
 						<Prp name="top" type="I" value="0"/>
 					</Node>
