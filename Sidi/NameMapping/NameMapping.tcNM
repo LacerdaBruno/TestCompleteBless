@@ -6386,6 +6386,102 @@
 									</Child>
 								</Children>
 							</Child>
+							<Child Name="frmSenhaLogon" Key="{D318B0A6-E352-4B62-9309-B5105CCE214B}" ParallelWalk="True">
+								<Image FileName="-1755980132" Left="0" Top="0" Right="355" Bottom="145" />
+								<TypeInfo Item0="{69AA627C-2F22-491B-ACA5-57C6A8F3627C}" />
+								<Properties>
+									<Property Name="ClassName">
+										<Value PropertyType="0" Value="TfrmSenhaLogon" Type="5" />
+									</Property>
+									<Property Name="ObjectIdentifier">
+										<Value PropertyType="0" Value="frmSenhaLogon" Type="5" />
+									</Property>
+								</Properties>
+								<Children>
+									<Child Name="PanelSenhaLogon" Key="{2BA19429-8D1B-4225-B85C-B3BCCB871892}" ParallelWalk="True">
+										<Image FileName="-1755980132" Left="3" Top="26" Right="352" Bottom="142" />
+										<TypeInfo Item0="{B133E503-EF8C-43F6-AD54-7E43333645DC}" />
+										<Properties>
+											<Property Name="ClassName">
+												<Value PropertyType="0" Value="TPanel" Type="5" />
+											</Property>
+											<Property Name="ObjectIdentifier">
+												<Value PropertyType="0" Value="Panel1" Type="5" />
+											</Property>
+										</Properties>
+										<Children>
+											<Child Name="pnlDadosLogin" Key="{8C48C63D-49E9-45F0-A046-917ADF75CBCD}" ParallelWalk="True">
+												<Image FileName="-1755980132" Left="4" Top="27" Right="351" Bottom="147" />
+												<TypeInfo Item0="{B133E503-EF8C-43F6-AD54-7E43333645DC}" />
+												<Properties>
+													<Property Name="ClassName">
+														<Value PropertyType="0" Value="TPanel" Type="5" />
+													</Property>
+													<Property Name="ObjectIdentifier">
+														<Value PropertyType="0" Value="pnlDadosLogin" Type="5" />
+													</Property>
+												</Properties>
+												<Children>
+													<Child Name="pnlDadosConexaoSenhaLogon" Key="{A60B7AE1-E8EB-4156-BDB9-C9CB76C273C3}" ParallelWalk="True">
+														<Image FileName="-1755980132" Left="5" Top="66" Right="350" Bottom="146" />
+														<TypeInfo Item0="{B133E503-EF8C-43F6-AD54-7E43333645DC}" />
+														<Properties>
+															<Property Name="ClassName">
+																<Value PropertyType="0" Value="TPanel" Type="5" />
+															</Property>
+															<Property Name="ObjectIdentifier">
+																<Value PropertyType="0" Value="pnlDadosConexao" Type="5" />
+															</Property>
+														</Properties>
+														<Children>
+															<Child Name="PanelSenhaLogon" Key="{9BFB97D1-7FFF-45F9-8B29-F11E9A12B819}" ParallelWalk="True">
+																<Image FileName="-1755980132" Left="59" Top="66" Right="350" Bottom="146" />
+																<TypeInfo Item0="{B133E503-EF8C-43F6-AD54-7E43333645DC}" />
+																<Properties>
+																	<Property Name="ClassName">
+																		<Value PropertyType="0" Value="TPanel" Type="5" />
+																	</Property>
+																	<Property Name="ObjectIdentifier">
+																		<Value PropertyType="0" Value="Panel5" Type="5" />
+																	</Property>
+																</Properties>
+																<Children>
+																	<Child Name="pnlDadosUsuarioSenhaLogon" Key="{B02E68BD-54CC-435C-8479-33A3AD53F6D3}" ParallelWalk="True">
+																		<Image FileName="-1755980132" Left="59" Top="66" Right="350" Bottom="146" />
+																		<TypeInfo Item0="{B133E503-EF8C-43F6-AD54-7E43333645DC}" />
+																		<Properties>
+																			<Property Name="ClassName">
+																				<Value PropertyType="0" Value="TPanel" Type="5" />
+																			</Property>
+																			<Property Name="ObjectIdentifier">
+																				<Value PropertyType="0" Value="pnlDadosUsuario" Type="5" />
+																			</Property>
+																		</Properties>
+																		<Children>
+																			<Child Name="btnOk" Key="{89D86FBB-EE82-4C29-B00C-0B4D9801CFAD}" ParallelWalk="True">
+																				<Image FileName="-1755980132" Left="266" Top="73" Right="341" Bottom="98" />
+																				<TypeInfo Item0="{F0640855-35C8-4BAE-82AE-DD5B774EE982}" />
+																				<Properties>
+																					<Property Name="ClassName">
+																						<Value PropertyType="0" Value="TBitBtn" Type="5" />
+																					</Property>
+																					<Property Name="ObjectIdentifier">
+																						<Value PropertyType="0" Value="btnOk" Type="5" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																		</Children>
+																	</Child>
+																</Children>
+															</Child>
+														</Children>
+													</Child>
+												</Children>
+											</Child>
+										</Children>
+									</Child>
+								</Children>
+							</Child>
 						</Children>
 					</Child>
 				</Children>
@@ -7104,6 +7200,19 @@
 			<Child Name="TwwPopupListbox" Owner="{916D77A4-BC27-4044-96A0-ECB6F8F1440B}" />
 			<Child Name="dlgSidi" Owner="{52FED8D5-6691-421F-859F-9CC4F3833A7E}">
 				<Child Name="btnOK" Owner="{95997768-BC18-48B4-BA9B-520AF8336710}" />
+			</Child>
+			<Child Name="frmSenhaLogon" Owner="{D318B0A6-E352-4B62-9309-B5105CCE214B}">
+				<Child Name="PanelSenhaLogon" Owner="{2BA19429-8D1B-4225-B85C-B3BCCB871892}">
+					<Child Name="pnlDadosLogin" Owner="{8C48C63D-49E9-45F0-A046-917ADF75CBCD}">
+						<Child Name="pnlDadosConexaoSenhaLogon" Owner="{A60B7AE1-E8EB-4156-BDB9-C9CB76C273C3}">
+							<Child Name="PanelSenhaLogon" Owner="{9BFB97D1-7FFF-45F9-8B29-F11E9A12B819}">
+								<Child Name="pnlDadosUsuarioSenhaLogon" Owner="{B02E68BD-54CC-435C-8479-33A3AD53F6D3}">
+									<Child Name="btnOk" Owner="{89D86FBB-EE82-4C29-B00C-0B4D9801CFAD}" />
+								</Child>
+							</Child>
+						</Child>
+					</Child>
+				</Child>
 			</Child>
 		</Child>
 	</LogicalNodes>

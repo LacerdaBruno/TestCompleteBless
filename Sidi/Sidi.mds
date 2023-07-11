@@ -30,6 +30,10 @@
 			<testItem name="Sidi" key="{2AC8EFB5-24EB-49CD-9DCA-2E4C9EADC735}" group="True" enabled="True" testMoniker="" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
 				<testParameters />
 				<children>
+					<testItem name="TestarValidarLogin" key="{A14EFE13-D334-4C88-AF86-08A5975C6EB7}" group="False" enabled="True" testMoniker="{523414B8-5D61-4CC0-B8C6-C59FDB2428C0}validaLogin" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+						<testParameters />
+						<children />
+					</testItem>
 					<testItem name="TestarFabrica" key="{7B6C2CCE-1B9E-4BD3-A57B-4950D5D23EE3}" group="False" enabled="True" testMoniker="{2F96AC4A-5B10-4C32-8949-9624A21970FD}testaFabrica" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
 						<testParameters />
 						<children />
