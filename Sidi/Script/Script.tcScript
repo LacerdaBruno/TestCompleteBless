@@ -67,6 +67,12 @@
 		<child name="Video" key="{A32035A1-4E05-407C-A8BC-93D48A30B14D}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
 			<data path="Video.js" />
 		</child>
+		<child name="UnidadesMedidda" key="{BDA6040D-16F9-46F3-8EFD-22A56B1B9C58}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="UnidadesMedidda.js" />
+		</child>
+		<child name="ClassificacoesFiscais" key="{F7894DC7-A3EE-41B0-AAA2-8F975B2DB120}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="ClassificacoesFiscais.js" />
+		</child>
 	</children>
 	<folders>
 		<folder caption="Cadastros" description="A logical folder that is used to organize project items and elements." moniker="">
@@ -82,6 +88,8 @@
 				<ref key="{57D03BCB-AA40-471A-9630-EBEBBBB41B72}" />
 				<ref key="{4DCC9650-EEA8-4156-BC1F-426B4D6FBEE0}" />
 				<ref key="{497CC71D-BB31-416C-B0B3-DEFBDF580E2B}" />
+				<ref key="{BDA6040D-16F9-46F3-8EFD-22A56B1B9C58}" />
+				<ref key="{F7894DC7-A3EE-41B0-AAA2-8F975B2DB120}" />
 			</references>
 		</folder>
 		<folder caption="Teste" description="A logical folder that is used to organize project items and elements." moniker="">
