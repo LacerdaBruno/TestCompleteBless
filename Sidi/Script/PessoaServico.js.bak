@@ -35,7 +35,7 @@ function cadastraCliente(){
   
   inserePais("Brasil");
   
-  insereCidade("SALTO DE PIRAPORA");
+  insereCidade(Project.Variables.DadosPessoasServicos.cidade(contDados));
   
   insereEmail(Project.Variables.DadosPessoasServicos.email1(contDados));
   

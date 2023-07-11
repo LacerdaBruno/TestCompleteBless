@@ -42,10 +42,6 @@
 						<testParameters />
 						<children />
 					</testItem>
-					<testItem name="TestarFormas" key="{2D094E61-6383-44B1-9DAF-D8293001FE0E}" group="False" enabled="True" testMoniker="{DEBC4ECD-BA95-4CD9-AF1A-0B8F8345D803}cadastraForma" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
-						<testParameters />
-						<children />
-					</testItem>
 					<testItem name="TestarCondicaoPagamento" key="{CC996236-5EC0-4FD5-8F54-AA3DCABF0D68}" group="False" enabled="True" testMoniker="{908ED210-70E9-474E-BA9D-38D7EFCFF99E}TesteCadastros" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
 						<testParameters />
 						<children />
@@ -55,6 +51,10 @@
 						<children />
 					</testItem>
 					<testItem name="TestarPessoaServico" key="{93A0E9BA-DEFF-4CBC-9682-24F4F6084239}" group="False" enabled="True" testMoniker="{C2603EA5-B76E-453F-8E21-BB91B567EC64}cadastraCliente" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+						<testParameters />
+						<children />
+					</testItem>
+					<testItem name="TestarFormas" key="{2D094E61-6383-44B1-9DAF-D8293001FE0E}" group="False" enabled="True" testMoniker="{DEBC4ECD-BA95-4CD9-AF1A-0B8F8345D803}cadastraForma" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
 						<testParameters />
 						<children />
 					</testItem>
@@ -145,6 +145,34 @@
 					<DefValue RowCount="1" ColumnCount="8">
 						<Columns ColumnName0="descricao" ColumnName1="referencia" ColumnName2="unitario_Vista" ColumnName3="unitario" ColumnName4="pesoLiquido" ColumnName5="pesoBruto" ColumnName6="cor" ColumnName7="unit_volume" />
 						<Row No="0" Cell0="5400450053005400450030003100" Cell1="5400450053005400450030003100" Cell2="31003000" Cell3="31003000" Cell4="31003500" Cell5="31003500" Cell6="41005A0055004C00" Cell7="20003100200050004500C7004100530020002D0020004A00200050005000200041004F00200034004700" />
+					</DefValue>
+				</Variable>
+				<Variable Name="UnidadeMedidas" Type="{4AD4881B-176C-4C96-8288-FBBB7E3D1FE3}" Local="False">
+					<DefValue RowCount="8" ColumnCount="3">
+						<Columns ColumnName0="Sigla" ColumnName1="Descricao" ColumnName2="Fator_Conversao" />
+						<Row No="0" Cell0="5000C700" Cell1="5000450043004100" Cell2="3100" />
+						<Row No="1" Cell0="55004E00" Cell1="55004E0049004400410044004500" Cell2="3100" />
+						<Row No="2" Cell0="50005200" Cell1="500041005200" Cell2="3100" />
+						<Row No="3" Cell0="4D005400" Cell1="4D004500540052004F00" Cell2="3100" />
+						<Row No="4" Cell0="4C005400" Cell1="4C00410054004100" Cell2="31003400" />
+						<Row No="5" Cell0="47005A00" Cell1="470052004F005A004100" Cell2="37003200" />
+						<Row No="6" Cell0="4D004900" Cell1="4D0049004C0048004500490052004F00" Cell2="3100300030003000" />
+						<Row No="7" Cell0="4B004700" Cell1="5100550049004C004F00" Cell2="3100" />
+					</DefValue>
+				</Variable>
+				<Variable Name="ClassificacaoFiscal" Type="{4AD4881B-176C-4C96-8288-FBBB7E3D1FE3}" Local="False">
+					<DefValue RowCount="10" ColumnCount="2">
+						<Columns ColumnName0="Codigo" ColumnName1="Descricao" />
+						<Row No="0" Cell0="30003000300030003000300030003000" Cell1="30003000300030003000300030003000" />
+						<Row No="1" Cell0="39003900390039003900390039003900" Cell1="39003900390039003900390039003900" />
+						<Row No="2" Cell0="30003100300032003200390031003900" Cell1="50004100500045004C00200049004E0054004500" />
+						<Row No="3" Cell0="30003300300034003400330030003000" Cell1="540045004300490044004F0020002D005200" />
+						<Row No="4" Cell0="39003300300037003100310030003000" Cell1="5A00490050004500520020005400520041005400" />
+						<Row No="5" Cell0="39003600300037003100390030003000" Cell1="42004F00540041004F0020005000520045005300" />
+						<Row No="6" Cell0="36003200300036003300300030003000" Cell1="430052004F005000500045004400" />
+						<Row No="7" Cell0="36003200300036003400300030003000" Cell1="430041004D004900530041002000450053005400" />
+						<Row No="8" Cell0="36003200300039003200300030003000" Cell1="42004F004400590020004D004300200058004100" />
+						<Row No="9" Cell0="36003200300035003300300030003000" Cell1="50004F004C004F00" />
 					</DefValue>
 				</Variable>
 			</Items>
