@@ -4376,6 +4376,48 @@
 																				<Value PropertyType="0" Value="gbPDV" Type="5" />
 																			</Property>
 																		</Properties>
+																		<Children>
+																			<Child Name="ALQ_ICMS" Key="{8C7535D0-D747-4772-AEB2-C18B74C1377F}" ParallelWalk="True">
+																				<Properties>
+																					<Property Name="ClassName">
+																						<Value PropertyType="0" Value="TDBEdit" Type="5" />
+																					</Property>
+																					<Property Name="ObjectIdentifier">
+																						<Value PropertyType="0" Value="ALQ_ICMS" Type="5" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="TRIBUTACAO" Key="{25599C75-F065-4714-8DDD-A3F4AFC231BF}" ParallelWalk="True">
+																				<Properties>
+																					<Property Name="ClassName">
+																						<Value PropertyType="0" Value="TwwDBComboBox" Type="5" />
+																					</Property>
+																					<Property Name="ObjectIdentifier">
+																						<Value PropertyType="0" Value="TRIBUTACAO" Type="5" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="CODIGO_ALTERNATIVO" Key="{3F9159C5-226F-467E-A0A9-8C993D2D0237}" ParallelWalk="True">
+																				<Properties>
+																					<Property Name="ClassName">
+																						<Value PropertyType="0" Value="TDBEdit" Type="5" />
+																					</Property>
+																					<Property Name="ObjectIdentifier">
+																						<Value PropertyType="0" Value="CODIGO_ALTERNATIVO" Type="5" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="UNITARIO_PDV" Key="{912A4B0B-18B0-41F3-8F65-1B8F73F667B7}" ParallelWalk="True">
+																				<Properties>
+																					<Property Name="ClassName">
+																						<Value PropertyType="0" Value="TDBEdit" Type="5" />
+																					</Property>
+																					<Property Name="ObjectIdentifier">
+																						<Value PropertyType="0" Value="UNITARIO_PDV" Type="5" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																		</Children>
 																	</Child>
 																	<Child Name="CODIGO" Key="{648E2257-34E8-44E8-B56E-C7A3964FBC5E}" ParallelWalk="True">
 																		<Properties>
@@ -4466,6 +4508,28 @@
 																				<Value PropertyType="0" Value="gbValoresVenda" Type="5" />
 																			</Property>
 																		</Properties>
+																		<Children>
+																			<Child Name="VENDA_UNIT" Key="{8B2FEEFB-D2BA-460E-9204-763D82B535D9}" ParallelWalk="True">
+																				<Properties>
+																					<Property Name="ClassName">
+																						<Value PropertyType="0" Value="TDBEdit" Type="5" />
+																					</Property>
+																					<Property Name="ObjectIdentifier">
+																						<Value PropertyType="0" Value="VENDA_UNIT" Type="5" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="VENDA_PRAZO_UNIT" Key="{9F27891D-61F2-40D6-B7C5-AEEC07E18CFC}" ParallelWalk="True">
+																				<Properties>
+																					<Property Name="ClassName">
+																						<Value PropertyType="0" Value="TDBEdit" Type="5" />
+																					</Property>
+																					<Property Name="ObjectIdentifier">
+																						<Value PropertyType="0" Value="VENDA_PRAZO_UNIT" Type="5" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																		</Children>
 																	</Child>
 																	<Child Name="SAI_FATURAMENTO" Key="{53EE6258-DB10-4987-8669-F7F988C7559A}" ParallelWalk="True">
 																		<Properties>
@@ -4596,6 +4660,28 @@
 																				<Value PropertyType="0" Value="gbValoresCompra" Type="5" />
 																			</Property>
 																		</Properties>
+																		<Children>
+																			<Child Name="COMPRA_UNIT" Key="{407FDF0A-E737-4267-9B2C-736A8EFE395D}" ParallelWalk="True">
+																				<Properties>
+																					<Property Name="ClassName">
+																						<Value PropertyType="0" Value="TDBEdit" Type="5" />
+																					</Property>
+																					<Property Name="ObjectIdentifier">
+																						<Value PropertyType="0" Value="COMPRA_UNIT" Type="5" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="COMPRA_PRAZO_UNIT" Key="{8157C141-417B-42B0-B435-3BF506A15645}" ParallelWalk="True">
+																				<Properties>
+																					<Property Name="ClassName">
+																						<Value PropertyType="0" Value="TDBEdit" Type="5" />
+																					</Property>
+																					<Property Name="ObjectIdentifier">
+																						<Value PropertyType="0" Value="COMPRA_PRAZO_UNIT" Type="5" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																		</Children>
 																	</Child>
 																	<Child Name="gbPeso" Key="{3BD3B50C-DEA8-4EF9-AF92-F744B09C2FE7}" ParallelWalk="True">
 																		<Properties>
@@ -4606,6 +4692,28 @@
 																				<Value PropertyType="0" Value="gbPeso" Type="5" />
 																			</Property>
 																		</Properties>
+																		<Children>
+																			<Child Name="PESO_BRUTO" Key="{118D620E-40B9-48C9-98BF-76C777E138DD}" ParallelWalk="True">
+																				<Properties>
+																					<Property Name="ClassName">
+																						<Value PropertyType="0" Value="TDBEdit" Type="5" />
+																					</Property>
+																					<Property Name="ObjectIdentifier">
+																						<Value PropertyType="0" Value="PESO_BRUTO" Type="5" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="PESO_LIQUIDO" Key="{1452B1B1-DCF3-4FBA-9D6F-ED1A776886B0}" ParallelWalk="True">
+																				<Properties>
+																					<Property Name="ClassName">
+																						<Value PropertyType="0" Value="TDBEdit" Type="5" />
+																					</Property>
+																					<Property Name="ObjectIdentifier">
+																						<Value PropertyType="0" Value="PESO_LIQUIDO" Type="5" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																		</Children>
 																	</Child>
 																	<Child Name="CODIGO_PRODUTO_DANFE" Key="{6F943B62-59E2-46B5-B1F9-0FF1E856B48E}" ParallelWalk="True">
 																		<Properties>
@@ -6970,7 +7078,12 @@
 					<Child Name="frmProdutoFiscal" Owner="{ADBEB5E1-17C9-458A-A42C-5F887EC9AADA}">
 						<Child Name="PageControlProdutoFiscal" Owner="{657D98BC-A147-4A90-A5FC-6EF071F6434E}">
 							<Child Name="tsdados" Owner="{E108C570-9EDF-4D93-964A-980E0E5D9712}">
-								<Child Name="gbPDV" Owner="{DC184DD3-AB53-4483-9B50-12915649FFFC}" />
+								<Child Name="gbPDV" Owner="{DC184DD3-AB53-4483-9B50-12915649FFFC}">
+									<Child Name="ALQ_ICMS" Owner="{8C7535D0-D747-4772-AEB2-C18B74C1377F}" />
+									<Child Name="TRIBUTACAO" Owner="{25599C75-F065-4714-8DDD-A3F4AFC231BF}" />
+									<Child Name="CODIGO_ALTERNATIVO" Owner="{3F9159C5-226F-467E-A0A9-8C993D2D0237}" />
+									<Child Name="UNITARIO_PDV" Owner="{912A4B0B-18B0-41F3-8F65-1B8F73F667B7}" />
+								</Child>
 								<Child Name="CODIGO" Owner="{648E2257-34E8-44E8-B56E-C7A3964FBC5E}" />
 								<Child Name="DESCRICAO_ABREV" Owner="{4DB2E900-D47E-4BAB-A490-FA552E5E8F90}" />
 								<Child Name="PERC_IPI" Owner="{C7140103-F5EB-46CC-8F5C-0EB820F158E8}" />
@@ -6979,7 +7092,10 @@
 								<Child Name="DESCRICAO" Owner="{67E2C9FB-A724-4B53-8623-085168A51AF1}" />
 								<Child Name="CLASSIFICACAO_FISCAL" Owner="{477F486F-770C-4CFF-8391-16B7FEE62B1F}" />
 								<Child Name="UNIDADE_MEDIDA" Owner="{76B39B4C-7545-4643-B789-2FDB3B8C714B}" />
-								<Child Name="gbValoresVenda" Owner="{3C7FDD7D-0A24-4B13-BFCF-BF3E4524AC92}" />
+								<Child Name="gbValoresVenda" Owner="{3C7FDD7D-0A24-4B13-BFCF-BF3E4524AC92}">
+									<Child Name="VENDA_UNIT" Owner="{8B2FEEFB-D2BA-460E-9204-763D82B535D9}" />
+									<Child Name="VENDA_PRAZO_UNIT" Owner="{9F27891D-61F2-40D6-B7C5-AEEC07E18CFC}" />
+								</Child>
 								<Child Name="SAI_FATURAMENTO" Owner="{53EE6258-DB10-4987-8669-F7F988C7559A}" />
 								<Child Name="ISENTO_ICMS" Owner="{AA0B8248-8B4F-460B-8174-74658807828B}" />
 								<Child Name="GRUPO_ESTOQUE" Owner="{87872FC8-DA00-45CB-907B-C047EC883BDA}" />
@@ -6992,11 +7108,17 @@
 								<Child Name="gbEspecificacoes" Owner="{7FCAEF71-6DB9-4587-9161-B375C2E83905}" />
 								<Child Name="LOCALIZACAO" Owner="{DE64462A-EA64-4081-A41B-C9CBB3053606}" />
 								<Child Name="REVENDA" Owner="{FA750595-B746-47B8-954C-38FE8E9D8B7E}" />
-								<Child Name="gbValoresCompra" Owner="{C674686E-C40D-4E45-AC81-220563665307}" />
-								<Child Name="gbPeso" Owner="{3BD3B50C-DEA8-4EF9-AF92-F744B09C2FE7}" />
+								<Child Name="gbValoresCompra" Owner="{C674686E-C40D-4E45-AC81-220563665307}">
+									<Child Name="COMPRA_UNIT" Owner="{407FDF0A-E737-4267-9B2C-736A8EFE395D}" />
+									<Child Name="COMPRA_PRAZO_UNIT" Owner="{8157C141-417B-42B0-B435-3BF506A15645}" />
+								</Child>
+								<Child Name="gbPeso" Owner="{3BD3B50C-DEA8-4EF9-AF92-F744B09C2FE7}">
+									<Child Name="PESO_BRUTO" Owner="{118D620E-40B9-48C9-98BF-76C777E138DD}" />
+									<Child Name="PESO_LIQUIDO" Owner="{1452B1B1-DCF3-4FBA-9D6F-ED1A776886B0}" />
+								</Child>
 								<Child Name="CODIGO_PRODUTO_DANFE" Owner="{6F943B62-59E2-46B5-B1F9-0FF1E856B48E}" />
 								<Child Name="ORIGEM_MERCADORIA" Owner="{2AFD8CA8-D688-42B1-96AD-F49A05FDA5C1}" />
-								<Child Name="CST" Owner="{5D08DEE9-EAEB-4C4E-8741-E6D26DEC40FB}" />
+								<Child Name="CST_ICMS" Owner="{5D08DEE9-EAEB-4C4E-8741-E6D26DEC40FB}" />
 								<Child Name="TIPO" Owner="{BEB442A8-ED0D-4BC4-AADA-761812E408D3}" />
 								<Child Name="CST_IPI" Owner="{3EC8396B-F7A3-48C6-B03F-ADEA63BB68EF}" />
 								<Child Name="SUB_CONTA_CONTABIL" Owner="{BBABEB24-5B31-4241-852F-EDDF2D8BBD80}" />

@@ -243,6 +243,12 @@
 						<Row No="16" Cell0="3900" Cell1="4500530043005200490054004F00520049004F00" Cell2="55004E00" Cell3="55004E00" />
 					</DefValue>
 				</Variable>
+				<Variable Name="ProdutosEMateriais" Type="{4AD4881B-176C-4C96-8288-FBBB7E3D1FE3}" Local="False">
+					<DefValue RowCount="1" ColumnCount="23">
+						<Columns ColumnName0="Tipo_NF" ColumnName1="Tipo_Produto" ColumnName2="Descricao" ColumnName3="UN" ColumnName4="GTIN" ColumnName5="EAN" ColumnName6="CEST" ColumnName7="ICMS" ColumnName8="IPI" ColumnName9="Classificacao_Fiscal" ColumnName10="Unidade_Volume" ColumnName11="Origem" ColumnName12="Mao_de_Obra" ColumnName13="CTA_Contabil" ColumnName14="Grupo" ColumnName15="Subgrupo" ColumnName16="Valor_Saida_Vista" ColumnName17="Valor_Saida_Prazo" ColumnName18="Valor_Entrada_Vista" ColumnName19="Valor_Entrada_Prazo" ColumnName20="Peso_Bruto" ColumnName21="Peso_Liquido" ColumnName22="Tribitacao_PDV" />
+						<Row No="0" Cell0="41004D00420041005300" Cell1="4D0041005400C9005200490041002D005000520049004D004100" Cell2="430041004D0049005300410020004D0041004E004700410020004C004F004E0047004100" Cell3="55004E00" Cell4="30003000300030003000300030003000" Cell5="3000300030003000300030003000300030003000300030003000" Cell6="3000300030003000300030003000" Cell7="300030003000" Cell8="300030003000" />
+					</DefValue>
+				</Variable>
 			</Items>
 		</data>
 	</variables>
