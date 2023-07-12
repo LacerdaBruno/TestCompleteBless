@@ -14,6 +14,7 @@ function cadastrarGrupoDeMateriais(){
 }
 
 function abreTela() {
+  Principal.alteraAba("Suprimentos");
   Principal.abreTelas(Aliases.SIDI.frmPrincipal.btnGrupoMateriais, 
   Aliases.SIDI.frmPrincipal.MDIClient.frmGrupoMateriais,"Grupo de Materiais");
 }

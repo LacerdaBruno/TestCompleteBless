@@ -19,17 +19,13 @@ function abreTela() {
 }
 function inserirGrupoDeMateriais(){
   
-  var gridUnidadeMedida = Aliases.SIDI.frmPrincipal.MDIClient.frmUnidadeMedidas.PageControlUnidadeMedidas.tsPesquisaUnidadeMedidas.PanelGridUnidadeMedidas.dbGridUnidadeMedidas;
-  for(i = 0; i < Project.Variables.UnidadeMedidas.RowCount; i++){
+  var gridUnidadeMedida = Aliases.SIDI.frmPrincipal.MDIClient.frmGrupoMateriais.
+  PageControlGrupoMateriais.tsPesquisaGrupoMateriais.PanelGridGrupoMateriais.dbGridGrupoMateriais;
+  for(i = 0; i < Project.Variables.GrupoDeMateriais.RowCount; i++){
   
   gridUnidadeMedida.Keys("[Home]");
   gridUnidadeMedida.Keys("[Right]");
-  gridUnidadeMedida.Keys(Project.Variables.UnidadeMedidas.Sigla(i)); 
-  gridUnidadeMedida.Keys("[Right]");
-  gridUnidadeMedida.Keys(Project.Variables.UnidadeMedidas.Descricao(i));
-  gridUnidadeMedida.Keys("[Right]");
-  gridUnidadeMedida.Keys("[Right]");
-  gridUnidadeMedida.Keys(Project.Variables.UnidadeMedidas.Fator_Conversao(i));
+  gridUnidadeMedida.Keys(Project.Variables.GrupoDeMateriais.Descricao(i)); 
   gridUnidadeMedida.Keys("[Down]");
   
   }
