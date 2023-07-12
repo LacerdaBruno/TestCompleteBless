@@ -14,6 +14,7 @@ function cadastrarSubgrupoDeMateriais(){
 }
 
 function abreTela() {
+  Principal.alteraAba("Suprimentos");
   Principal.abreTelas(Aliases.SIDI.frmPrincipal.btnSubGrupoMateriais, 
   Aliases.SIDI.frmPrincipal.MDIClient.frmSubGrupo,"Subgrupo de Materiais");
 }
@@ -28,7 +29,7 @@ function inserirSubgrupoDeMateriais(){
   Delay(500)
   gridSubGrupoMateriais.Keys("[Enter]"); 
   gridSubGrupoMateriais.Keys("[Right]");
-  gridSubGrupoMateriais.Keys("[Right]");
+  gridSubGrupoMateriais.Keys("[Right]");  
   gridSubGrupoMateriais.Keys(Project.Variables.SubGrupoMateriais.Descricao(i));
   gridSubGrupoMateriais.Keys("[Right]");
   gridSubGrupoMateriais.Keys(Project.Variables.SubGrupoMateriais.Unidade_Estoque(i));
