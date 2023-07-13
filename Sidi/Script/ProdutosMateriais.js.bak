@@ -60,7 +60,8 @@ function inserirProdutoFinanceiro(){
    tsdadosProdutoFiscal.TIPO.Keys(Tipo_NF+"[Enter]");
    tsdadosProdutoFiscal.Keys("[Tab]");
    tsdadosProdutoFiscal.TIPO_PRODUTO.Click();
-   tsdadosProdutoFiscal.TIPO_PRODUTO.Keys(Tipo_Produto+"[Enter]");
+   tsdadosProdutoFiscal.TIPO_PRODUTO.Keys(Tipo_Produto);
+   tsdadosProdutoFiscal.TIPO_PRODUTO.Keys("[Enter]");
    tsdadosProdutoFiscal.DESCRICAO.Keys(Descricao);
    tsdadosProdutoFiscal.UNIDADE_MEDIDA.Keys(UN+"[Enter]");
    tsdadosProdutoFiscal.Keys("[Tab]");

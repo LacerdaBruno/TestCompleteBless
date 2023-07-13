@@ -168,9 +168,9 @@
 					</DefValue>
 				</Variable>
 				<Variable Name="Materiais" Type="{4AD4881B-176C-4C96-8288-FBBB7E3D1FE3}" Local="False">
-					<DefValue RowCount="1" ColumnCount="14">
-						<Columns ColumnName0="tipo" ColumnName1="grupo" ColumnName2="subgrupo" ColumnName3="descricao" ColumnName4="cor" ColumnName5="custo" ColumnName6="icms" ColumnName7="ipi" ColumnName8="unidadeEstoque" ColumnName9="classificacaoFiscal" ColumnName10="precoVista" ColumnName11="pesoLiquido" ColumnName12="pesoBruto" ColumnName13="area" />
-						<Row No="0" Cell0="4D0041005400450052004900410020005000520049004D004100" Cell1="300031002D00540045004300490044004F00" Cell2="41004C0047004F00440041004F00" Cell3="42004900410052005200490054005A00200041004C0047004F00440041004F00200054004500530054004500" Cell4="4D004100520052004F004D00" Cell5="32003300" Cell6="3000" Cell7="3000" Cell8="4D005400" Cell9="30003000300030003000300030003000" Cell10="32003300" Cell11="3000" Cell12="3000" Cell13="3100" />
+					<DefValue RowCount="1" ColumnCount="13">
+						<Columns ColumnName0="tipo" ColumnName1="grupo" ColumnName2="subgrupo" ColumnName3="descricao" ColumnName4="cor" ColumnName5="custo" ColumnName6="icms" ColumnName7="ipi" ColumnName8="unidade_estoque" ColumnName9="classificacao_fiscal" ColumnName10="area" ColumnName11="unidade_volume" ColumnName12="setor" />
+						<Row No="0" Cell0="4D0041005400450052004900410020005000520049004D004100" Cell1="300031002D00540045004300490044004F00" Cell2="41004C0047004F00440041004F00" Cell3="42004900410052005200490054005A00200041004C0047004F00440041004F00200054004500530054004500" Cell4="4D004100520052004F004D00" Cell5="32003300" Cell6="3000" Cell7="3000" Cell8="4D005400" Cell9="30003300300034003400330030003000" Cell10="3100" Cell11="33003800200041004F00200034003300" Cell12="43004F00520054004500" />
 					</DefValue>
 				</Variable>
 				<Variable Name="Produto" Type="{4AD4881B-176C-4C96-8288-FBBB7E3D1FE3}" Local="False">
@@ -247,6 +247,21 @@
 					<DefValue RowCount="1" ColumnCount="24">
 						<Columns ColumnName0="Tipo_NF" ColumnName1="Tipo_Produto" ColumnName2="Descricao" ColumnName3="UN" ColumnName4="GTIN" ColumnName5="EAN" ColumnName6="CEST" ColumnName7="ICMS" ColumnName8="IPI" ColumnName9="Classificacao_Fiscal" ColumnName10="Unidade_Volume" ColumnName11="Origem" ColumnName12="Mao_de_Obra" ColumnName13="CTA_Contabil" ColumnName14="Grupo" ColumnName15="Subgrupo" ColumnName16="Valor_Saida_Vista" ColumnName17="Valor_Saida_Prazo" ColumnName18="Valor_Entrada_Vista" ColumnName19="Valor_Entrada_Prazo" ColumnName20="Peso_Bruto" ColumnName21="Peso_Liquido" ColumnName22="Tribitacao_PDV" ColumnName23="ICMS_PDV" />
 						<Row No="0" Cell0="4100" Cell1="4D0041005400C9005200490041002D005000520049004D004100" Cell2="430041004D0049005300410020004D0041004E004700410020004C004F004E0047004100" Cell3="55004E00" Cell4="30003000300030003000300030003000" Cell5="3000300030003000300030003000300030003000300030003000" Cell6="3000300030003000300030003000" Cell7="300030003000" Cell8="300030003000" Cell9="36003200300035003300300030003000" Cell10="33003800200041004F0020003400330020002D00200043004100490058004100200043004F004D00200031003200200050004100520045005300" Cell11="3000" Cell13="31002E0031002E0033002E00300033002E003000300031002000540045004300490044004F00" Cell14="540045004300490044004F00" Cell15="41004C0047004F00440041004F00" Cell16="31003500" Cell17="31003500" Cell18="31003000" Cell19="31003000" Cell20="3100" Cell21="3100" Cell22="30002D00540052004900420055005400410044004F00" Cell23="31003200" />
+					</DefValue>
+				</Variable>
+				<Variable Name="CorMateriais" Type="{4AD4881B-176C-4C96-8288-FBBB7E3D1FE3}" Local="False">
+					<DefValue RowCount="10" ColumnCount="1">
+						<Columns ColumnName0="cor" />
+						<Row No="0" Cell0="4200520041004E0043004F00" />
+						<Row No="1" Cell0="50005200450054004F00" />
+						<Row No="2" Cell0="41005A0055004C00" />
+						<Row No="3" Cell0="4D004100520052004F004D00" />
+						<Row No="4" Cell0="4D004100520049004E0048004F00" />
+						<Row No="5" Cell0="52004F0053004100" />
+						<Row No="6" Cell0="500049004E004B00" />
+						<Row No="7" Cell0="41004D004100520045004C004F00" />
+						<Row No="8" Cell0="5600450052004D0045004C0048004F00" />
+						<Row No="9" Cell0="56004500520044004500" />
 					</DefValue>
 				</Variable>
 			</Items>
