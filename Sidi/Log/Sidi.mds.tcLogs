@@ -20,35 +20,7 @@
 <Nodes version="1">
 	<Node name="root">
 		<Node name="folders"/>
-		<Node name="logs">
-			<Node name="log idx=0000">
-				<Prp name="caption" type="S" value=""/>
-				<Prp name="datetime" type="D" value="45119.5943184144"/>
-				<Prp name="description" type="S" value=""/>
-				<Prp name="key" type="S" value="{9CB7A35A-02D0-4970-AB4C-22566A6B6C14}"/>
-				<Prp name="nameofroot" type="S" value="Sidi"/>
-				<Prp name="relpath" type="S" value="12_07_2023_14_15_49_111\Description.tcLog"/>
-				<Prp name="status" type="I" value="2"/>
-			</Node>
-			<Node name="log idx=0001">
-				<Prp name="caption" type="S" value=""/>
-				<Prp name="datetime" type="D" value="45119.5970766204"/>
-				<Prp name="description" type="S" value=""/>
-				<Prp name="key" type="S" value="{0B42C7BF-BB04-4968-A50B-11728F4C7C54}"/>
-				<Prp name="nameofroot" type="S" value="TestarClassificacaoFiscal"/>
-				<Prp name="relpath" type="S" value="12_07_2023_14_19_47_420\Description.tcLog"/>
-				<Prp name="status" type="I" value="1"/>
-			</Node>
-			<Node name="log idx=0002">
-				<Prp name="caption" type="S" value=""/>
-				<Prp name="datetime" type="D" value="45119.5984888889"/>
-				<Prp name="description" type="S" value=""/>
-				<Prp name="key" type="S" value="{3A90A6AB-D2A5-431C-880E-A4C2787645C6}"/>
-				<Prp name="nameofroot" type="S" value="Sidi"/>
-				<Prp name="relpath" type="S" value="12_07_2023_14_21_49_440\Description.tcLog"/>
-				<Prp name="status" type="I" value="0"/>
-			</Node>
-		</Node>
+		<Node name="logs"/>
 		<Prp name="signature" type="S" value="{681DCC69-A39F-4C4D-8E7D-B2D9362FAF4F}"/>
 		<Prp name="version" type="S" value="11.0"/>
 	</Node>

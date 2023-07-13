@@ -9,7 +9,7 @@ function insereCor()
 {
   abreTela(); 
   Principal.clicaNovo(); 
-  insereDescCor('Colorido');
+  insereDescCor();
   confirma();
   Principal.clicaEditar();
   confirma();
@@ -24,9 +24,15 @@ function abreTela()
 
 function insereDescCor(cor){
  var dbGrid = Aliases.SIDI.frmPrincipal.MDIClient.frmCores.PageControlCores.tsPesquisaCores.PanelGridCores.dbGridPesquisaCores;
- dbGrid.Keys("[Home]");
- dbGrid.Keys("[Right]");
- dbGrid.Keys(cor);
+
+ for (var i = 0; i < Project.Variables.CorMateriais.RowCount; i++){
+    var cor = Project.Variables.CorMateriais.cor(i); 
+    dbGrid.Keys("[Home]");
+    dbGrid.Keys("[Right]");
+    dbGrid.Keys(cor);   
+    dbGrid.Keys("[Down]");
+ }
+
 }
 
 function confirma()

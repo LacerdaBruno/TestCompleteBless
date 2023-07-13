@@ -4044,6 +4044,108 @@
 																				<Value PropertyType="0" Value="pnlOpcoesMarcar" Type="5" />
 																			</Property>
 																		</Properties>
+																		<Children>
+																			<Child Name="SETOR_CORTE" Key="{AD5D2990-2CA6-4650-8F97-CBE67873EA92}" ParallelWalk="True">
+																				<Properties>
+																					<Property Name="ClassName">
+																						<Value PropertyType="0" Value="TDBCheckBox" Type="5" />
+																					</Property>
+																					<Property Name="ObjectIdentifier">
+																						<Value PropertyType="0" Value="SETOR_CORTE" Type="5" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="BANCA" Key="{E082EF7B-2982-45B4-87A3-7A99DAA36360}" ParallelWalk="True">
+																				<Properties>
+																					<Property Name="ClassName">
+																						<Value PropertyType="0" Value="TDBCheckBox" Type="5" />
+																					</Property>
+																					<Property Name="ObjectIdentifier">
+																						<Value PropertyType="0" Value="BANCA" Type="5" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="PRODUTO_PROCESSO_PADRAO" Key="{93C73A00-820C-4282-AC98-C4AFAC4B33B6}" ParallelWalk="True">
+																				<Properties>
+																					<Property Name="ClassName">
+																						<Value PropertyType="0" Value="TDBCheckBox" Type="5" />
+																					</Property>
+																					<Property Name="ObjectIdentifier">
+																						<Value PropertyType="0" Value="PRODUTO_PROCESSO_PADRAO" Type="5" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="MATERIAL_BASE" Key="{14AAB8DF-E183-48B9-A0E7-A8651E641231}" ParallelWalk="True">
+																				<Properties>
+																					<Property Name="ClassName">
+																						<Value PropertyType="0" Value="TDBCheckBox" Type="5" />
+																					</Property>
+																					<Property Name="ObjectIdentifier">
+																						<Value PropertyType="0" Value="MATERIAL_BASE" Type="5" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="ESTOQUE" Key="{94EDC282-2ED8-4BD8-B0C4-8D769A3D56D8}" ParallelWalk="True">
+																				<Properties>
+																					<Property Name="ClassName">
+																						<Value PropertyType="0" Value="TDBCheckBox" Type="5" />
+																					</Property>
+																					<Property Name="ObjectIdentifier">
+																						<Value PropertyType="0" Value="ESTOQUE" Type="5" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="BLOQUEIA_COMPRA" Key="{3C2EBB54-59EF-4325-8759-3324EC737BA6}" ParallelWalk="True">
+																				<Properties>
+																					<Property Name="ClassName">
+																						<Value PropertyType="0" Value="TDBCheckBox" Type="5" />
+																					</Property>
+																					<Property Name="ObjectIdentifier">
+																						<Value PropertyType="0" Value="BLOQUEIA_COMPRA" Type="5" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="BLOQUEADO" Key="{5CEDB71D-F773-4997-9ECD-113D22EC96BF}" ParallelWalk="True">
+																				<Properties>
+																					<Property Name="ClassName">
+																						<Value PropertyType="0" Value="TDBCheckBox" Type="5" />
+																					</Property>
+																					<Property Name="ObjectIdentifier">
+																						<Value PropertyType="0" Value="BLOQUEADO" Type="5" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="ITEM_NF" Key="{F3FE4F4D-A52B-4395-8843-3676BBA6586D}" ParallelWalk="True">
+																				<Properties>
+																					<Property Name="ClassName">
+																						<Value PropertyType="0" Value="TDBCheckBox" Type="5" />
+																					</Property>
+																					<Property Name="ObjectIdentifier">
+																						<Value PropertyType="0" Value="ITEM_NF" Type="5" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="COMPOE_CUSTO" Key="{2EBE9989-BEF6-4DE5-95C1-A38FA19EF78D}" ParallelWalk="True">
+																				<Properties>
+																					<Property Name="ClassName">
+																						<Value PropertyType="0" Value="TDBCheckBox" Type="5" />
+																					</Property>
+																					<Property Name="ObjectIdentifier">
+																						<Value PropertyType="0" Value="COMPOE_CUSTO" Type="5" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="MATERIAL_TEMPORARIO" Key="{F3666CB3-52F7-4D74-8D26-80D7332AE2B4}" ParallelWalk="True">
+																				<Properties>
+																					<Property Name="ClassName">
+																						<Value PropertyType="0" Value="TDBCheckBox" Type="5" />
+																					</Property>
+																					<Property Name="ObjectIdentifier">
+																						<Value PropertyType="0" Value="MATERIAL_TEMPORARIO" Type="5" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																		</Children>
 																	</Child>
 																	<Child Name="GroupBox3" Key="{E5FDCF58-09EC-40A7-9F44-2998B5148701}" ParallelWalk="True">
 																		<Properties>
@@ -6403,6 +6505,18 @@
 											</Property>
 										</Properties>
 									</Child>
+									<Child Name="No" Key="{E629135F-11CE-44D8-9C80-0C86E367652E}" ParallelWalk="True">
+										<Image FileName="568716638" Left="179" Top="92" Right="254" Bottom="118" />
+										<TypeInfo Item0="{F0640855-35C8-4BAE-82AE-DD5B774EE982}" />
+										<Properties>
+											<Property Name="ClassName">
+												<Value PropertyType="0" Value="TButton" Type="5" />
+											</Property>
+											<Property Name="ObjectIdentifier">
+												<Value PropertyType="0" Value="No" Type="5" />
+											</Property>
+										</Properties>
+									</Child>
 								</Children>
 							</Child>
 							<Child Name="dlgAten_o" Key="{5F9E1FB2-585D-4FBC-A265-442FFD8F00F3}" ParallelWalk="True">
@@ -6449,6 +6563,56 @@
 											</Property>
 											<Property Name="ObjectIdentifier">
 												<Value PropertyType="0" Value="OK" Type="5" />
+											</Property>
+										</Properties>
+									</Child>
+									<Child Name="Image" Key="{CC4D94BD-3F3F-42E7-A3E4-CDECA81055FB}" ParallelWalk="True">
+										<Properties>
+											<Property Name="ClassName">
+												<Value PropertyType="0" Value="TImage" Type="5" />
+											</Property>
+											<Property Name="ObjectIdentifier">
+												<Value PropertyType="0" Value="Image" Type="5" />
+											</Property>
+										</Properties>
+									</Child>
+									<Child Name="Message" Key="{B6E1467C-141B-4BEC-BEF2-701608269F68}" ParallelWalk="True">
+										<Properties>
+											<Property Name="ClassName">
+												<Value PropertyType="0" Value="TLabel" Type="5" />
+											</Property>
+											<Property Name="ObjectIdentifier">
+												<Value PropertyType="0" Value="Message" Type="5" />
+											</Property>
+										</Properties>
+									</Child>
+									<Child Name="Yes" Key="{90BAE23B-3378-4655-835F-1CB0ED659372}" ParallelWalk="True">
+										<Properties>
+											<Property Name="ClassName">
+												<Value PropertyType="0" Value="TButton" Type="5" />
+											</Property>
+											<Property Name="ObjectIdentifier">
+												<Value PropertyType="0" Value="Yes" Type="5" />
+											</Property>
+										</Properties>
+									</Child>
+									<Child Name="No" Key="{5345D9B7-952D-49EB-B32A-FDE1533E847B}" ParallelWalk="True">
+										<Properties>
+											<Property Name="ClassName">
+												<Value PropertyType="0" Value="TButton" Type="5" />
+											</Property>
+											<Property Name="ObjectIdentifier">
+												<Value PropertyType="0" Value="No" Type="5" />
+											</Property>
+										</Properties>
+									</Child>
+									<Child Name="Cancel" Key="{1D6F9A54-B20E-4FEF-B209-0A58A599371D}" ParallelWalk="True">
+										<Properties>
+											<Property Name="ClassName">
+												<Value PropertyType="0" Value="TButton" Type="5" />
+											</Property>
+											<Property Name="ObjectIdentifier">
+												<Value PropertyType="0" Value="Cancel" Type="5" />
 											</Property>
 										</Properties>
 									</Child>
@@ -7027,7 +7191,9 @@
 								<Child Name="CODIGO_SETOR" Owner="{30D54FFA-5139-4FE3-BFDB-E2E4C2870651}" />
 								<Child Name="CODIGO_COR" Owner="{60D70C02-464F-4BDB-BB25-99558C919A01}" />
 								<Child Name="CLF_FISCAL" Owner="{A88B8BEB-ED39-45EB-AD49-577C795DC67A}" />
-								<Child Name="LOCALIZACAO" Owner="{120114C2-ABBA-454E-8C3D-9DA426A6F67C}" />
+								<Child Name="LOCALIZACAO" Owner="{120114C2-ABBA-454E-8C3D-9DA426A6F67C}">
+									<Child Name="GroupBox3" Owner="{E5FDCF58-09EC-40A7-9F44-2998B5148701}" />
+								</Child>
 								<Child Name="CODIGO_BARRAS" Owner="{16AF21D2-A1F4-42FF-B3C1-B2B652142615}" />
 								<Child Name="DESCRICAO_AGRUPADA" Owner="{0FC9F884-350C-4388-8A74-7DD3D30BFBA9}" />
 								<Child Name="PRAZO_ENTREGA_FORNECEDOR" Owner="{1DEC0128-ABA6-4A96-B30B-EFAF0B00F1E8}" />
@@ -7039,8 +7205,18 @@
 								<Child Name="FATOR_CONVERSAO" Owner="{AE3792A1-204F-405A-AA08-4E7A5B9DFE85}" />
 								<Child Name="VR_CONVERTIDO" Owner="{D5E65545-3AF5-442B-9AC5-9DC5C7BE90F5}" />
 								<Child Name="gbObs" Owner="{543AB868-2AF0-4D55-BFBA-1219F8B137F1}" />
-								<Child Name="pnlOpcoesMarcar" Owner="{13186236-7D78-4FAB-8DF0-1AAF0291C86E}" />
-								<Child Name="GroupBox3" Owner="{E5FDCF58-09EC-40A7-9F44-2998B5148701}" />
+								<Child Name="pnlOpcoesMarcar" Owner="{13186236-7D78-4FAB-8DF0-1AAF0291C86E}">
+									<Child Name="SETOR_CORTE" Owner="{AD5D2990-2CA6-4650-8F97-CBE67873EA92}" />
+									<Child Name="BANCA" Owner="{E082EF7B-2982-45B4-87A3-7A99DAA36360}" />
+									<Child Name="PRODUTO_PROCESSO_PADRAO" Owner="{93C73A00-820C-4282-AC98-C4AFAC4B33B6}" />
+									<Child Name="MATERIAL_BASE" Owner="{14AAB8DF-E183-48B9-A0E7-A8651E641231}" />
+									<Child Name="ESTOQUE" Owner="{94EDC282-2ED8-4BD8-B0C4-8D769A3D56D8}" />
+									<Child Name="BLOQUEIA_COMPRA" Owner="{3C2EBB54-59EF-4325-8759-3324EC737BA6}" />
+									<Child Name="BLOQUEADO" Owner="{5CEDB71D-F773-4997-9ECD-113D22EC96BF}" />
+									<Child Name="ITEM_NF" Owner="{F3FE4F4D-A52B-4395-8843-3676BBA6586D}" />
+									<Child Name="COMPOE_CUSTO" Owner="{2EBE9989-BEF6-4DE5-95C1-A38FA19EF78D}" />
+									<Child Name="MATERIAL_TEMPORARIO" Owner="{F3666CB3-52F7-4D74-8D26-80D7332AE2B4}" />
+								</Child>
 								<Child Name="cbConsumoTalao" Owner="{4C08319F-C422-404D-A125-0C902211CBE0}" />
 								<Child Name="ULTIMA_AUDITORIA" Owner="{9660D4F8-29E6-4A1A-AC4C-0B1A554BE4F8}" />
 								<Child Name="gbCusto" Owner="{B841DB87-E235-473E-9F9D-33D816BC6F25}">
@@ -7312,12 +7488,18 @@
 			</Child>
 			<Child Name="MensagemConfirmacao" Owner="{F036F3DB-6C28-4533-9C80-B85080FCB813}">
 				<Child Name="btnSim" Owner="{3C6AD688-4E53-40F9-B4D1-168D12598B8C}" />
+				<Child Name="No" Owner="{E629135F-11CE-44D8-9C80-0C86E367652E}" />
 			</Child>
 			<Child Name="dlgAten_o" Owner="{5F9E1FB2-585D-4FBC-A265-442FFD8F00F3}">
 				<Child Name="btnSim" Owner="{5D22B055-1D6F-4AAF-96D6-EB2D3D14C78A}" />
 			</Child>
 			<Child Name="TMessageForm2" Owner="{7E053586-3AD2-416F-93E3-E2EEB0902F3B}">
 				<Child Name="OK" Owner="{1BCB58C9-10D3-49C7-8175-E21A58FA1E67}" />
+				<Child Name="Image" Owner="{CC4D94BD-3F3F-42E7-A3E4-CDECA81055FB}" />
+				<Child Name="Message" Owner="{B6E1467C-141B-4BEC-BEF2-701608269F68}" />
+				<Child Name="Yes" Owner="{90BAE23B-3378-4655-835F-1CB0ED659372}" />
+				<Child Name="No" Owner="{5345D9B7-952D-49EB-B32A-FDE1533E847B}" />
+				<Child Name="Cancel" Owner="{1D6F9A54-B20E-4FEF-B209-0A58A599371D}" />
 			</Child>
 			<Child Name="TwwPopupListbox" Owner="{916D77A4-BC27-4044-96A0-ECB6F8F1440B}" />
 			<Child Name="dlgSidi" Owner="{52FED8D5-6691-421F-859F-9CC4F3833A7E}">
