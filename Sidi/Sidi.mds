@@ -268,6 +268,12 @@
 						<Row No="9" Cell0="56004500520044004500" />
 					</DefValue>
 				</Variable>
+				<Variable Name="Facas" Type="{4AD4881B-176C-4C96-8288-FBBB7E3D1FE3}" Local="False">
+					<DefValue RowCount="1" ColumnCount="6">
+						<Columns ColumnName0="descricao" ColumnName1="valor" ColumnName2="grade" ColumnName3="referencia" ColumnName4="quantidade" ColumnName5="balancin" />
+						<Row No="0" Cell0="460041004300410020004300410042004500440041004C00" Cell1="3100" Cell2="33003800200041004F00200034003300" Cell3="54004500530054004500200042004C00450053005300" Cell4="3100" Cell5="420041004C0041004E00430049004E0020004600410042005200490043004100" />
+					</DefValue>
+				</Variable>
 			</Items>
 		</data>
 	</variables>

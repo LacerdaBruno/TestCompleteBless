@@ -50,6 +50,9 @@
 					<Node name="var15">
 						<Prp name="name" type="S" value="CorMateriais"/>
 					</Node>
+					<Node name="var16">
+						<Prp name="name" type="S" value="Facas"/>
+					</Node>
 					<Node name="var2">
 						<Prp name="name" type="S" value="DadosPessoasServicos"/>
 					</Node>

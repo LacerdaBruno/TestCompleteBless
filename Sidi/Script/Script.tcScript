@@ -82,6 +82,9 @@
 		<child name="ValidaLogin" key="{523414B8-5D61-4CC0-B8C6-C59FDB2428C0}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
 			<data path="ValidaLogin.js" />
 		</child>
+		<child name="Faca" key="{391265AB-D1AC-4A3B-95B1-49F1A77CCDFA}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="Faca.js" />
+		</child>
 	</children>
 	<folders>
 		<folder caption="Cadastros" description="A logical folder that is used to organize project items and elements." moniker="">
@@ -99,6 +102,7 @@
 				<ref key="{497CC71D-BB31-416C-B0B3-DEFBDF580E2B}" />
 				<ref key="{BDA6040D-16F9-46F3-8EFD-22A56B1B9C58}" />
 				<ref key="{F7894DC7-A3EE-41B0-AAA2-8F975B2DB120}" />
+				<ref key="{391265AB-D1AC-4A3B-95B1-49F1A77CCDFA}" />
 			</references>
 		</folder>
 		<folder caption="Teste" description="A logical folder that is used to organize project items and elements." moniker="">
