@@ -12,12 +12,10 @@ function cadastraMateriais(){
   Principal.clicaNovo(); 
   insereMateriais();
   confirma();
-  /*CRIAR UMA FUNÇÃO PARA CADASTRAR O PRODUTO NFE INDEPENDENTE DO SCRPT DE PRODUTO NFE*/
-
-  
-  /*Principal.clicaEditar();
+  inserirProdutoFinanceiro()  
+  Principal.clicaEditar();
   confirma();
-  Principal.fechaTela();*/ 
+  Principal.fechaTela(); 
 }
 
 function insereMateriais() {
@@ -77,6 +75,50 @@ function abreTela() {
 	Principal.abreTelas(Aliases.SIDI.frmPrincipal.btnMateriaisItem,
 		Aliases.SIDI.frmPrincipal.MDIClient.frmItemEstoque,
 		"Materiais - Suprimentos");
+}
+
+function inserirProdutoFinanceiro(){
+  
+  for(i = 0; i < Project.Variables.Materiais.RowCount; i++){
+
+  var Tipo_NF = Project.Variables.Materiais.Tipo_NF(i);
+  var Tipo_Produto = Project.Variables.Materiais.Tipo_Produto(i);
+  var GTIN = Project.Variables.Materiais.GTIN(i);
+  var EAN = Project.Variables.Materiais.EAN(i);
+  var CEST = Project.Variables.Materiais.CEST(i);
+  var CST_ICMS = Project.Variables.Materiais.CST_ICMS(i);
+  var CST_IPI = Project.Variables.Materiais.CST_IPI(i);
+  var Origem = Project.Variables.Materiais.origem(i);
+  var Grupo = Project.Variables.Materiais.grupo(i);
+  var Subgrupo = Project.Variables.Materiais.subgrupo(i);
+  var Valor_Saida_Vista = Project.Variables.Materiais.custo(i);
+  var Valor_Saida_Prazo = Project.Variables.Materiais.custo(i);
+  var Peso_Bruto = Project.Variables.Materiais.peso_bruto(i);
+  var Peso_Liquido = Project.Variables.Materiais.peso_liquido(i);
+  var Tribitacao_PDV = Project.Variables.Materiais.tributacao_pdv(i);
+  var ICMS_PDV = Project.Variables.Materiais.ICMS_PDV(i);
+  var tsdadosProdutoFiscal = Aliases.SIDI.frmPrincipal.MDIClient.frmProdutoFiscal.PageControlProdutoFiscal.tsdados;
+
+  
+   Principal.insereDropDownValue(tsdadosProdutoFiscal.TIPO, Tipo_NF);
+   Delay(1000);
+   Principal.insereDropDownValue(tsdadosProdutoFiscal.TIPO_PRODUTO, Tipo_Produto);
+   /*tsdadosProdutoFiscal.GTIN.Keys(GTIN);
+   tsdadosProdutoFiscal.EAN.Keys(EAN);
+   tsdadosProdutoFiscal.CEST.Keys(CEST);
+   Principal.insereDropDownValue(tsdadosProdutoFiscal.CST_ICMS, CST_ICMS);
+   Principal.insereDropDownValue(tsdadosProdutoFiscal.CST_IPI, CST_IPI);
+   Principal.insereDropDownValue(tsdadosProdutoFiscal.ORIGEM_MERCADORIA, Origem);
+   Principal.insereDropDownValue(tsdadosProdutoFiscal.CODIGO_GRUPO, Grupo);
+   Principal.insereDropDownValue(tsdadosProdutoFiscal.CODIGO_SUBGRUPO, Subgrupo);
+   tsdadosProdutoFiscal.gbValoresVenda.VENDA_UNIT.Keys(Valor_Saida_Vista);
+   tsdadosProdutoFiscal.gbValoresVenda.VENDA_PRAZO_UNIT.Keys(Valor_Saida_Prazo);
+   tsdadosProdutoFiscal.gbPeso.PESO_BRUTO.Keys(Peso_Bruto);
+   tsdadosProdutoFiscal.gbPeso.PESO_LIQUIDO.Keys(Peso_Liquido);
+   Principal.insereDropDownValue(tsdadosProdutoFiscal.gbPDV.TRIBUTACAO, Tribitacao_PDV);
+   tsdadosProdutoFiscal.gbPDV.ALQ_ICMS.Keys(ICMS_PDV);*/
+
+  }
 }
 
 function insereCF(cf) {
