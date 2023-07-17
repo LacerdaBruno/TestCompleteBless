@@ -117,8 +117,11 @@ function inserirProdutoFinanceiro(){
    tsdadosProdutoFiscal.gbPeso.PESO_LIQUIDO.Keys(Peso_Liquido);
    Principal.insereDropDownValue(tsdadosProdutoFiscal.gbPDV.TRIBUTACAO, Tribitacao_PDV);
    tsdadosProdutoFiscal.gbPDV.ALQ_ICMS.Keys(ICMS_PDV);
-
+   
+   confirmaProdutoNf()
+   Principal.fechaTela();
   }
+  
 }
 
 function insereCF(cf) {
@@ -130,6 +133,9 @@ function confirma() {
   if (Aliases.SIDI.MensagemConfirmacao.Exists){
     Aliases.SIDI.MensagemConfirmacao.Yes.ClickButton();
   }
+}
+function confirmaProdutoNf(){
+   Principal.confirma(Aliases.SIDI.frmPrincipal.MDIClient.frmProdutoFiscal.Panel1.PanelBotoes.btnConfirma, "produto NF");
 }
 module.exports.abreTela = abreTela;
 
