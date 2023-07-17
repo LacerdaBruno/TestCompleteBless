@@ -103,3 +103,5 @@ function confirma()
 {
   Principal.confirma(Aliases.SIDI.frmPrincipal.MDIClient.frmProdutoFiscal.Panel1.PanelBotoes.btnConfirma, "produto NF");
 }
+
+module.exports.cadastraProdutoFinanceiro = cadastraProdutoFinanceiro;
