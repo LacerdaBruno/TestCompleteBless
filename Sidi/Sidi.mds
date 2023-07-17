@@ -98,6 +98,10 @@
 						<testParameters />
 						<children />
 					</testItem>
+					<testItem name="TestarCadastrarFaca" key="{2B164504-6F56-49B9-85BB-237887F1D440}" group="False" enabled="True" testMoniker="{391265AB-D1AC-4A3B-95B1-49F1A77CCDFA}cadastraFaca" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+						<testParameters />
+						<children />
+					</testItem>
 				</children>
 			</testItem>
 		</children>
@@ -272,6 +276,13 @@
 					<DefValue RowCount="1" ColumnCount="6">
 						<Columns ColumnName0="descricao" ColumnName1="valor" ColumnName2="grade" ColumnName3="referencia" ColumnName4="quantidade" ColumnName5="balancin" />
 						<Row No="0" Cell0="460041004300410020004300410042004500440041004C00" Cell1="3100" Cell2="33003800200041004F00200034003300" Cell3="54004500530054004500200042004C00450053005300" Cell4="3100" Cell5="420041004C0041004E00430049004E0020004600410042005200490043004100" />
+					</DefValue>
+				</Variable>
+				<Variable Name="FamiliaProdutos" Type="{4AD4881B-176C-4C96-8288-FBBB7E3D1FE3}" Local="False">
+					<DefValue RowCount="2" ColumnCount="6">
+						<Columns ColumnName0="descricao" ColumnName1="inicio_entrega" ColumnName2="desconto" ColumnName3="tipo_desconto" ColumnName4="qte_minima" ColumnName5="desconto_ret" />
+						<Row No="0" Cell0="52004F005500500041005300" Cell1="300031002F00300031002F003200300032003200" Cell2="3000" Cell3="2500" Cell4="3000" Cell5="3000" />
+						<Row No="1" Cell0="430041004C004300410044004F005300" Cell1="300031002F00300031002F003200300032003200" Cell2="3000" Cell3="2500" Cell4="3000" Cell5="3000" />
 					</DefValue>
 				</Variable>
 			</Items>

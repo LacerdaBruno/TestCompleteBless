@@ -31,7 +31,7 @@ function cadastraFaca()
   painelCadastroFaca.QTE_FACA.Keys(Quantidade);
   Principal.insereDropDownValue(painelCadastroFaca.BALANCIN, Balancin);
   
-  importarGrade()
+  importarGrade();
   
 }
   
