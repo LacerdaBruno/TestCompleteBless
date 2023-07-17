@@ -26,15 +26,10 @@ function abreTelas(botao, tela, nomeTela){
 
 function insereDropDownValue(dropDown, value)
 {
-  //currentvalue = dropDown.Text;
-  //while(currentvalue != value && aqString.Find(currentvalue, value) != 0){
     dropDown.Click();
-    var formattedValue = value.replace("{0}", "É");
-    dropDown.Keys(formattedValue);
-    Delay(1000);
-    dropDown.Keys("[Tab]");
-  //currentvalue = dropDown.Text;
-  //}
+    dropDown.Keys(value);
+    dropDown.Keys("[Tab]");   
+
 }
 
 function clicaNovo()

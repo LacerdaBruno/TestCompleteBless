@@ -7,8 +7,7 @@ var Visualizacoes = require("Visualizacoes");
 
 //var Video = require("Video");
 
-function cadastraProdutoFinanceiro(){
- 
+function cadastraProdutoFinanceiro(){ 
   abreTela();
   Principal.clicaNovo(); 
   inserirProdutoFinanceiro();
@@ -28,7 +27,7 @@ function abreTela()
 
 function inserirProdutoFinanceiro(){
   
-  for(i = 0; i < Project.Variables.ProdutosEMateriais.RowCount; i++){
+  for(let i = 0; i < Project.Variables.ProdutosEMateriais.RowCount; i++){
 
   var Tipo_NF = Project.Variables.ProdutosEMateriais.Tipo_NF(i);
   var Tipo_Produto = Project.Variables.ProdutosEMateriais.Tipo_Produto(i);
