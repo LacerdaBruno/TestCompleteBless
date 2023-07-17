@@ -102,6 +102,10 @@
 						<testParameters />
 						<children />
 					</testItem>
+					<testItem name="TestarCadastrarFamilia" key="{4846AFD1-E0B3-4F45-939F-BE80DE58A9C0}" group="False" enabled="True" testMoniker="{82EE076C-5125-4F46-AE50-B7114D00E5C6}insereFamiliaProdutos" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+						<testParameters />
+						<children />
+					</testItem>
 				</children>
 			</testItem>
 		</children>

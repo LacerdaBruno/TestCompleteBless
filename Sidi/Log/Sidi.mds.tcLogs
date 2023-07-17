@@ -23,56 +23,38 @@
 		<Node name="logs">
 			<Node name="log idx=0000">
 				<Prp name="caption" type="S" value=""/>
-				<Prp name="datetime" type="D" value="45124.6683725926"/>
+				<Prp name="datetime" type="D" value="45124.6807753356"/>
 				<Prp name="description" type="S" value=""/>
-				<Prp name="key" type="S" value="{CF326FE0-B3EF-417C-ACED-DD87E7319537}"/>
-				<Prp name="nameofroot" type="S" value="Script Test Log [FamiliaProdutos\cadastarFamiliaProdutos]"/>
-				<Prp name="relpath" type="S" value="17_07_2023_16_02_27_392\Description.tcLog"/>
+				<Prp name="key" type="S" value="{B5B91399-C2D0-4B82-86DD-8DBA81452062}"/>
+				<Prp name="nameofroot" type="S" value="Sidi"/>
+				<Prp name="relpath" type="S" value="17_07_2023_16_20_18_989\Description.tcLog"/>
 				<Prp name="status" type="I" value="2"/>
 			</Node>
 			<Node name="log idx=0001">
 				<Prp name="caption" type="S" value=""/>
-				<Prp name="datetime" type="D" value="45124.6685934259"/>
+				<Prp name="datetime" type="D" value="45124.6873541898"/>
 				<Prp name="description" type="S" value=""/>
-				<Prp name="key" type="S" value="{01FD62C6-E6C1-438B-8BA2-E1A0145DF569}"/>
-				<Prp name="nameofroot" type="S" value="Script Test Log [FamiliaProdutos\cadastarFamiliaProdutos]"/>
-				<Prp name="relpath" type="S" value="17_07_2023_16_02_46_472\Description.tcLog"/>
-				<Prp name="status" type="I" value="2"/>
+				<Prp name="key" type="S" value="{1B1C44AF-1531-4DA0-BF2C-EE950B913D35}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [Faca\cadastraFaca]"/>
+				<Prp name="relpath" type="S" value="17_07_2023_16_29_47_402\Description.tcLog"/>
+				<Prp name="status" type="I" value="1"/>
 			</Node>
 			<Node name="log idx=0002">
 				<Prp name="caption" type="S" value=""/>
-				<Prp name="datetime" type="D" value="45124.6702031944"/>
+				<Prp name="datetime" type="D" value="45124.6882329398"/>
 				<Prp name="description" type="S" value=""/>
-				<Prp name="key" type="S" value="{00D5B778-F722-4032-8454-1568D7B80110}"/>
-				<Prp name="nameofroot" type="S" value="Script Test Log [FamiliaProdutos\cadastarFamiliaProdutos]"/>
-				<Prp name="relpath" type="S" value="17_07_2023_16_05_05_556\Description.tcLog"/>
+				<Prp name="key" type="S" value="{1FC89054-5D8C-4FDB-A8AC-286B770EE095}"/>
+				<Prp name="nameofroot" type="S" value="TestarCadastrarFamilia"/>
+				<Prp name="relpath" type="S" value="17_07_2023_16_31_03_326\Description.tcLog"/>
 				<Prp name="status" type="I" value="2"/>
 			</Node>
 			<Node name="log idx=0003">
 				<Prp name="caption" type="S" value=""/>
-				<Prp name="datetime" type="D" value="45124.6713130324"/>
+				<Prp name="datetime" type="D" value="45124.6888540162"/>
 				<Prp name="description" type="S" value=""/>
-				<Prp name="key" type="S" value="{021565A2-B8BA-4883-863D-FF7C3784325E}"/>
-				<Prp name="nameofroot" type="S" value="Script Test Log [FamiliaProdutos\cadastarFamiliaProdutos]"/>
-				<Prp name="relpath" type="S" value="17_07_2023_16_06_41_446\Description.tcLog"/>
-				<Prp name="status" type="I" value="1"/>
-			</Node>
-			<Node name="log idx=0004">
-				<Prp name="caption" type="S" value=""/>
-				<Prp name="datetime" type="D" value="45124.6718277546"/>
-				<Prp name="description" type="S" value=""/>
-				<Prp name="key" type="S" value="{D631B42B-2B4B-4E1D-A930-B5355BF70E77}"/>
-				<Prp name="nameofroot" type="S" value="Script Test Log [FamiliaProdutos\cadastarFamiliaProdutos]"/>
-				<Prp name="relpath" type="S" value="17_07_2023_16_07_25_918\Description.tcLog"/>
-				<Prp name="status" type="I" value="1"/>
-			</Node>
-			<Node name="log idx=0005">
-				<Prp name="caption" type="S" value=""/>
-				<Prp name="datetime" type="D" value="45124.6722497569"/>
-				<Prp name="description" type="S" value=""/>
-				<Prp name="key" type="S" value="{3A9865F3-CEFF-4C50-8B14-97221FF4FBF1}"/>
-				<Prp name="nameofroot" type="S" value="Script Test Log [FamiliaProdutos\insereFamiliaProdutos]"/>
-				<Prp name="relpath" type="S" value="17_07_2023_16_08_02_379\Description.tcLog"/>
+				<Prp name="key" type="S" value="{1A565F43-A1E6-4F5E-BA4A-B3C3D1F20BD5}"/>
+				<Prp name="nameofroot" type="S" value="TestarCadastrarFamilia"/>
+				<Prp name="relpath" type="S" value="17_07_2023_16_31_56_987\Description.tcLog"/>
 				<Prp name="status" type="I" value="1"/>
 			</Node>
 		</Node>
