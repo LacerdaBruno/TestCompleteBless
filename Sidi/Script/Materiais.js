@@ -103,7 +103,7 @@ function inserirProdutoFinanceiro(){
    Principal.insereDropDownValue(tsdadosProdutoFiscal.TIPO, Tipo_NF);
    Delay(1000);
    Principal.insereDropDownValue(tsdadosProdutoFiscal.TIPO_PRODUTO, Tipo_Produto);
-   /*tsdadosProdutoFiscal.GTIN.Keys(GTIN);
+   tsdadosProdutoFiscal.GTIN.Keys(GTIN);
    tsdadosProdutoFiscal.EAN.Keys(EAN);
    tsdadosProdutoFiscal.CEST.Keys(CEST);
    Principal.insereDropDownValue(tsdadosProdutoFiscal.CST_ICMS, CST_ICMS);
@@ -116,7 +116,7 @@ function inserirProdutoFinanceiro(){
    tsdadosProdutoFiscal.gbPeso.PESO_BRUTO.Keys(Peso_Bruto);
    tsdadosProdutoFiscal.gbPeso.PESO_LIQUIDO.Keys(Peso_Liquido);
    Principal.insereDropDownValue(tsdadosProdutoFiscal.gbPDV.TRIBUTACAO, Tribitacao_PDV);
-   tsdadosProdutoFiscal.gbPDV.ALQ_ICMS.Keys(ICMS_PDV);*/
+   tsdadosProdutoFiscal.gbPDV.ALQ_ICMS.Keys(ICMS_PDV);
 
   }
 }

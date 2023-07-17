@@ -102,7 +102,7 @@ function inserirProdutoFinanceiro(){
   
    Principal.insereDropDownValue(tsdadosProdutoFiscal.TIPO, Tipo_NF);
    Delay(1000);
-   Principal.insereDropDownValue(tsdadosProdutoFiscal.TIPO_PRODUTO, decodeURI(Tipo_Produto));
+   Principal.insereDropDownValue(tsdadosProdutoFiscal.TIPO_PRODUTO, Tipo_Produto);
    /*tsdadosProdutoFiscal.GTIN.Keys(GTIN);
    tsdadosProdutoFiscal.EAN.Keys(EAN);
    tsdadosProdutoFiscal.CEST.Keys(CEST);
