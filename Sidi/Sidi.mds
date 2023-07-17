@@ -168,9 +168,9 @@
 					</DefValue>
 				</Variable>
 				<Variable Name="Materiais" Type="{4AD4881B-176C-4C96-8288-FBBB7E3D1FE3}" Local="False">
-					<DefValue RowCount="1" ColumnCount="13">
-						<Columns ColumnName0="tipo" ColumnName1="grupo" ColumnName2="subgrupo" ColumnName3="descricao" ColumnName4="cor" ColumnName5="custo" ColumnName6="icms" ColumnName7="ipi" ColumnName8="unidade_estoque" ColumnName9="classificacao_fiscal" ColumnName10="area" ColumnName11="unidade_volume" ColumnName12="setor" />
-						<Row No="0" Cell0="4D0041005400450052004900410020005000520049004D004100" Cell1="300031002D00540045004300490044004F00" Cell2="41004C0047004F00440041004F00" Cell3="42004900410052005200490054005A00200041004C0047004F00440041004F00200054004500530054004500" Cell4="4D004100520052004F004D00" Cell5="32003300" Cell6="3000" Cell7="3000" Cell8="4D005400" Cell9="30003300300034003400330030003000" Cell10="3100" Cell11="33003800200041004F00200034003300" Cell12="43004F00520054004500" />
+					<DefValue RowCount="1" ColumnCount="25">
+						<Columns ColumnName0="tipo" ColumnName1="grupo" ColumnName2="subgrupo" ColumnName3="descricao" ColumnName4="cor" ColumnName5="custo" ColumnName6="icms" ColumnName7="ipi" ColumnName8="unidade_estoque" ColumnName9="classificacao_fiscal" ColumnName10="area" ColumnName11="unidade_volume" ColumnName12="setor" ColumnName13="Tipo_NF" ColumnName14="Tipo_Produto" ColumnName15="GTIN" ColumnName16="EAN" ColumnName17="CEST" ColumnName18="origem" ColumnName19="peso_bruto" ColumnName20="peso_liquido" ColumnName21="tributacao_pdv" ColumnName22="ICMS_PDV" ColumnName23="CST_ICMS" ColumnName24="CST_IPI" />
+						<Row No="0" Cell0="4D0041005400450052004900410020005000520049004D004100" Cell1="300031002D00540045004300490044004F00" Cell2="41004C0047004F00440041004F00" Cell3="42004900410052005200490054005A00200041004C0047004F00440041004F00200054004500530054004500" Cell4="4D004100520052004F004D00" Cell5="32003300" Cell6="3000" Cell7="3000" Cell8="4D005400" Cell9="30003300300034003400330030003000" Cell10="3100" Cell11="33003800200041004F00200034003300" Cell12="43004F00520054004500" Cell13="4100" Cell14="4D0041005400C9005200490041002D005000520049004D004100" Cell15="300030003000300030003000" Cell16="3000300030003000300030003000300030003000300030003000" Cell17="30003000300030003000300030003000" Cell18="3000" Cell19="3100" Cell20="3100" Cell21="3000" Cell22="31003200" Cell23="300030003000" Cell24="300030003000" />
 					</DefValue>
 				</Variable>
 				<Variable Name="Produto" Type="{4AD4881B-176C-4C96-8288-FBBB7E3D1FE3}" Local="False">
