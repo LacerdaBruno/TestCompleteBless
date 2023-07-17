@@ -10,8 +10,27 @@ var painelCadastroFaca = Aliases.SIDI.frmPrincipal.MDIClient.frmFaca.PageControl
 
 function cadastraFaca()
 {
+  
   abreTela();  
   Principal.clicaNovo();  
+  
+  for(i = 0; i < Project.Variables.Facas.RowCount; i++){
+  var Descricao = Project.Variables.Facas.descricao(i);
+  var Valor = Project.Variables.Facas.valor(i);
+  var Grade = Project.Variables.Facas.grade(i);
+  var Refencia = Project.Variables.Facas.referencia(i);
+  var Quantidade = Project.Variables.Facas.quantidade(i);
+  var Balancin = Project.Variables.Facas.balancin(i);
+  
+  painelCadastroFaca.DESCRICAO.Keys(Descricao);
+  painelCadastroFaca.VALOR.Keys(Valor);
+  Principal.insereDropDownValue(painelCadastroFaca.GRADE, Grade);
+  painelCadastroFaca.REFERENCIA.Keys(Refencia);
+  painelCadastroFaca.QTE_FACA.Keys(Quantidade);
+  Principal.insereDropDownValue(painelCadastroFaca.BALANCIN, Balancin);
+  
+  }
+  
   confirma();
   Principal.clicaEditar();
   confirma();  
@@ -24,13 +43,6 @@ function abreTela()
   Aliases.SIDI.frmPrincipal.MDIClient.frmForma,
   'Faca');
 }
-
- 
-
-
-
-
-
 
 function confirma()
 {
