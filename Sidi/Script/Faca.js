@@ -6,12 +6,14 @@ var Principal = require("Principal");
 var Visualizacoes = require("Visualizacoes");
 
 var painelCadastroFaca = Aliases.SIDI.frmPrincipal.MDIClient.frmFaca.PageControlFaca.tsDadosFaca.pnlCadastros;
+var pageControlFaca = Aliases.SIDI.frmPrincipal.MDIClient.frmFaca.PageControlFaca;
+var dbGridPesquisa = Aliases.SIDI.frmPrincipal.MDIClient.frmFaca.PageControlFaca.tsPesquisa.PanelGrid.dbGridPesquisa;
 
 
 function cadastraFaca()
-{
-  
-  abreTela();  
+{  
+  abreTela();
+  cadastrarBalancin();  
   Principal.clicaNovo();  
   
   for(i = 0; i < Project.Variables.Facas.RowCount; i++){
@@ -29,7 +31,9 @@ function cadastraFaca()
   painelCadastroFaca.QTE_FACA.Keys(Quantidade);
   Principal.insereDropDownValue(painelCadastroFaca.BALANCIN, Balancin);
   
-  }
+  importarGrade();
+  
+}
   
   confirma();
   Principal.clicaEditar();
@@ -39,16 +43,42 @@ function cadastraFaca()
 
 function abreTela()
 {
-  Principal.abreTelas(Aliases.SIDI.frmPrincipal.btnFormas,
-  Aliases.SIDI.frmPrincipal.MDIClient.frmForma,
+  Principal.abreTelas(Aliases.SIDI.frmPrincipal.btnFacas,
+  Aliases.SIDI.frmPrincipal.MDIClient.frmFaca,
   'Faca');
+}
+function cadastrarBalancin(){
+  var dbGridBalancin = Aliases.SIDI.frmBalancin.PageControlBalancin.tsPesquisaBalancin.PanelGridBalancin.dbGridPesquisaBalancin;  
+  var painelBotoes = Aliases.SIDI.frmBalancin.PanelBotoesBalancin.PanelBotoes;
+
+  pageControlFaca.ClickTab("Pes&quisa");
+  dbGridPesquisa.ClickR();
+  dbGridPesquisa.PopupMenu.Click("Cadastrar Balancin");
+  dbGridBalancin.Keys("[Home]");
+  dbGridBalancin.Keys("[Right]");
+  dbGridBalancin.Keys("BALANCIN FABRICA");
+  painelBotoes.btnConfirma.ClickButton()
+  Aliases.SIDI.TMessageForm2.Yes.ClickButton();  
+  
 }
 
 function confirma()
 {
-  Principal.confirma(Aliases.SIDI.frmPrincipal.MDIClient.frmForma.Panel1.PanelBotoes.btnConfirma, "Forma");
+  Principal.confirma(Aliases.SIDI.frmPrincipal.MDIClient.frmFaca.PanelBotoesFaca.PanelBotoes.btnConfirma, "Faca");
 }
 
 module.exports.abreTela = abreTela;
 module.exports.confirma = confirma;
 module.exports.cadastraForma = cadastraFaca;
+
+function importarGrade()
+{
+  var pageControl;
+  var bitBtn;
+  pageControl = Aliases.SIDI.frmPrincipal.MDIClient.frmFaca.PageControlFaca;
+  pageControl.ClickTab("&Dados Básicos");
+  bitBtn = pageControl.tsDadosFaca.gbGrade.tbGradeFaca.btnOpcoes;
+  bitBtn.ClickButton();
+  bitBtn.PopupMenu.Click("Atualiza grade");
+
+}
