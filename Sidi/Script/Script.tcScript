@@ -88,6 +88,9 @@
 		<child name="FamiliaProdutos" key="{82EE076C-5125-4F46-AE50-B7114D00E5C6}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
 			<data path="FamiliaProdutos.js" />
 		</child>
+		<child name="Compras" key="{9EC22FD1-01B8-461F-AD0A-218092A3C5E7}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="Compras.js" />
+		</child>
 	</children>
 	<folders>
 		<folder caption="Cadastros" description="A logical folder that is used to organize project items and elements." moniker="">
@@ -127,6 +130,7 @@
 				<ref key="{F4A05E74-AB1D-41FC-A18C-203C94CD7427}" />
 				<ref key="{2752B4CC-2B3B-4883-8793-BAB5660F1B60}" />
 				<ref key="{7E5FFE56-4F5F-4114-BF39-5ADA8932DA80}" />
+				<ref key="{9EC22FD1-01B8-461F-AD0A-218092A3C5E7}" />
 			</references>
 		</folder>
 		<folder caption="Producao" description="A logical folder that is used to organize project items and elements." moniker="">
