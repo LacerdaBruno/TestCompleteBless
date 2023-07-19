@@ -138,25 +138,25 @@
 					<DefValue IntValue="4" />
 				</Variable>
 				<Variable Name="Grade" Type="{4AD4881B-176C-4C96-8288-FBBB7E3D1FE3}" Local="False">
-					<DefValue RowCount="17" ColumnCount="1">
-						<Columns ColumnName0="tamanho" />
-						<Row No="0" Cell0="32003800" />
-						<Row No="1" Cell0="32003900" />
-						<Row No="2" Cell0="33003000" />
-						<Row No="3" Cell0="33003100" />
-						<Row No="4" Cell0="33003200" />
-						<Row No="5" Cell0="33003300" />
-						<Row No="6" Cell0="33003400" />
-						<Row No="7" Cell0="33003500" />
-						<Row No="8" Cell0="33003600" />
-						<Row No="9" Cell0="33003700" />
-						<Row No="10" Cell0="33003800" />
-						<Row No="11" Cell0="33003900" />
-						<Row No="12" Cell0="34003000" />
-						<Row No="13" Cell0="34003100" />
-						<Row No="14" Cell0="34003200" />
-						<Row No="15" Cell0="34003300" />
-						<Row No="16" Cell0="34003400" />
+					<DefValue RowCount="17" ColumnCount="2">
+						<Columns ColumnName0="tamanho" ColumnName1="quantidade" />
+						<Row No="0" Cell0="32003800" Cell1="390039003900" />
+						<Row No="1" Cell0="32003900" Cell1="390039003900" />
+						<Row No="2" Cell0="33003000" Cell1="390039003900" />
+						<Row No="3" Cell0="33003100" Cell1="390039003900" />
+						<Row No="4" Cell0="33003200" Cell1="390039003900" />
+						<Row No="5" Cell0="33003300" Cell1="390039003900" />
+						<Row No="6" Cell0="33003400" Cell1="390039003900" />
+						<Row No="7" Cell0="33003500" Cell1="390039003900" />
+						<Row No="8" Cell0="33003600" Cell1="390039003900" />
+						<Row No="9" Cell0="33003700" Cell1="390039003900" />
+						<Row No="10" Cell0="33003800" Cell1="390039003900" />
+						<Row No="11" Cell0="33003900" Cell1="390039003900" />
+						<Row No="12" Cell0="34003000" Cell1="390039003900" />
+						<Row No="13" Cell0="34003100" Cell1="390039003900" />
+						<Row No="14" Cell0="34003200" Cell1="390039003900" />
+						<Row No="15" Cell0="34003300" Cell1="390039003900" />
+						<Row No="16" Cell0="34003400" Cell1="390039003900" />
 					</DefValue>
 				</Variable>
 				<Variable Name="SetoresBanca" Type="{4AD4881B-176C-4C96-8288-FBBB7E3D1FE3}" Local="False">

@@ -74,7 +74,7 @@ function fazEntrega(material, tipoMaterial, quantidade) {
 	Principal.fechaTela();
 }
 
-function cadastraCompra(material, tipoMaterial, quantidade) {
+function cadastraCompra() {
 	abreTela();
 	Principal.clicaNovo();
 	insereFornecedor(fornecedor);
@@ -100,10 +100,10 @@ function insereMaterial(material) {
 }
 
 function insereGrade() {
-	Aliases.SIDI.wndTfrmPrincipal.MDIClient.frmCompraManut.PageControl1.tsDados_basicos.GbItem_Compra.gdItem_Compra.Keys("[F10]");
-	Aliases.SIDI.frmCompraManutGrade.dbGrid.Keys("[Up]");
-	for (let i = 0; i < Project.Variables.grade.RowCount; i++) {
-		Aliases.SIDI.frmCompraManutGrade.dbGrid.Keys(Project.Variables.grade.qte(i) + "[Right]");
+	Aliases.SIDI.frmPrincipal.MDIClient.frmCompra.PageControlCompras.tsDadosBasicosCompra.GrideItemCompra.gdItemCompra.Keys("[F10]");
+	Aliases.SIDI.frmCompraGrade.dbGridCompraGrade.Keys("[Up]");
+	for (let i = 0; i < Project.Variables.Grade.RowCount; i++) {
+		Aliases.SIDI.frmCompraGrade.dbGridCompraGrade.Keys(Project.Variables.Grade.quantidade(i) + "[Right]");
 	}
 	Aliases.SIDI.frmCompraManutGrade.Panel1.btnconfirma.ClickButton();
 }

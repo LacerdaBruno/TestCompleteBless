@@ -8355,6 +8355,70 @@
 									</Child>
 								</Children>
 							</Child>
+							<Child Name="frmCompraGrade" Key="{35C001BF-C2FA-4BD8-AC34-185877408D7C}" ParallelWalk="True">
+								<Image FileName="318763107" Left="0" Top="0" Right="913" Bottom="139" />
+								<TypeInfo Item0="{69AA627C-2F22-491B-ACA5-57C6A8F3627C}" />
+								<Properties>
+									<Property Name="ClassName">
+										<Value PropertyType="0" Value="TfrmCompraManutGrade" Type="5" />
+									</Property>
+									<Property Name="ObjectIdentifier">
+										<Value PropertyType="0" Value="frmCompraManutGrade" Type="5" />
+									</Property>
+								</Properties>
+								<Children>
+									<Child Name="dbGridCompraGrade" Key="{D27EF57E-B673-4253-B0F7-8940CE76E587}" ParallelWalk="True">
+										<Image FileName="318763107" Left="156" Top="26" Right="910" Bottom="95" />
+										<TypeInfo Item0="{2EE004DC-6673-4998-AC96-88B3EBD87BED}" />
+										<Properties>
+											<Property Name="ClassName">
+												<Value PropertyType="0" Value="TwwDBGrid" Type="5" />
+											</Property>
+											<Property Name="ObjectIdentifier">
+												<Value PropertyType="0" Value="dbGrid" Type="5" />
+											</Property>
+										</Properties>
+									</Child>
+									<Child Name="PanelBotoesCompraGrade" Key="{872A4E31-560A-444F-BDED-7C90681D0EF5}" ParallelWalk="True">
+										<Image FileName="318763107" Left="3" Top="95" Right="910" Bottom="136" />
+										<TypeInfo Item0="{B133E503-EF8C-43F6-AD54-7E43333645DC}" />
+										<Properties>
+											<Property Name="ClassName">
+												<Value PropertyType="0" Value="TPanel" Type="5" />
+											</Property>
+											<Property Name="ObjectIdentifier">
+												<Value PropertyType="0" Value="Panel1" Type="5" />
+											</Property>
+										</Properties>
+										<Children>
+											<Child Name="btnconfirma" Key="{57C8832A-A4D7-46A8-82BA-DFB7B82A17EB}" ParallelWalk="True">
+												<Image FileName="318763107" Left="733" Top="106" Right="815" Bottom="131" />
+												<TypeInfo Item0="{F0640855-35C8-4BAE-82AE-DD5B774EE982}" />
+												<Properties>
+													<Property Name="ClassName">
+														<Value PropertyType="0" Value="TBitBtn" Type="5" />
+													</Property>
+													<Property Name="ObjectIdentifier">
+														<Value PropertyType="0" Value="btnconfirma" Type="5" />
+													</Property>
+												</Properties>
+											</Child>
+											<Child Name="btnCancela" Key="{23B3A326-DEB4-420B-9014-8619045CE209}" ParallelWalk="True">
+												<Image FileName="318763107" Left="823" Top="106" Right="905" Bottom="131" />
+												<TypeInfo Item0="{F0640855-35C8-4BAE-82AE-DD5B774EE982}" />
+												<Properties>
+													<Property Name="ClassName">
+														<Value PropertyType="0" Value="TBitBtn" Type="5" />
+													</Property>
+													<Property Name="ObjectIdentifier">
+														<Value PropertyType="0" Value="btnCancela" Type="5" />
+													</Property>
+												</Properties>
+											</Child>
+										</Children>
+									</Child>
+								</Children>
+							</Child>
 						</Children>
 					</Child>
 				</Children>
@@ -9310,6 +9374,13 @@
 					<Child Name="PanelBotoes" Owner="{CFD0EFD8-761A-4551-9F6F-FA76F22A12C9}">
 						<Child Name="btnConfirma" Owner="{BE303ED6-D277-49F8-A4EF-AAFF934B97AF}" />
 					</Child>
+				</Child>
+			</Child>
+			<Child Name="frmCompraGrade" Owner="{35C001BF-C2FA-4BD8-AC34-185877408D7C}">
+				<Child Name="dbGridCompraGrade" Owner="{D27EF57E-B673-4253-B0F7-8940CE76E587}" />
+				<Child Name="PanelBotoesCompraGrade" Owner="{872A4E31-560A-444F-BDED-7C90681D0EF5}">
+					<Child Name="btnconfirma" Owner="{57C8832A-A4D7-46A8-82BA-DFB7B82A17EB}" />
+					<Child Name="btnCancela" Owner="{23B3A326-DEB4-420B-9014-8619045CE209}" />
 				</Child>
 			</Child>
 		</Child>

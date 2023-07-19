@@ -18,6 +18,7 @@ function cadastraMateriais(){
 function insereMateriais() {
 
 	for (let i = 0; i < Project.Variables.Materiais.RowCount; i++) {
+  abreTela(); 
   Principal.clicaNovo();
     var codigoUsuario = (Project.Variables.Materiais.codigo(i));
 		var tipo = (Project.Variables.Materiais.tipo(i));
@@ -69,7 +70,7 @@ function insereMateriais() {
     inserirProdutoFinanceiro(i)
     confirmaProdutoNf()
     Principal.fechaTela(); 
-        
+    Principal.fechaTela();        
 	}
 }
 

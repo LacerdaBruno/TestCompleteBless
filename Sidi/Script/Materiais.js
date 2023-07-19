@@ -8,16 +8,9 @@ var Visualizacoes = require("Visualizacoes");
 var materiais = Aliases.SIDI.frmPrincipal.MDIClient.frmItemEstoque.PageControlItemEstoque.tsDadosItemEstoque;
 
 function cadastraMateriais(){
-  abreTela(); 
-  insereMateriais(); 
-  Principal.clicaEditar();
-  confirma();
-  Principal.fechaTela(); 
-}
-
-function insereMateriais() {
 
 	for (let i = 0; i < Project.Variables.Materiais.RowCount; i++) {
+  abreTela(); 
   Principal.clicaNovo();
     var codigoUsuario = (Project.Variables.Materiais.codigo(i));
 		var tipo = (Project.Variables.Materiais.tipo(i));
@@ -69,9 +62,7 @@ function insereMateriais() {
     inserirProdutoFinanceiro(i)
     confirmaProdutoNf()
     Principal.fechaTela(); 
-    Principal.fechaTela();
-    abreTela(); 
-        
+    Principal.fechaTela();        
 	}
 }
 
