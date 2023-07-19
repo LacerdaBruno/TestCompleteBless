@@ -25,19 +25,15 @@
 				<Node name="{8ee82d46-af98-4371-988c-39e367c94873}"/>
 			</Node>
 			<Node name="{24b6fa0b-0143-461a-9758-aeb9e9a9428b}">
-				<Prp name="activity" type="S" value="{B3796CA5-88C9-4A10-ACE6-8CBCD49F2571}"/>
+				<Prp name="activity" type="S" value="{9EC22FD1-01B8-461F-AD0A-218092A3C5E7}"/>
 			</Node>
-			<Node name="{2c786620-2489-4cbb-9c1e-1a94437a9245}">
-				<Node name="{aaa0867d-244d-42a8-be88-04cd1e4871f2}">
-					<Prp name="hash" type="I" value="1"/>
-				</Node>
-			</Node>
+			<Node name="{2c786620-2489-4cbb-9c1e-1a94437a9245}"/>
 			<Node name="{415b5aa1-c6ac-4d4d-9a53-063a521a45ab}">
 				<Node name="workspace">
 					<Node name="0">
 						<Node name="editor">
 							<Node name="{93765269-c25d-4cd5-b6bf-5d7454869c93}">
-								<Prp name="key" type="S" value="{6F8552DF-48F7-480C-9639-080F9C7B88F8}"/>
+								<Prp name="key" type="S" value="{7B97C38A-EFEA-4F5B-9CA7-D45E657A9156}"/>
 							</Node>
 							<Prp name="editor" type="S" value="{4FC0C0BA-64F4-455E-BEDE-09363507BA19}"/>
 							<Prp name="focused" type="S" value="{6F8552DF-48F7-480C-9639-080F9C7B88F8}"/>
@@ -1662,6 +1658,7 @@
 					<Node name="sidi">
 						<Node name="advanced">
 							<Node name="script">
+								<Node name="suprimentos"/>
 								<Node name="teste"/>
 							</Node>
 						</Node>

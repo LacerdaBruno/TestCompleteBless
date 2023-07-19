@@ -1,18 +1,35 @@
-﻿function ADOExample()
- {   
-// Cria uma instância do objeto de conexão com o banco de dados Firebird
-var connection = ADO.CreateADOConnection();
-// Define a string de conexão com o banco de dados Firebird
-connection.ConnectionString = "DRIVER=Firebird/InterBase(r) driver; UID=SYSDBA; PWD=pmpsyfwr; DBNAME=SIDI";
+﻿function recuperarCodigoMaterial()
+ {
+   var DSet, codigo;
+   // Cria um novo objeto IAQAADODataset
+   DSet = ADO.CreateADODataset();
+   // Especifique a string de conexão
+   DSet.ConnectionString ="DRIVER=Firebird/InterBase(r) driver; UID=SYSDBA; PWD=pmpsyfwr; DBNAME=10.1.1.101:C:\\bless\\Bin\\Data\\SIDI\\DADOS\\DADOS\\DADOS.FDB; DIALECT=3";
+   // Especifique o tipo de comando e o texto
+   DSet.CommandType = cmdTable;
+   DSet.CommandText = "ITEM_ESTOQUE";
+   // Abre o conjunto de dados
+   DSet.Open();
+   // Processa os registros da tabela de produtos
+   Log.AppendFolder("ITEM_ESTOQUE")
+   DSet.First();
+   var i = 0
+   while (! DSet.EOF)
+ 
+   {
+     if (Project.Variables.Materiais.RowCount < i){
+            
+       break;
+     
+       }    
+   
+     // Inserir dados no log de teste
+     codigo = DSet.FieldByName("codigo_interno").Value;     
+     Log.Message(codigo);
+     DSet.Next();
+     i++;     
+     
+   };
+   DSet.Close();
+ }
 
-// Suprime a caixa de diálogo de login
-connection.LoginPrompt = false ;
-// Abre a conexão com o banco de dados
-connection.Open();
-
-// Executa consultas ou outras operações no banco de dados
-
-// Fecha a conexão com o banco de dados
-connection.Close();
-
-}

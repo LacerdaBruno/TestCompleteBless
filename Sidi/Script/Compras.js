@@ -8,7 +8,6 @@ var Materiais = require("Materiais");
 var fornecedor = Project.Variables.DadosPessoasServicos.nome(0);
 var transportadora = Project.Variables.DadosPessoasServicos.nome(1);
 var tipoMaterial = Project.Variables.Materiais.tipo(0);
-var material = 21856;
 var quantidade = 1;
 
 function testaCompras() {
@@ -90,12 +89,26 @@ function cadastraCompra() {
 	confirma();
 }
 
-function insereMaterial(material) {
-  
+function insereMaterial() {
+
+  while ( ! Project.Variables.CodigoMateriais.IsEOF()){
+  var material = Project.Variables.CodigoMateriais.Value("CODIGO_USUARIO");
   var gdItemCompra = Aliases.SIDI.frmPrincipal.MDIClient.frmCompra.PageControlCompras.tsDadosBasicosCompra.GrideItemCompra.gdItemCompra;
   gdItemCompra.Keys(material + "[Enter]");
   gdItemCompra.Keys("[Tab]");
   gdItemCompra.Keys("[Tab]");
+  if (Project.Variables.Materiais.tipo(i) == "SOLADO" || Project.Variables.Materiais.tipo(i) == "PALMILHA" || Project.Variables.Materiais.grupo(i) == "PRODUTO EM PROCESSO") {
+		  insereGrade();
+    } else {
+		  insereQuantidade(quantidade);
+	}
+  gdItemCompra.Keys("[Down]"); 
+  
+  Project.Variables.CodigoMateriais.Next();
+  
+  }
+  
+
 
 }
 
