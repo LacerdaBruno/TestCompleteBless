@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="message 8">
+			<Prp name="pictype" type="I" value="2"/>
+			<Prp name="picture" type="S" value="Picture1.png"/>
+			<Prp name="type" type="I" value="3"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="message" type="S" value="ReferenceError: material is not defined"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="id" type="I" value="8"/>
+			<Prp name="date" type="D" value="45126.6313663079"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="stack end" type="I" value="0"/>
+			<Prp name="remarks" type="S" value="JavaScript runtime error.&#xA;&#xA;ReferenceError: material is not defined&#xA;&#xA;Error location:&#xA;Unit: &quot;Bless\Sidi\Script\Compras&quot;&#xA;Line: 79 Column: 17."/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="line no" type="I" value="78"/>
+			<Prp name="stack beginning" type="I" value="0"/>
+			<Prp name="owner id" type="I" value="-1"/>
+		</Node>
+		<Node name="message 4">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="object left" type="I" value="11"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="click point y" type="I" value="112"/>
+					<Prp name="datetime" type="D" value="45126.7562830787"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="object bottom" type="I" value="124"/>
+					<Prp name="object name" type="S" value="Aliases.SIDI.frmPrincipal.sbNovo"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object right" type="I" value="86"/>
+					<Prp name="object top" type="I" value="100"/>
+					<Prp name="image file name" type="S" value="visImage1.png"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="click point x" type="I" value="48"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="line #" type="I" value="36"/>
+				</Node>
+			</Node>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="message" type="S" value="The window was clicked with the left mouse button."/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="id" type="I" value="4"/>
+			<Prp name="date" type="D" value="45126.6312840162"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="remarks" type="S" value="A click at point (37, 12) with no key pressed.&#xA;&#xA;Tested object:&#xA;Aliases.SIDI.frmPrincipal.sbNovo&#xA;(Sys.Process(&quot;SIDI&quot;).VCLObject(&quot;frmPrincipal&quot;).VCLObject(&quot;sbNovo&quot;))"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="line no" type="I" value="36"/>
+			<Prp name="owner id" type="I" value="-1"/>
+		</Node>
+		<Node name="units">
+			<Prp name="unit 0" type="S" value="{A812C9B4-A487-4B08-8F0F-F1353D0E9CC0}"/>
+			<Prp name="unit 1" type="S" value="{9EC22FD1-01B8-461F-AD0A-218092A3C5E7}"/>
+		</Node>
+		<Node name="message 5">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="object left" type="I" value="208"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="datetime" type="D" value="45126.7563078704"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="object bottom" type="I" value="182"/>
+					<Prp name="object name" type="S" value="Aliases.SIDI.frmPrincipal.MDIClient.frmCompra.PageControlCompras.tsDadosBasicosCompra.PanelDadosBasicosCompra.FORNECEDOR"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object right" type="I" value="416"/>
+					<Prp name="object top" type="I" value="161"/>
+					<Prp name="image file name" type="S" value="visImage2.png"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="line #" type="I" value="132"/>
+				</Node>
+			</Node>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="message" type="S" value="Keyboard input."/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="id" type="I" value="5"/>
+			<Prp name="date" type="D" value="45126.6313194444"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="remarks" type="S" value="'EDER ROCHA &amp; ROCHA LTDA[Enter]' was sent as a keyboard input to the following window or control.&#xA;&#xA;Tested object:&#xA;Aliases.SIDI.frmPrincipal.MDIClient.frmCompra.PageControlCompras.tsDadosBasicosCompra.PanelDadosBasicosCompra.FORNECEDOR&#xA;(Sys.Process(&quot;SIDI&quot;).VCLObject(&quot;frmPrincipal&quot;).Window(&quot;MDIClient&quot;, &quot;&quot;, 1).VCLObject(&quot;frmCompraManut&quot;).VCLObject(&quot;PageControl1&quot;).VCLObject(&quot;tsDados_basicos&quot;).VCLObject(&quot;Panel2&quot;).VCLObject(&quot;FORNECEDOR&quot;))"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="line no" type="I" value="132"/>
+			<Prp name="owner id" type="I" value="-1"/>
+		</Node>
+		<Node name="message 7">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="object left" type="I" value="478"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="datetime" type="D" value="45126.7563293287"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="object bottom" type="I" value="228"/>
+					<Prp name="object name" type="S" value="Aliases.SIDI.frmPrincipal.MDIClient.frmCompra.PageControlCompras.tsDadosBasicosCompra.PanelDadosBasicosCompra.TIPO_COBRANCA"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object right" type="I" value="641"/>
+					<Prp name="object top" type="I" value="207"/>
+					<Prp name="image file name" type="S" value="visImage4.png"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="line #" type="I" value="140"/>
+				</Node>
+			</Node>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="message" type="S" value="Keyboard input."/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="id" type="I" value="7"/>
+			<Prp name="date" type="D" value="45126.6313341435"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="remarks" type="S" value="'CARTEIRA[Enter]' was sent as a keyboard input to the following window or control.&#xA;&#xA;Tested object:&#xA;Aliases.SIDI.frmPrincipal.MDIClient.frmCompra.PageControlCompras.tsDadosBasicosCompra.PanelDadosBasicosCompra.TIPO_COBRANCA&#xA;(Sys.Process(&quot;SIDI&quot;).VCLObject(&quot;frmPrincipal&quot;).Window(&quot;MDIClient&quot;, &quot;&quot;, 1).VCLObject(&quot;frmCompraManut&quot;).VCLObject(&quot;PageControl1&quot;).VCLObject(&quot;tsDados_basicos&quot;).VCLObject(&quot;Panel2&quot;).VCLObject(&quot;TIPO_COBRANCA&quot;))"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="line no" type="I" value="140"/>
+			<Prp name="owner id" type="I" value="-1"/>
+		</Node>
+		<Node name="message 1">
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="message" type="S" value="The tab control page 'Suprimentos' is already selected."/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="id" type="I" value="1"/>
+			<Prp name="date" type="D" value="45126.6312789236"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="remarks" type="S" value="Tested object:&#xA;Aliases.SIDI.frmPrincipal.Panel2.PageControl1&#xA;(Sys.Process(&quot;SIDI&quot;).VCLObject(&quot;frmPrincipal&quot;).VCLObject(&quot;Panel2&quot;).VCLObject(&quot;PageControl1&quot;))"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="line no" type="I" value="102"/>
+			<Prp name="owner id" type="I" value="-1"/>
+		</Node>
+		<Node name="message 9">
+			<Prp name="pictype" type="I" value="2"/>
+			<Prp name="picture" type="S" value="Picture2.png"/>
+			<Prp name="type" type="I" value="3"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="message" type="S" value="The test run has stopped because the &quot;Stop on Error&quot; setting is enabled."/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="id" type="I" value="9"/>
+			<Prp name="date" type="D" value="45126.631369838"/>
+			<Prp name="as html" type="B" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="stack end" type="I" value="1"/>
+			<Prp name="remarks" type="S" value="&lt;html&gt;&lt;body&gt;&lt;p&gt;The test execution has stopped because --&lt;/p&gt;&lt;ul&gt;&lt;li&gt;An error message was posted to the log and&lt;/li&gt;&lt;li&gt;The &lt;a href=&quot;aqa-help://6090&quot;&gt;Stop on Error&lt;/a&gt; project property is enabled.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt; If you don't want the test to stop on errors, disable this property (&lt;b&gt;Project Editor &amp;rArr; Properties &amp;rArr; Playback&lt;/b&gt;), or change your test commands so that they do not post errors to the log automatically. For instance, if some window or process was not found, use the WaitWindow, WaitProcess or similar methods to obtain the desired object.&lt;/p&gt;&lt;a href=&quot;aqa-help://2207&quot;&gt;Read More&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="line no" type="I" value="78"/>
+			<Prp name="stack beginning" type="I" value="1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+		</Node>
+		<Node name="message 6">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="object left" type="I" value="63"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="datetime" type="D" value="45126.7563205208"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="object bottom" type="I" value="251"/>
+					<Prp name="object name" type="S" value="Aliases.SIDI.frmPrincipal.MDIClient.frmCompra.PageControlCompras.tsDadosBasicosCompra.PanelDadosBasicosCompra.TRANSP"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object right" type="I" value="212"/>
+					<Prp name="object top" type="I" value="230"/>
+					<Prp name="image file name" type="S" value="visImage3.png"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="line #" type="I" value="136"/>
+				</Node>
+			</Node>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="message" type="S" value="Keyboard input."/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="id" type="I" value="6"/>
+			<Prp name="date" type="D" value="45126.6313282755"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="remarks" type="S" value="'FABIANA CALCADOS LTDA' was sent as a keyboard input to the following window or control.&#xA;&#xA;Tested object:&#xA;Aliases.SIDI.frmPrincipal.MDIClient.frmCompra.PageControlCompras.tsDadosBasicosCompra.PanelDadosBasicosCompra.TRANSP&#xA;(Sys.Process(&quot;SIDI&quot;).VCLObject(&quot;frmPrincipal&quot;).Window(&quot;MDIClient&quot;, &quot;&quot;, 1).VCLObject(&quot;frmCompraManut&quot;).VCLObject(&quot;PageControl1&quot;).VCLObject(&quot;tsDados_basicos&quot;).VCLObject(&quot;Panel2&quot;).VCLObject(&quot;TRANSP&quot;))"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="line no" type="I" value="136"/>
+			<Prp name="owner id" type="I" value="-1"/>
+		</Node>
+		<Node name="message 0">
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="type" type="I" value="2"/>
+			<Prp name="priority" type="I" value="500"/>
+			<Prp name="message" type="S" value="There is (are) 1 running instance(s) of &quot;C:\bless\SIDI\SIDI.exe&quot;. New instances will not be launched."/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="id" type="I" value="0"/>
+			<Prp name="date" type="D" value="45126.6312771875"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="line no" type="I" value="2"/>
+			<Prp name="owner id" type="I" value="-1"/>
+		</Node>
+		<Node name="child data"/>
+		<Node name="item 0">
+			<Prp name="line no" type="I" value="78"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="stacktext" type="S" value="cadastraCompra"/>
+		</Node>
+		<Node name="stack"/>
+		<Node name="message 2">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="object left" type="I" value="242"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="click point y" type="I" value="78"/>
+					<Prp name="datetime" type="D" value="45126.7562796065"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="object bottom" type="I" value="89"/>
+					<Prp name="object name" type="S" value="Aliases.SIDI.frmPrincipal.btnCompras"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object right" type="I" value="266"/>
+					<Prp name="object top" type="I" value="67"/>
+					<Prp name="image file name" type="S" value="visImage0.png"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="click point x" type="I" value="254"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="line #" type="I" value="7"/>
+				</Node>
+			</Node>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="message" type="S" value="The window was clicked with the left mouse button."/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="id" type="I" value="2"/>
+			<Prp name="date" type="D" value="45126.6312810069"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="remarks" type="S" value="A click at point (12, 11) with no key pressed.&#xA;&#xA;Tested object:&#xA;Aliases.SIDI.frmPrincipal.btnCompras&#xA;(Sys.Process(&quot;SIDI&quot;).VCLObject(&quot;frmPrincipal&quot;).VCLObject(&quot;btnCompras&quot;))"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="line no" type="I" value="7"/>
+			<Prp name="owner id" type="I" value="-1"/>
+		</Node>
+		<Node name="item 1">
+			<Prp name="line no" type="I" value="78"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="stacktext" type="S" value=""/>
+		</Node>
+		<Node name="message 3">
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="type" type="I" value="7"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="message" type="S" value="The checkpoint 'A tela de Compras abriu em 15ms.' for the performance counter 'DefaultCounter' passed."/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="id" type="I" value="3"/>
+			<Prp name="date" type="D" value="45126.6312822338"/>
+			<Prp name="as html" type="B" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="remarks" type="S" value="The elapsed time 16 (ms) is less than MaxExecTime 3000 (ms)."/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="line no" type="I" value="17"/>
+			<Prp name="owner id" type="I" value="-1"/>
+		</Node>
+		<Prp name="status" type="I" value="2"/>
+	</Node>
+</Nodes>

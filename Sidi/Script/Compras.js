@@ -4,11 +4,8 @@ var Principal = require("Principal");
 var Visualizacoes = require("Visualizacoes");
 var Materiais = require("Materiais");
 
-
-var fornecedor = Project.Variables.DadosPessoasServicos.nome(0);
-var transportadora = Project.Variables.DadosPessoasServicos.nome(1);
-var tipoMaterial = Project.Variables.Materiais.tipo(0);
-var quantidade = 1;
+  var fornecedor = Project.Variables.DadosPessoasServicos.nome(0);
+  var transportadora = Project.Variables.DadosPessoasServicos.nome(1);
 
 function testaCompras() {
 	for (let i = 0; i < Project.Variables.Materiais.RowCount; i++) {
@@ -79,37 +76,35 @@ function cadastraCompra() {
 	insereFornecedor(fornecedor);
   insereTransportadora(transportadora);
 	insereTipoCobranca("CARTEIRA");
-	insereMaterial(material);
-
-	if (tipoMaterial == "PALMILHA" || tipoMaterial == "SOLADO") {
-		insereGrade();
-	} else {
-		insereQuantidade(quantidade);
-	}
+	insereMaterial();
 	confirma();
 }
 
-function insereMaterial() {
-
-  while ( ! Project.Variables.CodigoMateriais.IsEOF()){
-  var material = Project.Variables.CodigoMateriais.Value("CODIGO_USUARIO");
+function insereMaterial(material) {
+  var indice = 0;
   var gdItemCompra = Aliases.SIDI.frmPrincipal.MDIClient.frmCompra.PageControlCompras.tsDadosBasicosCompra.GrideItemCompra.gdItemCompra;
+  
+  while ( ! Project.Variables.CodigoMateriais.IsEOF()){    
+  
+  var tipoMaterial = Project.Variables.Materiais.tipo(indice);
+  var quantidade = 1;   
+  var material = Project.Variables.CodigoMateriais.Value("CODIGO_USUARIO");
+  
   gdItemCompra.Keys(material + "[Enter]");
   gdItemCompra.Keys("[Tab]");
   gdItemCompra.Keys("[Tab]");
-  if (Project.Variables.Materiais.tipo(i) == "SOLADO" || Project.Variables.Materiais.tipo(i) == "PALMILHA" || Project.Variables.Materiais.grupo(i) == "PRODUTO EM PROCESSO") {
+  if (tipoMaterial == "SOLADO" || tipoMaterial == "PALMILHA" || tipoMaterial == "PRODUTO EM PROCESSO") {
 		  insereGrade();
     } else {
 		  insereQuantidade(quantidade);
 	}
   gdItemCompra.Keys("[Down]"); 
   
+  indice++;
   Project.Variables.CodigoMateriais.Next();
   
   }
   
-
-
 }
 
 function insereGrade() {
