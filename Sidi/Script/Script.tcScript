@@ -85,6 +85,15 @@
 		<child name="Faca" key="{391265AB-D1AC-4A3B-95B1-49F1A77CCDFA}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
 			<data path="Faca.js" />
 		</child>
+		<child name="FamiliaProdutos" key="{82EE076C-5125-4F46-AE50-B7114D00E5C6}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="FamiliaProdutos.js" />
+		</child>
+		<child name="Compras" key="{9EC22FD1-01B8-461F-AD0A-218092A3C5E7}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="Compras.js" />
+		</child>
+		<child name="Conexao" key="{B3796CA5-88C9-4A10-ACE6-8CBCD49F2571}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="Conexao.js" />
+		</child>
 	</children>
 	<folders>
 		<folder caption="Cadastros" description="A logical folder that is used to organize project items and elements." moniker="">
@@ -103,6 +112,7 @@
 				<ref key="{BDA6040D-16F9-46F3-8EFD-22A56B1B9C58}" />
 				<ref key="{F7894DC7-A3EE-41B0-AAA2-8F975B2DB120}" />
 				<ref key="{391265AB-D1AC-4A3B-95B1-49F1A77CCDFA}" />
+				<ref key="{82EE076C-5125-4F46-AE50-B7114D00E5C6}" />
 			</references>
 		</folder>
 		<folder caption="Teste" description="A logical folder that is used to organize project items and elements." moniker="">
@@ -116,6 +126,7 @@
 				<ref key="{51DAC472-3837-4F0E-8E62-7CAB258F161D}" />
 				<ref key="{51C47889-BC0A-4664-8E9D-2C0384BCCC2A}" />
 				<ref key="{523414B8-5D61-4CC0-B8C6-C59FDB2428C0}" />
+				<ref key="{B3796CA5-88C9-4A10-ACE6-8CBCD49F2571}" />
 			</references>
 		</folder>
 		<folder caption="Suprimentos" description="A logical folder that is used to organize project items and elements." moniker="">
@@ -123,6 +134,7 @@
 				<ref key="{F4A05E74-AB1D-41FC-A18C-203C94CD7427}" />
 				<ref key="{2752B4CC-2B3B-4883-8793-BAB5660F1B60}" />
 				<ref key="{7E5FFE56-4F5F-4114-BF39-5ADA8932DA80}" />
+				<ref key="{9EC22FD1-01B8-461F-AD0A-218092A3C5E7}" />
 			</references>
 		</folder>
 		<folder caption="Producao" description="A logical folder that is used to organize project items and elements." moniker="">

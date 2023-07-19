@@ -8,19 +8,11 @@ var Visualizacoes = require("Visualizacoes");
 var materiais = Aliases.SIDI.frmPrincipal.MDIClient.frmItemEstoque.PageControlItemEstoque.tsDadosItemEstoque;
 
 function cadastraMateriais(){
-  abreTela();
-  Principal.clicaNovo(); 
-  insereMateriais();
-  confirma();
-  inserirProdutoFinanceiro()  
-  Principal.clicaEditar();
-  confirma();
-  Principal.fechaTela(); 
-}
-
-function insereMateriais() {
 
 	for (let i = 0; i < Project.Variables.Materiais.RowCount; i++) {
+  abreTela(); 
+  Principal.clicaNovo();
+    var codigoUsuario = (Project.Variables.Materiais.codigo(i));
 		var tipo = (Project.Variables.Materiais.tipo(i));
 		var grupo = (Project.Variables.Materiais.grupo(i));
 		var subGrupo = (Project.Variables.Materiais.subgrupo(i));
@@ -41,9 +33,9 @@ function insereMateriais() {
 			insereUnidadeVolume("34 A 43");
 			marcaGerarMovtPelaGrade();
 		}
-      
-    materiais.FK_TIPO_ITEM_ESTOQUE.Keys(tipo + "[Enter]");
-    materiais.CODIGO_GRUPO.Keys(grupo + "[Enter]");
+ 
+    Principal.insereDropDownValue(materiais.FK_TIPO_ITEM_ESTOQUE, tipo);
+    Principal.insereDropDownValue(materiais.CODIGO_GRUPO, grupo);
     Principal.insereDropDownValue(materiais.CODIGO_SUB_GRUPO, subGrupo);
     Principal.insereDropDownValue(materiais.DESCRICAO, descricao);
     materiais.CODIGO_COR.Keys(cor + "[Enter]");
@@ -66,21 +58,16 @@ function insereMateriais() {
 		  materiais.pnlOpcoesMarcar.SETOR_CORTE.ClickButton(cbChecked);
     }
     
+    confirma();
+    inserirProdutoFinanceiro(i)
+    confirmaProdutoNf()
+    Principal.fechaTela(); 
+    Principal.fechaTela();        
 	}
 }
 
-function abreTela() {
-	Principal.alteraAba("Suprimentos");
-
-	Principal.abreTelas(Aliases.SIDI.frmPrincipal.btnMateriaisItem,
-		Aliases.SIDI.frmPrincipal.MDIClient.frmItemEstoque,
-		"Materiais - Suprimentos");
-}
-
-function inserirProdutoFinanceiro(){
+function inserirProdutoFinanceiro(i){
   
-  for(i = 0; i < Project.Variables.Materiais.RowCount; i++){
-
   var Tipo_NF = Project.Variables.Materiais.Tipo_NF(i);
   var Tipo_Produto = Project.Variables.Materiais.Tipo_Produto(i);
   var GTIN = Project.Variables.Materiais.GTIN(i);
@@ -98,7 +85,6 @@ function inserirProdutoFinanceiro(){
   var Tribitacao_PDV = Project.Variables.Materiais.tributacao_pdv(i);
   var ICMS_PDV = Project.Variables.Materiais.ICMS_PDV(i);
   var tsdadosProdutoFiscal = Aliases.SIDI.frmPrincipal.MDIClient.frmProdutoFiscal.PageControlProdutoFiscal.tsdados;
-
   
    Principal.insereDropDownValue(tsdadosProdutoFiscal.TIPO, Tipo_NF);
    Delay(1000);
@@ -117,11 +103,13 @@ function inserirProdutoFinanceiro(){
    tsdadosProdutoFiscal.gbPeso.PESO_LIQUIDO.Keys(Peso_Liquido);
    Principal.insereDropDownValue(tsdadosProdutoFiscal.gbPDV.TRIBUTACAO, Tribitacao_PDV);
    tsdadosProdutoFiscal.gbPDV.ALQ_ICMS.Keys(ICMS_PDV);
-   
-   confirmaProdutoNf()
-   Principal.fechaTela();
-  }
-  
+}
+
+function abreTela() {
+	Principal.alteraAba("Suprimentos");
+	Principal.abreTelas(Aliases.SIDI.frmPrincipal.btnMateriaisItem,
+		Aliases.SIDI.frmPrincipal.MDIClient.frmItemEstoque,
+		"Materiais - Suprimentos");
 }
 
 function insereCF(cf) {
