@@ -1,4 +1,11 @@
-﻿function recuperarCodigoMaterial()
+﻿
+
+//Eu estava considerando conectar ao banco de dados e acessar os dados para utilizá-los nos casos de teste. No entanto, encontrei uma abordagem melhor. 
+//No projeto "Sidi", criei variáveis de tabela (dbtable) que realizam a consulta desejada. 
+//Estou mantendo esse código aqui porque ele funciona, e caso seja necessário, já está pronto para ser usado.
+
+
+function recuperarCodigoMaterial()
  {
    var DSet, codigo;
    // Cria um novo objeto IAQAADODataset

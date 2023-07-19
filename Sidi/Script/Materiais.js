@@ -112,10 +112,6 @@ function abreTela() {
 		"Materiais - Suprimentos");
 }
 
-function insereCF(cf) {
-	materiais.CLF_FISCAL.Keys(cf);
-}
-
 function confirma() {
 	Principal.confirma(Aliases.SIDI.frmPrincipal.MDIClient.frmItemEstoque.Panel1.PanelBotoes.btnConfirma, "Materiais");
   if (Aliases.SIDI.MensagemConfirmacao.Exists){
@@ -125,22 +121,3 @@ function confirma() {
 function confirmaProdutoNf(){
    Principal.confirma(Aliases.SIDI.frmPrincipal.MDIClient.frmProdutoFiscal.Panel1.PanelBotoes.btnConfirma, "produto NF");
 }
-module.exports.abreTela = abreTela;
-
-function pesquisaPorCodigo(codigo) {
-	Aliases.SIDI.frmPrincipal.MDIClient.frmItemEstoque.PageControlItemEstoque.tsPesquisaItemEstoque.PanelPesquisa.PanelProcurar.edValor.SetText(codigo);
-	Aliases.SIDI.frmPrincipal.MDIClient.frmItemEstoque.PageControlItemEstoque.tsPesquisaItemEstoque.PanelPesquisa.PanelClassificar.btnPesquisar.ClickButton();
-	Aliases.SIDI.frmPrincipal.MDIClient.frmItemEstoque.PageControlItemEstoque.ClickTab("&Dados Básicos");
-}
-
-function getEstoque(produto) {
-	Materiais.abreTela();
-	Materiais.pesquisaPorCodigo(produto);
-	estoque = aqConvert.StrToInt(Aliases.SIDI.frmPrincipal.MDIClient.frmItemEstoque.PageControlItemEstoque.tsDadosItemEstoque.GBquantidades.QTE_DISPONIVEL.wText);
-	Principal.fechaTela();
-	return estoque;
-}
-
-module.exports.pesquisaPorCodigo = pesquisaPorCodigo;
-module.exports.getEstoque = getEstoque;
-module.exports.cadastraMateriais = cadastraMateriais;

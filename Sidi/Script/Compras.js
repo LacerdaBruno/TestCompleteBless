@@ -10,11 +10,8 @@ var Materiais = require("Materiais");
 function fazEntrega(material, tipoMaterial, quantidade) {
 
 	abreAbaEntrega();
-
 	Aliases.SIDI.wndTfrmPrincipal.MDIClient.frmCompras.PageControlCompras.tsObs_condicoes.gbEntregas.Panel5.Panel6.btnEntrega.ClickButton();
-
 	Aliases.SIDI.frmPesquisaMaterialEntregas.Panel3.btnMarcarTodos.ClickButton();
-
 	Aliases.SIDI.frmPesquisaMaterialEntregas.Panel3.btnOk.ClickButton();
 
 	if (tipoMaterial == "PALMILHA" || tipoMaterial == "SOLADO") {
@@ -143,18 +140,4 @@ function abreAbaEntrega() {
 function abreAbaDadosBasicos() {
 	Aliases.SIDI.wndTfrmPrincipal.MDIClient.frmCompraManut.PageControl1.ClickTab("&Dados Básicos");
 }
-
-module.exports.cadastraCompra = cadastraCompra;
-module.exports.testaCompras = testaCompras;
-module.exports.fazEntrega = fazEntrega;
-module.exports.insereGrade = insereGrade;
-module.exports.insereQuantidade = insereQuantidade;
-module.exports.insereMaterial = insereMaterial;
-module.exports.abreTela = abreTela;
-module.exports.insereFornecedor = insereFornecedor;
-module.exports.insereTransportadora = insereTransportadora;
-module.exports.insereTipoCobranca = insereTipoCobranca;
-module.exports.confirma = confirma;
-module.exports.abreAbaEntrega = abreAbaEntrega;
-module.exports.abreAbaDadosBasicos = abreAbaDadosBasicos;
 
