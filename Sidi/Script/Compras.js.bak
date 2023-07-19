@@ -76,7 +76,7 @@ function cadastraCompra() {
 	insereFornecedor(fornecedor);
   insereTransportadora(transportadora);
 	insereTipoCobranca("CARTEIRA");
-	insereMaterial(material);
+	insereMaterial();
 	confirma();
 }
 

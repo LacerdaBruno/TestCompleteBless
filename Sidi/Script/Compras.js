@@ -7,16 +7,7 @@ var Materiais = require("Materiais");
   var fornecedor = Project.Variables.DadosPessoasServicos.nome(0);
   var transportadora = Project.Variables.DadosPessoasServicos.nome(1);
 
-function testaCompras() {
-	for (let i = 0; i < Project.Variables.Materiais.RowCount; i++) {
-		cadastraCompra(Project.Variables.Materiais.codigo(i), Project.Variables.Materiais.tipo(i), 12);
-		fazEntrega(Project.Variables.Materiais.codigo(i), Project.Variables.Materiais.tipo(i), 12);
-	}
-}
-
 function fazEntrega(material, tipoMaterial, quantidade) {
-	// Pega o estoque anterior
-	let estoqueAterior = Materiais.getEstoque(material);
 
 	abreAbaEntrega();
 
