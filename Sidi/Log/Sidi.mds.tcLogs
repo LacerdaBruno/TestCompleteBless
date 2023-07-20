@@ -23,12 +23,147 @@
 		<Node name="logs">
 			<Node name="log idx=0000">
 				<Prp name="caption" type="S" value=""/>
-				<Prp name="datetime" type="D" value="45126.728929919"/>
+				<Prp name="datetime" type="D" value="45127.3479271644"/>
 				<Prp name="description" type="S" value=""/>
-				<Prp name="key" type="S" value="{25DCDF0C-D28C-42C8-BCDD-44E90065876F}"/>
+				<Prp name="key" type="S" value="{E676FC22-282D-4FF0-A114-DB5EE76761F1}"/>
 				<Prp name="nameofroot" type="S" value="Script Test Log [Compras\fazEntrega]"/>
-				<Prp name="relpath" type="S" value="19_07_2023_17_29_39_545\Description.tcLog"/>
+				<Prp name="relpath" type="S" value="20_07_2023_08_21_00_907\Description.tcLog"/>
 				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0001">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="45127.3484496181"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{112E01B6-5461-4BC8-84E5-F2AF825BACEF}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [Compras\fazEntrega]"/>
+				<Prp name="relpath" type="S" value="20_07_2023_08_21_46_47\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0002">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="45127.3653379282"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{91BDB811-B616-4486-9ACF-06FFDEB0D9BD}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [Compras\fazEntrega]"/>
+				<Prp name="relpath" type="S" value="20_07_2023_08_46_05_197\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0003">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="45127.3660509491"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{5202B2E5-7B9C-46B8-B8DF-6B518DA4418F}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [Compras\fazEntrega]"/>
+				<Prp name="relpath" type="S" value="20_07_2023_08_47_06_802\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0004">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="45127.3662730671"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{DD8FF275-826D-4956-9CE4-4CA97D34FDA1}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [Compras\fazEntrega]"/>
+				<Prp name="relpath" type="S" value="20_07_2023_08_47_25_993\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0005">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="45127.3690669444"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{5EF51E60-6786-4453-8AE9-AF0E8B85EC89}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [Compras\fazEntrega]"/>
+				<Prp name="relpath" type="S" value="20_07_2023_08_51_27_384\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0006">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="45127.3691853241"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{F1C60C36-9423-4EAD-B8BF-8EA80A3B8282}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [Compras\fazEntrega]"/>
+				<Prp name="relpath" type="S" value="20_07_2023_08_51_37_612\Description.tcLog"/>
+				<Prp name="status" type="I" value="1"/>
+			</Node>
+			<Node name="log idx=0007">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="45127.369386875"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{1046FF1D-AB1F-4E47-A35C-29B3E7FAA4ED}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [Compras\fazEntrega]"/>
+				<Prp name="relpath" type="S" value="20_07_2023_08_51_55_26\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0008">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="45127.369654919"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{A38FAF70-F355-426C-BA02-D27F9A759F66}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [Compras\fazEntrega]"/>
+				<Prp name="relpath" type="S" value="20_07_2023_08_52_18_185\Description.tcLog"/>
+				<Prp name="status" type="I" value="1"/>
+			</Node>
+			<Node name="log idx=0009">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="45127.3700038889"/>
+				<Prp name="description" type="S" value="Script Test Log [Compras\fazEntrega]"/>
+				<Prp name="key" type="S" value="{BE0D0089-C1FF-4ED6-BC3F-2EBB56BD5383}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [Compras\fazEntrega]"/>
+				<Prp name="relpath" type="S" value="20_07_2023_08_52_48_336\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0010">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="45127.377792581"/>
+				<Prp name="description" type="S" value="Script Test Log [Compras\fazEntrega]"/>
+				<Prp name="key" type="S" value="{76643E81-9ED2-4A9C-9FEE-6550C547067D}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [Compras\fazEntrega]"/>
+				<Prp name="relpath" type="S" value="20_07_2023_09_04_01_279\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0011">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="45127.3796525347"/>
+				<Prp name="description" type="S" value="Script Test Log [Compras\fazEntrega]"/>
+				<Prp name="key" type="S" value="{896D5CA4-596B-4AB0-BD46-C208C8FB8C2A}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [Compras\fazEntrega]"/>
+				<Prp name="relpath" type="S" value="20_07_2023_09_06_41_979\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0012">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="45127.3811938657"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{217843F1-CE62-4E07-BE38-3F5D39706C16}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [Compras\fazEntrega]"/>
+				<Prp name="relpath" type="S" value="20_07_2023_09_08_55_150\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0013">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="45127.3815306713"/>
+				<Prp name="description" type="S" value="Script Test Log [Compras\fazEntrega]"/>
+				<Prp name="key" type="S" value="{8262B8DF-FFEA-4309-AB14-15F0B4AA97A2}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [Compras\fazEntrega]"/>
+				<Prp name="relpath" type="S" value="20_07_2023_09_09_24_250\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0014">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="45127.3818269444"/>
+				<Prp name="description" type="S" value="Script Test Log [Compras\fazEntrega]"/>
+				<Prp name="key" type="S" value="{893CB6A0-B0F2-4897-B086-2FA06A7BE9E3}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [Compras\fazEntrega]"/>
+				<Prp name="relpath" type="S" value="20_07_2023_09_09_49_848\Description.tcLog"/>
+				<Prp name="status" type="I" value="1"/>
+			</Node>
+			<Node name="log idx=0015">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="45127.382258125"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{D764DBCE-F3BD-42B0-AC57-C5038E136BF8}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [Compras\fazEntrega]"/>
+				<Prp name="relpath" type="S" value="20_07_2023_09_10_27_102\Description.tcLog"/>
+				<Prp name="status" type="I" value="1"/>
 			</Node>
 		</Node>
 		<Prp name="signature" type="S" value="{681DCC69-A39F-4C4D-8E7D-B2D9362FAF4F}"/>

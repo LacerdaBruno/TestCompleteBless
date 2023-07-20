@@ -27,11 +27,7 @@
 			<Node name="{24b6fa0b-0143-461a-9758-aeb9e9a9428b}">
 				<Prp name="activity" type="S" value="{9EC22FD1-01B8-461F-AD0A-218092A3C5E7}"/>
 			</Node>
-			<Node name="{2c786620-2489-4cbb-9c1e-1a94437a9245}">
-				<Node name="{aaa0867d-244d-42a8-be88-04cd1e4871f2}">
-					<Prp name="hash" type="I" value="1"/>
-				</Node>
-			</Node>
+			<Node name="{2c786620-2489-4cbb-9c1e-1a94437a9245}"/>
 			<Node name="{415b5aa1-c6ac-4d4d-9a53-063a521a45ab}">
 				<Node name="workspace">
 					<Node name="0">
@@ -56,7 +52,7 @@
 					<Node name="1">
 						<Node name="editor">
 							<Node name="{93765269-c25d-4cd5-b6bf-5d7454869c93}">
-								<Prp name="key" type="S" value="{E0399B4A-9400-48F0-882B-74278E34FFBE}"/>
+								<Prp name="key" type="S" value="{89601A33-9AD4-4F58-862E-BB5A42DD2162}"/>
 							</Node>
 							<Prp name="editor" type="S" value="{DB137951-8F79-4BBB-A621-B1FF267BCD69}"/>
 							<Prp name="focused" type="S" value="{E0399B4A-9400-48F0-882B-74278E34FFBE}"/>
@@ -113,12 +109,15 @@
 					</Node>
 					<Node name="5">
 						<Node name="editor">
+							<Node name="{18d21374-749a-4b12-9591-aeba7c5332a9}"/>
 							<Node name="{531ace08-e68e-400b-9eb9-e24763725fd8}">
 								<Prp name="key" type="S" value="{A7E22300-11E1-4EE8-A6A5-AB0B0B3D4D6F}"/>
 							</Node>
 							<Node name="{9185a4c3-0780-497d-b02d-ad3af4e9cf98}">
 								<Prp name="key" type="S" value="{217A3BEC-BB76-452C-9305-F822DDDC576D}"/>
 							</Node>
+							<Node name="{98f67204-5328-4e0e-99f5-6d1b1e6d4971}"/>
+							<Node name="{d26a70c5-94dd-4095-922f-2de8d44eae70}"/>
 							<Prp name="editor" type="S" value="{0F05AE9A-23F4-4DE2-839A-AC9A0FD47C1E}"/>
 							<Prp name="focused" type="S" value="{217A3BEC-BB76-452C-9305-F822DDDC576D}"/>
 						</Node>
@@ -139,23 +138,8 @@
 			<Node name="{78a745b3-10ae-4253-9f16-55a8bcaf43c6}">
 				<Node name="item_0">
 					<Prp name="enabled" type="B" value="-1"/>
-					<Prp name="expression" type="S" value="Tipo_Produto"/>
+					<Prp name="expression" type="S" value="entrege"/>
 					<Prp name="index" type="I" value="0"/>
-				</Node>
-				<Node name="item_1">
-					<Prp name="enabled" type="B" value="-1"/>
-					<Prp name="expression" type="S" value="value"/>
-					<Prp name="index" type="I" value="1"/>
-				</Node>
-				<Node name="item_2">
-					<Prp name="enabled" type="B" value="-1"/>
-					<Prp name="expression" type="S" value="dropDown.Keys"/>
-					<Prp name="index" type="I" value="2"/>
-				</Node>
-				<Node name="item_3">
-					<Prp name="enabled" type="B" value="-1"/>
-					<Prp name="expression" type="S" value="descricaoMaterial"/>
-					<Prp name="index" type="I" value="3"/>
 				</Node>
 				<Prp name="history" type="S" value=""/>
 			</Node>
@@ -1720,7 +1704,9 @@
 					<Node name="sidi">
 						<Node name="advanced">
 							<Node name="script">
+								<Node name="cadastros"/>
 								<Node name="suprimentos"/>
+								<Node name="teste"/>
 							</Node>
 						</Node>
 					</Node>

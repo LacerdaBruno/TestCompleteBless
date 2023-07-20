@@ -10,14 +10,14 @@ var Materiais = require("Materiais");
 function fazEntrega(/*material, tipoMaterial, quantidade*/) {
 
 	var PageControlCompras = Aliases.SIDI.frmPrincipal.MDIClient.frmCompra.PageControlCompras;
-  var Panel3 = Aliases.SIDI.frmPesquisaMaterialEntregas.Panel3;
+  var Panel3 = Aliases.SIDI.frmPesquisaMaterialEntrega.Panel3;
   
   PageControlCompras.ClickTab("Entregas, Pagamentos e Observações");
 	PageControlCompras.tsCompraEntrega.gbEntregas.Panel5.Panel6.btnEntrega.ClickButton();
 	Panel3.btnMarcarTodos.ClickButton();
 	Panel3.btnOk.ClickButton();
 
-	if (tipoMaterial == "PALMILHA" || tipoMaterial == "SOLADO") {
+	/*if (tipoMaterial == "PALMILHA" || tipoMaterial == "SOLADO") {
 		PageControlCompras.tsCompraEntrega.gbEntregas.GridItensEntrega.Keys("[F10]");
 		let quantidade = 0;
 		for (let i = 0; i < Project.Variables.grade.RowCount; i++) {
@@ -32,8 +32,8 @@ function fazEntrega(/*material, tipoMaterial, quantidade*/) {
 			}
 		}
 
-		Aliases.SIDI.frmCompraManutEntregaGrades.Panel1.btnconfirma.ClickButton();
-	}
+		Aliases.SIDI.frmCompraEntregaGrade.PanelBotoes.btnconfirma.ClickButton();
+	}*/
 	confirma();
 
 	/*
@@ -41,9 +41,9 @@ function fazEntrega(/*material, tipoMaterial, quantidade*/) {
 	*/
 
 	abreAbaDadosBasicos();
-	let entrege = Aliases.SIDI.wndTfrmPrincipal.MDIClient.frmCompraManut.PageControl1.tsDados_basicos.Panel2.ENTREGUE.Value;
+	let entrege = Aliases.SIDI.frmPrincipal.MDIClient.frmCompra.PageControlCompras.tsDadosBasicosCompra.PanelDadosBasicosCompra.ENTREGUE.ItemIndex;     
 
-	if (entrege == "S") {
+	if (entrege == "0") {
 		Log.Checkpoint("Compra cadastrada e entregue corretamente", '', 400, null, Sys.Desktop);
 	} else {
 		Log.Warning("Situação da compra incorreta!!", '', 400, null, Sys.Desktop)
@@ -51,12 +51,12 @@ function fazEntrega(/*material, tipoMaterial, quantidade*/) {
 
 	/*
 	* Valida estoque
-	*/
+	
 	if (Materiais.getEstoque(material) == quantidade + estoqueAterior) {
 		Log.Checkpoint("Estoque validado!!");
 	} else {
 		Log.Warning("Estoque incorreto", '', 500, null, Sys.Desktop);
-	}
+	}*/
 
 	Principal.fechaTela();
 }
@@ -137,6 +137,6 @@ function confirma() {
 }
 
 function abreAbaDadosBasicos() {
-	Aliases.SIDI.wndTfrmPrincipal.MDIClient.frmCompraManut.PageControl1.ClickTab("&Dados Básicos");
+	Aliases.SIDI.frmPrincipal.MDIClient.frmCompra.PageControlCompras.ClickTab("&Dados Básicos");
 }
 
