@@ -7,59 +7,6 @@ var Materiais = require("Materiais");
   var fornecedor = Project.Variables.DadosPessoasServicos.nome(0);
   var transportadora = Project.Variables.DadosPessoasServicos.nome(1);
 
-function fazEntrega(/*material, tipoMaterial, quantidade*/) {
-
-	var PageControlCompras = Aliases.SIDI.frmPrincipal.MDIClient.frmCompra.PageControlCompras;
-  var Panel3 = Aliases.SIDI.frmPesquisaMaterialEntrega.Panel3;
-  
-  PageControlCompras.ClickTab("Entregas, Pagamentos e Observações");
-	PageControlCompras.tsCompraEntrega.gbEntregas.Panel5.Panel6.btnEntrega.ClickButton();
-	Panel3.btnMarcarTodos.ClickButton();
-	Panel3.btnOk.ClickButton();
-
-	/*if (tipoMaterial == "PALMILHA" || tipoMaterial == "SOLADO") {
-		PageControlCompras.tsCompraEntrega.gbEntregas.GridItensEntrega.Keys("[F10]");
-		let quantidade = 0;
-		for (let i = 0; i < Project.Variables.grade.RowCount; i++) {
-
-			let qteEntrega = Aliases.SIDI.frmCompraManutEntregaGrades.dbGrid.Fields(i).Value;
-			let qteGrade = aqConvert.StrToInt(Project.Variables.grade.qte(i));
-
-			quantidade += qteGrade;
-
-			if (qteEntrega != qteGrade) {
-				Log.Warning("Quantidade da entrega da compra incorreta!!");
-			}
-		}
-
-		Aliases.SIDI.frmCompraEntregaGrade.PanelBotoes.btnconfirma.ClickButton();
-	}*/
-	confirma();
-
-	/*
-	* Validação
-	*/
-
-	abreAbaDadosBasicos();
-	let entrege = Aliases.SIDI.frmPrincipal.MDIClient.frmCompra.PageControlCompras.tsDadosBasicosCompra.PanelDadosBasicosCompra.ENTREGUE.ItemIndex;     
-
-	if (entrege == "0") {
-		Log.Checkpoint("Compra cadastrada e entregue corretamente", '', 400, null, Sys.Desktop);
-	} else {
-		Log.Warning("Situação da compra incorreta!!", '', 400, null, Sys.Desktop)
-	}
-
-	/*
-	* Valida estoque
-	
-	if (Materiais.getEstoque(material) == quantidade + estoqueAterior) {
-		Log.Checkpoint("Estoque validado!!");
-	} else {
-		Log.Warning("Estoque incorreto", '', 500, null, Sys.Desktop);
-	}*/
-
-	Principal.fechaTela();
-}
 
 function cadastraCompra() {
 	abreTela();
@@ -69,6 +16,7 @@ function cadastraCompra() {
 	insereTipoCobranca("CARTEIRA");
 	insereMaterial();
 	confirma();
+  fazEntrega();
 }
 
 function insereMaterial(material) {
@@ -112,6 +60,31 @@ function insereQuantidade(quantidade) {
   gdItemCompra.Keys(quantidade);
 
 }
+
+function fazEntrega(){
+
+	var PageControlCompras = Aliases.SIDI.frmPrincipal.MDIClient.frmCompra.PageControlCompras;
+  var Panel3 = Aliases.SIDI.frmPesquisaMaterialEntrega.Panel3;
+  
+  PageControlCompras.ClickTab("Entregas, Pagamentos e Observações");
+	PageControlCompras.tsCompraEntrega.gbEntregas.Panel5.Panel6.btnEntrega.ClickButton();
+	Panel3.btnMarcarTodos.ClickButton();
+	Panel3.btnOk.ClickButton();
+
+	confirma();
+  
+	abreAbaDadosBasicos();
+	let entrege = Aliases.SIDI.frmPrincipal.MDIClient.frmCompra.PageControlCompras.tsDadosBasicosCompra.PanelDadosBasicosCompra.ENTREGUE.ItemIndex;     
+
+	if (entrege == "0") {
+		Log.Checkpoint("Compra cadastrada e entregue corretamente", '', 400, null, Sys.Desktop);
+	} else {
+		Log.Warning("Situação da compra incorreta!!", '', 400, null, Sys.Desktop)
+	}
+
+	Principal.fechaTela();
+}
+
 
 function abreTela() {
 	Principal.alteraAba("Suprimentos");
