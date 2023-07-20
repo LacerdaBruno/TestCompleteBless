@@ -7,15 +7,18 @@ var Materiais = require("Materiais");
   var fornecedor = Project.Variables.DadosPessoasServicos.nome(0);
   var transportadora = Project.Variables.DadosPessoasServicos.nome(1);
 
-function fazEntrega(material, tipoMaterial, quantidade) {
+function fazEntrega(/*material, tipoMaterial, quantidade*/) {
 
-	abreAbaEntrega();
-	Aliases.SIDI.wndTfrmPrincipal.MDIClient.frmCompras.PageControlCompras.tsObs_condicoes.gbEntregas.Panel5.Panel6.btnEntrega.ClickButton();
-	Aliases.SIDI.frmPesquisaMaterialEntregas.Panel3.btnMarcarTodos.ClickButton();
-	Aliases.SIDI.frmPesquisaMaterialEntregas.Panel3.btnOk.ClickButton();
+	var PageControlCompras = Aliases.SIDI.frmPrincipal.MDIClient.frmCompra.PageControlCompras;
+  var Panel3 = Aliases.SIDI.frmPesquisaMaterialEntregas.Panel3;
+  
+  PageControlCompras.ClickTab("Entregas, Pagamentos e Observações");
+	PageControlCompras.tsCompraEntrega.gbEntregas.Panel5.Panel6.btnEntrega.ClickButton();
+	Panel3.btnMarcarTodos.ClickButton();
+	Panel3.btnOk.ClickButton();
 
 	if (tipoMaterial == "PALMILHA" || tipoMaterial == "SOLADO") {
-		Aliases.SIDI.wndTfrmPrincipal.MDIClient.frmCompraManut.PageControl1.tsObs_condicoes.gbEntregas.GridItensEntrega.Keys("[F10]");
+		PageControlCompras.tsCompraEntrega.gbEntregas.GridItensEntrega.Keys("[F10]");
 		let quantidade = 0;
 		for (let i = 0; i < Project.Variables.grade.RowCount; i++) {
 
@@ -131,10 +134,6 @@ function insereTipoCobranca(cobranca) {
 
 function confirma() {
 	Principal.confirma(Aliases.SIDI.frmPrincipal.MDIClient.frmCompra.PanelBotoesCompra.PanelBotoes.btnConfirma, "Compras");
-}
-
-function abreAbaEntrega() {
-	Aliases.SIDI.wndTfrmPrincipal.MDIClient.frmCompraManut.PageControl1.ClickTab("Entregas, Pagamentos e Observações");
 }
 
 function abreAbaDadosBasicos() {
