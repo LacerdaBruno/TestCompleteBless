@@ -7184,6 +7184,88 @@
 																	</Child>
 																</Children>
 															</Child>
+															<Child Name="tsCompraEntrega" Key="{55E69ABB-5B6A-4342-96B0-7BE7EE2C2737}" ParallelWalk="True">
+																<Image FileName="1518302153" Left="12" Top="160" Right="1370" Bottom="660" />
+																<TypeInfo Item0="{B133E503-EF8C-43F6-AD54-7E43333645DC}" />
+																<Properties>
+																	<Property Name="ClassName">
+																		<Value PropertyType="0" Value="TTabSheet" Type="5" />
+																	</Property>
+																	<Property Name="ObjectIdentifier">
+																		<Value PropertyType="0" Value="tsObs_condicoes" Type="5" />
+																	</Property>
+																</Properties>
+																<Children>
+																	<Child Name="gbEntregas" Key="{EDE9C287-744D-4A0B-A5BF-4B03D522E6FF}" ParallelWalk="True">
+																		<Image FileName="1518302153" Left="12" Top="160" Right="1370" Bottom="437" />
+																		<TypeInfo Item0="{B133E503-EF8C-43F6-AD54-7E43333645DC}" />
+																		<Properties>
+																			<Property Name="ClassName">
+																				<Value PropertyType="0" Value="TGroupBox" Type="5" />
+																			</Property>
+																			<Property Name="ObjectIdentifier">
+																				<Value PropertyType="0" Value="gbEntregas" Type="5" />
+																			</Property>
+																		</Properties>
+																		<Children>
+																			<Child Name="GridItensEntrega" Key="{A09A44C0-D0DA-48F7-80CA-1305D3829D71}" ParallelWalk="True">
+																				<Properties>
+																					<Property Name="ClassName">
+																						<Value PropertyType="0" Value="TwwDBGrid" Type="5" />
+																					</Property>
+																					<Property Name="ObjectIdentifier">
+																						<Value PropertyType="0" Value="GridItensEntrega" Type="5" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="Panel5" Key="{04D5A677-4DBC-43F8-9A33-F8AADA96178F}" ParallelWalk="True">
+																				<Properties>
+																					<Property Name="ClassName">
+																						<Value PropertyType="0" Value="TPanel" Type="5" />
+																					</Property>
+																					<Property Name="ObjectIdentifier">
+																						<Value PropertyType="0" Value="Panel5" Type="5" />
+																					</Property>
+																				</Properties>
+																				<Children>
+																					<Child Name="GridEntregas" Key="{6F81D89A-1567-47DF-8F3A-76F7D0E14F47}" ParallelWalk="True">
+																						<Properties>
+																							<Property Name="ClassName">
+																								<Value PropertyType="0" Value="TwwDBGrid" Type="5" />
+																							</Property>
+																							<Property Name="ObjectIdentifier">
+																								<Value PropertyType="0" Value="GridEntregas" Type="5" />
+																							</Property>
+																						</Properties>
+																					</Child>
+																					<Child Name="Panel6" Key="{4D06EBEA-188D-4301-8017-08A4984DD69B}" ParallelWalk="True">
+																						<Properties>
+																							<Property Name="ClassName">
+																								<Value PropertyType="0" Value="TPanel" Type="5" />
+																							</Property>
+																							<Property Name="ObjectIdentifier">
+																								<Value PropertyType="0" Value="Panel6" Type="5" />
+																							</Property>
+																						</Properties>
+																						<Children>
+																							<Child Name="btnEntrega" Key="{211764A2-F017-4F5B-B672-4A150EE14790}" ParallelWalk="True">
+																								<Properties>
+																									<Property Name="ClassName">
+																										<Value PropertyType="0" Value="TBitBtn" Type="5" />
+																									</Property>
+																									<Property Name="ObjectIdentifier">
+																										<Value PropertyType="0" Value="btnEntrega" Type="5" />
+																									</Property>
+																								</Properties>
+																							</Child>
+																						</Children>
+																					</Child>
+																				</Children>
+																			</Child>
+																		</Children>
+																	</Child>
+																</Children>
+															</Child>
 														</Children>
 													</Child>
 													<Child Name="PanelBotoesCompra" Key="{C72739D2-E961-4154-8D33-7433CC56724A}" ParallelWalk="True">
@@ -7227,304 +7309,6 @@
 																			</Property>
 																			<Property Name="ObjectIdentifier">
 																				<Value PropertyType="0" Value="btnCancela" Type="5" />
-																			</Property>
-																		</Properties>
-																	</Child>
-																</Children>
-															</Child>
-														</Children>
-													</Child>
-													<Child Name="Label30" Key="{BE722138-13A7-4C85-8A62-E6380F0A7499}" ParallelWalk="True">
-														<Image FileName="-386986378" Left="350" Top="160" Right="402" Bottom="173" />
-														<TypeInfo Item0="{4F434D4F-4E9C-487C-A751-086A13C5CA8D}" />
-														<Properties>
-															<Property Name="ClassName">
-																<Value PropertyType="0" Value="TLabel" Type="5" />
-															</Property>
-															<Property Name="ObjectIdentifier">
-																<Value PropertyType="0" Value="Label30" Type="5" />
-															</Property>
-														</Properties>
-													</Child>
-												</Children>
-											</Child>
-											<Child Name="frmCompraManut" Key="{85A6935B-8662-48D2-B165-48ED934DAFF1}" ParallelWalk="True">
-												<Image FileName="-873136230" Left="-3" Top="102" Right="1369" Bottom="696" />
-												<Properties>
-													<Property Name="ClassName">
-														<Value PropertyType="0" Value="TfrmCompraManut" Type="5" />
-													</Property>
-													<Property Name="ObjectIdentifier">
-														<Value PropertyType="0" Value="frmTemplateManut" Type="5" />
-													</Property>
-												</Properties>
-												<Children>
-													<Child Name="PageControl1" Key="{6B6DA813-381C-42C6-9474-5094473C26E2}" ParallelWalk="True">
-														<Image FileName="-873136230" Left="0" Top="128" Right="1366" Bottom="656" />
-														<Properties>
-															<Property Name="ClassName">
-																<Value PropertyType="0" Value="TPageControl" Type="5" />
-															</Property>
-															<Property Name="ObjectIdentifier">
-																<Value PropertyType="0" Value="PageControl1" Type="5" />
-															</Property>
-														</Properties>
-														<Children>
-															<Child Name="tsDados_basicos" Key="{B85C18FA-602E-43C5-8307-6DCD28FDDFFA}" ParallelWalk="True">
-																<Image FileName="1055649601" Left="4" Top="152" Right="1362" Bottom="652" />
-																<Properties>
-																	<Property Name="ClassName">
-																		<Value PropertyType="0" Value="TTabSheet" Type="5" />
-																	</Property>
-																	<Property Name="ObjectIdentifier">
-																		<Value PropertyType="0" Value="tsDados_basicos" Type="5" />
-																	</Property>
-																</Properties>
-																<Children>
-																	<Child Name="Panel2" Key="{5ACF025F-A7DB-478B-A01A-786D63242B83}" ParallelWalk="True">
-																		<Image FileName="1055649601" Left="4" Top="152" Right="1362" Bottom="345" />
-																		<Properties>
-																			<Property Name="ClassName">
-																				<Value PropertyType="0" Value="TPanel" Type="5" />
-																			</Property>
-																			<Property Name="ObjectIdentifier">
-																				<Value PropertyType="0" Value="Panel2" Type="5" />
-																			</Property>
-																		</Properties>
-																		<Children>
-																			<Child Name="FORNECEDOR" Key="{4E5E9AF6-BC9E-410E-B4BF-A94AF2C7B25D}" ParallelWalk="True">
-																				<Image FileName="1055649601" Left="208" Top="161" Right="416" Bottom="182" />
-																				<Properties>
-																					<Property Name="ClassName">
-																						<Value PropertyType="0" Value="TwwDBLookupCombo" Type="5" />
-																					</Property>
-																					<Property Name="ObjectIdentifier">
-																						<Value PropertyType="0" Value="FORNECEDOR" Type="5" />
-																					</Property>
-																				</Properties>
-																				<Children>
-																					<Child Name="TBtnWinControl" Key="{8BC73E9B-D0CB-4637-A81B-BB86292F2B9E}" ParallelWalk="True">
-																						<Image FileName="-172480957" Left="397" Top="163" Right="414" Bottom="180" />
-																						<TypeInfo Item0="{F4EE141E-3581-476C-96F5-0C02314FD72C}" />
-																						<Properties>
-																							<Property Name="WndClass">
-																								<Value PropertyType="0" Value="TBtnWinControl" Type="5" />
-																							</Property>
-																						</Properties>
-																					</Child>
-																				</Children>
-																			</Child>
-																			<Child Name="TIPO_COBRANCA" Key="{D0631F22-0C8B-4F7B-8A08-F487F40DE13C}" ParallelWalk="True">
-																				<Image FileName="1566107915" Left="478" Top="207" Right="641" Bottom="228" />
-																				<Properties>
-																					<Property Name="ClassName">
-																						<Value PropertyType="0" Value="TwwDBLookupCombo" Type="5" />
-																					</Property>
-																					<Property Name="ObjectIdentifier">
-																						<Value PropertyType="0" Value="TIPO_COBRANCA" Type="5" />
-																					</Property>
-																				</Properties>
-																				<Children>
-																					<Child Name="TBtnWinControl" Key="{6CA3CCBB-3D6E-4E16-9142-FDFA03EA84D8}" ParallelWalk="True">
-																						<Image FileName="-692692459" Left="622" Top="209" Right="639" Bottom="226" />
-																						<TypeInfo Item0="{F4EE141E-3581-476C-96F5-0C02314FD72C}" />
-																						<Properties>
-																							<Property Name="WndClass">
-																								<Value PropertyType="0" Value="TBtnWinControl" Type="5" />
-																							</Property>
-																						</Properties>
-																					</Child>
-																				</Children>
-																			</Child>
-																			<Child Name="CLIENTE" Key="{973EB384-7C32-4D76-9D6B-FFF8D9C84DC9}" ParallelWalk="True">
-																				<Image FileName="-2090219030" Left="208" Top="207" Right="416" Bottom="228" />
-																				<Properties>
-																					<Property Name="ClassName">
-																						<Value PropertyType="0" Value="TwwDBLookupCombo" Type="5" />
-																					</Property>
-																					<Property Name="ObjectIdentifier">
-																						<Value PropertyType="0" Value="CLIENTE" Type="5" />
-																					</Property>
-																				</Properties>
-																				<Children>
-																					<Child Name="TBtnWinControl" Key="{8D803E26-CEEB-4763-8727-B3A3DBCC8704}" ParallelWalk="True">
-																						<Image FileName="2138650700" Left="397" Top="209" Right="414" Bottom="226" />
-																						<TypeInfo Item0="{F4EE141E-3581-476C-96F5-0C02314FD72C}" />
-																						<Properties>
-																							<Property Name="WndClass">
-																								<Value PropertyType="0" Value="TBtnWinControl" Type="5" />
-																							</Property>
-																						</Properties>
-																					</Child>
-																				</Children>
-																			</Child>
-																			<Child Name="TRANSP" Key="{DBA3519E-F2DC-4E00-8422-6350506C1325}" ParallelWalk="True">
-																				<Image FileName="-1858611132" Left="63" Top="230" Right="212" Bottom="251" />
-																				<Properties>
-																					<Property Name="ClassName">
-																						<Value PropertyType="0" Value="TwwDBLookupCombo" Type="5" />
-																					</Property>
-																					<Property Name="ObjectIdentifier">
-																						<Value PropertyType="0" Value="TRANSP" Type="5" />
-																					</Property>
-																				</Properties>
-																				<Children>
-																					<Child Name="TBtnWinControl" Key="{7777C07A-9F58-4C6F-B852-66B181258ACE}" ParallelWalk="True">
-																						<Image FileName="1332827056" Left="193" Top="232" Right="210" Bottom="249" />
-																						<TypeInfo Item0="{F4EE141E-3581-476C-96F5-0C02314FD72C}" />
-																						<Properties>
-																							<Property Name="WndClass">
-																								<Value PropertyType="0" Value="TBtnWinControl" Type="5" />
-																							</Property>
-																						</Properties>
-																					</Child>
-																				</Children>
-																			</Child>
-																			<Child Name="CONDICAO" Key="{9AE880E3-446D-424C-8E4A-579849913135}" ParallelWalk="True">
-																				<Image FileName="1566107915" Left="478" Top="184" Right="641" Bottom="205" />
-																				<Properties>
-																					<Property Name="ClassName">
-																						<Value PropertyType="0" Value="TwwDBLookupCombo" Type="5" />
-																					</Property>
-																					<Property Name="ObjectIdentifier">
-																						<Value PropertyType="0" Value="CONDICAO" Type="5" />
-																					</Property>
-																				</Properties>
-																				<Children>
-																					<Child Name="TBtnWinControl" Key="{A714E0E6-F4ED-48B2-AFF7-2929EBB4F326}" ParallelWalk="True">
-																						<Image FileName="551450918" Left="622" Top="186" Right="639" Bottom="203" />
-																						<TypeInfo Item0="{F4EE141E-3581-476C-96F5-0C02314FD72C}" />
-																						<Properties>
-																							<Property Name="WndClass">
-																								<Value PropertyType="0" Value="TBtnWinControl" Type="5" />
-																							</Property>
-																						</Properties>
-																					</Child>
-																				</Children>
-																			</Child>
-																		</Children>
-																	</Child>
-																	<Child Name="GbItem_Compra" Key="{1F0BFB7E-7702-4CEE-987B-ED9AF6BC68BF}" ParallelWalk="True">
-																		<Image FileName="335119283" Left="4" Top="345" Right="1362" Bottom="652" />
-																		<Properties>
-																			<Property Name="ClassName">
-																				<Value PropertyType="0" Value="TGroupBox" Type="5" />
-																			</Property>
-																			<Property Name="ObjectIdentifier">
-																				<Value PropertyType="0" Value="GbItem_Compra" Type="5" />
-																			</Property>
-																		</Properties>
-																		<Children>
-																			<Child Name="gdItem_Compra" Key="{487E932F-915F-419D-B76B-F163C0C23A2E}" ParallelWalk="True">
-																				<Image FileName="335119283" Left="6" Top="360" Right="1360" Bottom="595" />
-																				<TypeInfo Item0="{F4EE141E-3581-476C-96F5-0C02314FD72C}" />
-																				<Properties>
-																					<Property Name="ClassName">
-																						<Value PropertyType="0" Value="TwwDBGrid" Type="5" />
-																					</Property>
-																					<Property Name="ObjectIdentifier">
-																						<Value PropertyType="0" Value="gdItem_Compra" Type="5" />
-																					</Property>
-																				</Properties>
-																				<Children>
-																					<Child Name="MATERIAL" Key="{58F4467A-6853-4E1A-8EBA-7E9A2C340BDE}" ParallelWalk="True">
-																						<Image FileName="335119283" Left="112" Top="380" Right="374" Bottom="396" />
-																						<Properties>
-																							<Property Name="ClassName">
-																								<Value PropertyType="0" Value="TwwDBLookupCombo" Type="5" />
-																							</Property>
-																							<Property Name="ObjectIdentifier">
-																								<Value PropertyType="0" Value="MATERIAL" Type="5" />
-																							</Property>
-																						</Properties>
-																						<Children>
-																							<Child Name="TBtnWinControl" Key="{3F9C10CE-0C42-49EF-9115-7D4E22DC1B05}" ParallelWalk="True">
-																								<Image FileName="335119283" Left="357" Top="380" Right="374" Bottom="396" />
-																								<TypeInfo Item0="{F4EE141E-3581-476C-96F5-0C02314FD72C}" />
-																								<Properties>
-																									<Property Name="WndClass">
-																										<Value PropertyType="0" Value="TBtnWinControl" Type="5" />
-																									</Property>
-																								</Properties>
-																							</Child>
-																						</Children>
-																					</Child>
-																					<Child Name="TwwInplaceEdit" Key="{17511FFF-4B7F-4292-9447-E9A3F82E780B}" ParallelWalk="True">
-																						<Image FileName="1363913466" Left="476" Top="380" Right="576" Bottom="396" />
-																						<TypeInfo Item0="{F4EE141E-3581-476C-96F5-0C02314FD72C}" />
-																						<Properties>
-																							<Property Name="WndClass">
-																								<Value PropertyType="0" Value="TwwInplaceEdit" Type="5" />
-																							</Property>
-																							<Property Name="WndCaption">
-																								<Value PropertyType="0" Value="0,00000" Type="5" />
-																							</Property>
-																						</Properties>
-																					</Child>
-																				</Children>
-																			</Child>
-																			<Child Name="PanelTotal" Key="{9AE3B732-7E48-4266-B7B2-7CB273B6E94C}" ParallelWalk="True">
-																				<Image FileName="476453791" Left="6" Top="595" Right="1360" Bottom="650" />
-																				<Properties>
-																					<Property Name="ClassName">
-																						<Value PropertyType="0" Value="TPanel" Type="5" />
-																					</Property>
-																					<Property Name="ObjectIdentifier">
-																						<Value PropertyType="0" Value="PanelTotal" Type="5" />
-																					</Property>
-																				</Properties>
-																				<Children>
-																					<Child Name="btnTotaliza" Key="{8578A351-48A8-4BCE-9F4C-5A3968D21E1D}" ParallelWalk="True">
-																						<Image FileName="476453791" Left="15" Top="602" Right="132" Bottom="626" />
-																						<TypeInfo Item0="{7D76557F-AC2C-45FA-94AF-174BB1DAE6A6}" />
-																						<Properties>
-																							<Property Name="ClassName">
-																								<Value PropertyType="0" Value="TBitBtn" Type="5" />
-																							</Property>
-																							<Property Name="ObjectIdentifier">
-																								<Value PropertyType="0" Value="btnTotaliza" Type="5" />
-																							</Property>
-																						</Properties>
-																					</Child>
-																				</Children>
-																			</Child>
-																		</Children>
-																	</Child>
-																</Children>
-															</Child>
-														</Children>
-													</Child>
-													<Child Name="Panel1" Key="{108993BA-B3D7-4BD9-91CB-7B3D34B3B33C}" ParallelWalk="True">
-														<Image FileName="-1978311527" Left="0" Top="656" Right="1366" Bottom="693" />
-														<Properties>
-															<Property Name="ClassName">
-																<Value PropertyType="0" Value="TPanel" Type="5" />
-															</Property>
-															<Property Name="ObjectIdentifier">
-																<Value PropertyType="0" Value="Panel1" Type="5" />
-															</Property>
-														</Properties>
-														<Children>
-															<Child Name="PanelBotoes" Key="{2FF53896-1F25-4C45-9494-5281F601D5B3}" ParallelWalk="True">
-																<Image FileName="-1978311527" Left="1175" Top="657" Right="1365" Bottom="692" />
-																<Properties>
-																	<Property Name="ClassName">
-																		<Value PropertyType="0" Value="TPanel" Type="5" />
-																	</Property>
-																	<Property Name="ObjectIdentifier">
-																		<Value PropertyType="0" Value="PanelBotoes" Type="5" />
-																	</Property>
-																</Properties>
-																<Children>
-																	<Child Name="btnConfirma" Key="{EEBD5DE6-1671-4781-9CA8-6717E680FE6B}" ParallelWalk="True">
-																		<Image FileName="-1978311527" Left="1181" Top="665" Right="1261" Bottom="688" />
-																		<TypeInfo Item0="{7D76557F-AC2C-45FA-94AF-174BB1DAE6A6}" />
-																		<Properties>
-																			<Property Name="ClassName">
-																				<Value PropertyType="0" Value="TBitBtn" Type="5" />
-																			</Property>
-																			<Property Name="ObjectIdentifier">
-																				<Value PropertyType="0" Value="btnConfirma" Type="5" />
 																			</Property>
 																		</Properties>
 																	</Child>
@@ -8419,6 +8203,218 @@
 									</Child>
 								</Children>
 							</Child>
+							<Child Name="frmCompraEntregaGrade" Key="{80B8BA04-24D4-4240-94A4-1488A47E9432}" ParallelWalk="True">
+								<Image FileName="-248714998" Left="0" Top="0" Right="913" Bottom="139" />
+								<TypeInfo Item0="{69AA627C-2F22-491B-ACA5-57C6A8F3627C}" />
+								<Properties>
+									<Property Name="ClassName">
+										<Value PropertyType="0" Value="TfrmCompraManutEntregaGrade" Type="5" />
+									</Property>
+									<Property Name="ObjectIdentifier">
+										<Value PropertyType="0" Value="frmCompraManutEntregaGrade" Type="5" />
+									</Property>
+								</Properties>
+								<Children>
+									<Child Name="dbGrid" Key="{DABCAE80-E741-4662-B498-845ACC48A851}" ParallelWalk="True">
+										<Image FileName="1727491455" Left="156" Top="26" Right="910" Bottom="95" />
+										<TypeInfo Item0="{2EE004DC-6673-4998-AC96-88B3EBD87BED}" />
+										<Properties>
+											<Property Name="ClassName">
+												<Value PropertyType="0" Value="TwwDBGrid" Type="5" />
+											</Property>
+											<Property Name="ObjectIdentifier">
+												<Value PropertyType="0" Value="dbGrid" Type="5" />
+											</Property>
+										</Properties>
+									</Child>
+									<Child Name="PanelBotoes" Key="{23943D2A-71E3-4489-8D82-71A2E682E0AB}" ParallelWalk="True">
+										<Image FileName="1727491455" Left="3" Top="95" Right="910" Bottom="136" />
+										<TypeInfo Item0="{B133E503-EF8C-43F6-AD54-7E43333645DC}" />
+										<Properties>
+											<Property Name="ClassName">
+												<Value PropertyType="0" Value="TPanel" Type="5" />
+											</Property>
+											<Property Name="ObjectIdentifier">
+												<Value PropertyType="0" Value="Panel1" Type="5" />
+											</Property>
+										</Properties>
+										<Children>
+											<Child Name="btnconfirma" Key="{A00F8055-2116-407F-B93C-2A69A223F55A}" ParallelWalk="True">
+												<Image FileName="1727491455" Left="731" Top="106" Right="813" Bottom="131" />
+												<TypeInfo Item0="{F0640855-35C8-4BAE-82AE-DD5B774EE982}" />
+												<Properties>
+													<Property Name="ClassName">
+														<Value PropertyType="0" Value="TBitBtn" Type="5" />
+													</Property>
+													<Property Name="ObjectIdentifier">
+														<Value PropertyType="0" Value="btnconfirma" Type="5" />
+													</Property>
+												</Properties>
+											</Child>
+											<Child Name="btnCancela" Key="{75FA2743-274A-4AE8-94D6-24F9F943F0E1}" ParallelWalk="True">
+												<Image FileName="1727491455" Left="821" Top="106" Right="903" Bottom="131" />
+												<TypeInfo Item0="{F0640855-35C8-4BAE-82AE-DD5B774EE982}" />
+												<Properties>
+													<Property Name="ClassName">
+														<Value PropertyType="0" Value="TBitBtn" Type="5" />
+													</Property>
+													<Property Name="ObjectIdentifier">
+														<Value PropertyType="0" Value="btnCancela" Type="5" />
+													</Property>
+												</Properties>
+											</Child>
+										</Children>
+									</Child>
+								</Children>
+							</Child>
+							<Child Name="frmPesquisaMaterialEntrega" Key="{BBB6A174-6E3F-4FAE-8EB9-49FF44DDA11B}" ParallelWalk="True">
+								<Image FileName="628308672" Left="0" Top="0" Right="888" Bottom="455" />
+								<TypeInfo Item0="{69AA627C-2F22-491B-ACA5-57C6A8F3627C}" />
+								<Properties>
+									<Property Name="ClassName">
+										<Value PropertyType="0" Value="TfrmPesquisaMaterialEntrega" Type="5" />
+									</Property>
+									<Property Name="ObjectIdentifier">
+										<Value PropertyType="0" Value="frmPesquisaMaterialEntrega" Type="5" />
+									</Property>
+								</Properties>
+								<Children>
+									<Child Name="Label1" Key="{56F5CEEC-E68A-4E3B-964E-6A882D9760AA}" ParallelWalk="True">
+										<Properties>
+											<Property Name="ClassName">
+												<Value PropertyType="0" Value="TLabel" Type="5" />
+											</Property>
+											<Property Name="ObjectIdentifier">
+												<Value PropertyType="0" Value="Label1" Type="5" />
+											</Property>
+										</Properties>
+									</Child>
+									<Child Name="Label3" Key="{CD192942-93DC-45CF-BC8E-EE5C652E7D49}" ParallelWalk="True">
+										<Properties>
+											<Property Name="ClassName">
+												<Value PropertyType="0" Value="TLabel" Type="5" />
+											</Property>
+											<Property Name="ObjectIdentifier">
+												<Value PropertyType="0" Value="Label3" Type="5" />
+											</Property>
+										</Properties>
+									</Child>
+									<Child Name="dsManut" Key="{3B9E87ED-290F-4310-BB56-A6C715D336FF}" ParallelWalk="True">
+										<Properties>
+											<Property Name="ClassName">
+												<Value PropertyType="0" Value="TDataSource" Type="5" />
+											</Property>
+											<Property Name="ObjectIdentifier">
+												<Value PropertyType="0" Value="dsManut" Type="5" />
+											</Property>
+										</Properties>
+									</Child>
+									<Child Name="ImagensGrid" Key="{2C66C702-00D8-4D0D-B26B-A3467674202D}" ParallelWalk="True">
+										<Properties>
+											<Property Name="ClassName">
+												<Value PropertyType="0" Value="TImageList" Type="5" />
+											</Property>
+											<Property Name="ObjectIdentifier">
+												<Value PropertyType="0" Value="ImagensGrid" Type="5" />
+											</Property>
+										</Properties>
+									</Child>
+									<Child Name="FblSkin" Key="{3881CB0D-4D06-4B3A-AA35-6EB7A6075F70}" ParallelWalk="True">
+										<Properties>
+											<Property Name="ClassName">
+												<Value PropertyType="0" Value="TblSkin" Type="5" />
+											</Property>
+											<Property Name="ObjectIdentifier">
+												<Value PropertyType="0" Value="FblSkin" Type="5" />
+											</Property>
+										</Properties>
+									</Child>
+									<Child Name="ResultadoPesquisa" Key="{799C2C24-4614-4BA7-9863-2210B886B114}" ParallelWalk="True">
+										<Properties>
+											<Property Name="ClassName">
+												<Value PropertyType="0" Value="TwwDBGrid" Type="5" />
+											</Property>
+											<Property Name="ObjectIdentifier">
+												<Value PropertyType="0" Value="ResultadoPesquisa" Type="5" />
+											</Property>
+										</Properties>
+									</Child>
+									<Child Name="Panel1" Key="{09D989E5-544D-4D41-B74C-871B286446DE}" ParallelWalk="True">
+										<Properties>
+											<Property Name="ClassName">
+												<Value PropertyType="0" Value="TPanel" Type="5" />
+											</Property>
+											<Property Name="ObjectIdentifier">
+												<Value PropertyType="0" Value="Panel1" Type="5" />
+											</Property>
+										</Properties>
+										<Children>
+											<Child Name="CODIGO" Key="{C199C885-F563-4AC3-8D46-E55E553D4F5F}" ParallelWalk="True">
+												<Properties>
+													<Property Name="ClassName">
+														<Value PropertyType="0" Value="TEdit" Type="5" />
+													</Property>
+													<Property Name="ObjectIdentifier">
+														<Value PropertyType="0" Value="CODIGO" Type="5" />
+													</Property>
+												</Properties>
+											</Child>
+											<Child Name="DESCRICAO" Key="{37494545-0051-4F0D-AD41-3C8481BE91E2}" ParallelWalk="True">
+												<Properties>
+													<Property Name="ClassName">
+														<Value PropertyType="0" Value="TEdit" Type="5" />
+													</Property>
+													<Property Name="ObjectIdentifier">
+														<Value PropertyType="0" Value="DESCRICAO" Type="5" />
+													</Property>
+												</Properties>
+											</Child>
+										</Children>
+									</Child>
+									<Child Name="Panel3" Key="{5A6EB05F-102B-48BA-AD6B-31E8FAAEEB50}" ParallelWalk="True">
+										<Properties>
+											<Property Name="ClassName">
+												<Value PropertyType="0" Value="TPanel" Type="5" />
+											</Property>
+											<Property Name="ObjectIdentifier">
+												<Value PropertyType="0" Value="Panel3" Type="5" />
+											</Property>
+										</Properties>
+										<Children>
+											<Child Name="btnOk" Key="{75CEBC6C-A178-4784-AF0F-1BCD0A83CC0A}" ParallelWalk="True">
+												<Properties>
+													<Property Name="ClassName">
+														<Value PropertyType="0" Value="TBitBtn" Type="5" />
+													</Property>
+													<Property Name="ObjectIdentifier">
+														<Value PropertyType="0" Value="btnOk" Type="5" />
+													</Property>
+												</Properties>
+											</Child>
+											<Child Name="btnCancelar" Key="{57EC39E5-116B-4144-B9BD-D9B68381BCF4}" ParallelWalk="True">
+												<Properties>
+													<Property Name="ClassName">
+														<Value PropertyType="0" Value="TBitBtn" Type="5" />
+													</Property>
+													<Property Name="ObjectIdentifier">
+														<Value PropertyType="0" Value="btnCancelar" Type="5" />
+													</Property>
+												</Properties>
+											</Child>
+											<Child Name="btnMarcarTodos" Key="{949955F8-7D20-4ACE-AFCF-BFA3D260D8D5}" ParallelWalk="True">
+												<Properties>
+													<Property Name="ClassName">
+														<Value PropertyType="0" Value="TBitBtn" Type="5" />
+													</Property>
+													<Property Name="ObjectIdentifier">
+														<Value PropertyType="0" Value="btnMarcarTodos" Type="5" />
+													</Property>
+												</Properties>
+											</Child>
+										</Children>
+									</Child>
+								</Children>
+							</Child>
 						</Children>
 					</Child>
 				</Children>
@@ -9236,51 +9232,22 @@
 									<Child Name="Panel8" Owner="{D92C0B06-9FD8-459E-AD5D-A7D7256C1085}" />
 								</Child>
 							</Child>
+							<Child Name="tsCompraEntrega" Owner="{55E69ABB-5B6A-4342-96B0-7BE7EE2C2737}">
+								<Child Name="gbEntregas" Owner="{EDE9C287-744D-4A0B-A5BF-4B03D522E6FF}">
+									<Child Name="GridItensEntrega" Owner="{A09A44C0-D0DA-48F7-80CA-1305D3829D71}" />
+									<Child Name="Panel5" Owner="{04D5A677-4DBC-43F8-9A33-F8AADA96178F}">
+										<Child Name="GridEntregas" Owner="{6F81D89A-1567-47DF-8F3A-76F7D0E14F47}" />
+										<Child Name="Panel6" Owner="{4D06EBEA-188D-4301-8017-08A4984DD69B}">
+											<Child Name="btnEntrega" Owner="{211764A2-F017-4F5B-B672-4A150EE14790}" />
+										</Child>
+									</Child>
+								</Child>
+							</Child>
 						</Child>
 						<Child Name="PanelBotoesCompra" Owner="{C72739D2-E961-4154-8D33-7433CC56724A}">
 							<Child Name="PanelBotoes" Owner="{28EB9465-6953-4004-A920-1128E80F4EF1}">
 								<Child Name="btnConfirma" Owner="{4E90AB28-6B71-4E66-B2F7-6179FFA0EAD7}" />
 								<Child Name="btnCancela" Owner="{9287B3C2-8987-48AB-88AA-45FE6C1FAAEB}" />
-							</Child>
-						</Child>
-						<Child Name="Label30" Owner="{BE722138-13A7-4C85-8A62-E6380F0A7499}" />
-					</Child>
-					<Child Name="frmCompraManut" Owner="{85A6935B-8662-48D2-B165-48ED934DAFF1}">
-						<Child Name="PageControl1" Owner="{6B6DA813-381C-42C6-9474-5094473C26E2}">
-							<Child Name="tsDados_basicos" Owner="{B85C18FA-602E-43C5-8307-6DCD28FDDFFA}">
-								<Child Name="Panel2" Owner="{5ACF025F-A7DB-478B-A01A-786D63242B83}">
-									<Child Name="FORNECEDOR" Owner="{4E5E9AF6-BC9E-410E-B4BF-A94AF2C7B25D}">
-										<Child Name="TBtnWinControl" Owner="{8BC73E9B-D0CB-4637-A81B-BB86292F2B9E}" />
-									</Child>
-									<Child Name="TIPO_COBRANCA" Owner="{D0631F22-0C8B-4F7B-8A08-F487F40DE13C}">
-										<Child Name="TBtnWinControl" Owner="{6CA3CCBB-3D6E-4E16-9142-FDFA03EA84D8}" />
-									</Child>
-									<Child Name="CLIENTE" Owner="{973EB384-7C32-4D76-9D6B-FFF8D9C84DC9}">
-										<Child Name="TBtnWinControl" Owner="{8D803E26-CEEB-4763-8727-B3A3DBCC8704}" />
-									</Child>
-									<Child Name="TRANSP" Owner="{DBA3519E-F2DC-4E00-8422-6350506C1325}">
-										<Child Name="TBtnWinControl" Owner="{7777C07A-9F58-4C6F-B852-66B181258ACE}" />
-									</Child>
-									<Child Name="CONDICAO" Owner="{9AE880E3-446D-424C-8E4A-579849913135}">
-										<Child Name="TBtnWinControl" Owner="{A714E0E6-F4ED-48B2-AFF7-2929EBB4F326}" />
-									</Child>
-								</Child>
-								<Child Name="GbItem_Compra" Owner="{1F0BFB7E-7702-4CEE-987B-ED9AF6BC68BF}">
-									<Child Name="gdItem_Compra" Owner="{487E932F-915F-419D-B76B-F163C0C23A2E}">
-										<Child Name="MATERIAL" Owner="{58F4467A-6853-4E1A-8EBA-7E9A2C340BDE}">
-											<Child Name="TBtnWinControl" Owner="{3F9C10CE-0C42-49EF-9115-7D4E22DC1B05}" />
-										</Child>
-										<Child Name="TwwInplaceEdit" Owner="{17511FFF-4B7F-4292-9447-E9A3F82E780B}" />
-									</Child>
-									<Child Name="PanelTotal" Owner="{9AE3B732-7E48-4266-B7B2-7CB273B6E94C}">
-										<Child Name="btnTotaliza" Owner="{8578A351-48A8-4BCE-9F4C-5A3968D21E1D}" />
-									</Child>
-								</Child>
-							</Child>
-						</Child>
-						<Child Name="Panel1" Owner="{108993BA-B3D7-4BD9-91CB-7B3D34B3B33C}">
-							<Child Name="PanelBotoes" Owner="{2FF53896-1F25-4C45-9494-5281F601D5B3}">
-								<Child Name="btnConfirma" Owner="{EEBD5DE6-1671-4781-9CA8-6717E680FE6B}" />
 							</Child>
 						</Child>
 					</Child>
@@ -9381,6 +9348,30 @@
 				<Child Name="PanelBotoesCompraGrade" Owner="{872A4E31-560A-444F-BDED-7C90681D0EF5}">
 					<Child Name="btnconfirma" Owner="{57C8832A-A4D7-46A8-82BA-DFB7B82A17EB}" />
 					<Child Name="btnCancela" Owner="{23B3A326-DEB4-420B-9014-8619045CE209}" />
+				</Child>
+			</Child>
+			<Child Name="frmCompraEntregaGrade" Owner="{80B8BA04-24D4-4240-94A4-1488A47E9432}">
+				<Child Name="dbGrid" Owner="{DABCAE80-E741-4662-B498-845ACC48A851}" />
+				<Child Name="PanelBotoes" Owner="{23943D2A-71E3-4489-8D82-71A2E682E0AB}">
+					<Child Name="btnconfirma" Owner="{A00F8055-2116-407F-B93C-2A69A223F55A}" />
+					<Child Name="btnCancela" Owner="{75FA2743-274A-4AE8-94D6-24F9F943F0E1}" />
+				</Child>
+			</Child>
+			<Child Name="frmPesquisaMaterialEntrega" Owner="{BBB6A174-6E3F-4FAE-8EB9-49FF44DDA11B}">
+				<Child Name="Label1" Owner="{56F5CEEC-E68A-4E3B-964E-6A882D9760AA}" />
+				<Child Name="Label3" Owner="{CD192942-93DC-45CF-BC8E-EE5C652E7D49}" />
+				<Child Name="dsManut" Owner="{3B9E87ED-290F-4310-BB56-A6C715D336FF}" />
+				<Child Name="ImagensGrid" Owner="{2C66C702-00D8-4D0D-B26B-A3467674202D}" />
+				<Child Name="FblSkin" Owner="{3881CB0D-4D06-4B3A-AA35-6EB7A6075F70}" />
+				<Child Name="ResultadoPesquisa" Owner="{799C2C24-4614-4BA7-9863-2210B886B114}" />
+				<Child Name="Panel1" Owner="{09D989E5-544D-4D41-B74C-871B286446DE}">
+					<Child Name="CODIGO" Owner="{C199C885-F563-4AC3-8D46-E55E553D4F5F}" />
+					<Child Name="DESCRICAO" Owner="{37494545-0051-4F0D-AD41-3C8481BE91E2}" />
+				</Child>
+				<Child Name="Panel3" Owner="{5A6EB05F-102B-48BA-AD6B-31E8FAAEEB50}">
+					<Child Name="btnOk" Owner="{75CEBC6C-A178-4784-AF0F-1BCD0A83CC0A}" />
+					<Child Name="btnCancelar" Owner="{57EC39E5-116B-4144-B9BD-D9B68381BCF4}" />
+					<Child Name="btnMarcarTodos" Owner="{949955F8-7D20-4ACE-AFCF-BFA3D260D8D5}" />
 				</Child>
 			</Child>
 		</Child>

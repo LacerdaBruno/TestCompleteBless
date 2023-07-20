@@ -8,14 +8,6 @@ var Visualizacoes = require("Visualizacoes");
 var materiais = Aliases.SIDI.frmPrincipal.MDIClient.frmItemEstoque.PageControlItemEstoque.tsDadosItemEstoque;
 
 function cadastraMateriais(){
-  abreTela(); 
-  insereMateriais(); 
-  Principal.clicaEditar();
-  confirma();
-  Principal.fechaTela(); 
-}
-
-function insereMateriais() {
 
 	for (let i = 0; i < Project.Variables.Materiais.RowCount; i++) {
   abreTela(); 

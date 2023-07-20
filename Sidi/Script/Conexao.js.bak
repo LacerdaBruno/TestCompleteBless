@@ -26,8 +26,6 @@
      // Inserir dados no log de teste
      codigo = DSet.FieldByName("codigo_interno").Value;     
      Log.Message(codigo);
-     Log.Message(Project.Variables.Materiais.);
-     
      DSet.Next();
      i++;     
      

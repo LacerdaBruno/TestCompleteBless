@@ -94,6 +94,9 @@
 		<child name="Conexao" key="{B3796CA5-88C9-4A10-ACE6-8CBCD49F2571}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
 			<data path="Conexao.js" />
 		</child>
+		<child name="BuscarEstoqueMateriais" key="{5D64B3A9-AD40-4869-A1F4-7B1EAA69A4FE}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="BuscarEstoqueMateriais.js" />
+		</child>
 	</children>
 	<folders>
 		<folder caption="Cadastros" description="A logical folder that is used to organize project items and elements." moniker="">
@@ -135,6 +138,7 @@
 				<ref key="{2752B4CC-2B3B-4883-8793-BAB5660F1B60}" />
 				<ref key="{7E5FFE56-4F5F-4114-BF39-5ADA8932DA80}" />
 				<ref key="{9EC22FD1-01B8-461F-AD0A-218092A3C5E7}" />
+				<ref key="{5D64B3A9-AD40-4869-A1F4-7B1EAA69A4FE}" />
 			</references>
 		</folder>
 		<folder caption="Producao" description="A logical folder that is used to organize project items and elements." moniker="">

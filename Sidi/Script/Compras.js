@@ -7,59 +7,6 @@ var Materiais = require("Materiais");
   var fornecedor = Project.Variables.DadosPessoasServicos.nome(0);
   var transportadora = Project.Variables.DadosPessoasServicos.nome(1);
 
-function fazEntrega(material, tipoMaterial, quantidade) {
-
-	abreAbaEntrega();
-
-	Aliases.SIDI.wndTfrmPrincipal.MDIClient.frmCompras.PageControlCompras.tsObs_condicoes.gbEntregas.Panel5.Panel6.btnEntrega.ClickButton();
-
-	Aliases.SIDI.frmPesquisaMaterialEntregas.Panel3.btnMarcarTodos.ClickButton();
-
-	Aliases.SIDI.frmPesquisaMaterialEntregas.Panel3.btnOk.ClickButton();
-
-	if (tipoMaterial == "PALMILHA" || tipoMaterial == "SOLADO") {
-		Aliases.SIDI.wndTfrmPrincipal.MDIClient.frmCompraManut.PageControl1.tsObs_condicoes.gbEntregas.GridItensEntrega.Keys("[F10]");
-		let quantidade = 0;
-		for (let i = 0; i < Project.Variables.grade.RowCount; i++) {
-
-			let qteEntrega = Aliases.SIDI.frmCompraManutEntregaGrades.dbGrid.Fields(i).Value;
-			let qteGrade = aqConvert.StrToInt(Project.Variables.grade.qte(i));
-
-			quantidade += qteGrade;
-
-			if (qteEntrega != qteGrade) {
-				Log.Warning("Quantidade da entrega da compra incorreta!!");
-			}
-		}
-
-		Aliases.SIDI.frmCompraManutEntregaGrades.Panel1.btnconfirma.ClickButton();
-	}
-	confirma();
-
-	/*
-	* Validação
-	*/
-
-	abreAbaDadosBasicos();
-	let entrege = Aliases.SIDI.wndTfrmPrincipal.MDIClient.frmCompraManut.PageControl1.tsDados_basicos.Panel2.ENTREGUE.Value;
-
-	if (entrege == "S") {
-		Log.Checkpoint("Compra cadastrada e entregue corretamente", '', 400, null, Sys.Desktop);
-	} else {
-		Log.Warning("Situação da compra incorreta!!", '', 400, null, Sys.Desktop)
-	}
-
-	/*
-	* Valida estoque
-	*/
-	if (Materiais.getEstoque(material) == quantidade + estoqueAterior) {
-		Log.Checkpoint("Estoque validado!!");
-	} else {
-		Log.Warning("Estoque incorreto", '', 500, null, Sys.Desktop);
-	}
-
-	Principal.fechaTela();
-}
 
 function cadastraCompra() {
 	abreTela();
@@ -69,6 +16,7 @@ function cadastraCompra() {
 	insereTipoCobranca("CARTEIRA");
 	insereMaterial();
 	confirma();
+  fazEntrega();
 }
 
 function insereMaterial(material) {
@@ -113,6 +61,31 @@ function insereQuantidade(quantidade) {
 
 }
 
+function fazEntrega(){
+
+	var PageControlCompras = Aliases.SIDI.frmPrincipal.MDIClient.frmCompra.PageControlCompras;
+  var Panel3 = Aliases.SIDI.frmPesquisaMaterialEntrega.Panel3;
+  
+  PageControlCompras.ClickTab("Entregas, Pagamentos e Observações");
+	PageControlCompras.tsCompraEntrega.gbEntregas.Panel5.Panel6.btnEntrega.ClickButton();
+	Panel3.btnMarcarTodos.ClickButton();
+	Panel3.btnOk.ClickButton();
+
+	confirma();
+  
+	abreAbaDadosBasicos();
+	let entrege = Aliases.SIDI.frmPrincipal.MDIClient.frmCompra.PageControlCompras.tsDadosBasicosCompra.PanelDadosBasicosCompra.ENTREGUE.ItemIndex;     
+
+	if (entrege == "0") {
+		Log.Checkpoint("Compra cadastrada e entregue corretamente", '', 400, null, Sys.Desktop);
+	} else {
+		Log.Warning("Situação da compra incorreta!!", '', 400, null, Sys.Desktop)
+	}
+
+	Principal.fechaTela();
+}
+
+
 function abreTela() {
 	Principal.alteraAba("Suprimentos");
 	Principal.abreTelas(Aliases.SIDI.frmPrincipal.btnCompras,
@@ -136,25 +109,7 @@ function confirma() {
 	Principal.confirma(Aliases.SIDI.frmPrincipal.MDIClient.frmCompra.PanelBotoesCompra.PanelBotoes.btnConfirma, "Compras");
 }
 
-function abreAbaEntrega() {
-	Aliases.SIDI.wndTfrmPrincipal.MDIClient.frmCompraManut.PageControl1.ClickTab("Entregas, Pagamentos e Observações");
-}
-
 function abreAbaDadosBasicos() {
-	Aliases.SIDI.wndTfrmPrincipal.MDIClient.frmCompraManut.PageControl1.ClickTab("&Dados Básicos");
+	Aliases.SIDI.frmPrincipal.MDIClient.frmCompra.PageControlCompras.ClickTab("&Dados Básicos");
 }
-
-module.exports.cadastraCompra = cadastraCompra;
-module.exports.testaCompras = testaCompras;
-module.exports.fazEntrega = fazEntrega;
-module.exports.insereGrade = insereGrade;
-module.exports.insereQuantidade = insereQuantidade;
-module.exports.insereMaterial = insereMaterial;
-module.exports.abreTela = abreTela;
-module.exports.insereFornecedor = insereFornecedor;
-module.exports.insereTransportadora = insereTransportadora;
-module.exports.insereTipoCobranca = insereTipoCobranca;
-module.exports.confirma = confirma;
-module.exports.abreAbaEntrega = abreAbaEntrega;
-module.exports.abreAbaDadosBasicos = abreAbaDadosBasicos;
 
