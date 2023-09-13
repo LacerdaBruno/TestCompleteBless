@@ -3974,6 +3974,35 @@
 																				<Value PropertyType="0" Value="UNIDADES_VOLUME" Type="5" />
 																			</Property>
 																		</Properties>
+																		<Children>
+																			<Child Name="TwwLookupComboButton" Key="{5769D639-0970-410D-8A1F-8C1C409A7CB1}" ParallelWalk="True">
+																				<Properties>
+																					<Property Name="ClassName">
+																						<Value PropertyType="0" Value="TwwLookupComboButton" Type="5" />
+																					</Property>
+																					<Property Name="ObjectIdentifier">
+																						<Value PropertyType="0" Value="TwwLookupComboButton" Type="5" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="TTimer" Key="{D04F2BA4-5D0B-412F-AEE7-3054A348ECB3}" ParallelWalk="True">
+																				<Properties>
+																					<Property Name="ClassName">
+																						<Value PropertyType="0" Value="TTimer" Type="5" />
+																					</Property>
+																					<Property Name="ObjectIdentifier">
+																						<Value PropertyType="0" Value="TTimer" Type="5" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="TBtnWinControl" Key="{E9F4DB9B-931B-419F-9948-8B03B3EBC2CD}" ParallelWalk="True">
+																				<Properties>
+																					<Property Name="WndClass">
+																						<Value PropertyType="0" Value="TBtnWinControl" Type="5" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																		</Children>
 																	</Child>
 																	<Child Name="CODIGO_SUB_GRUPO" Key="{04813005-06F7-43DF-B30A-315465FEF1F2}" ParallelWalk="True">
 																		<Properties>
@@ -4274,6 +4303,37 @@
 																					</Property>
 																					<Property Name="ObjectIdentifier">
 																						<Value PropertyType="0" Value="gbTotal" Type="5" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																		</Children>
+																	</Child>
+																	<Child Name="ORIGEM_MERCADORIA" Key="{EE88D656-7315-41C3-9D1A-3F00CC9D76CC}" ParallelWalk="True">
+																		<Image FileName="-1933890045" Left="79" Top="331" Right="287" Bottom="352" />
+																		<TypeInfo Item0="{2EE004DC-6673-4998-AC96-88B3EBD87BED}" />
+																		<Properties>
+																			<Property Name="ClassName">
+																				<Value PropertyType="0" Value="TwwDBComboBox" Type="5" />
+																			</Property>
+																			<Property Name="ObjectIdentifier">
+																				<Value PropertyType="0" Value="ORIGEM_MERCADORIA" Type="5" />
+																			</Property>
+																		</Properties>
+																		<Children>
+																			<Child Name="TwwComboDlgButton" Key="{775D5A18-29CD-45EE-9C57-8F89CEDD325F}" ParallelWalk="True">
+																				<Properties>
+																					<Property Name="ClassName">
+																						<Value PropertyType="0" Value="TwwComboDlgButton" Type="5" />
+																					</Property>
+																					<Property Name="ObjectIdentifier">
+																						<Value PropertyType="0" Value="TwwComboDlgButton" Type="5" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="TBtnWinControl" Key="{E09BEBA5-7B46-45BB-B19D-32043E2100D1}" ParallelWalk="True">
+																				<Properties>
+																					<Property Name="WndClass">
+																						<Value PropertyType="0" Value="TBtnWinControl" Type="5" />
 																					</Property>
 																				</Properties>
 																			</Child>
@@ -8859,7 +8919,11 @@
 								<Child Name="DESCRICAO_AGRUPADA" Owner="{0FC9F884-350C-4388-8A74-7DD3D30BFBA9}" />
 								<Child Name="PRAZO_ENTREGA_FORNECEDOR" Owner="{1DEC0128-ABA6-4A96-B30B-EFAF0B00F1E8}" />
 								<Child Name="COLECAO" Owner="{45AFB476-6DF9-4BF6-A66E-3CF64EC80567}" />
-								<Child Name="UNIDADES_VOLUME" Owner="{F7EBB8D3-5466-47C0-B1B1-906A16CA0DC4}" />
+								<Child Name="UNIDADES_VOLUME" Owner="{F7EBB8D3-5466-47C0-B1B1-906A16CA0DC4}">
+									<Child Name="TwwLookupComboButton" Owner="{5769D639-0970-410D-8A1F-8C1C409A7CB1}" />
+									<Child Name="TTimer" Owner="{D04F2BA4-5D0B-412F-AEE7-3054A348ECB3}" />
+									<Child Name="TBtnWinControl" Owner="{E9F4DB9B-931B-419F-9948-8B03B3EBC2CD}" />
+								</Child>
 								<Child Name="CODIGO_SUB_GRUPO" Owner="{04813005-06F7-43DF-B30A-315465FEF1F2}" />
 								<Child Name="FK_TIPO_ITEM_ESTOQUE" Owner="{ADE94517-BF56-4005-99DB-F68E32B76380}" />
 								<Child Name="gbEstoqueDisponivel" Owner="{9C7A1427-4FFE-44DB-844A-FC432CA8DED8}" />
@@ -8890,6 +8954,10 @@
 									<Child Name="VALOR_ACRESCIMO" Owner="{7B3098F2-741F-4C94-AA2F-C8580A034E51}" />
 									<Child Name="VALOR_ACRESCIMO_ANTERIOR" Owner="{991647A6-3F1A-4FE1-B0B5-974D9783B62B}" />
 									<Child Name="gbTotal" Owner="{0148E9A8-7935-4AF7-B8C6-B612B4A877E9}" />
+								</Child>
+								<Child Name="ORIGEM_MERCADORIA" Owner="{EE88D656-7315-41C3-9D1A-3F00CC9D76CC}">
+									<Child Name="TwwComboDlgButton" Owner="{775D5A18-29CD-45EE-9C57-8F89CEDD325F}" />
+									<Child Name="TBtnWinControl" Owner="{E09BEBA5-7B46-45BB-B19D-32043E2100D1}" />
 								</Child>
 							</Child>
 							<Child Name="tsPesquisaItemEstoque" Owner="{EA3E8762-CCD6-4AD2-B3FC-D9935273967A}">

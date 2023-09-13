@@ -30,75 +30,75 @@
 			<testItem name="Sidi" key="{2AC8EFB5-24EB-49CD-9DCA-2E4C9EADC735}" group="True" enabled="True" testMoniker="" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
 				<testParameters />
 				<children>
-					<testItem name="TestarValidarLogin" key="{A14EFE13-D334-4C88-AF86-08A5975C6EB7}" group="False" enabled="True" testMoniker="{523414B8-5D61-4CC0-B8C6-C59FDB2428C0}validaLogin" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+					<testItem name="TestarValidarLogin" key="{A14EFE13-D334-4C88-AF86-08A5975C6EB7}" group="False" enabled="False" testMoniker="{523414B8-5D61-4CC0-B8C6-C59FDB2428C0}validaLogin" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
 						<testParameters />
 						<children />
 					</testItem>
-					<testItem name="TestarFabrica" key="{7B6C2CCE-1B9E-4BD3-A57B-4950D5D23EE3}" group="False" enabled="True" testMoniker="{2F96AC4A-5B10-4C32-8949-9624A21970FD}testaFabrica" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+					<testItem name="TestarFabrica" key="{7B6C2CCE-1B9E-4BD3-A57B-4950D5D23EE3}" group="False" enabled="False" testMoniker="{2F96AC4A-5B10-4C32-8949-9624A21970FD}testaFabrica" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
 						<testParameters />
 						<children />
 					</testItem>
-					<testItem name="TestarSetores" key="{1007CA41-3275-4545-A7F1-32943A89EA0A}" group="False" enabled="True" testMoniker="{4DCC9650-EEA8-4156-BC1F-426B4D6FBEE0}insereSetores" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+					<testItem name="TestarSetores" key="{1007CA41-3275-4545-A7F1-32943A89EA0A}" group="False" enabled="False" testMoniker="{4DCC9650-EEA8-4156-BC1F-426B4D6FBEE0}insereSetores" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
 						<testParameters />
 						<children />
 					</testItem>
-					<testItem name="TestarUnidadeMedida" key="{8EA86414-0960-47EB-8F96-D8C26E105625}" group="False" enabled="True" testMoniker="{BDA6040D-16F9-46F3-8EFD-22A56B1B9C58}cadastraUnidadeMedidas" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+					<testItem name="TestarUnidadeMedida" key="{8EA86414-0960-47EB-8F96-D8C26E105625}" group="False" enabled="False" testMoniker="{BDA6040D-16F9-46F3-8EFD-22A56B1B9C58}cadastraUnidadeMedidas" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
 						<testParameters />
 						<children />
 					</testItem>
-					<testItem name="TestarClassificacaoFiscal" key="{220C80CB-8334-4B93-87E7-0EB1BFB79FDE}" group="False" enabled="True" testMoniker="{F7894DC7-A3EE-41B0-AAA2-8F975B2DB120}cadastrarClassificacaoFiscal" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+					<testItem name="TestarClassificacaoFiscal" key="{220C80CB-8334-4B93-87E7-0EB1BFB79FDE}" group="False" enabled="False" testMoniker="{F7894DC7-A3EE-41B0-AAA2-8F975B2DB120}cadastrarClassificacaoFiscal" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
 						<testParameters />
 						<children />
 					</testItem>
-					<testItem name="TestarCores" key="{F63777FA-A18D-4577-A0F3-A1DA0927C703}" group="False" enabled="True" testMoniker="{E28A1FBB-8D67-4AA4-B88E-222074689048}insereCor" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+					<testItem name="TestarCores" key="{F63777FA-A18D-4577-A0F3-A1DA0927C703}" group="False" enabled="False" testMoniker="{E28A1FBB-8D67-4AA4-B88E-222074689048}insereCor" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
 						<testParameters />
 						<children />
 					</testItem>
-					<testItem name="TestarCondicaoPagamento" key="{CC996236-5EC0-4FD5-8F54-AA3DCABF0D68}" group="False" enabled="True" testMoniker="{908ED210-70E9-474E-BA9D-38D7EFCFF99E}TesteCadastros" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+					<testItem name="TestarCondicaoPagamento" key="{CC996236-5EC0-4FD5-8F54-AA3DCABF0D68}" group="False" enabled="False" testMoniker="{908ED210-70E9-474E-BA9D-38D7EFCFF99E}TesteCadastros" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
 						<testParameters />
 						<children />
 					</testItem>
-					<testItem name="TestarGrupoCliente" key="{04AA7604-C65B-417D-8205-D7540B17F70C}" group="False" enabled="True" testMoniker="{9283B5C6-779A-4B46-A1FD-7CA28356857C}cadastraGrupoCliente" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+					<testItem name="TestarGrupoCliente" key="{04AA7604-C65B-417D-8205-D7540B17F70C}" group="False" enabled="False" testMoniker="{9283B5C6-779A-4B46-A1FD-7CA28356857C}cadastraGrupoCliente" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
 						<testParameters />
 						<children />
 					</testItem>
-					<testItem name="TestarPessoaServico" key="{93A0E9BA-DEFF-4CBC-9682-24F4F6084239}" group="False" enabled="True" testMoniker="{C2603EA5-B76E-453F-8E21-BB91B567EC64}cadastraCliente" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+					<testItem name="TestarPessoaServico" key="{93A0E9BA-DEFF-4CBC-9682-24F4F6084239}" group="False" enabled="False" testMoniker="{C2603EA5-B76E-453F-8E21-BB91B567EC64}cadastraCliente" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
 						<testParameters />
 						<children />
 					</testItem>
-					<testItem name="TestarContaBancaria" key="{31CB1F4D-0812-4880-AF33-99ABE204763D}" group="False" enabled="True" testMoniker="{AD584C7A-E86D-4665-A253-D997B3FE1B20}cadastraConta" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+					<testItem name="TestarContaBancaria" key="{31CB1F4D-0812-4880-AF33-99ABE204763D}" group="False" enabled="False" testMoniker="{AD584C7A-E86D-4665-A253-D997B3FE1B20}cadastraConta" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
 						<testParameters />
 						<children />
 					</testItem>
-					<testItem name="TestarFormas" key="{2D094E61-6383-44B1-9DAF-D8293001FE0E}" group="False" enabled="True" testMoniker="{DEBC4ECD-BA95-4CD9-AF1A-0B8F8345D803}cadastraForma" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+					<testItem name="TestarFormas" key="{2D094E61-6383-44B1-9DAF-D8293001FE0E}" group="False" enabled="False" testMoniker="{DEBC4ECD-BA95-4CD9-AF1A-0B8F8345D803}cadastraForma" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
 						<testParameters />
 						<children />
 					</testItem>
-					<testItem name="TestarGrade" key="{86222F47-781F-495E-A5DE-DA42C9A8DF6D}" group="False" enabled="True" testMoniker="{B18A80EE-B741-4B28-A216-6FB02DA00592}cadastraGrade" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+					<testItem name="TestarGrade" key="{86222F47-781F-495E-A5DE-DA42C9A8DF6D}" group="False" enabled="False" testMoniker="{B18A80EE-B741-4B28-A216-6FB02DA00592}cadastraGrade" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
 						<testParameters />
 						<children />
 					</testItem>
-					<testItem name="TestarUnidadePorVolume" key="{6F40B518-5E51-4616-9690-0F49940F511E}" group="False" enabled="True" testMoniker="{497CC71D-BB31-416C-B0B3-DEFBDF580E2B}cadastraUnidadePorVolume" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+					<testItem name="TestarUnidadePorVolume" key="{6F40B518-5E51-4616-9690-0F49940F511E}" group="False" enabled="False" testMoniker="{497CC71D-BB31-416C-B0B3-DEFBDF580E2B}cadastraUnidadePorVolume" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
 						<testParameters />
 						<children />
 					</testItem>
-					<testItem name="TestarPrestadorServico" key="{8508BB29-0EAF-4F95-94D1-763E60981FF9}" group="False" enabled="True" testMoniker="{57D03BCB-AA40-471A-9630-EBEBBBB41B72}cadastraBanca" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+					<testItem name="TestarPrestadorServico" key="{8508BB29-0EAF-4F95-94D1-763E60981FF9}" group="False" enabled="False" testMoniker="{57D03BCB-AA40-471A-9630-EBEBBBB41B72}cadastraBanca" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
 						<testParameters />
 						<children />
 					</testItem>
-					<testItem name="TestarGrupoMateriais" key="{128C74F5-FE5C-496D-A3D7-BD69D61F5E86}" group="False" enabled="True" testMoniker="{2752B4CC-2B3B-4883-8793-BAB5660F1B60}cadastrarGrupoDeMateriais" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+					<testItem name="TestarGrupoMateriais" key="{128C74F5-FE5C-496D-A3D7-BD69D61F5E86}" group="False" enabled="False" testMoniker="{2752B4CC-2B3B-4883-8793-BAB5660F1B60}cadastrarGrupoDeMateriais" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
 						<testParameters />
 						<children />
 					</testItem>
-					<testItem name="TestarSubgrupoMateriais" key="{EE418551-D0A8-4452-9C91-62ABD56DA515}" group="False" enabled="True" testMoniker="{7E5FFE56-4F5F-4114-BF39-5ADA8932DA80}cadastrarSubgrupoDeMateriais" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+					<testItem name="TestarSubgrupoMateriais" key="{EE418551-D0A8-4452-9C91-62ABD56DA515}" group="False" enabled="False" testMoniker="{7E5FFE56-4F5F-4114-BF39-5ADA8932DA80}cadastrarSubgrupoDeMateriais" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
 						<testParameters />
 						<children />
 					</testItem>
-					<testItem name="TestarCadastrarMateriais" key="{79837EE4-0C43-4A5F-81B8-9A5C8A004396}" group="False" enabled="True" testMoniker="{F4A05E74-AB1D-41FC-A18C-203C94CD7427}cadastraMateriais" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+					<testItem name="TestarCadastrarMateriais" key="{79837EE4-0C43-4A5F-81B8-9A5C8A004396}" group="False" enabled="False" testMoniker="{F4A05E74-AB1D-41FC-A18C-203C94CD7427}cadastraMateriais" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
 						<testParameters />
 						<children />
 					</testItem>
-					<testItem name="TestarCadastrarFaca" key="{2B164504-6F56-49B9-85BB-237887F1D440}" group="False" enabled="True" testMoniker="{391265AB-D1AC-4A3B-95B1-49F1A77CCDFA}cadastraFaca" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+					<testItem name="TestarCadastrarFaca" key="{2B164504-6F56-49B9-85BB-237887F1D440}" group="False" enabled="False" testMoniker="{391265AB-D1AC-4A3B-95B1-49F1A77CCDFA}cadastraFaca" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
 						<testParameters />
 						<children />
 					</testItem>
@@ -182,10 +182,10 @@
 				<Variable Name="Materiais" Type="{4AD4881B-176C-4C96-8288-FBBB7E3D1FE3}" Local="False">
 					<DefValue RowCount="4" ColumnCount="25">
 						<Columns ColumnName0="tipo" ColumnName1="grupo" ColumnName2="subgrupo" ColumnName3="descricao" ColumnName4="cor" ColumnName5="custo" ColumnName6="icms" ColumnName7="ipi" ColumnName8="unidade_estoque" ColumnName9="classificacao_fiscal" ColumnName10="area" ColumnName11="unidade_volume" ColumnName12="setor" ColumnName13="Tipo_NF" ColumnName14="Tipo_Produto" ColumnName15="GTIN" ColumnName16="EAN" ColumnName17="CEST" ColumnName18="origem" ColumnName19="peso_bruto" ColumnName20="peso_liquido" ColumnName21="tributacao_pdv" ColumnName22="ICMS_PDV" ColumnName23="CST_ICMS" ColumnName24="CST_IPI" />
-						<Row No="0" Cell0="4D0041005400450052004900410020005000520049004D004100" Cell1="540045004300490044004F00" Cell2="41004C0047004F00440041004F00" Cell3="42004900410052005200490054005A00200041004C0047004F00440041004F00200054004500530054004500" Cell4="4D004100520052004F004D00" Cell5="32003300" Cell6="3000" Cell7="3000" Cell8="4D005400" Cell9="30003300300034003400330030003000" Cell10="3100" Cell11="33003800200041004F00200034003300" Cell12="43004F00520054004500" Cell13="4100" Cell14="4D0041005400B40045005200490041002D005000520049004D004100" Cell15="300030003000300030003000" Cell16="3000300030003000300030003000300030003000300030003000" Cell17="30003000300030003000300030003000" Cell18="3000" Cell19="3100" Cell20="3100" Cell21="3000" Cell22="31003200" Cell23="300030003000" Cell24="300030003000" />
-						<Row No="1" Cell0="53004F004C00410044004F00" Cell1="53004F004C00410044004F00" Cell2="53004F004C00410044004F00" Cell3="53004F004C004100200043004F004D0020004700520041004400450020004100440055004C0054004F00" Cell4="4200520041004E0043004F00" Cell5="3900" Cell6="3000" Cell7="3000" Cell8="55004E00" Cell9="30003300300034003400330030003000" Cell10="3100" Cell11="33003800200041004F00200034003300" Cell12="4D004F004E0054004100470045004D00" Cell13="4100" Cell14="500052004F004400550054004F00200045004D002000500052004F0043004500530053004F00" Cell15="300030003000300030003000" Cell16="3000300030003000300030003000300030003000300030003000" Cell17="30003000300030003000300030003000" Cell18="3000" Cell19="3100" Cell20="3100" Cell21="3000" Cell22="31003200" Cell23="300030003000" Cell24="300030003000" />
-						<Row No="2" Cell0="500041004C004D0049004C0048004100" Cell1="500041004C004D0049004C0048004100" Cell2="500041004C004D0049004C0048004100" Cell3="500041004C004D0049004C0048004100200043004F004D0020004700520041004400450020004100440055004C0054004F00" Cell4="4200520041004E0043004F00" Cell5="31002C003500" Cell6="3000" Cell7="3000" Cell8="55004E00" Cell9="30003300300034003400330030003000" Cell10="3100" Cell11="33003800200041004F00200034003300" Cell12="4D004F004E0054004100470045004D00" Cell13="4100" Cell14="500052004F004400550054004F00200045004D002000500052004F0043004500530053004F00" Cell15="300030003000300030003000" Cell16="3000300030003000300030003000300030003000300030003000" Cell17="30003000300030003000300030003000" Cell18="3000" Cell19="3100" Cell20="3100" Cell21="3000" Cell22="31003200" Cell23="300030003000" Cell24="300030003000" />
-						<Row No="3" Cell0="550053004F0020004500200043004F004E00530055004D004F00" Cell1="45004D00420041004C004100470045004E005300" Cell2="43004100490058004100" Cell3="43004100490058004100200044004500200045004D00420041004C004100470045004E005300" Cell4="4D004100520052004F004D00" Cell5="30002C0030003300" Cell6="3000" Cell7="3000" Cell8="55004E00" Cell9="30003300300034003400330030003000" Cell10="3100" Cell11="33003800200041004F00200034003300" Cell12="450058005000450044004900430041004F00" Cell13="4100" Cell14="45004D00420041004C004100470045004D00" Cell15="300030003000300030003000" Cell16="3000300030003000300030003000300030003000300030003000" Cell17="30003000300030003000300030003000" Cell18="3000" Cell19="3100" Cell20="3100" Cell21="3000" Cell22="31003200" Cell23="300030003000" Cell24="300030003000" />
+						<Row No="0" Cell0="4D0041005400450052004900410020005000520049004D004100" Cell1="540045004300490044004F00" Cell2="41004C0047004F00440041004F00" Cell3="42004900410052005200490054005A00200041004C0047004F00440041004F00200054004500530054004500" Cell4="4D004100520052004F004D00" Cell5="32003300" Cell6="3000" Cell7="3000" Cell8="4D005400" Cell9="30003300300034003400330030003000" Cell10="3100" Cell11="31003200200050004500C7004100530020002D0020005A00200033003800200041004F00200034003300" Cell12="43004F00520054004500" Cell13="4100" Cell14="4D0041005400B40045005200490041002D005000520049004D004100" Cell15="300030003000300030003000" Cell16="3000300030003000300030003000300030003000300030003000" Cell17="30003000300030003000300030003000" Cell18="3000" Cell19="3100" Cell20="3100" Cell21="3000" Cell22="31003200" Cell23="300030003000" Cell24="300030003000" />
+						<Row No="1" Cell0="53004F004C00410044004F00" Cell1="53004F004C00410044004F00" Cell2="53004F004C00410044004F00" Cell3="53004F004C004100200043004F004D0020004700520041004400450020004100440055004C0054004F00" Cell4="4200520041004E0043004F00" Cell5="3900" Cell6="3000" Cell7="3000" Cell8="55004E00" Cell9="30003300300034003400330030003000" Cell10="3100" Cell11="31003200200050004500C7004100530020002D0020005A00200033003800200041004F00200034003300" Cell12="4D004F004E0054004100470045004D00" Cell13="4100" Cell14="500052004F004400550054004F00200045004D002000500052004F0043004500530053004F00" Cell15="300030003000300030003000" Cell16="3000300030003000300030003000300030003000300030003000" Cell17="30003000300030003000300030003000" Cell18="3000" Cell19="3100" Cell20="3100" Cell21="3000" Cell22="31003200" Cell23="300030003000" Cell24="300030003000" />
+						<Row No="2" Cell0="500041004C004D0049004C0048004100" Cell1="500041004C004D0049004C0048004100" Cell2="500041004C004D0049004C0048004100" Cell3="500041004C004D0049004C0048004100200043004F004D0020004700520041004400450020004100440055004C0054004F00" Cell4="4200520041004E0043004F00" Cell5="31002C003500" Cell6="3000" Cell7="3000" Cell8="55004E00" Cell9="30003300300034003400330030003000" Cell10="3100" Cell11="31003200200050004500C7004100530020002D0020005A00200033003800200041004F00200034003300" Cell12="4D004F004E0054004100470045004D00" Cell13="4100" Cell14="500052004F004400550054004F00200045004D002000500052004F0043004500530053004F00" Cell15="300030003000300030003000" Cell16="3000300030003000300030003000300030003000300030003000" Cell17="30003000300030003000300030003000" Cell18="3000" Cell19="3100" Cell20="3100" Cell21="3000" Cell22="31003200" Cell23="300030003000" Cell24="300030003000" />
+						<Row No="3" Cell0="550053004F0020004500200043004F004E00530055004D004F00" Cell1="45004D00420041004C004100470045004E005300" Cell2="43004100490058004100" Cell3="43004100490058004100200044004500200045004D00420041004C004100470045004E005300" Cell4="4D004100520052004F004D00" Cell5="30002C0030003300" Cell6="3000" Cell7="3000" Cell8="55004E00" Cell9="30003300300034003400330030003000" Cell10="3100" Cell11="31003200200050004500C7004100530020002D0020005A00200033003800200041004F00200034003300" Cell12="450058005000450044004900430041004F00" Cell13="4100" Cell14="45004D00420041004C004100470045004D00" Cell15="300030003000300030003000" Cell16="3000300030003000300030003000300030003000300030003000" Cell17="30003000300030003000300030003000" Cell18="3000" Cell19="3100" Cell20="3100" Cell21="3000" Cell22="31003200" Cell23="300030003000" Cell24="300030003000" />
 					</DefValue>
 				</Variable>
 				<Variable Name="Produto" Type="{4AD4881B-176C-4C96-8288-FBBB7E3D1FE3}" Local="False">
@@ -292,8 +292,8 @@
 				<Variable Name="FamiliaProdutos" Type="{4AD4881B-176C-4C96-8288-FBBB7E3D1FE3}" Local="False">
 					<DefValue RowCount="2" ColumnCount="6">
 						<Columns ColumnName0="descricao" ColumnName1="inicio_entrega" ColumnName2="desconto" ColumnName3="tipo_desconto" ColumnName4="qte_minima" ColumnName5="desconto_ret" />
-						<Row No="0" Cell0="52004F005500500041005300" Cell1="300031002F00300031002F003200300032003200" Cell2="3000" Cell3="2500" Cell4="3000" Cell5="3000" />
-						<Row No="1" Cell0="430041004C004300410044004F005300" Cell1="300031002F00300031002F003200300032003200" Cell2="3000" Cell3="2500" Cell4="3000" Cell5="3000" />
+						<Row No="0" Cell0="52004F005500500041005300" Cell1="30003100300031003200300032003200" Cell2="3000" Cell3="2500" Cell4="3000" Cell5="3000" />
+						<Row No="1" Cell0="430041004C004300410044004F005300" Cell1="30003100300032003200300032003300" Cell2="3000" Cell3="2500" Cell4="3000" Cell5="3000" />
 					</DefValue>
 				</Variable>
 				<Variable Name="CodigoMateriais" Type="{8ECBD24A-6DA1-4476-A473-EE3A52F06A83}" Local="False">

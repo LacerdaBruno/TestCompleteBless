@@ -12,7 +12,7 @@ function cadastraMateriais(){
 	for (let i = 0; i < Project.Variables.Materiais.RowCount; i++) {
   abreTela(); 
   Principal.clicaNovo();
-    var codigoUsuario = (Project.Variables.Materiais.codigo(i));
+   // var codigoUsuario = (Project.Variables.Materiais.codigo(i));
 		var tipo = (Project.Variables.Materiais.tipo(i));
 		var grupo = (Project.Variables.Materiais.grupo(i));
 		var subGrupo = (Project.Variables.Materiais.subgrupo(i));
@@ -26,6 +26,7 @@ function cadastraMateriais(){
 		var unidadeMedida = (Project.Variables.Materiais.unidade_estoque(i));
 		var unidadeConsumo = (Project.Variables.Materiais.unidade_estoque(i));
 		var area = (Project.Variables.Materiais.area(i));
+    var origem = (Project.Variables.Materiais.origem(i));
 		var classificacaoFiscal = (Project.Variables.Materiais.classificacao_fiscal(i));
 
 		if (Project.Variables.Materiais.descricao(i) == "SOLADO" ||
@@ -39,13 +40,14 @@ function cadastraMateriais(){
     Principal.insereDropDownValue(materiais.CODIGO_SUB_GRUPO, subGrupo);
     Principal.insereDropDownValue(materiais.DESCRICAO, descricao);
     materiais.CODIGO_COR.Keys(cor + "[Enter]");
+    materiais.UNIDADES_VOLUME.Keys(" "+unidadeVolume + "[Tab]");
     materiais.gbCusto.CUSTO_UNIT.Keys(custoUnit + "[Tab]");
     materiais.gbCusto.ALQ_ICMS.Keys(aliqICMS + "[Tab]");
     materiais.gbCusto.ALQ_IPI.Keys(aliqIPI + "[Tab]");
-    materiais.gbunidadesItemEstoque.UNIDADE_MEDIDA.Keys(unidadeMedida + "[Enter]");
+    Principal.insereDropDownValue(materiais.gbunidadesItemEstoque.UNIDADE_MEDIDA, unidadeMedida);
     materiais.gbunidadesItemEstoque.UNIDADE_CONSUMO.Keys(unidadeConsumo + "[Enter]");
     materiais.gbunidadesItemEstoque.AREA_CONSUMO.Keys(area + "[Enter]");
-    materiais.UNIDADES_VOLUME.Keys(unidadeVolume + "[Enter]");
+    Principal.insereDropDownValue(materiais.ORIGEM_MERCADORIA, origem);
     Principal.insereDropDownValue(materiais.CLF_FISCAL, classificacaoFiscal);
     materiais.pnlOpcoesMarcar.COMPOE_CUSTO.ClickButton(cbChecked);
     
@@ -62,7 +64,7 @@ function cadastraMateriais(){
     inserirProdutoFinanceiro(i)
     confirmaProdutoNf()
     Principal.fechaTela(); 
-    Principal.fechaTela();        
+    Principal.fechaTela();      
 	}
 }
 
