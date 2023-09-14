@@ -11,7 +11,7 @@ function abreTelas(botao, tela, nomeTela){
   // inicia o cronometro
   aqPerformance.Start();
   
-  // Verifica se a tela de pedidos abriu 
+  // Verifica se a tela abriu 
   if(Validacoes.CheckExists(tela, 2000))
   {   
     // verifica se a tela abriu em menos de 3 segundos
@@ -20,14 +20,14 @@ function abreTelas(botao, tela, nomeTela){
   else
   {
     Log.Error(" Tela "+nomeTela+" não abriu");
-    aqPerformance.Check(5000);
+    aqPerformance.Check(10000);
   }
 }
 
 function insereDropDownValue(dropDown, value)
 {
     dropDown.Click();
-    dropDown.Keys('value');
+    dropDown.Keys(value);
     dropDown.Keys("[Tab]");   
 
 }

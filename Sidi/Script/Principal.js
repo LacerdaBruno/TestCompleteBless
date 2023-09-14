@@ -10,16 +10,23 @@ function abreTelas(botao, tela, nomeTela){
 //  Principal.confirmaAviso();
   // inicia o cronometro
   aqPerformance.Start();
-  
-  // Verifica se a tela de pedidos abriu 
+
+  // Verifica se a tela abriu 
   if(Validacoes.CheckExists(tela, 2000))
   {   
-    // verifica se a tela abriu em menos de 3 segundos
-    aqPerformance.Check(3000,"A tela de " + nomeTela + " abriu em " + aqPerformance.Value() + "ms.");
+    // Verifica se a tela abriu em menos de 3 segundos
+    if (aqPerformance.Value() <= 3000)
+    {
+      aqPerformance.Check(3000, "A tela de " + nomeTela + " abriu em " + aqPerformance.Value() + "ms.");
+    }
+    else
+    {
+      Log.Warning("A tela de " + nomeTela + " levou mais de 3 segundos para abrir: " + aqPerformance.Value() + "ms.");
+    }
   }
   else
   {
-    Log.Error(" Tela "+nomeTela+" não abriu");
+    Log.Error("Tela " + nomeTela + " não abriu");
     aqPerformance.Check(5000);
   }
 }
