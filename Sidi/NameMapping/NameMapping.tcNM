@@ -7372,6 +7372,18 @@
 																							</Property>
 																						</Properties>
 																					</Child>
+																					<Child Name="btnPagamentos" Key="{DCC42213-F61E-49F7-8457-A014A7C0D40C}" ParallelWalk="True">
+																						<Image FileName="-136789015" Left="20" Top="454" Right="120" Bottom="479" />
+																						<TypeInfo Item0="{F0640855-35C8-4BAE-82AE-DD5B774EE982}" />
+																						<Properties>
+																							<Property Name="ClassName">
+																								<Value PropertyType="0" Value="TBitBtn" Type="5" />
+																							</Property>
+																							<Property Name="ObjectIdentifier">
+																								<Value PropertyType="0" Value="btnPagamentos" Type="5" />
+																							</Property>
+																						</Properties>
+																					</Child>
 																				</Children>
 																			</Child>
 																		</Children>
@@ -9366,6 +9378,7 @@
 									<Child Name="PanelPagamentoDocumentos" Owner="{3A014C73-3C80-4153-802B-B5D7FE408990}">
 										<Child Name="NUMERO_DOC" Owner="{F04B730F-8552-46DC-A7B7-F56DC41D39B9}" />
 										<Child Name="btnImprimirParcelas" Owner="{20044B0F-BB16-4AFD-841B-BE0794B5395A}" />
+										<Child Name="btnPagamentos" Owner="{DCC42213-F61E-49F7-8457-A014A7C0D40C}" />
 									</Child>
 								</Child>
 							</Child>

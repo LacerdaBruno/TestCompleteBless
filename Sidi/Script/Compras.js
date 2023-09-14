@@ -6,7 +6,7 @@ var Materiais = require("Materiais");
 
 function cadastraCompra() {
   var dadosBasicos = Aliases.SIDI.frmPrincipal.MDIClient.frmCompra.PageControlCompras.tsDadosBasicosCompra.PanelDadosBasicosCompra;
-  var contDados = 0; 
+  var contDados = 4; 
   
   while (contDados <= Project.Variables.ContDados) { 
   var fornecedor = Project.Variables.DadosPessoasServicos.nome(contDados);
@@ -85,7 +85,12 @@ function fazEntrega(){
 	Panel3.btnMarcarTodos.ClickButton();
 	Panel3.btnOk.ClickButton();
 
-	confirma();
+}
+
+function gerarDuplicatas(){
+  Aliases.SIDI.frmPrincipal.MDIClient.frmCompra.PageControlCompras.tsCompraEntrega.gbPagamentos.PanelPagamentoDocumentos.btnPagamentos.Click();
+  
+  confirma();
   
 	abreAbaDadosBasicos();
 	let entrege = Aliases.SIDI.frmPrincipal.MDIClient.frmCompra.PageControlCompras.tsDadosBasicosCompra.PanelDadosBasicosCompra.ENTREGUE.ItemIndex;     
@@ -95,10 +100,6 @@ function fazEntrega(){
 	} else {
 		Log.Warning("Situação da compra incorreta!!", '', 400, null, Sys.Desktop)
 	}
-}
-
-function gerarDuplicatas(){
-  Aliases.SIDI.frmPrincipal.MDIClient.frmCompra.PageControlCompras.tsCompraEntrega.gbPagamentos.PanelPagamentoDocumentos.btnImprimirParcelas.Click();
  	Principal.fechaTela(); 
 }
 
