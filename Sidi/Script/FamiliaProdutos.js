@@ -18,6 +18,7 @@ function insereFamiliaProdutos()
 
 function abreTela()
 {
+  Principal.alteraAba("Cadastros");
   Principal.abreTelas(Aliases.SIDI.frmPrincipal.btnFamiliaProdutos, 
   Aliases.SIDI.frmPrincipal.MDIClient.frmFamiliaProdutos,"Cores");
 }

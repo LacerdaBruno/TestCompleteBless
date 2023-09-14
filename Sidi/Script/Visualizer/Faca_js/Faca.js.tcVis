@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <Root signature="{42D2222C-ACA2-405F-8E67-05D5C42EB839}" version="2">
 	<data key="{391265AB-D1AC-4A3B-95B1-49F1A77CCDFA}">
-		<item typeId="{87B03792-E854-4F5D-9F33-165F1F874209}" version="2" lineNo="80" kind="0" dateTime="45124.7267476852" objectName="Aliases.SIDI.frmPrincipal.MDIClient.frmFaca.PageControlFaca.tsDadosFaca.gbGrade.tbGradeFaca.btnOpcoes" objectLeft="6" objectTop="274" objectRight="103" objectBottom="299" clickPointX="29" clickPointY="286" imageFileName="tcvi2380634373321.png" storageFileName="" needUpdate="False" rectColor="255" />
-		<item typeId="{87B03792-E854-4F5D-9F33-165F1F874209}" version="2" lineNo="81" kind="0" dateTime="45124.7267708333" objectName="Aliases.SIDI.frmPrincipal.MDIClient.frmFaca.PageControlFaca.tsDadosFaca.gbGrade.tbGradeFaca.btnOpcoes" objectLeft="6" objectTop="274" objectRight="103" objectBottom="299" clickPointX="-1" clickPointY="-1" imageFileName="tcvi2380898473326.png" storageFileName="" needUpdate="False" rectColor="255" />
+		<item typeId="{87B03792-E854-4F5D-9F33-165F1F874209}" version="2" lineNo="81" kind="0" dateTime="45124.7267476852" objectName="Aliases.SIDI.frmPrincipal.MDIClient.frmFaca.PageControlFaca.tsDadosFaca.gbGrade.tbGradeFaca.btnOpcoes" objectLeft="6" objectTop="274" objectRight="103" objectBottom="299" clickPointX="29" clickPointY="286" imageFileName="tcvi2380634373321.png" storageFileName="" needUpdate="False" rectColor="255" />
+		<item typeId="{87B03792-E854-4F5D-9F33-165F1F874209}" version="2" lineNo="82" kind="0" dateTime="45124.7267708333" objectName="Aliases.SIDI.frmPrincipal.MDIClient.frmFaca.PageControlFaca.tsDadosFaca.gbGrade.tbGradeFaca.btnOpcoes" objectLeft="6" objectTop="274" objectRight="103" objectBottom="299" clickPointX="-1" clickPointY="-1" imageFileName="tcvi2380898473326.png" storageFileName="" needUpdate="False" rectColor="255" />
 	</data>
 </Root>
