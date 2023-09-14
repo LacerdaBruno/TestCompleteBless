@@ -7324,6 +7324,58 @@
 																			</Child>
 																		</Children>
 																	</Child>
+																	<Child Name="gbPagamentos" Key="{91408D20-235E-4DCB-8AB1-C9842D04548C}" ParallelWalk="True">
+																		<Image FileName="-1278538345" Left="12" Top="437" Right="1370" Bottom="614" />
+																		<TypeInfo Item0="{B133E503-EF8C-43F6-AD54-7E43333645DC}" />
+																		<Properties>
+																			<Property Name="ClassName">
+																				<Value PropertyType="0" Value="TGroupBox" Type="5" />
+																			</Property>
+																			<Property Name="ObjectIdentifier">
+																				<Value PropertyType="0" Value="gbPagamentos" Type="5" />
+																			</Property>
+																		</Properties>
+																		<Children>
+																			<Child Name="PanelPagamentoDocumentos" Key="{3A014C73-3C80-4153-802B-B5D7FE408990}" ParallelWalk="True">
+																				<Image FileName="-1278538345" Left="14" Top="452" Right="1368" Bottom="521" />
+																				<TypeInfo Item0="{B133E503-EF8C-43F6-AD54-7E43333645DC}" />
+																				<Properties>
+																					<Property Name="ClassName">
+																						<Value PropertyType="0" Value="TPanel" Type="5" />
+																					</Property>
+																					<Property Name="ObjectIdentifier">
+																						<Value PropertyType="0" Value="Panel4" Type="5" />
+																					</Property>
+																				</Properties>
+																				<Children>
+																					<Child Name="NUMERO_DOC" Key="{F04B730F-8552-46DC-A7B7-F56DC41D39B9}" ParallelWalk="True">
+																						<Image FileName="-1278538345" Left="778" Top="452" Right="878" Bottom="473" />
+																						<TypeInfo Item0="{2EE004DC-6673-4998-AC96-88B3EBD87BED}" />
+																						<Properties>
+																							<Property Name="ClassName">
+																								<Value PropertyType="0" Value="TwwDBEdit" Type="5" />
+																							</Property>
+																							<Property Name="ObjectIdentifier">
+																								<Value PropertyType="0" Value="NUMERO_DOC" Type="5" />
+																							</Property>
+																						</Properties>
+																					</Child>
+																					<Child Name="btnImprimirParcelas" Key="{20044B0F-BB16-4AFD-841B-BE0794B5395A}" ParallelWalk="True">
+																						<Image FileName="-1278538345" Left="20" Top="483" Right="120" Bottom="508" />
+																						<TypeInfo Item0="{F0640855-35C8-4BAE-82AE-DD5B774EE982}" />
+																						<Properties>
+																							<Property Name="ClassName">
+																								<Value PropertyType="0" Value="TBitBtn" Type="5" />
+																							</Property>
+																							<Property Name="ObjectIdentifier">
+																								<Value PropertyType="0" Value="btnImprimirParcelas" Type="5" />
+																							</Property>
+																						</Properties>
+																					</Child>
+																				</Children>
+																			</Child>
+																		</Children>
+																	</Child>
 																</Children>
 															</Child>
 														</Children>
@@ -9308,6 +9360,12 @@
 										<Child Name="Panel6" Owner="{4D06EBEA-188D-4301-8017-08A4984DD69B}">
 											<Child Name="btnEntrega" Owner="{211764A2-F017-4F5B-B672-4A150EE14790}" />
 										</Child>
+									</Child>
+								</Child>
+								<Child Name="gbPagamentos" Owner="{91408D20-235E-4DCB-8AB1-C9842D04548C}">
+									<Child Name="PanelPagamentoDocumentos" Owner="{3A014C73-3C80-4153-802B-B5D7FE408990}">
+										<Child Name="NUMERO_DOC" Owner="{F04B730F-8552-46DC-A7B7-F56DC41D39B9}" />
+										<Child Name="btnImprimirParcelas" Owner="{20044B0F-BB16-4AFD-841B-BE0794B5395A}" />
 									</Child>
 								</Child>
 							</Child>

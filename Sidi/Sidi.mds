@@ -30,81 +30,96 @@
 			<testItem name="Sidi" key="{2AC8EFB5-24EB-49CD-9DCA-2E4C9EADC735}" group="True" enabled="True" testMoniker="" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
 				<testParameters />
 				<children>
-					<testItem name="TestarValidarLogin" key="{A14EFE13-D334-4C88-AF86-08A5975C6EB7}" group="False" enabled="False" testMoniker="{523414B8-5D61-4CC0-B8C6-C59FDB2428C0}validaLogin" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+					<testItem name="Outros" key="{1E84D8C3-0D8A-4B4C-9DDF-223715E12E1E}" group="True" enabled="True" testMoniker="" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
 						<testParameters />
-						<children />
+						<children>
+							<testItem name="TestarValidarLogin" key="{A14EFE13-D334-4C88-AF86-08A5975C6EB7}" group="False" enabled="True" testMoniker="{523414B8-5D61-4CC0-B8C6-C59FDB2428C0}validaLogin" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+						</children>
 					</testItem>
-					<testItem name="TestarFabrica" key="{7B6C2CCE-1B9E-4BD3-A57B-4950D5D23EE3}" group="False" enabled="False" testMoniker="{2F96AC4A-5B10-4C32-8949-9624A21970FD}testaFabrica" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+					<testItem name="Cadastro" key="{ACE03BA3-D91F-4EDF-B3E8-E79A192F3BB3}" group="True" enabled="True" testMoniker="" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
 						<testParameters />
-						<children />
+						<children>
+							<testItem name="TestarFabrica" key="{7B6C2CCE-1B9E-4BD3-A57B-4950D5D23EE3}" group="False" enabled="True" testMoniker="{2F96AC4A-5B10-4C32-8949-9624A21970FD}testaFabrica" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="TestarSetores" key="{1007CA41-3275-4545-A7F1-32943A89EA0A}" group="False" enabled="True" testMoniker="{4DCC9650-EEA8-4156-BC1F-426B4D6FBEE0}insereSetores" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="TestarUnidadeMedida" key="{8EA86414-0960-47EB-8F96-D8C26E105625}" group="False" enabled="True" testMoniker="{BDA6040D-16F9-46F3-8EFD-22A56B1B9C58}cadastraUnidadeMedidas" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="TestarClassificacaoFiscal" key="{220C80CB-8334-4B93-87E7-0EB1BFB79FDE}" group="False" enabled="True" testMoniker="{F7894DC7-A3EE-41B0-AAA2-8F975B2DB120}cadastrarClassificacaoFiscal" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="TestarCores" key="{F63777FA-A18D-4577-A0F3-A1DA0927C703}" group="False" enabled="True" testMoniker="{E28A1FBB-8D67-4AA4-B88E-222074689048}insereCor" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="TestarCondicaoPagamento" key="{CC996236-5EC0-4FD5-8F54-AA3DCABF0D68}" group="False" enabled="True" testMoniker="{908ED210-70E9-474E-BA9D-38D7EFCFF99E}TesteCadastros" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="TestarGrupoCliente" key="{04AA7604-C65B-417D-8205-D7540B17F70C}" group="False" enabled="True" testMoniker="{9283B5C6-779A-4B46-A1FD-7CA28356857C}cadastraGrupoCliente" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="TestarPessoaServico" key="{93A0E9BA-DEFF-4CBC-9682-24F4F6084239}" group="False" enabled="True" testMoniker="{C2603EA5-B76E-453F-8E21-BB91B567EC64}cadastraCliente" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="TestarContaBancaria" key="{31CB1F4D-0812-4880-AF33-99ABE204763D}" group="False" enabled="True" testMoniker="{AD584C7A-E86D-4665-A253-D997B3FE1B20}cadastraConta" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="TestarFormas" key="{2D094E61-6383-44B1-9DAF-D8293001FE0E}" group="False" enabled="True" testMoniker="{DEBC4ECD-BA95-4CD9-AF1A-0B8F8345D803}cadastraForma" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="TestarGrade" key="{86222F47-781F-495E-A5DE-DA42C9A8DF6D}" group="False" enabled="True" testMoniker="{B18A80EE-B741-4B28-A216-6FB02DA00592}cadastraGrade" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="TestarUnidadePorVolume" key="{6F40B518-5E51-4616-9690-0F49940F511E}" group="False" enabled="True" testMoniker="{497CC71D-BB31-416C-B0B3-DEFBDF580E2B}cadastraUnidadePorVolume" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="TestarPrestadorServico" key="{8508BB29-0EAF-4F95-94D1-763E60981FF9}" group="False" enabled="True" testMoniker="{57D03BCB-AA40-471A-9630-EBEBBBB41B72}cadastraBanca" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="TestarCadastrarFaca" key="{2B164504-6F56-49B9-85BB-237887F1D440}" group="False" enabled="True" testMoniker="{391265AB-D1AC-4A3B-95B1-49F1A77CCDFA}cadastraFaca" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="TestarCadastrarFamilia" key="{4846AFD1-E0B3-4F45-939F-BE80DE58A9C0}" group="False" enabled="True" testMoniker="{82EE076C-5125-4F46-AE50-B7114D00E5C6}insereFamiliaProdutos" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+						</children>
 					</testItem>
-					<testItem name="TestarSetores" key="{1007CA41-3275-4545-A7F1-32943A89EA0A}" group="False" enabled="False" testMoniker="{4DCC9650-EEA8-4156-BC1F-426B4D6FBEE0}insereSetores" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+					<testItem name="Suprimentos" key="{2B35F785-5274-40FE-8035-4367A1991709}" group="True" enabled="True" testMoniker="" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
 						<testParameters />
-						<children />
-					</testItem>
-					<testItem name="TestarUnidadeMedida" key="{8EA86414-0960-47EB-8F96-D8C26E105625}" group="False" enabled="False" testMoniker="{BDA6040D-16F9-46F3-8EFD-22A56B1B9C58}cadastraUnidadeMedidas" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
-						<testParameters />
-						<children />
-					</testItem>
-					<testItem name="TestarClassificacaoFiscal" key="{220C80CB-8334-4B93-87E7-0EB1BFB79FDE}" group="False" enabled="False" testMoniker="{F7894DC7-A3EE-41B0-AAA2-8F975B2DB120}cadastrarClassificacaoFiscal" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
-						<testParameters />
-						<children />
-					</testItem>
-					<testItem name="TestarCores" key="{F63777FA-A18D-4577-A0F3-A1DA0927C703}" group="False" enabled="False" testMoniker="{E28A1FBB-8D67-4AA4-B88E-222074689048}insereCor" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
-						<testParameters />
-						<children />
-					</testItem>
-					<testItem name="TestarCondicaoPagamento" key="{CC996236-5EC0-4FD5-8F54-AA3DCABF0D68}" group="False" enabled="False" testMoniker="{908ED210-70E9-474E-BA9D-38D7EFCFF99E}TesteCadastros" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
-						<testParameters />
-						<children />
-					</testItem>
-					<testItem name="TestarGrupoCliente" key="{04AA7604-C65B-417D-8205-D7540B17F70C}" group="False" enabled="False" testMoniker="{9283B5C6-779A-4B46-A1FD-7CA28356857C}cadastraGrupoCliente" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
-						<testParameters />
-						<children />
-					</testItem>
-					<testItem name="TestarPessoaServico" key="{93A0E9BA-DEFF-4CBC-9682-24F4F6084239}" group="False" enabled="False" testMoniker="{C2603EA5-B76E-453F-8E21-BB91B567EC64}cadastraCliente" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
-						<testParameters />
-						<children />
-					</testItem>
-					<testItem name="TestarContaBancaria" key="{31CB1F4D-0812-4880-AF33-99ABE204763D}" group="False" enabled="False" testMoniker="{AD584C7A-E86D-4665-A253-D997B3FE1B20}cadastraConta" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
-						<testParameters />
-						<children />
-					</testItem>
-					<testItem name="TestarFormas" key="{2D094E61-6383-44B1-9DAF-D8293001FE0E}" group="False" enabled="False" testMoniker="{DEBC4ECD-BA95-4CD9-AF1A-0B8F8345D803}cadastraForma" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
-						<testParameters />
-						<children />
-					</testItem>
-					<testItem name="TestarGrade" key="{86222F47-781F-495E-A5DE-DA42C9A8DF6D}" group="False" enabled="False" testMoniker="{B18A80EE-B741-4B28-A216-6FB02DA00592}cadastraGrade" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
-						<testParameters />
-						<children />
-					</testItem>
-					<testItem name="TestarUnidadePorVolume" key="{6F40B518-5E51-4616-9690-0F49940F511E}" group="False" enabled="False" testMoniker="{497CC71D-BB31-416C-B0B3-DEFBDF580E2B}cadastraUnidadePorVolume" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
-						<testParameters />
-						<children />
-					</testItem>
-					<testItem name="TestarPrestadorServico" key="{8508BB29-0EAF-4F95-94D1-763E60981FF9}" group="False" enabled="False" testMoniker="{57D03BCB-AA40-471A-9630-EBEBBBB41B72}cadastraBanca" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
-						<testParameters />
-						<children />
-					</testItem>
-					<testItem name="TestarGrupoMateriais" key="{128C74F5-FE5C-496D-A3D7-BD69D61F5E86}" group="False" enabled="False" testMoniker="{2752B4CC-2B3B-4883-8793-BAB5660F1B60}cadastrarGrupoDeMateriais" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
-						<testParameters />
-						<children />
-					</testItem>
-					<testItem name="TestarSubgrupoMateriais" key="{EE418551-D0A8-4452-9C91-62ABD56DA515}" group="False" enabled="False" testMoniker="{7E5FFE56-4F5F-4114-BF39-5ADA8932DA80}cadastrarSubgrupoDeMateriais" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
-						<testParameters />
-						<children />
-					</testItem>
-					<testItem name="TestarCadastrarMateriais" key="{79837EE4-0C43-4A5F-81B8-9A5C8A004396}" group="False" enabled="False" testMoniker="{F4A05E74-AB1D-41FC-A18C-203C94CD7427}cadastraMateriais" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
-						<testParameters />
-						<children />
-					</testItem>
-					<testItem name="TestarCadastrarFaca" key="{2B164504-6F56-49B9-85BB-237887F1D440}" group="False" enabled="False" testMoniker="{391265AB-D1AC-4A3B-95B1-49F1A77CCDFA}cadastraFaca" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
-						<testParameters />
-						<children />
-					</testItem>
-					<testItem name="TestarCadastrarFamilia" key="{4846AFD1-E0B3-4F45-939F-BE80DE58A9C0}" group="False" enabled="True" testMoniker="{82EE076C-5125-4F46-AE50-B7114D00E5C6}insereFamiliaProdutos" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
-						<testParameters />
-						<children />
+						<children>
+							<testItem name="TestarGrupoMateriais" key="{128C74F5-FE5C-496D-A3D7-BD69D61F5E86}" group="False" enabled="True" testMoniker="{2752B4CC-2B3B-4883-8793-BAB5660F1B60}cadastrarGrupoDeMateriais" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="TestarSubgrupoMateriais" key="{EE418551-D0A8-4452-9C91-62ABD56DA515}" group="False" enabled="True" testMoniker="{7E5FFE56-4F5F-4114-BF39-5ADA8932DA80}cadastrarSubgrupoDeMateriais" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="TestarCadastrarMateriais" key="{79837EE4-0C43-4A5F-81B8-9A5C8A004396}" group="False" enabled="True" testMoniker="{F4A05E74-AB1D-41FC-A18C-203C94CD7427}cadastraMateriais" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+						</children>
 					</testItem>
 				</children>
 			</testItem>
@@ -126,12 +141,13 @@
 					<DefValue FloatValue="36" />
 				</Variable>
 				<Variable Name="DadosPessoasServicos" Type="{4AD4881B-176C-4C96-8288-FBBB7E3D1FE3}" Local="False">
-					<DefValue RowCount="4" ColumnCount="9">
+					<DefValue RowCount="5" ColumnCount="9">
 						<Columns ColumnName0="CGC" ColumnName1="inscricaoEstadual" ColumnName2="nome" ColumnName3="rua" ColumnName4="numero" ColumnName5="email1" ColumnName6="UF" ColumnName7="nome_banca" ColumnName8="cidade" />
 						<Row No="0" Cell0="32003400310039003300390039003200300030003000310038003900" Cell1="370035003700300031003400360034003700310031003600" Cell2="4500440045005200200052004F0043004800410020002600200052004F0043004800410020004C00540044004100" Cell3="5200200041004E0054004F004E0049004F0020004400450020004F004C00490056004500490052004100200050004F005200540045005300" Cell4="340030003900" Cell5="6200720075006E006F00400062006C00650073007300730069007300740065006D00610073002E0063006F006D002E0062007200" Cell6="53005000" Cell8="530041004C0054004F002000440045002000500049005200410050004F0052004100" />
 						<Row No="1" Cell0="38003000390035003700350033003300300030003000310030003300" Cell1="320035003100370031003400350035003100" Cell2="460041004200490041004E0041002000430041004C004300410044004F00530020004C00540044004100" Cell3="5200200043004F004E00450047004F00200041004E004900420041004C0020004D00410052004900410020004400490020004600520041004E00430049004100" Cell4="390031003500" Cell5="6200720075006E006F00400062006C00650073007300730069007300740065006D00610073002E0063006F006D002E0062007200" Cell6="53004300" Cell8="530041004C0054004F002000560045004C004F0053004F00" />
 						<Row No="2" Cell0="33003900320032003600330030003400300030003000310030003700" Cell1="3000300033003800350033003000300035003000300034003500" Cell2="4C00550049005A0020004600450052004E0041004E0044004F0020004C004F0050004500530020004E0041005300430049004D0045004E0054004F00200030003100350032003200350034003600360038003500" Cell3="520020004F00550052004F002000460049004E004F00" Cell4="39003000" Cell5="6200720075006E006F00400062006C00650073007300730069007300740065006D00610073002E0063006F006D002E0062007200" Cell6="4D004700" Cell7="4C00550049005A0020004600450052004E0041004E0044004F00" Cell8="4E004F00560041002000530045005200520041004E004100" />
 						<Row No="3" Cell0="32003900390037003100340038003100300030003000310036003400" Cell1="3000300033003100350033003700390036003000300035003900" Cell2="4D0055004C005400200049004E00440055005300540052004900410020004500200043004F004D0045005200430049004F00200044004500200043004F004E0046004500430043004F0045005300200045004900520045004C004900" Cell3="5200200043004500410052004100" Cell4="370032003700" Cell5="6200720075006E006F00400062006C00650073007300730069007300740065006D00610073002E0063006F006D002E0062007200" Cell6="4D004700" Cell7="4D0055004C005400200049004E00440020004500200043004F004D00" Cell8="4E004F00560041002000530045005200520041004E004100" />
+						<Row No="4" Cell0="3100320033003400" Cell1="4900530045004E0054004F00" Cell2="49004300410052004F0020004A004F005300C90020004400450020004E004F0042005200450047004100200046005200450049005400410053002000530049004C0056004100200044004F004E0049005A0045005400" Cell3="520020003300" Cell4="3500350031003900300031003000" Cell5="74006500730074006500400062006C006500730073002E0063006F006D00" Cell6="4D004700" Cell8="44004900560049004E00D30050004F004C0049005300" />
 					</DefValue>
 				</Variable>
 				<Variable Name="ContDados" Type="{88422C25-DDF4-4EA1-B7CC-95779A023F5D}" Local="False">
@@ -298,7 +314,7 @@
 				</Variable>
 				<Variable Name="CodigoMateriais" Type="{8ECBD24A-6DA1-4476-A473-EE3A52F06A83}" Local="False">
 					<DefValue Kind="{002E9C22-1E7F-4CEC-AFD0-5C1ACCB5BA1F}">
-						<ConnectionInfo ConnectionString="Provider=MSDASQL.1;Persist Security Info=False;Extended Properties=&quot;DSN=SIDI;Driver=Firebird/InterBase(r) driver;Dbname=C:\bless\Bin\Data\SIDI\DADOS\DADOS\DADOS.FDB;CHARSET=NONE;UID=SYSDBA;Client=C:\Users\suporte\Desktop\Firebird\Firebird_3_0\fbclient.dll;&quot;" Login="SYSDBA" Psw="A0B0153E2BCA20676AF1096E0BC206B76FD97E5B0503C954F449" Query="SELECT CODIGO_USUARIO FROM ITEM_ESTOQUE" />
+						<ConnectionInfo ConnectionString="Provider=MSDASQL.1;Persist Security Info=False;Extended Properties=&quot;DSN=SIDI;Driver=Firebird/InterBase(r) driver;Dbname=C:\bless\Bin\Data\SIDI\DADOS\DADOS\DADOS.FDB;CHARSET=NONE;UID=SYSDBA;Client=C:\Program Files\Firebird\Firebird_3_0\fbclient.dll&quot;" Login="SYSDBA" Psw="A0B0153E2BCA20676AF1096E0BC206B76FD97E5B0503C954F449" Query="SELECT CODIGO_USUARIO FROM ITEM_ESTOQUE" />
 					</DefValue>
 				</Variable>
 			</Items>

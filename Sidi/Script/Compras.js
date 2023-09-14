@@ -4,19 +4,34 @@ var Principal = require("Principal");
 var Visualizacoes = require("Visualizacoes");
 var Materiais = require("Materiais");
 
-  var fornecedor = Project.Variables.DadosPessoasServicos.nome(0);
-  var transportadora = Project.Variables.DadosPessoasServicos.nome(1);
-
-
 function cadastraCompra() {
-	abreTela();
+  var dadosBasicos = Aliases.SIDI.frmPrincipal.MDIClient.frmCompra.PageControlCompras.tsDadosBasicosCompra.PanelDadosBasicosCompra;
+  var contDados = 0; 
+  
+  while (contDados <= Project.Variables.ContDados) { 
+  var fornecedor = Project.Variables.DadosPessoasServicos.nome(contDados);
+  var transportadora = Project.Variables.DadosPessoasServicos.nome(contDados);
+  
+	abreTela(); 
 	Principal.clicaNovo();
-	insereFornecedor(fornecedor);
-  insereTransportadora(transportadora);
-	insereTipoCobranca("CARTEIRA");
+	Principal.insereDropDownValue(dadosBasicos.FORNECEDOR, fornecedor);
+  Principal.insereDropDownValue(dadosBasicos.CONDICAO, "BOA CONDICAO");
+	Principal.insereDropDownValue(dadosBasicos.TRANSP,transportadora);
+	dadosBasicos.TIPO_COBRANCA.Keys("BANCARIA" + "[Enter]");
 	insereMaterial();
 	confirma();
   fazEntrega();
+  gerarDuplicatas();
+  
+  contDados++;
+  }
+}
+
+function abreTela() {
+	Principal.alteraAba("Suprimentos");
+	Principal.abreTelas(Aliases.SIDI.frmPrincipal.btnCompras,
+		Aliases.SIDI.frmPrincipal.MDIClient.frmCompra,
+		"Compras");
 }
 
 function insereMaterial(material) {
@@ -40,10 +55,9 @@ function insereMaterial(material) {
   gdItemCompra.Keys("[Down]"); 
   
   indice++;
-  Project.Variables.CodigoMateriais.Next();
-  
-  }
-  
+  Project.Variables.CodigoMateriais.Next();  
+  }  
+  Project.Variables.CodigoMateriais.Reset();
 }
 
 function insereGrade() {
@@ -81,28 +95,11 @@ function fazEntrega(){
 	} else {
 		Log.Warning("Situação da compra incorreta!!", '', 400, null, Sys.Desktop)
 	}
-
-	Principal.fechaTela();
 }
 
-
-function abreTela() {
-	Principal.alteraAba("Suprimentos");
-	Principal.abreTelas(Aliases.SIDI.frmPrincipal.btnCompras,
-		Aliases.SIDI.frmPrincipal.MDIClient.frmCompra,
-		"Compras");
-}
-
-function insereFornecedor(fornec) {
-	Aliases.SIDI.frmPrincipal.MDIClient.frmCompra.PageControlCompras.tsDadosBasicosCompra.PanelDadosBasicosCompra.FORNECEDOR.Keys(fornec + "[Enter]");
-}
-
-function insereTransportadora(transp) {
-	Aliases.SIDI.frmPrincipal.MDIClient.frmCompra.PageControlCompras.tsDadosBasicosCompra.PanelDadosBasicosCompra.TRANSP.Keys(transp);
-}
-
-function insereTipoCobranca(cobranca) {
-	Aliases.SIDI.frmPrincipal.MDIClient.frmCompra.PageControlCompras.tsDadosBasicosCompra.PanelDadosBasicosCompra.TIPO_COBRANCA.Keys(cobranca + "[Enter]");
+function gerarDuplicatas(){
+  Aliases.SIDI.frmPrincipal.MDIClient.frmCompra.PageControlCompras.tsCompraEntrega.gbPagamentos.PanelPagamentoDocumentos.btnImprimirParcelas.Click();
+ 	Principal.fechaTela(); 
 }
 
 function confirma() {

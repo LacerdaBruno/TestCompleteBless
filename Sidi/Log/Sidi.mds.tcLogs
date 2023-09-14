@@ -20,17 +20,7 @@
 <Nodes version="1">
 	<Node name="root">
 		<Node name="folders"/>
-		<Node name="logs">
-			<Node name="log idx=0000">
-				<Prp name="caption" type="S" value=""/>
-				<Prp name="datetime" type="D" value="45183.3753158796"/>
-				<Prp name="description" type="S" value=""/>
-				<Prp name="key" type="S" value="{4922E9B2-AFDF-4292-A986-C41D3B4A4E7B}"/>
-				<Prp name="nameofroot" type="S" value="Script Test Log [PessoaServico\cadastraCliente]"/>
-				<Prp name="relpath" type="S" value="14_09_2023_09_00_27_292\Description.tcLog"/>
-				<Prp name="status" type="I" value="2"/>
-			</Node>
-		</Node>
+		<Node name="logs"/>
 		<Prp name="signature" type="S" value="{681DCC69-A39F-4C4D-8E7D-B2D9362FAF4F}"/>
 		<Prp name="version" type="S" value="11.0"/>
 	</Node>

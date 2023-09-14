@@ -43,6 +43,7 @@ function cadastraFaca()
 
 function abreTela()
 {
+  Principal.alteraAba("Cadastros");
   Principal.abreTelas(Aliases.SIDI.frmPrincipal.btnFacas,
   Aliases.SIDI.frmPrincipal.MDIClient.frmFaca,
   'Faca');
