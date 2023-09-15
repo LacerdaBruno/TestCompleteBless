@@ -25,6 +25,7 @@ function cadastraCompra() {
   
   contDados++;
   }
+  gerarCopiaCompra()
 }
 
 function abreTela() {
@@ -85,7 +86,12 @@ function fazEntrega(){
 	Panel3.btnMarcarTodos.ClickButton();
 	Panel3.btnOk.ClickButton();
 
-	confirma();
+}
+
+function gerarDuplicatas(){
+  Aliases.SIDI.frmPrincipal.MDIClient.frmCompra.PageControlCompras.tsCompraEntrega.gbPagamentos.PanelPagamentoDocumentos.btnPagamentos.Click();
+  
+  confirma();
   
 	abreAbaDadosBasicos();
 	let entrege = Aliases.SIDI.frmPrincipal.MDIClient.frmCompra.PageControlCompras.tsDadosBasicosCompra.PanelDadosBasicosCompra.ENTREGUE.ItemIndex;     
@@ -95,10 +101,6 @@ function fazEntrega(){
 	} else {
 		Log.Warning("Situação da compra incorreta!!", '', 400, null, Sys.Desktop)
 	}
-}
-
-function gerarDuplicatas(){
-  Aliases.SIDI.frmPrincipal.MDIClient.frmCompra.PageControlCompras.tsCompraEntrega.gbPagamentos.PanelPagamentoDocumentos.btnImprimirParcelas.Click();
  	Principal.fechaTela(); 
 }
 
@@ -108,5 +110,27 @@ function confirma() {
 
 function abreAbaDadosBasicos() {
 	Aliases.SIDI.frmPrincipal.MDIClient.frmCompra.PageControlCompras.ClickTab("&Dados Básicos");
+}
+
+function gerarCopiaCompra(){
+  var mapFrmCompra = Aliases.SIDI.frmPrincipal.MDIClient.frmCompra;
+  abreTela(); 
+  mapFrmCompra.PageControlCompras.tsPesquisa.PanelPesquisa.PanelClassificar.btnPesquisar.Click();
+  mapFrmCompra.PageControlCompras.tsPesquisa.PanelPesquisa.DblClick();
+  Principal.clicaEditar();
+  mapFrmCompra.btnCopiar.Click();
+  mapFrmCompra.PageControlCompras.tsCopia.Panel7.btnAplicarCriterios.Click();
+  //A unica forma que encontrei de fazer foi simulando um click na tela dentro do grid e depois
+  //simulando o click na tecla de Espaço do teclado para marcar o campo Copiar da grid.
+  mapFrmCompra.PageControlCompras.tsCopia.dbgResultado.Click();
+  mapFrmCompra.PageControlCompras.tsCopia.dbgResultado.Keys(" ");
+  mapFrmCompra.PageControlCompras.tsCopia.dbgResultado.Keys("[Down]");
+  mapFrmCompra.PageControlCompras.tsCopia.dbgResultado.Keys(" ");
+  mapFrmCompra.PageControlCompras.tsCopia.dbgResultado.Keys("[Down]");
+  mapFrmCompra.PageControlCompras.tsCopia.dbgResultado.Keys(" ");
+  
+  mapFrmCompra.PanelBotoesCompra.PanelBotoes.btnConfirma.Click();
+  
+  Principal.fechaTela();
 }
 
