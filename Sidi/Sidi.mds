@@ -119,7 +119,7 @@
 								<testParameters />
 								<children />
 							</testItem>
-							<testItem name="TestarCadastrarCompra" key="{A46DD231-D602-412C-8B59-B1A57A9DF8AE}" group="False" enabled="True" testMoniker="{9EC22FD1-01B8-461F-AD0A-218092A3C5E7}cadastraCompra" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+							<testItem name="TestarCadastrarCompra" key="{A46DD231-D602-412C-8B59-B1A57A9DF8AE}" group="False" enabled="True" testMoniker="{9EC22FD1-01B8-461F-AD0A-218092A3C5E7}testarCompra" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
 								<testParameters />
 								<children />
 							</testItem>

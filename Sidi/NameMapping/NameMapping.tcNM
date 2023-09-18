@@ -7239,6 +7239,68 @@
 																						<Value PropertyType="0" Value="Panel8" Type="5" />
 																					</Property>
 																				</Properties>
+																				<Children>
+																					<Child Name="GERAR_MOVTO_FISCAL" Key="{BE312598-266F-48C1-A1D6-183337234748}" ParallelWalk="True">
+																						<Properties>
+																							<Property Name="ClassName">
+																								<Value PropertyType="0" Value="TDBCheckBox" Type="5" />
+																							</Property>
+																							<Property Name="ObjectIdentifier">
+																								<Value PropertyType="0" Value="GERAR_MOVTO_FISCAL" Type="5" />
+																							</Property>
+																						</Properties>
+																					</Child>
+																					<Child Name="AMOSTRA" Key="{B9DADB90-AE1A-4704-8740-B9719D411045}" ParallelWalk="True">
+																						<Properties>
+																							<Property Name="ClassName">
+																								<Value PropertyType="0" Value="TwwCheckBox" Type="5" />
+																							</Property>
+																							<Property Name="ObjectIdentifier">
+																								<Value PropertyType="0" Value="AMOSTRA" Type="5" />
+																							</Property>
+																						</Properties>
+																					</Child>
+																					<Child Name="BLOQUEADO" Key="{8F607D31-FDE2-4FC8-98CA-B49F83F29FC0}" ParallelWalk="True">
+																						<Properties>
+																							<Property Name="ClassName">
+																								<Value PropertyType="0" Value="TDBCheckBox" Type="5" />
+																							</Property>
+																							<Property Name="ObjectIdentifier">
+																								<Value PropertyType="0" Value="BLOQUEADO" Type="5" />
+																							</Property>
+																						</Properties>
+																					</Child>
+																					<Child Name="COMPRA_FATURADA" Key="{352FC794-900C-4E6F-B349-BA798997CC10}" ParallelWalk="True">
+																						<Properties>
+																							<Property Name="ClassName">
+																								<Value PropertyType="0" Value="TDBCheckBox" Type="5" />
+																							</Property>
+																							<Property Name="ObjectIdentifier">
+																								<Value PropertyType="0" Value="COMPRA_FATURADA" Type="5" />
+																							</Property>
+																						</Properties>
+																					</Child>
+																					<Child Name="CONFERIDA" Key="{FD3F4A26-FF56-44EF-8977-19D1AC41C45A}" ParallelWalk="True">
+																						<Properties>
+																							<Property Name="ClassName">
+																								<Value PropertyType="0" Value="TDBCheckBox" Type="5" />
+																							</Property>
+																							<Property Name="ObjectIdentifier">
+																								<Value PropertyType="0" Value="CONFERIDA" Type="5" />
+																							</Property>
+																						</Properties>
+																					</Child>
+																					<Child Name="COMPRA_GERADA" Key="{82E2E9F3-5FA0-405B-BCD9-9D2AD3DC1370}" ParallelWalk="True">
+																						<Properties>
+																							<Property Name="ClassName">
+																								<Value PropertyType="0" Value="TDBEdit" Type="5" />
+																							</Property>
+																							<Property Name="ObjectIdentifier">
+																								<Value PropertyType="0" Value="COMPRA_GERADA" Type="5" />
+																							</Property>
+																						</Properties>
+																					</Child>
+																				</Children>
 																			</Child>
 																		</Children>
 																	</Child>
@@ -9660,7 +9722,14 @@
 									<Child Name="DATA_PREVISTA_FATURAMENTO" Owner="{C85E623D-430B-4B49-A8A7-1C0495CC2392}" />
 									<Child Name="COLECAO" Owner="{18CBEEA0-E2EC-474D-8E20-ACB326D6C344}" />
 									<Child Name="DATA_CADASTRO" Owner="{84020CA9-3C97-4984-A6A0-48B31DA9BB07}" />
-									<Child Name="Panel8" Owner="{D92C0B06-9FD8-459E-AD5D-A7D7256C1085}" />
+									<Child Name="Panel8" Owner="{D92C0B06-9FD8-459E-AD5D-A7D7256C1085}">
+										<Child Name="GERAR_MOVTO_FISCAL" Owner="{BE312598-266F-48C1-A1D6-183337234748}" />
+										<Child Name="AMOSTRA" Owner="{B9DADB90-AE1A-4704-8740-B9719D411045}" />
+										<Child Name="BLOQUEADO" Owner="{8F607D31-FDE2-4FC8-98CA-B49F83F29FC0}" />
+										<Child Name="COMPRA_FATURADA" Owner="{352FC794-900C-4E6F-B349-BA798997CC10}" />
+										<Child Name="CONFERIDA" Owner="{FD3F4A26-FF56-44EF-8977-19D1AC41C45A}" />
+										<Child Name="COMPRA_GERADA" Owner="{82E2E9F3-5FA0-405B-BCD9-9D2AD3DC1370}" />
+									</Child>
 								</Child>
 							</Child>
 							<Child Name="tsCompraEntrega" Owner="{55E69ABB-5B6A-4342-96B0-7BE7EE2C2737}">

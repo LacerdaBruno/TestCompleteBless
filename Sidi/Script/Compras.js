@@ -4,33 +4,46 @@ var Principal = require("Principal");
 var Visualizacoes = require("Visualizacoes");
 var Materiais = require("Materiais");
 
-function cadastraCompra() {
-  var dadosBasicos = Aliases.SIDI.frmPrincipal.MDIClient.frmCompra.PageControlCompras.tsDadosBasicosCompra.PanelDadosBasicosCompra;
-  var contDados = 0; 
-  
+function testarCompra(){
+
+  var contDados = 0;   
   while (contDados <= Project.Variables.ContDados) { 
   var fornecedor = Project.Variables.DadosPessoasServicos.nome(contDados);
-  var transportadora = Project.Variables.DadosPessoasServicos.nome(contDados);
-  var mensagem = Aliases.SIDI.TMessageForm2;
+  var transportadora = Project.Variables.DadosPessoasServicos.nome(contDados);  
   
+  cadastraCompra(fornecedor, transportadora, contDados); 
+  Principal.fechaTela();
+  
+  contDados++;
+  }
+  gerarCopiaCompra();
+  Principal.fechaTela();
+}
+
+function cadastraCompra(fornecedor, transportadora, contDados) { 
+  var dadosBasicos = Aliases.SIDI.frmPrincipal.MDIClient.frmCompra.PageControlCompras.tsDadosBasicosCompra.PanelDadosBasicosCompra;
+  var mensagem = Aliases.SIDI.TMessageForm2;
 	abreTela(); 
 	Principal.clicaNovo();
 	Principal.insereDropDownValue(dadosBasicos.FORNECEDOR, fornecedor);
+  //Caso o fornecedor esteja com alguma restrição o sistema vai exibir uma mensagem e o teste vai clicar em OK.
   if (Aliases.SIDI.TMessageForm2.Exists){
     mensagem.OK.Click();
   }
   Principal.insereDropDownValue(dadosBasicos.CONDICAO, "BOA CONDICAO");
 	Principal.insereDropDownValue(dadosBasicos.TRANSP,transportadora);
 	dadosBasicos.TIPO_COBRANCA.Keys("BANCARIA" + "[Enter]");
+  dadosBasicos.Panel8.GERAR_MOVTO_FISCAL.Click();
+  //Isenrir uma compra como prestação de serviço
+  if (contDados > 3){
+    Principal.insereDropDownValue(dadosBasicos.PREST_SERVICO, "SIM" + "[Enter]");
+  }
 	insereMaterial();
 	confirma();
   fazEntrega();
   Principal.clicaEditar();
   gerarDuplicatas();
   
-  contDados++;
-  }
-  gerarCopiaCompra()
 }
 
 function abreTela() {
@@ -91,9 +104,7 @@ function fazEntrega(material){
 	PageControlCompras.tsCompraEntrega.gbEntregas.Panel5.Panel6.btnEntrega.ClickButton();
 	Panel3.btnMarcarTodos.ClickButton();
 	Panel3.btnOk.ClickButton(); 
-
 	confirma();
-
 }
 
 function gerarDuplicatas(){
@@ -108,7 +119,7 @@ function gerarDuplicatas(){
 		Log.Warning("Situação da compra incorreta!!", '', 400, null, Sys.Desktop)
 	}
   confirma();
- 	Principal.fechaTela(); 
+
 }
 
 function confirma() {
@@ -134,10 +145,8 @@ function gerarCopiaCompra(){
   mapFrmCompra.PageControlCompras.tsCopia.dbgResultado.Keys("[Down]");
   mapFrmCompra.PageControlCompras.tsCopia.dbgResultado.Keys(" ");
   mapFrmCompra.PageControlCompras.tsCopia.dbgResultado.Keys("[Down]");
-  mapFrmCompra.PageControlCompras.tsCopia.dbgResultado.Keys(" ");
-  
+  mapFrmCompra.PageControlCompras.tsCopia.dbgResultado.Keys(" ");  
   mapFrmCompra.PanelBotoesCompra.PanelBotoes.btnConfirma.Click();
   
-  Principal.fechaTela();
 }
 
