@@ -20,7 +20,62 @@
 <Nodes version="1">
 	<Node name="root">
 		<Node name="folders"/>
-		<Node name="logs"/>
+		<Node name="logs">
+			<Node name="log idx=0000">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="45187.5354334722"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{775D37C8-62F4-42F1-846D-AA3FD1618462}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [Compras\gerarDuplicatas]"/>
+				<Prp name="relpath" type="S" value="18_09_2023_12_51_01_452\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0001">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="45187.5373134491"/>
+				<Prp name="description" type="S" value="Script Test Log [Compras\gerarDuplicatas]"/>
+				<Prp name="key" type="S" value="{66557A8A-62B5-4BD9-9077-399B4BA9CCAE}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [Compras\gerarDuplicatas]"/>
+				<Prp name="relpath" type="S" value="18_09_2023_12_53_43_882\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0002">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="45187.5376020255"/>
+				<Prp name="description" type="S" value="Script Test Log [Compras\cadastraCompra]"/>
+				<Prp name="key" type="S" value="{D2256BF7-9D4A-490E-A38A-B18E7CC26004}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [Compras\cadastraCompra]"/>
+				<Prp name="relpath" type="S" value="18_09_2023_12_54_08_815\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0003">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="45187.5398052894"/>
+				<Prp name="description" type="S" value="Script Test Log [Compras\cadastraCompra]"/>
+				<Prp name="key" type="S" value="{52A2CB7B-360B-4B7E-8865-3E23E5DDBCE1}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [Compras\cadastraCompra]"/>
+				<Prp name="relpath" type="S" value="18_09_2023_12_57_19_177\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0004">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="45187.5426901736"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{5D9F2A82-52F3-47A8-9358-9F34735726F8}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [Compras\cadastraCompra]"/>
+				<Prp name="relpath" type="S" value="18_09_2023_13_01_28_431\Description.tcLog"/>
+				<Prp name="status" type="I" value="1"/>
+			</Node>
+			<Node name="log idx=0005">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="45187.5483034259"/>
+				<Prp name="description" type="S" value="Script Test Log [Compras\cadastraCompra]"/>
+				<Prp name="key" type="S" value="{5168F852-64E4-4B22-96D9-A4B3359E448E}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [Compras\cadastraCompra]"/>
+				<Prp name="relpath" type="S" value="18_09_2023_13_09_33_416\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+		</Node>
 		<Prp name="signature" type="S" value="{681DCC69-A39F-4C4D-8E7D-B2D9362FAF4F}"/>
 		<Prp name="version" type="S" value="11.0"/>
 	</Node>

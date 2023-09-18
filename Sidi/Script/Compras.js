@@ -11,16 +11,21 @@ function cadastraCompra() {
   while (contDados <= Project.Variables.ContDados) { 
   var fornecedor = Project.Variables.DadosPessoasServicos.nome(contDados);
   var transportadora = Project.Variables.DadosPessoasServicos.nome(contDados);
+  var mensagem = Aliases.SIDI.TMessageForm2;
   
 	abreTela(); 
 	Principal.clicaNovo();
 	Principal.insereDropDownValue(dadosBasicos.FORNECEDOR, fornecedor);
+  if (Aliases.SIDI.TMessageForm2.Exists){
+    mensagem.OK.Click();
+  }
   Principal.insereDropDownValue(dadosBasicos.CONDICAO, "BOA CONDICAO");
 	Principal.insereDropDownValue(dadosBasicos.TRANSP,transportadora);
 	dadosBasicos.TIPO_COBRANCA.Keys("BANCARIA" + "[Enter]");
 	insereMaterial();
 	confirma();
   fazEntrega();
+  Principal.clicaEditar();
   gerarDuplicatas();
   
   contDados++;
@@ -35,7 +40,7 @@ function abreTela() {
 		"Compras");
 }
 
-function insereMaterial(material) {
+function insereMaterial() {
   var indice = 0;
   var gdItemCompra = Aliases.SIDI.frmPrincipal.MDIClient.frmCompra.PageControlCompras.tsDadosBasicosCompra.GrideItemCompra.gdItemCompra;
   
@@ -76,23 +81,24 @@ function insereQuantidade(quantidade) {
 
 }
 
-function fazEntrega(){
-
+function fazEntrega(material){
+  // Pega o estoque anterior
+	let estoqueAterior = Materiais.getEstoque(material);
 	var PageControlCompras = Aliases.SIDI.frmPrincipal.MDIClient.frmCompra.PageControlCompras;
   var Panel3 = Aliases.SIDI.frmPesquisaMaterialEntrega.Panel3;
   
   PageControlCompras.ClickTab("Entregas, Pagamentos e Observações");
 	PageControlCompras.tsCompraEntrega.gbEntregas.Panel5.Panel6.btnEntrega.ClickButton();
 	Panel3.btnMarcarTodos.ClickButton();
-	Panel3.btnOk.ClickButton();
+	Panel3.btnOk.ClickButton(); 
+
+	confirma();
 
 }
 
 function gerarDuplicatas(){
   Aliases.SIDI.frmPrincipal.MDIClient.frmCompra.PageControlCompras.tsCompraEntrega.gbPagamentos.PanelPagamentoDocumentos.btnPagamentos.Click();
-  
-  confirma();
-  
+    
 	abreAbaDadosBasicos();
 	let entrege = Aliases.SIDI.frmPrincipal.MDIClient.frmCompra.PageControlCompras.tsDadosBasicosCompra.PanelDadosBasicosCompra.ENTREGUE.ItemIndex;     
 
@@ -101,6 +107,7 @@ function gerarDuplicatas(){
 	} else {
 		Log.Warning("Situação da compra incorreta!!", '', 400, null, Sys.Desktop)
 	}
+  confirma();
  	Principal.fechaTela(); 
 }
 

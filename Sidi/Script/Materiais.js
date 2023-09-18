@@ -123,3 +123,21 @@ function confirma() {
 function confirmaProdutoNf(){
    Principal.confirma(Aliases.SIDI.frmPrincipal.MDIClient.frmProdutoFiscal.Panel1.PanelBotoes.btnConfirma, "produto NF");
 }
+
+function pesquisaPorCodigo(codigo) {
+	Aliases.SIDI.frmPrincipal.MDIClient.frmItemEstoqueManut.PageControl1.tsPesquisa.PanelPesquisa.PanelProcurar.edValor.SetText(codigo);
+	Aliases.SIDI.frmPrincipal.MDIClient.frmItemEstoqueManut.PageControl1.tsPesquisa.PanelPesquisa.PanelClassificar.btnPesquisar.ClickButton();
+	Aliases.SIDI.frmPrincipal.MDIClient.frmItemEstoqueManut.PageControl1.ClickTab("&Dados Básicos");
+}
+
+function getEstoque(produto) {
+	Materiais.abreTela();
+	Materiais.pesquisaPorCodigo(produto);
+	estoque = aqConvert.StrToInt(Aliases.SIDI.frmPrincipal.MDIClient.frmItemEstoqueManut.PageControl1.tsDados.GBquantidades.QTE_DISPONIVEL.wText);
+	Principal.fechaTela();
+	return estoque;
+}
+
+module.exports.getEstoque = getEstoque;
+module.exports.pesquisaPorCodigo = pesquisaPorCodigo;
+
