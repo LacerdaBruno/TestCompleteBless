@@ -35,19 +35,19 @@ function cadastraMateriais(){
 			marcaGerarMovtPelaGrade();
 		}
  
-    /*Principal.insereDropDownValue(materiais.FK_TIPO_ITEM_ESTOQUE, tipo);
+    Principal.insereDropDownValue(materiais.FK_TIPO_ITEM_ESTOQUE, tipo);
     Principal.insereDropDownValue(materiais.CODIGO_GRUPO, grupo);
     Principal.insereDropDownValue(materiais.CODIGO_SUB_GRUPO, subGrupo);
     Principal.insereDropDownValue(materiais.DESCRICAO, descricao);
-    materiais.CODIGO_COR.Keys(cor + "[Enter]");*/
+    materiais.CODIGO_COR.Keys(cor + "[Enter]");
     materiais.UNIDADES_VOLUME.Keys(" "+unidadeVolume + "[Tab]");
-    /*materiais.gbCusto.CUSTO_UNIT.Keys(custoUnit + "[Tab]");
+    materiais.gbCusto.CUSTO_UNIT.Keys(custoUnit + "[Tab]");
     materiais.gbCusto.ALQ_ICMS.Keys(aliqICMS + "[Tab]");
     materiais.gbCusto.ALQ_IPI.Keys(aliqIPI + "[Tab]");
     Principal.insereDropDownValue(materiais.gbunidadesItemEstoque.UNIDADE_MEDIDA, unidadeMedida);
     materiais.gbunidadesItemEstoque.UNIDADE_CONSUMO.Keys(unidadeConsumo + "[Enter]");
-    materiais.gbunidadesItemEstoque.AREA_CONSUMO.Keys(area + "[Enter]");*/
-    /*Principal.insereDropDownValue(materiais.ORIGEM_MERCADORIA, origem);
+    materiais.gbunidadesItemEstoque.AREA_CONSUMO.Keys(area + "[Enter]");
+    Principal.insereDropDownValue(materiais.ORIGEM_MERCADORIA, origem);
     Principal.insereDropDownValue(materiais.CLF_FISCAL, classificacaoFiscal);
     materiais.pnlOpcoesMarcar.COMPOE_CUSTO.ClickButton(cbChecked);
     
@@ -64,7 +64,7 @@ function cadastraMateriais(){
     inserirProdutoFinanceiro(i)
     confirmaProdutoNf()
     Principal.fechaTela(); 
-    Principal.fechaTela(); */       
+    Principal.fechaTela();      
 	}
 }
 
@@ -123,3 +123,21 @@ function confirma() {
 function confirmaProdutoNf(){
    Principal.confirma(Aliases.SIDI.frmPrincipal.MDIClient.frmProdutoFiscal.Panel1.PanelBotoes.btnConfirma, "produto NF");
 }
+
+function pesquisaPorCodigo(codigo) {
+	Aliases.SIDI.wndTfrmPrincipal.MDIClient.frmItemEstoqueManut.PageControl1.tsPesquisa.PanelPesquisa.PanelProcurar.edValor.SetText(codigo);
+	Aliases.SIDI.wndTfrmPrincipal.MDIClient.frmItemEstoqueManut.PageControl1.tsPesquisa.PanelPesquisa.PanelClassificar.btnPesquisar.ClickButton();
+	Aliases.SIDI.wndTfrmPrincipal.MDIClient.frmItemEstoqueManut.PageControl1.ClickTab("&Dados Básicos");
+}
+
+function getEstoque(produto) {
+	Materiais.abreTela();
+	Materiais.pesquisaPorCodigo(produto);
+	estoque = aqConvert.StrToInt(Aliases.SIDI.wndTfrmPrincipal.MDIClient.frmItemEstoqueManut.PageControl1.tsDados.GBquantidades.QTE_DISPONIVEL.wText);
+	Principal.fechaTela();
+	return estoque;
+}
+
+module.exports.getEstoque = getEstoque;
+module.exports.pesquisaPorCodigo = pesquisaPorCodigo;
+
