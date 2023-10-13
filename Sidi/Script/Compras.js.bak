@@ -17,6 +17,7 @@ function testarCompra(){
   contDados++;
   }
   gerarCopiaCompra();
+  Principal.fechaTela();
 }
 
 function cadastraCompra(fornecedor, transportadora, contDados) { 

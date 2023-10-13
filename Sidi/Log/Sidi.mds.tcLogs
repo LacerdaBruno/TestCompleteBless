@@ -20,7 +20,107 @@
 <Nodes version="1">
 	<Node name="root">
 		<Node name="folders"/>
-		<Node name="logs"/>
+		<Node name="logs">
+			<Node name="log idx=0000">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="45187.6251924884"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{9C7CC337-9702-4D64-A014-2C529112348B}"/>
+				<Prp name="nameofroot" type="S" value="Sidi"/>
+				<Prp name="relpath" type="S" value="18_09_2023_15_00_16_631\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0001">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="45187.6392291204"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{816F1ADE-D2D4-4A9D-A2F0-CF6C648E6D68}"/>
+				<Prp name="nameofroot" type="S" value="Sidi"/>
+				<Prp name="relpath" type="S" value="18_09_2023_15_20_29_396\Description.tcLog"/>
+				<Prp name="status" type="I" value="1"/>
+			</Node>
+			<Node name="log idx=0002">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="45187.7068698148"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{27252553-3EBC-499A-938B-75179DDB890A}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [MovimentavaoEstoqueMateriais\testaMovimentacoes]"/>
+				<Prp name="relpath" type="S" value="18_09_2023_16_57_53_552\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0003">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="45187.7083754745"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{7E348242-A087-48D0-B17D-B48B74F73C66}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [MovimentavaoEstoqueMateriais\testaMovimentacoes]"/>
+				<Prp name="relpath" type="S" value="18_09_2023_17_00_03_641\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0004">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="45187.7127745833"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{85514228-440C-4481-BD25-659DCCD4F0EE}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [MovimentavaoEstoqueMateriais\testaMovimentacoes]"/>
+				<Prp name="relpath" type="S" value="18_09_2023_17_06_23_724\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0005">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="45188.6786480324"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{C7E6B55C-EB9D-4359-81F2-79D336563705}"/>
+				<Prp name="nameofroot" type="S" value="Sidi"/>
+				<Prp name="relpath" type="S" value="19_09_2023_16_17_15_190\Description.tcLog"/>
+				<Prp name="status" type="I" value="1"/>
+			</Node>
+			<Node name="log idx=0006">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="45188.6893822222"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{2FDAB9A3-3FEE-4DD6-8BD7-5B8882AC4E1F}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [MovimentavaoEstoqueMateriais\testaMovimentacoes]"/>
+				<Prp name="relpath" type="S" value="19_09_2023_16_32_42_624\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0007">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="45188.6901167593"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{E57641CB-1447-4C38-8D3F-95F3CF761360}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [MovimentavaoEstoqueMateriais\testaMovimentacoes]"/>
+				<Prp name="relpath" type="S" value="19_09_2023_16_33_46_88\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0008">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="45188.6926673611"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{6BDB8291-B0B6-41C9-A725-B1DE4447DD23}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [MovimentavaoEstoqueMateriais\testaMovimentacoes]"/>
+				<Prp name="relpath" type="S" value="19_09_2023_16_37_26_460\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0009">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="45188.7008181134"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{ACC8CBDB-819A-4A8E-8D66-AB00CC77B1B4}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [MovimentavaoEstoqueMateriais\testaMovimentacoes]"/>
+				<Prp name="relpath" type="S" value="19_09_2023_16_49_10_685\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0010">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="45212.4714545602"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{DAFA4262-D4DD-4A1E-B046-58CC1738F732}"/>
+				<Prp name="nameofroot" type="S" value="Sidi"/>
+				<Prp name="relpath" type="S" value="13_10_2023_11_18_53_674\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+		</Node>
 		<Prp name="signature" type="S" value="{681DCC69-A39F-4C4D-8E7D-B2D9362FAF4F}"/>
 		<Prp name="version" type="S" value="11.0"/>
 	</Node>

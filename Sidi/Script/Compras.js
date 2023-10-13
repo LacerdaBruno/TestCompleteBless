@@ -5,13 +5,15 @@ var Visualizacoes = require("Visualizacoes");
 var Materiais = require("Materiais");
 
 function testarCompra(){
-
+  
+  var dadosBasicos = Aliases.SIDI.frmPrincipal.MDIClient.frmCompra.PageControlCompras.tsDadosBasicosCompra.PanelDadosBasicosCompra;
+  var mensagem = Aliases.SIDI.TMessageForm2;
   var contDados = 0;   
   while (contDados <= Project.Variables.ContDados) { 
   var fornecedor = Project.Variables.DadosPessoasServicos.nome(contDados);
   var transportadora = Project.Variables.DadosPessoasServicos.nome(contDados);  
   
-  cadastraCompra(fornecedor, transportadora, contDados); 
+  cadastraCompra(dadosBasicos, mensagem, fornecedor, transportadora, contDados); 
   Principal.fechaTela();
   
   contDados++;
@@ -20,9 +22,8 @@ function testarCompra(){
   Principal.fechaTela();
 }
 
-function cadastraCompra(fornecedor, transportadora, contDados) { 
-  var dadosBasicos = Aliases.SIDI.frmPrincipal.MDIClient.frmCompra.PageControlCompras.tsDadosBasicosCompra.PanelDadosBasicosCompra;
-  var mensagem = Aliases.SIDI.TMessageForm2;
+function cadastraCompra(dadosBasicos, mensagem, fornecedor, transportadora, contDados) { 
+
 	abreTela(); 
 	Principal.clicaNovo();
 	Principal.insereDropDownValue(dadosBasicos.FORNECEDOR, fornecedor);

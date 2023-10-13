@@ -137,7 +137,8 @@ function getEstoque(produto) {
 	Principal.fechaTela();
 	return estoque;
 }
-
-module.exports.getEstoque = getEstoque;
+module.exports.abreTela = abreTela;
 module.exports.pesquisaPorCodigo = pesquisaPorCodigo;
+module.exports.getEstoque = getEstoque;
+module.exports.cadastraMateriais = cadastraMateriais;
 

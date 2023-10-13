@@ -125,15 +125,15 @@ function confirmaProdutoNf(){
 }
 
 function pesquisaPorCodigo(codigo) {
-	Aliases.SIDI.wndTfrmPrincipal.MDIClient.frmItemEstoqueManut.PageControl1.tsPesquisa.PanelPesquisa.PanelProcurar.edValor.SetText(codigo);
-	Aliases.SIDI.wndTfrmPrincipal.MDIClient.frmItemEstoqueManut.PageControl1.tsPesquisa.PanelPesquisa.PanelClassificar.btnPesquisar.ClickButton();
-	Aliases.SIDI.wndTfrmPrincipal.MDIClient.frmItemEstoqueManut.PageControl1.ClickTab("&Dados Básicos");
+	Aliases.SIDI.frmPrincipal.MDIClient.frmItemEstoqueManut.PageControl1.tsPesquisa.PanelPesquisa.PanelProcurar.edValor.SetText(codigo);
+	Aliases.SIDI.frmPrincipal.MDIClient.frmItemEstoqueManut.PageControl1.tsPesquisa.PanelPesquisa.PanelClassificar.btnPesquisar.ClickButton();
+	Aliases.SIDI.frmPrincipal.MDIClient.frmItemEstoqueManut.PageControl1.ClickTab("&Dados Básicos");
 }
 
 function getEstoque(produto) {
 	Materiais.abreTela();
 	Materiais.pesquisaPorCodigo(produto);
-	estoque = aqConvert.StrToInt(Aliases.SIDI.wndTfrmPrincipal.MDIClient.frmItemEstoqueManut.PageControl1.tsDados.GBquantidades.QTE_DISPONIVEL.wText);
+	estoque = aqConvert.StrToInt(Aliases.SIDI.frmPrincipal.MDIClient.frmItemEstoqueManut.PageControl1.tsDados.GBquantidades.QTE_DISPONIVEL.wText);
 	Principal.fechaTela();
 	return estoque;
 }

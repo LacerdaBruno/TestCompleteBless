@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="summary">
+			<Node name="executed">
+				<Prp name="total (sum)" type="I" value="16"/>
+			</Node>
+			<Node name="total">
+				<Prp name="total (sum)" type="I" value="20"/>
+			</Node>
+			<Node name="warning">
+				<Prp name="total (sum)" type="I" value="0"/>
+			</Node>
+			<Node name="failed">
+				<Prp name="total (sum)" type="I" value="1"/>
+			</Node>
+			<Node name="passed">
+				<Prp name="total (sum)" type="I" value="15"/>
+			</Node>
+			<Prp name="log status" type="I" value="2"/>
+			<Prp name="user" type="S" value="suporte"/>
+			<Prp name="stop date" type="D" value="45187.6302688079"/>
+			<Prp name="test" type="S" value="Sidi"/>
+			<Prp name="start date" type="D" value="45187.6252041319"/>
+			<Prp name="host" type="S" value="PROG05"/>
+		</Node>
+		<Node name="log data">
+			<Node name="row1">
+				<Node name="messages"/>
+				<Prp name="index" type="I" value="1"/>
+				<Prp name="name" type="S" value="Cadastro"/>
+				<Prp name="details" type="S" value="{002ADCDF-722C-4C0E-B10B-7498882C9B87}"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="end time" type="D" value="45187.6302688079"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="start time" type="D" value="45187.6253330324"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="row0">
+				<Node name="messages"/>
+				<Prp name="index" type="I" value="0"/>
+				<Prp name="name" type="S" value="Outros"/>
+				<Prp name="details" type="S" value="{952A8C92-6B4E-42CD-AD70-DE82F2F41063}"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="end time" type="D" value="45187.6253330324"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="start time" type="D" value="45187.6252041319"/>
+				<Prp name="status" type="I" value="0"/>
+			</Node>
+		</Node>
+		<Prp name="hassummary" type="B" value="-1"/>
+	</Node>
+</Nodes>
