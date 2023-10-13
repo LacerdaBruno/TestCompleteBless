@@ -424,7 +424,7 @@
 		<setting name="Recording_TestedAppsOnly" type="1" value="False" />
 		<setting name="{FB1CAF99-7FA6-447C-B963-D862CA8BFF89}" type="2" value="3000" />
 		<setting name="{3B76535B-58AD-456C-837E-091A5C480F6C}" type="1" value="True" />
-		<setting name="{3AE91BBD-F37D-40E6-B49D-D2F1EF68E285}" type="1" value="True" />
+		<setting name="{3AE91BBD-F37D-40E6-B49D-D2F1EF68E285}" type="1" value="False" />
 		<setting name="{90FD1116-F071-44C8-AB72-F1916C2B3A1B}" type="1" value="False" />
 		<setting name="JavaFXOpenApp_ExposedCustomNodes" type="6" rowIndex="-1" colIndex="2">
 			<columns>
