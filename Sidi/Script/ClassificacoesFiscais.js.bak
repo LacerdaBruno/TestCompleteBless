@@ -29,7 +29,7 @@ function inserirClassificacaoFiscal(){
   gridClassificacaoFiscal.Keys(Project.Variables.ClassificacaoFiscal.Codigo(i)); 
   gridClassificacaoFiscal.Keys("[Right]");
   gridClassificacaoFiscal.Keys(Project.Variables.ClassificacaoFiscal.Descricao(i));
-  gridUnidadeMedida.Keys("[Down]");
+  gridClassificacaoFiscal.Keys("[Down]");
   
   }
 }

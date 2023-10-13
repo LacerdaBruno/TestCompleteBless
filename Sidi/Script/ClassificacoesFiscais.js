@@ -10,7 +10,8 @@ function cadastrarClassificacaoFiscal(){
   confirma();
   Principal.clicaEditar();
   confirma();
-  Principal.fechaTela(); 
+  Principal.fechaTela();
+  
 }
 
 function abreTela() {
