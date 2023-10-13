@@ -33,7 +33,8 @@ function insereDropDownValue(dropDown, value)
 }
 
 function clicaNovo()
-{
+{ 
+  Delay(5000);
   Aliases.SIDI.frmPrincipal.sbNovo.Click();
 }
 

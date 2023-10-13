@@ -6,7 +6,7 @@ function testaFabrica()
  Principal.clicaEditar();
  confirma();
  Principal.clicaEditar();
- //cancela();
+ cancela();
  Principal.fechaTela();
 }
 
