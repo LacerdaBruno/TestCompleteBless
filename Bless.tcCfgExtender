@@ -25,13 +25,9 @@
 				<Node name="{8ee82d46-af98-4371-988c-39e367c94873}"/>
 			</Node>
 			<Node name="{24b6fa0b-0143-461a-9758-aeb9e9a9428b}">
-				<Prp name="activity" type="S" value="{4F39E97C-6F12-4184-87A5-7081F53361DD}"/>
+				<Prp name="activity" type="S" value="{AF427052-55EC-4B73-86EC-91EBAD1C1E73}"/>
 			</Node>
-			<Node name="{2c786620-2489-4cbb-9c1e-1a94437a9245}">
-				<Node name="{aaa0867d-244d-42a8-be88-04cd1e4871f2}">
-					<Prp name="hash" type="I" value="1"/>
-				</Node>
-			</Node>
+			<Node name="{2c786620-2489-4cbb-9c1e-1a94437a9245}"/>
 			<Node name="{415b5aa1-c6ac-4d4d-9a53-063a521a45ab}">
 				<Node name="workspace">
 					<Node name="0">
@@ -75,9 +71,13 @@
 					</Node>
 					<Node name="3">
 						<Node name="editor">
+							<Node name="{18d21374-749a-4b12-9591-aeba7c5332a9}"/>
 							<Node name="{531ace08-e68e-400b-9eb9-e24763725fd8}">
 								<Prp name="key" type="S" value="{2C7026E6-A1CA-4F66-B783-494963D26F30}"/>
 							</Node>
+							<Node name="{9185a4c3-0780-497d-b02d-ad3af4e9cf98}"/>
+							<Node name="{98f67204-5328-4e0e-99f5-6d1b1e6d4971}"/>
+							<Node name="{d26a70c5-94dd-4095-922f-2de8d44eae70}"/>
 							<Prp name="editor" type="S" value="{2EC5AFD2-4D3B-409F-8C46-D6E15CC4DF5A}"/>
 							<Prp name="focused" type="S" value="{2C7026E6-A1CA-4F66-B783-494963D26F30}"/>
 						</Node>
@@ -85,6 +85,8 @@
 					</Node>
 					<Node name="4">
 						<Node name="editor">
+							<Node name="{8c45957c-f4b3-4dd7-9212-49cbd350f69f}"/>
+							<Node name="{d0151f8e-51fe-49da-8534-008b9f1b7c45}"/>
 							<Prp name="editor" type="S" value="{DD5FC45F-3B27-488F-9F63-79838F073CA8}"/>
 							<Prp name="focused" type="S" value="{053CF5F1-80A1-4AC6-873E-E53C24C1E1C0}"/>
 						</Node>
@@ -1772,12 +1774,9 @@
 						<Node name="advanced">
 							<Node name="script">
 								<Node name="cadastros"/>
-								<Node name="financeiro"/>
-								<Node name="suprimentos"/>
 								<Node name="teste"/>
 							</Node>
 						</Node>
-						<Node name="keywordtests"/>
 					</Node>
 				</Node>
 				<Node name="bless logs">

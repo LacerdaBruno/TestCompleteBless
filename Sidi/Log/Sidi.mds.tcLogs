@@ -120,6 +120,15 @@
 				<Prp name="relpath" type="S" value="13_10_2023_11_18_53_674\Description.tcLog"/>
 				<Prp name="status" type="I" value="2"/>
 			</Node>
+			<Node name="log idx=0011">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="45212.5384043981"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{6F96A9F6-51AC-4968-A31B-C700BC1A922E}"/>
+				<Prp name="nameofroot" type="S" value="Sidi"/>
+				<Prp name="relpath" type="S" value="13_10_2023_12_55_18_140\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
 		</Node>
 		<Prp name="signature" type="S" value="{681DCC69-A39F-4C4D-8E7D-B2D9362FAF4F}"/>
 		<Prp name="version" type="S" value="11.0"/>

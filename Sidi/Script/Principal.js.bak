@@ -20,7 +20,7 @@ function abreTelas(botao, tela, nomeTela){
   else
   {
     Log.Error(" Tela "+nomeTela+" não abriu");
-    aqPerformance.Check(50000);
+    aqPerformance.Check(5000);
   }
 }
 
