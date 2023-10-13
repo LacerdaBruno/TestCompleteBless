@@ -37,8 +37,6 @@ function clicaNovo()
   Aliases.SIDI.frmPrincipal.sbNovo.Click();
 }
 
-
-
 module.exports.abreTelas = abreTelas;
 
 

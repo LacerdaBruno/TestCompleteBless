@@ -8143,18 +8143,6 @@
 											</Property>
 										</Properties>
 									</Child>
-									<Child Name="sbNovo" Key="{92A8A48E-03B9-407D-9683-15559B4C3867}" ParallelWalk="True">
-										<Image FileName="1438823033" Left="11" Top="100" Right="86" Bottom="124" />
-										<TypeInfo Item0="{4F434D4F-4E9C-487C-A751-086A13C5CA8D}" />
-										<Properties>
-											<Property Name="ClassName">
-												<Value PropertyType="0" Value="TSpeedButton" Type="5" />
-											</Property>
-											<Property Name="ObjectIdentifier">
-												<Value PropertyType="0" Value="sbNovo" Type="5" />
-											</Property>
-										</Properties>
-									</Child>
 									<Child Name="btnCores" Key="{07DE159E-7E93-45C7-A092-D61C06E8F282}" ParallelWalk="True">
 										<Image FileName="-250939958" Left="291" Top="67" Right="316" Bottom="89" />
 										<TypeInfo Item0="{4F434D4F-4E9C-487C-A751-086A13C5CA8D}" />
@@ -8422,6 +8410,18 @@
 											</Property>
 											<Property Name="ObjectIdentifier">
 												<Value PropertyType="0" Value="sbEditar" Type="5" />
+											</Property>
+										</Properties>
+									</Child>
+									<Child Name="sbNovo" Key="{F2560677-4A32-4E29-80FC-434989EAA041}" ParallelWalk="True">
+										<Image FileName="1884212285" Left="19" Top="108" Right="94" Bottom="132" />
+										<TypeInfo Item0="{7609E520-B2A1-487D-9396-54ACA352B214}" />
+										<Properties>
+											<Property Name="ClassName">
+												<Value PropertyType="0" Value="TSpeedButton" Type="5" />
+											</Property>
+											<Property Name="ObjectIdentifier">
+												<Value PropertyType="0" Value="sbNovo" Type="5" />
 											</Property>
 										</Properties>
 									</Child>
@@ -10198,7 +10198,6 @@
 				<Child Name="btnGrupoCliente" Owner="{49537F88-9C43-4A6E-AB73-566956F4169F}" />
 				<Child Name="btnPessoaseServicos" Owner="{3D166FE7-7DAA-4032-8964-016368573898}" />
 				<Child Name="btnBancas" Owner="{603DFBCB-F4F8-40D1-8B12-F6094053340E}" />
-				<Child Name="sbNovo" Owner="{92A8A48E-03B9-407D-9683-15559B4C3867}" />
 				<Child Name="btnCores" Owner="{07DE159E-7E93-45C7-A092-D61C06E8F282}" />
 				<Child Name="btnFormas" Owner="{F62073C6-F569-4265-BD2C-1D67229DD247}" />
 				<Child Name="btnGrades" Owner="{7770694B-9F47-4FA0-98B8-EF0824EC06DB}" />
@@ -10225,6 +10224,7 @@
 					<Child Name="PageControl1" Owner="{5FFC89FD-EF1E-4B79-AFF3-2562586812A9}" />
 				</Child>
 				<Child Name="sbEditar" Owner="{6DE4E7D4-E095-4B98-88CC-945BDD8A7741}" />
+				<Child Name="sbNovo" Owner="{F2560677-4A32-4E29-80FC-434989EAA041}" />
 			</Child>
 			<Child Name="TMessageForm3" Owner="{F8BD1CD7-AB0B-4DB2-93D3-5D7D5514F5C3}">
 				<Child Name="OK" Owner="{20CF0555-DC8A-4A01-963A-FA9CCB8AB288}" />
