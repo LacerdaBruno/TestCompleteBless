@@ -20,9 +20,8 @@ function AbreTela()
 function cadastraFabrica(nome)
 {
   AbreTela();
-
-  Principal.clicaNovo();
-  
+  Delay(5000);
+  Principal.clicaNovo();  
   // Insere o nome da fabrica
   Aliases.SIDI.frmPrincipal.MDIClient.frmFabricaManut.PageControlFabricas.tsPesquisaFabricas.PanelGridFabricas.dbGridPesquisaFabricas.Keys(nome);
   
