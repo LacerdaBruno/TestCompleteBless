@@ -435,7 +435,7 @@
 			<data />
 		</setting>
 		<setting name="{CE0B0B5B-F813-482E-BBEC-6E12A96D3B83}" type="1" value="False" />
-		<setting name="{D5773345-4407-4A8A-ACE6-0F0A9C8787C8}" type="1" value="True" />
+		<setting name="{D5773345-4407-4A8A-ACE6-0F0A9C8787C8}" type="1" value="False" />
 		<setting name="{C8F95D39-4AC0-4855-9D60-6E7E3BD87B30}" type="1" value="False" />
 		<setting name="{4FD668CC-C8C3-46B4-A220-8DDE5CD7A39F}" type="6" rowIndex="-1" colIndex="2">
 			<columns>
