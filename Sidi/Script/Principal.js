@@ -6,7 +6,6 @@ var sidi;
 function abreTelas(botao, tela, nomeTela){
   // Clica para abrir a tela de pedidos
   botao.Click();
-    Delay(10000);
 //  Principal.confirmaAviso();
 //  Principal.confirmaAviso();
   // inicia o cronometro
