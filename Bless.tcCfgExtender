@@ -25,13 +25,9 @@
 				<Node name="{8ee82d46-af98-4371-988c-39e367c94873}"/>
 			</Node>
 			<Node name="{24b6fa0b-0143-461a-9758-aeb9e9a9428b}">
-				<Prp name="activity" type="S" value="{AF427052-55EC-4B73-86EC-91EBAD1C1E73}"/>
+				<Prp name="activity" type="S" value="{E28A1FBB-8D67-4AA4-B88E-222074689048}"/>
 			</Node>
-			<Node name="{2c786620-2489-4cbb-9c1e-1a94437a9245}">
-				<Node name="{aaa0867d-244d-42a8-be88-04cd1e4871f2}">
-					<Prp name="hash" type="I" value="1"/>
-				</Node>
-			</Node>
+			<Node name="{2c786620-2489-4cbb-9c1e-1a94437a9245}"/>
 			<Node name="{415b5aa1-c6ac-4d4d-9a53-063a521a45ab}">
 				<Node name="workspace">
 					<Node name="0">
@@ -1758,7 +1754,9 @@
 				<Node name="bless">
 					<Node name="sidi">
 						<Node name="advanced">
-							<Node name="script"/>
+							<Node name="script">
+								<Node name="cadastros"/>
+							</Node>
 						</Node>
 					</Node>
 				</Node>

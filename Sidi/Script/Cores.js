@@ -32,7 +32,6 @@ function insereDescCor(cor){
     dbGrid.Keys(cor);   
     dbGrid.Keys("[Down]");
  }
-
 }
 
 function confirma()
