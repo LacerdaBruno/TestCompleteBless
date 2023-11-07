@@ -318,7 +318,7 @@
 				</Variable>
 				<Variable Name="CodigoMateriais" Type="{8ECBD24A-6DA1-4476-A473-EE3A52F06A83}" Local="False">
 					<DefValue Kind="{002E9C22-1E7F-4CEC-AFD0-5C1ACCB5BA1F}">
-						<ConnectionInfo ConnectionString="Provider=MSDASQL.1;Persist Security Info=False;Extended Properties=&quot;DSN=SIDI;Driver=Firebird/InterBase(r) driver;Dbname=C:\bless\Bin\Data\SIDI\DADOS\DADOS\DADOS.FDB;CHARSET=NONE;UID=SYSDBA;Client=C:\Program Files\Firebird\Firebird_4_0\fbclient.dll&quot;" Login="SYSDBA" Psw="A0B0153E2BCA20676AF1096E0BC206B76FD97E5B0503C954F449" Query="SELECT CODIGO_USUARIO FROM ITEM_ESTOQUE" />
+						<ConnectionInfo ConnectionString="Provider=MSDASQL.1;Persist Security Info=False;Extended Properties=&quot;DSN=SIDI;Driver=Firebird/InterBase(r) driver;Dbname=C:\bless\Bin\Data\SIDI\DADOS\DADOS.FDB;CHARSET=NONE;UID=SYSDBA;Client=C:\Program Files\Firebird\Firebird_4_0\fbclient.dll&quot;" Login="SYSDBA" Psw="A0B0153E2BCA20676AF1096E0BC206B76FD97E5B0503C954F449" Query="SELECT CODIGO_USUARIO FROM ITEM_ESTOQUE" />
 					</DefValue>
 				</Variable>
 			</Items>
