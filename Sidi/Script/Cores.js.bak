@@ -29,7 +29,8 @@ function insereDescCor(cor){
     var cor = Project.Variables.CorMateriais.cor(i); 
     dbGrid.Keys("[Home]");
     dbGrid.Keys("[Right]");
-    dbGrid.Keys(cor); 
+    dbGrid.Keys(cor);   
+    dbGrid.Keys("[Down]");
  }
 
 }
