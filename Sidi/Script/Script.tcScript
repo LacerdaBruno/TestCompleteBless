@@ -100,6 +100,12 @@
 		<child name="MovimentavaoEstoqueMateriais" key="{4F39E97C-6F12-4184-87A5-7081F53361DD}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
 			<data path="MovimentavaoEstoqueMateriais.js" />
 		</child>
+		<child name="Linha" key="{40F4D983-C0E3-4197-B805-5FD5E1184611}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="Linha.js" />
+		</child>
+		<child name="Referencias" key="{05140779-086A-4BB4-ACA6-F5F58ED6CAD6}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="Referencias.js" />
+		</child>
 	</children>
 	<folders>
 		<folder caption="Cadastros" description="A logical folder that is used to organize project items and elements." moniker="">
@@ -148,6 +154,8 @@
 		<folder caption="Producao" description="A logical folder that is used to organize project items and elements." moniker="">
 			<references>
 				<ref key="{20EA13E4-7805-45FA-B78C-9715BED7AF3B}" />
+				<ref key="{40F4D983-C0E3-4197-B805-5FD5E1184611}" />
+				<ref key="{05140779-086A-4BB4-ACA6-F5F58ED6CAD6}" />
 			</references>
 		</folder>
 		<folder caption="Financeiro" description="A logical folder that is used to organize project items and elements." moniker="">
