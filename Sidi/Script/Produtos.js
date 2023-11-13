@@ -118,7 +118,9 @@ function insereDescricao(descricao)
 
 function insereUnidadeVolume(un)
 {
+  Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsDadosModelos.ModelosCadastro.CalcUnidadesVolume.Keys(" ");  
   Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsDadosModelos.ModelosCadastro.CalcUnidadesVolume.Keys(un);
+  Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsDadosModelos.ModelosCadastro.CalcUnidadesVolume.Keys("[Enter]");  
 }
 
 function insereCusto(custo)
@@ -174,14 +176,19 @@ function abreFichaTecnica()
 
 function insereQteMaterial(qte)
 {
-    Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsVersao.PageControlCores.tsFichaMateriais.GridFichaTecnica.Fields(4).SetText(qte);
+  let grid = Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsVersao.PageControlCores.tsFichaMateriais.GridFichaTecnica;
+  grid.Keys("[Tab]");
+  grid.Keys("[Tab]");
+  grid.Keys(qte);
 }
 
 function incluirMaterial(mat)
 {
-  Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsVersao.PageControlCores.tsFichaMateriais.GridFichaTecnica.Keys("[Down]");
-  
-  Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsVersao.PageControlCores.tsFichaMateriais.GridFichaTecnica.Fields(2).SetText(mat);
+  let grid = Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsVersao.PageControlCores.tsFichaMateriais.GridFichaTecnica;
+  grid.Keys("[Down]");  
+  grid.Keys("[Tab]");
+  grid.Keys(mat);
+    
 }
 
 function getProdutoNF()
