@@ -8645,251 +8645,11 @@
 																			<Property Name="ObjectIdentifier">
 																				<Value PropertyType="0" Value="dbgPedido" Type="5" />
 																			</Property>
-																			<Property Name="Align">
-																				<Value PropertyType="0" Value="5" Type="0" />
-																			</Property>
-																			<Property Name="Anchors">
-																				<Value PropertyType="0" Value="15" Type="0" />
-																			</Property>
-																			<Property Name="BiDiMode">
-																				<Value PropertyType="0" Value="0" Type="0" />
-																			</Property>
-																			<Property Name="BorderStyle">
-																				<Value PropertyType="0" Value="1" Type="0" />
-																			</Property>
-																			<Property Name="ChildCount">
-																				<Value PropertyType="0" Value="21" Type="0" />
-																			</Property>
-																			<Property Name="Color">
-																				<Value PropertyType="0" Value="-16777211" Type="0" />
-																			</Property>
-																			<Property Name="ControlId">
-																				<Value PropertyType="0" Value="1250608" Type="0" />
-																			</Property>
-																			<Property Name="ControlInfoInDataset">
-																				<Value PropertyType="0" Value="True" Type="6" />
-																			</Property>
-																			<Property Name="Ctl3D">
-																				<Value PropertyType="0" Value="True" Type="6" />
-																			</Property>
-																			<Property Name="Cursor">
-																				<Value PropertyType="0" Value="0" Type="0" />
-																			</Property>
-																			<Property Name="DefaultDrawing">
-																				<Value PropertyType="0" Value="True" Type="6" />
-																			</Property>
-																			<Property Name="DisableThemes">
-																				<Value PropertyType="0" Value="True" Type="6" />
-																			</Property>
-																			<Property Name="DisableThemesInTitle">
-																				<Value PropertyType="0" Value="False" Type="6" />
-																			</Property>
-																			<Property Name="DragCursor">
-																				<Value PropertyType="0" Value="-12" Type="0" />
-																			</Property>
-																			<Property Name="DragMode">
-																				<Value PropertyType="0" Value="0" Type="0" />
-																			</Property>
-																			<Property Name="DragVertOffset">
-																				<Value PropertyType="0" Value="15" Type="0" />
-																			</Property>
-																			<Property Name="EditCalculated">
-																				<Value PropertyType="0" Value="False" Type="6" />
-																			</Property>
-																			<Property Name="EditControlOptions">
-																				<Value PropertyType="0" Value="10" Type="0" />
-																			</Property>
-																			<Property Name="Enabled">
-																				<Value PropertyType="0" Value="True" Type="6" />
-																			</Property>
-																			<Property Name="Exists">
-																				<Value PropertyType="0" Value="True" Type="6" />
-																			</Property>
-																			<Property Name="FixedCols">
-																				<Value PropertyType="0" Value="1" Type="0" />
-																			</Property>
-																			<Property Name="Focused">
-																				<Value PropertyType="0" Value="False" Type="6" />
-																			</Property>
-																			<Property Name="FooterCellColor">
-																				<Value PropertyType="0" Value="-16777201" Type="0" />
-																			</Property>
-																			<Property Name="FooterColor">
-																				<Value PropertyType="0" Value="-16777201" Type="0" />
-																			</Property>
-																			<Property Name="FooterHeight">
-																				<Value PropertyType="0" Value="0" Type="0" />
-																			</Property>
-																			<Property Name="FullName">
-																				<Value PropertyType="0" Value="Sys.Process(&quot;SIDI&quot;).VCLObject(&quot;frmPrincipal&quot;).Window(&quot;MDIClient&quot;, &quot;&quot;, 1).VCLObject(&quot;frmPedidoManut&quot;).VCLObject(&quot;PageControl1&quot;).VCLObject(&quot;tsitems_pedido&quot;).VCLObject(&quot;dbgPedido&quot;)" Type="5" />
-																			</Property>
-																			<Property Name="GroupFieldName">
-																				<Value PropertyType="0" Value="" Type="5" />
-																			</Property>
-																			<Property Name="Handle">
-																				<Value PropertyType="0" Value="1250608" Type="0" />
-																			</Property>
-																			<Property Name="Height">
-																				<Value PropertyType="0" Value="374" Type="0" />
-																			</Property>
-																			<Property Name="HelpContext">
-																				<Value PropertyType="0" Value="0" Type="0" />
-																			</Property>
-																			<Property Name="HelpKeyword">
-																				<Value PropertyType="0" Value="" Type="5" />
-																			</Property>
-																			<Property Name="HelpType">
-																				<Value PropertyType="0" Value="1" Type="0" />
-																			</Property>
-																			<Property Name="HideAllLines">
-																				<Value PropertyType="0" Value="False" Type="6" />
-																			</Property>
-																			<Property Name="Hint">
-																				<Value PropertyType="0" Value="Item bloqueado pelo Pré-Faturamento" Type="5" />
-																			</Property>
-																			<Property Name="Id">
-																				<Value PropertyType="0" Value="407182968" Type="0" />
-																			</Property>
-																			<Property Name="ImeMode">
-																				<Value PropertyType="0" Value="3" Type="0" />
-																			</Property>
-																			<Property Name="ImeName">
-																				<Value PropertyType="0" Value="" Type="5" />
-																			</Property>
-																			<Property Name="Index">
-																				<Value PropertyType="0" Value="1" Type="0" />
-																			</Property>
-																			<Property Name="IndicatorColor">
-																				<Value PropertyType="0" Value="0" Type="0" />
-																			</Property>
-																			<Property Name="IndicatorIconColor">
-																				<Value PropertyType="0" Value="0" Type="0" />
-																			</Property>
-																			<Property Name="InstancePtr">
-																				<Value PropertyType="0" Value="407182968" Type="0" />
-																			</Property>
-																			<Property Name="KeyOptions">
-																				<Value PropertyType="0" Value="7" Type="0" />
-																			</Property>
-																			<Property Name="Left">
-																				<Value PropertyType="0" Value="0" Type="0" />
-																			</Property>
-																			<Property Name="LineStyle">
-																				<Value PropertyType="0" Value="2" Type="0" />
-																			</Property>
-																			<Property Name="LoadAllRTF">
-																				<Value PropertyType="0" Value="False" Type="6" />
-																			</Property>
-																			<Property Name="MemoAttributes">
-																				<Value PropertyType="0" Value="3" Type="0" />
-																			</Property>
-																			<Property Name="MultiSelectOptions">
-																				<Value PropertyType="0" Value="0" Type="0" />
-																			</Property>
-																			<Property Name="Name">
-																				<Value PropertyType="0" Value="VCLObject(&quot;dbgPedido&quot;)" Type="5" />
-																			</Property>
 																			<Property Name="ObjectType">
 																				<Value PropertyType="0" Value="VCLObject" Type="5" />
 																			</Property>
-																			<Property Name="Options">
-																				<Value PropertyType="0" Value="536911101" Type="0" />
-																			</Property>
-																			<Property Name="PadColumnStyle">
-																				<Value PropertyType="0" Value="2" Type="0" />
-																			</Property>
-																			<Property Name="ParentBiDiMode">
-																				<Value PropertyType="0" Value="True" Type="6" />
-																			</Property>
-																			<Property Name="ParentColor">
-																				<Value PropertyType="0" Value="False" Type="6" />
-																			</Property>
-																			<Property Name="ParentCtl3D">
-																				<Value PropertyType="0" Value="True" Type="6" />
-																			</Property>
-																			<Property Name="ParentFont">
-																				<Value PropertyType="0" Value="False" Type="6" />
-																			</Property>
-																			<Property Name="ParentShowHint">
-																				<Value PropertyType="0" Value="True" Type="6" />
-																			</Property>
-																			<Property Name="PictureMaskFromDataSet">
-																				<Value PropertyType="0" Value="True" Type="6" />
-																			</Property>
-																			<Property Name="ReadOnly">
-																				<Value PropertyType="0" Value="False" Type="6" />
-																			</Property>
-																			<Property Name="RowHeightPercent">
-																				<Value PropertyType="0" Value="100" Type="0" />
-																			</Property>
-																			<Property Name="ScreenLeft">
-																				<Value PropertyType="0" Value="4" Type="0" />
-																			</Property>
-																			<Property Name="ScreenTop">
-																				<Value PropertyType="0" Value="189" Type="0" />
-																			</Property>
-																			<Property Name="ShowHint">
-																				<Value PropertyType="0" Value="False" Type="6" />
-																			</Property>
-																			<Property Name="ShowHorzScrollBar">
-																				<Value PropertyType="0" Value="True" Type="6" />
-																			</Property>
-																			<Property Name="ShowVertScrollBar">
-																				<Value PropertyType="0" Value="True" Type="6" />
-																			</Property>
-																			<Property Name="TabOrder">
+																			<Property Name="Index">
 																				<Value PropertyType="0" Value="1" Type="0" />
-																			</Property>
-																			<Property Name="TabStop">
-																				<Value PropertyType="0" Value="True" Type="6" />
-																			</Property>
-																			<Property Name="Tag">
-																				<Value PropertyType="0" Value="0" Type="0" />
-																			</Property>
-																			<Property Name="TitleAlignment">
-																				<Value PropertyType="0" Value="0" Type="0" />
-																			</Property>
-																			<Property Name="TitleButtons">
-																				<Value PropertyType="0" Value="False" Type="6" />
-																			</Property>
-																			<Property Name="TitleColor">
-																				<Value PropertyType="0" Value="-16777201" Type="0" />
-																			</Property>
-																			<Property Name="TitleLines">
-																				<Value PropertyType="0" Value="2" Type="0" />
-																			</Property>
-																			<Property Name="Top">
-																				<Value PropertyType="0" Value="37" Type="0" />
-																			</Property>
-																			<Property Name="Unicode">
-																				<Value PropertyType="0" Value="False" Type="6" />
-																			</Property>
-																			<Property Name="UseTFields">
-																				<Value PropertyType="0" Value="True" Type="6" />
-																			</Property>
-																			<Property Name="VCLClass">
-																				<Value PropertyType="0" Value="TwwDBGrid" Type="5" />
-																			</Property>
-																			<Property Name="Visible">
-																				<Value PropertyType="0" Value="True" Type="6" />
-																			</Property>
-																			<Property Name="VisibleOnScreen">
-																				<Value PropertyType="0" Value="True" Type="6" />
-																			</Property>
-																			<Property Name="Width">
-																				<Value PropertyType="0" Value="1358" Type="0" />
-																			</Property>
-																			<Property Name="WndCaption">
-																				<Value PropertyType="0" Value="" Type="5" />
-																			</Property>
-																			<Property Name="WndClass">
-																				<Value PropertyType="0" Value="TwwDBGrid" Type="5" />
-																			</Property>
-																			<Property Name="WndStyles">
-																				<Value PropertyType="0" Value="1412497408" Type="0" />
-																			</Property>
-																			<Property Name="WndStylesEx">
-																				<Value PropertyType="0" Value="512" Type="0" />
 																			</Property>
 																		</Properties>
 																	</Child>
@@ -9006,6 +8766,312 @@
 																							</Property>
 																							<Property Name="ObjectIdentifier">
 																								<Value PropertyType="0" Value="btnPesquisar" Type="5" />
+																							</Property>
+																						</Properties>
+																					</Child>
+																				</Children>
+																			</Child>
+																		</Children>
+																	</Child>
+																</Children>
+															</Child>
+															<Child Name="tsEntregas" Key="{467BDD6D-8B46-4BF0-9141-69A5DDBA6D71}" ParallelWalk="True">
+																<Image FileName="-2074313379" Left="12" Top="160" Right="1370" Bottom="660" />
+																<TypeInfo Item0="{B133E503-EF8C-43F6-AD54-7E43333645DC}" />
+																<Properties>
+																	<Property Name="ClassName">
+																		<Value PropertyType="0" Value="TTabSheet" Type="5" />
+																	</Property>
+																	<Property Name="ObjectIdentifier">
+																		<Value PropertyType="0" Value="tsEntregas" Type="5" />
+																	</Property>
+																</Properties>
+																<Children>
+																	<Child Name="gbEntregas" Key="{69627247-C41F-4DBA-9DF1-F6E625D3D3E9}" ParallelWalk="True">
+																		<Image FileName="70716542" Left="12" Top="197" Right="1370" Bottom="489" />
+																		<TypeInfo Item0="{B133E503-EF8C-43F6-AD54-7E43333645DC}" />
+																		<Properties>
+																			<Property Name="ClassName">
+																				<Value PropertyType="0" Value="TGroupBox" Type="5" />
+																			</Property>
+																			<Property Name="ObjectIdentifier">
+																				<Value PropertyType="0" Value="gbEntregas" Type="5" />
+																			</Property>
+																		</Properties>
+																		<Children>
+																			<Child Name="pnlEntrega" Key="{74C7AEF3-3C7E-47A9-9A6E-66B8DF8893ED}" ParallelWalk="True">
+																				<Image FileName="-2074313379" Left="14" Top="212" Right="1368" Bottom="487" />
+																				<TypeInfo Item0="{B133E503-EF8C-43F6-AD54-7E43333645DC}" />
+																				<Properties>
+																					<Property Name="ClassName">
+																						<Value PropertyType="0" Value="TPanel" Type="5" />
+																					</Property>
+																					<Property Name="ObjectIdentifier">
+																						<Value PropertyType="0" Value="pnlCentralEntregas" Type="5" />
+																					</Property>
+																				</Properties>
+																				<Children>
+																					<Child Name="pnlEntregaTitulo" Key="{487BE8C1-8806-45C5-9DFA-50C8061DEFBB}" ParallelWalk="True">
+																						<Image FileName="-2074313379" Left="15" Top="213" Right="210" Bottom="448" />
+																						<TypeInfo Item0="{B133E503-EF8C-43F6-AD54-7E43333645DC}" />
+																						<Properties>
+																							<Property Name="ClassName">
+																								<Value PropertyType="0" Value="TPanel" Type="5" />
+																							</Property>
+																							<Property Name="ObjectIdentifier">
+																								<Value PropertyType="0" Value="pnlEntrega" Type="5" />
+																							</Property>
+																						</Properties>
+																						<Children>
+																							<Child Name="pnlEntregaTitulo" Key="{0294C7ED-4A31-423E-B285-B403FC4D68AE}" ParallelWalk="True">
+																								<Image FileName="-2074313379" Left="15" Top="213" Right="210" Bottom="238" />
+																								<TypeInfo Item0="{B133E503-EF8C-43F6-AD54-7E43333645DC}" />
+																								<Properties>
+																									<Property Name="ClassName">
+																										<Value PropertyType="0" Value="TPanel" Type="5" />
+																									</Property>
+																									<Property Name="ObjectIdentifier">
+																										<Value PropertyType="0" Value="pnlEntregaTitulo" Type="5" />
+																									</Property>
+																								</Properties>
+																								<Children>
+																									<Child Name="btnEntrega" Key="{C9C3045D-2F52-4A55-A9D9-D84E7F0531E1}" ParallelWalk="True">
+																										<Image FileName="-2074313379" Left="17" Top="213" Right="208" Bottom="238" />
+																										<TypeInfo Item0="{F0640855-35C8-4BAE-82AE-DD5B774EE982}" />
+																										<Properties>
+																											<Property Name="ClassName">
+																												<Value PropertyType="0" Value="TBitBtn" Type="5" />
+																											</Property>
+																											<Property Name="ObjectIdentifier">
+																												<Value PropertyType="0" Value="btnEntrega" Type="5" />
+																											</Property>
+																										</Properties>
+																									</Child>
+																								</Children>
+																							</Child>
+																						</Children>
+																					</Child>
+																				</Children>
+																			</Child>
+																		</Children>
+																	</Child>
+																</Children>
+															</Child>
+															<Child Name="tsdados" Key="{4AA3DA13-F7AF-402C-BC3D-598DC873ED93}" ParallelWalk="True">
+																<Image FileName="-361102998" Left="12" Top="160" Right="1370" Bottom="660" />
+																<TypeInfo Item0="{B133E503-EF8C-43F6-AD54-7E43333645DC}" />
+																<Properties>
+																	<Property Name="ClassName">
+																		<Value PropertyType="0" Value="TTabSheet" Type="5" />
+																	</Property>
+																	<Property Name="ObjectIdentifier">
+																		<Value PropertyType="0" Value="tsdados" Type="5" />
+																	</Property>
+																</Properties>
+																<Children>
+																	<Child Name="NUMERO" Key="{54141F64-5DA7-418D-B8E6-9B7C4D40D253}" ParallelWalk="True">
+																		<Properties>
+																			<Property Name="ClassName">
+																				<Value PropertyType="0" Value="TDBEdit" Type="5" />
+																			</Property>
+																			<Property Name="ObjectIdentifier">
+																				<Value PropertyType="0" Value="NUMERO" Type="5" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="DATA_ENTREGA_SOLICITADA" Key="{472C5906-339C-49CD-A1FD-06BC47B430DB}" ParallelWalk="True">
+																		<Properties>
+																			<Property Name="ClassName">
+																				<Value PropertyType="0" Value="TDBDateEdit" Type="5" />
+																			</Property>
+																			<Property Name="ObjectIdentifier">
+																				<Value PropertyType="0" Value="DATA_ENTREGA_SOLICITADA" Type="5" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="ENTREGA_REPRESENTANTE" Key="{80BA8A44-2056-43D2-A614-8194E3CA4F7F}" ParallelWalk="True">
+																		<Properties>
+																			<Property Name="ClassName">
+																				<Value PropertyType="0" Value="TDBDateEdit" Type="5" />
+																			</Property>
+																			<Property Name="ObjectIdentifier">
+																				<Value PropertyType="0" Value="ENTREGA_REPRESENTANTE" Type="5" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="VALOR_INFORMADO" Key="{80FB7B4D-9288-4E2E-9712-E98493FB352D}" ParallelWalk="True">
+																		<Properties>
+																			<Property Name="ClassName">
+																				<Value PropertyType="0" Value="TDBEdit" Type="5" />
+																			</Property>
+																			<Property Name="ObjectIdentifier">
+																				<Value PropertyType="0" Value="VALOR_INFORMADO" Type="5" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="EMISSAO_REPRESENTANTE" Key="{E6481D44-0F2B-4E7B-814A-B93F90E3DAC1}" ParallelWalk="True">
+																		<Properties>
+																			<Property Name="ClassName">
+																				<Value PropertyType="0" Value="TDBDateEdit" Type="5" />
+																			</Property>
+																			<Property Name="ObjectIdentifier">
+																				<Value PropertyType="0" Value="EMISSAO_REPRESENTANTE" Type="5" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="HORA" Key="{C1292616-6742-4461-97BA-551818429886}" ParallelWalk="True">
+																		<Properties>
+																			<Property Name="ClassName">
+																				<Value PropertyType="0" Value="TDBEdit" Type="5" />
+																			</Property>
+																			<Property Name="ObjectIdentifier">
+																				<Value PropertyType="0" Value="HORA" Type="5" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="PARES_INFORMADO" Key="{B77B00CC-4226-4931-8C76-B9600251ACB3}" ParallelWalk="True">
+																		<Properties>
+																			<Property Name="ClassName">
+																				<Value PropertyType="0" Value="TDBEdit" Type="5" />
+																			</Property>
+																			<Property Name="ObjectIdentifier">
+																				<Value PropertyType="0" Value="PARES_INFORMADO" Type="5" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="QUANT_ENTREGAS" Key="{98C6583C-4256-4CA2-9A59-67DFE84A74E9}" ParallelWalk="True">
+																		<Properties>
+																			<Property Name="ClassName">
+																				<Value PropertyType="0" Value="TDBEdit" Type="5" />
+																			</Property>
+																			<Property Name="ObjectIdentifier">
+																				<Value PropertyType="0" Value="QUANT_ENTREGAS" Type="5" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="CICLO" Key="{D55C4FC9-3E88-4221-875C-63C9C76AA41F}" ParallelWalk="True">
+																		<Properties>
+																			<Property Name="ClassName">
+																				<Value PropertyType="0" Value="TwwDBLookupCombo" Type="5" />
+																			</Property>
+																			<Property Name="ObjectIdentifier">
+																				<Value PropertyType="0" Value="CICLO" Type="5" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="SOMA_VRFRETE_TOTAL_PEDIDO" Key="{B7610683-1EF6-4A13-8827-B3C89C971494}" ParallelWalk="True">
+																		<Properties>
+																			<Property Name="ClassName">
+																				<Value PropertyType="0" Value="TwwRadioGroup" Type="5" />
+																			</Property>
+																			<Property Name="ObjectIdentifier">
+																				<Value PropertyType="0" Value="SOMA_VRFRETE_TOTAL_PEDIDO" Type="5" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="gbCliente" Key="{3B1FCCEF-1F7D-41AD-B076-67F097839ACD}" ParallelWalk="True">
+																		<Image FileName="-1810136932" Left="16" Top="302" Right="959" Bottom="531" />
+																		<TypeInfo Item0="{B133E503-EF8C-43F6-AD54-7E43333645DC}" />
+																		<Properties>
+																			<Property Name="ClassName">
+																				<Value PropertyType="0" Value="TGroupBox" Type="5" />
+																			</Property>
+																			<Property Name="ObjectIdentifier">
+																				<Value PropertyType="0" Value="gbCliente" Type="5" />
+																			</Property>
+																		</Properties>
+																		<Children>
+																			<Child Name="NUMERO_CLIENTE" Key="{1CE5C865-C26A-4715-A817-32566BDEC357}" ParallelWalk="True">
+																				<Properties>
+																					<Property Name="ClassName">
+																						<Value PropertyType="0" Value="TDBEdit" Type="5" />
+																					</Property>
+																					<Property Name="ObjectIdentifier">
+																						<Value PropertyType="0" Value="NUMERO_CLIENTE" Type="5" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="CGC_CLIENTE" Key="{048F6969-0C66-48E4-B017-ED75E8E380C5}" ParallelWalk="True">
+																				<Properties>
+																					<Property Name="ClassName">
+																						<Value PropertyType="0" Value="TwwDBComboDlg" Type="5" />
+																					</Property>
+																					<Property Name="ObjectIdentifier">
+																						<Value PropertyType="0" Value="CGC_CLIENTE" Type="5" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="RAZAO_SOCIAL_CLIENTE" Key="{00A6E51C-ECC5-4506-AC37-D022FD82A98D}" ParallelWalk="True">
+																				<Properties>
+																					<Property Name="ClassName">
+																						<Value PropertyType="0" Value="TDBEdit" Type="5" />
+																					</Property>
+																					<Property Name="ObjectIdentifier">
+																						<Value PropertyType="0" Value="RAZAO_SOCIAL_CLIENTE" Type="5" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="ESTADO_CLIENTE" Key="{A074E08B-61EE-4B58-95E4-8FBEDDB878B8}" ParallelWalk="True">
+																				<Properties>
+																					<Property Name="ClassName">
+																						<Value PropertyType="0" Value="TDBEdit" Type="5" />
+																					</Property>
+																					<Property Name="ObjectIdentifier">
+																						<Value PropertyType="0" Value="ESTADO_CLIENTE" Type="5" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="ENDERECO_CLIENTE" Key="{00B8EA61-DD67-4460-A1EB-99A44DC85CAD}" ParallelWalk="True">
+																				<Properties>
+																					<Property Name="ClassName">
+																						<Value PropertyType="0" Value="TDBEdit" Type="5" />
+																					</Property>
+																					<Property Name="ObjectIdentifier">
+																						<Value PropertyType="0" Value="ENDERECO_CLIENTE" Type="5" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="CIDADE_CLIENTE" Key="{75E63D85-407B-4B82-B7A9-5385B23168C8}" ParallelWalk="True">
+																				<Properties>
+																					<Property Name="ClassName">
+																						<Value PropertyType="0" Value="TDBEdit" Type="5" />
+																					</Property>
+																					<Property Name="ObjectIdentifier">
+																						<Value PropertyType="0" Value="CIDADE_CLIENTE" Type="5" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="INSCR_ESTADUAL_CLIENTE" Key="{9CF3787E-22A3-4CC1-AADD-865626D20E6C}" ParallelWalk="True">
+																				<Properties>
+																					<Property Name="ClassName">
+																						<Value PropertyType="0" Value="TDBEdit" Type="5" />
+																					</Property>
+																					<Property Name="ObjectIdentifier">
+																						<Value PropertyType="0" Value="INSCR_ESTADUAL_CLIENTE" Type="5" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="PanelDadosPedido" Key="{6711034F-405D-4800-881B-2CF4F9712F0C}" ParallelWalk="True">
+																				<Image FileName="1091327259" Left="17" Top="381" Right="937" Bottom="529" />
+																				<TypeInfo Item0="{B133E503-EF8C-43F6-AD54-7E43333645DC}" />
+																				<Properties>
+																					<Property Name="ClassName">
+																						<Value PropertyType="0" Value="TPanel" Type="5" />
+																					</Property>
+																					<Property Name="ObjectIdentifier">
+																						<Value PropertyType="0" Value="PanelDadosPedido" Type="5" />
+																					</Property>
+																				</Properties>
+																				<Children>
+																					<Child Name="CGC_TRANSPORTADORA" Key="{16D98ECC-D1B9-41FF-8832-ABD58B22013F}" ParallelWalk="True">
+																						<Image FileName="1091327259" Left="103" Top="404" Right="212" Bottom="425" />
+																						<TypeInfo Item0="{2EE004DC-6673-4998-AC96-88B3EBD87BED}" />
+																						<Properties>
+																							<Property Name="ClassName">
+																								<Value PropertyType="0" Value="TwwDBComboDlg" Type="5" />
+																							</Property>
+																							<Property Name="ObjectIdentifier">
+																								<Value PropertyType="0" Value="CGC_TRANSPORTADORA" Type="5" />
 																							</Property>
 																						</Properties>
 																					</Child>
@@ -10224,6 +10290,74 @@
 									</Child>
 								</Children>
 							</Child>
+							<Child Name="frmInformarGradeVolume" Key="{5D718A7F-5B5C-4CDC-8D81-E1522CB1C28F}" ParallelWalk="True">
+								<Image FileName="-322235556" Left="0" Top="0" Right="935" Bottom="464" />
+								<TypeInfo Item0="{69AA627C-2F22-491B-ACA5-57C6A8F3627C}" />
+								<Properties>
+									<Property Name="ClassName">
+										<Value PropertyType="0" Value="TfrmInformarGradeVolume" Type="5" />
+									</Property>
+									<Property Name="ObjectIdentifier">
+										<Value PropertyType="0" Value="frmInformarGradeVolume" Type="5" />
+									</Property>
+								</Properties>
+								<Children>
+									<Child Name="Panel1" Key="{CBFABFE0-420D-48D3-9535-DD9CFCA08756}" ParallelWalk="True">
+										<Image FileName="-322235556" Left="8" Top="31" Right="927" Bottom="418" />
+										<TypeInfo Item0="{B133E503-EF8C-43F6-AD54-7E43333645DC}" />
+										<Properties>
+											<Property Name="ClassName">
+												<Value PropertyType="0" Value="TPanel" Type="5" />
+											</Property>
+											<Property Name="ObjectIdentifier">
+												<Value PropertyType="0" Value="Panel1" Type="5" />
+											</Property>
+										</Properties>
+										<Children>
+											<Child Name="gbItens" Key="{409035ED-39A9-4D60-97E1-899DA4163DC5}" ParallelWalk="True">
+												<Image FileName="-322235556" Left="8" Top="31" Right="927" Bottom="146" />
+												<TypeInfo Item0="{B133E503-EF8C-43F6-AD54-7E43333645DC}" />
+												<Properties>
+													<Property Name="ClassName">
+														<Value PropertyType="0" Value="TGroupBox" Type="5" />
+													</Property>
+													<Property Name="ObjectIdentifier">
+														<Value PropertyType="0" Value="gbItens" Type="5" />
+													</Property>
+												</Properties>
+												<Children>
+													<Child Name="Panel6" Key="{DF84B7B1-0875-4D52-86C8-C2742C5130CA}" ParallelWalk="True">
+														<Image FileName="-322235556" Left="10" Top="46" Right="925" Bottom="144" />
+														<TypeInfo Item0="{B133E503-EF8C-43F6-AD54-7E43333645DC}" />
+														<Properties>
+															<Property Name="ClassName">
+																<Value PropertyType="0" Value="TPanel" Type="5" />
+															</Property>
+															<Property Name="ObjectIdentifier">
+																<Value PropertyType="0" Value="Panel6" Type="5" />
+															</Property>
+														</Properties>
+														<Children>
+															<Child Name="GRID_ITENS_GRADE" Key="{978417C0-7E10-4F0D-9D54-D0E7E0A687EA}" ParallelWalk="True">
+																<Image FileName="-322235556" Left="184" Top="74" Right="925" Bottom="144" />
+																<TypeInfo Item0="{2EE004DC-6673-4998-AC96-88B3EBD87BED}" />
+																<Properties>
+																	<Property Name="ClassName">
+																		<Value PropertyType="0" Value="TwwDBGrid" Type="5" />
+																	</Property>
+																	<Property Name="ObjectIdentifier">
+																		<Value PropertyType="0" Value="GRID_ITENS" Type="5" />
+																	</Property>
+																</Properties>
+															</Child>
+														</Children>
+													</Child>
+												</Children>
+											</Child>
+										</Children>
+									</Child>
+								</Children>
+							</Child>
 						</Children>
 					</Child>
 				</Children>
@@ -11208,7 +11342,7 @@
 						</Child>
 					</Child>
 					<Child Name="TelaPedidos" Owner="{B693E8BA-9E31-4EA2-9E35-4B4DE5A6858F}">
-						<Child Name="PageControl1" Owner="{608F9F67-EF17-4FA1-ACCA-110F8C098420}">
+						<Child Name="PageControl" Owner="{608F9F67-EF17-4FA1-ACCA-110F8C098420}">
 							<Child Name="tsitems_pedido" Owner="{D3280933-15ED-44B0-828C-2D2300ADE419}">
 								<Child Name="PanelPedido" Owner="{5E38F4B8-5054-476C-83DF-E960AEAB216D}">
 									<Child Name="CALC_CLIENTE_PROD" Owner="{C7F788B2-1D74-4C69-B6C0-F6FC3E85D38C}" />
@@ -11231,6 +11365,41 @@
 									</Child>
 									<Child Name="PanelClassificar" Owner="{9AA99EB2-4226-455A-B1D3-60AF0805F797}">
 										<Child Name="btnPesquisar" Owner="{B6B29F27-470E-44A9-BB30-E18F0F7052D3}" />
+									</Child>
+								</Child>
+							</Child>
+							<Child Name="tsEntregas" Owner="{467BDD6D-8B46-4BF0-9141-69A5DDBA6D71}">
+								<Child Name="gbEntregas" Owner="{69627247-C41F-4DBA-9DF1-F6E625D3D3E9}">
+									<Child Name="pnlEntrega" Owner="{74C7AEF3-3C7E-47A9-9A6E-66B8DF8893ED}">
+										<Child Name="pnlEntregaTitulo" Owner="{487BE8C1-8806-45C5-9DFA-50C8061DEFBB}">
+											<Child Name="pnlEntregaTitulo" Owner="{0294C7ED-4A31-423E-B285-B403FC4D68AE}">
+												<Child Name="btnEntrega" Owner="{C9C3045D-2F52-4A55-A9D9-D84E7F0531E1}" />
+											</Child>
+										</Child>
+									</Child>
+								</Child>
+							</Child>
+							<Child Name="tsdados" Owner="{4AA3DA13-F7AF-402C-BC3D-598DC873ED93}">
+								<Child Name="NUMERO" Owner="{54141F64-5DA7-418D-B8E6-9B7C4D40D253}" />
+								<Child Name="DATA_ENTREGA_SOLICITADA" Owner="{472C5906-339C-49CD-A1FD-06BC47B430DB}" />
+								<Child Name="ENTREGA_REPRESENTANTE" Owner="{80BA8A44-2056-43D2-A614-8194E3CA4F7F}" />
+								<Child Name="VALOR_INFORMADO" Owner="{80FB7B4D-9288-4E2E-9712-E98493FB352D}" />
+								<Child Name="EMISSAO_REPRESENTANTE" Owner="{E6481D44-0F2B-4E7B-814A-B93F90E3DAC1}" />
+								<Child Name="HORA" Owner="{C1292616-6742-4461-97BA-551818429886}" />
+								<Child Name="PARES_INFORMADO" Owner="{B77B00CC-4226-4931-8C76-B9600251ACB3}" />
+								<Child Name="QUANT_ENTREGAS" Owner="{98C6583C-4256-4CA2-9A59-67DFE84A74E9}" />
+								<Child Name="CICLO" Owner="{D55C4FC9-3E88-4221-875C-63C9C76AA41F}" />
+								<Child Name="SOMA_VRFRETE_TOTAL_PEDIDO" Owner="{B7610683-1EF6-4A13-8827-B3C89C971494}" />
+								<Child Name="gbCliente" Owner="{3B1FCCEF-1F7D-41AD-B076-67F097839ACD}">
+									<Child Name="NUMERO_CLIENTE" Owner="{1CE5C865-C26A-4715-A817-32566BDEC357}" />
+									<Child Name="CGC_CLIENTE" Owner="{048F6969-0C66-48E4-B017-ED75E8E380C5}" />
+									<Child Name="RAZAO_SOCIAL_CLIENTE" Owner="{00A6E51C-ECC5-4506-AC37-D022FD82A98D}" />
+									<Child Name="ESTADO_CLIENTE" Owner="{A074E08B-61EE-4B58-95E4-8FBEDDB878B8}" />
+									<Child Name="ENDERECO_CLIENTE" Owner="{00B8EA61-DD67-4460-A1EB-99A44DC85CAD}" />
+									<Child Name="CIDADE_CLIENTE" Owner="{75E63D85-407B-4B82-B7A9-5385B23168C8}" />
+									<Child Name="INSCR_ESTADUAL_CLIENTE" Owner="{9CF3787E-22A3-4CC1-AADD-865626D20E6C}" />
+									<Child Name="PanelDadosPedido" Owner="{6711034F-405D-4800-881B-2CF4F9712F0C}">
+										<Child Name="CGC_TRANSPORTADORA" Owner="{16D98ECC-D1B9-41FF-8832-ABD58B22013F}" />
 									</Child>
 								</Child>
 							</Child>
@@ -11368,6 +11537,15 @@
 				<Child Name="Panel1" Owner="{E5519E60-9A50-410D-9564-35788445F969}">
 					<Child Name="btnconfirma" Owner="{4ADDC903-1597-4A71-8828-8827DF49D76E}" />
 					<Child Name="btnCancela" Owner="{6E465D4C-6418-4B71-8365-25BDF421E5C0}" />
+				</Child>
+			</Child>
+			<Child Name="frmInformarGradeVolume" Owner="{5D718A7F-5B5C-4CDC-8D81-E1522CB1C28F}">
+				<Child Name="Panel1" Owner="{CBFABFE0-420D-48D3-9535-DD9CFCA08756}">
+					<Child Name="gbItens" Owner="{409035ED-39A9-4D60-97E1-899DA4163DC5}">
+						<Child Name="Panel6" Owner="{DF84B7B1-0875-4D52-86C8-C2742C5130CA}">
+							<Child Name="GRID_ITENS_GRADE" Owner="{978417C0-7E10-4F0D-9D54-D0E7E0A687EA}" />
+						</Child>
+					</Child>
 				</Child>
 			</Child>
 		</Child>

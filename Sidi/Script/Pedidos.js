@@ -85,23 +85,17 @@ function insereGrade()
   Aliases.SIDI.frmInformarGradeVolume.Panel3.btnContinuar.ClickButton();
 }
 
-function insereProduto(produto, cor, codigo){
-  let i = 0;
-    let produtoAtual = Aliases.SIDI.frmPrincipal.MDIClient.TelaPedidos.PageControl.tsitems_pedido.dbgPedido.Fields(2).Text;
-  while(aqString.Find(produtoAtual,produto) == -1){
-    // Volta para o campo do produto antes de inserir novamente -- [REF - PRODUTO - COMBINAÇÃO/COR - CÓDIGO PROD]
-    if(i > 0){
-     Aliases.SIDI.frmPrincipal.MDIClient.TelaPedidos.PageControl.tsitems_pedido.dbgPedido.Keys("[Left][Left]" + produto + "[Tab]");
-     Aliases.SIDI.frmPrincipal.MDIClient.TelaPedidos.PageControl.tsitems_pedido.dbgPedido.Keys(cor + "[Tab]");
-    }else{
-      Aliases.SIDI.frmPrincipal.MDIClient.TelaPedidos.PageControl.tsitems_pedido.dbgPedido.Keys(produto + "[Tab]");
-      Aliases.SIDI.frmPrincipal.MDIClient.TelaPedidos.PageControl.tsitems_pedido.dbgPedido.Click();
-      Aliases.SIDI.frmPrincipal.MDIClient.TelaPedidos.PageControl.tsitems_pedido.dbgPedido.Keys(cor+"[Tab]");
-      Aliases.SIDI.frmPrincipal.MDIClient.TelaPedidos.PageControl.tsitems_pedido.dbgPedido.Click();
-    }
-    produtoAtual = Aliases.SIDI.frmPrincipal.MDIClient.TelaPedidos.PageControl.tsitems_pedido.dbgPedido.Fields(2).Text;
-    i++; 
-  }
+function insereProduto(){
+
+  var gdItemPedido = Aliases.SIDI.frmPrincipal.MDIClient.TelaPedidos.PageControl.tsitems_pedido.dbgPedido;   
+  var produto = Project.Variables.Produto.referencia(0);
+  var cor = Project.Variables.Produto.cor(0);  
+  
+  gdItemPedido.Keys(produto + "[Enter]");
+  Delay(2000);
+  gdItemPedido.Keys(cor + "[Enter]");
+  gdItemPedido.Keys("[F10]");
+  
 }
 
 function pesquisaPedido(pedido)
@@ -258,20 +252,23 @@ function alteraAba(aba)
 function insereRepresentante(repres)
 {
   Aliases.SIDI.frmPrincipal.MDIClient.TelaPedidos.PageControl.tsdados.gbCliente.PanelDadosPedido.CGC_REPRESENTANTE.Keys("r");
-  Aliases.SIDI.SelecionaCliente.wwIncrementalSearch1.Keys(repres+"[Enter]");
-  Aliases.SIDI.TMessageForm3.OK.ClickButton();
+  Aliases.SIDI.PesquisaFornecedor.wwIncrementalSearch1.Keys(repres+"[Enter]");
+  if(Aliases.SIDI.TMessageForm3.Exists){
+    Aliases.SIDI.TMessageForm3.OK.ClickButton();
+  }
+  
 }
 
 function insereTransportadora(transp)
 {
-  Aliases.SIDI.frmPrincipal.MDIClient.TelaPedidos.PageControl.tsdados.gbCliente.CGC_TRANSPORTADORA.Keys("r");
-  Aliases.SIDI.SelecionaCliente.wwIncrementalSearch1.Keys(transp+"[Enter]");
+  Aliases.SIDI.frmPrincipal.MDIClient.TelaPedidos.PageControl.tsdados.gbCliente.PanelDadosPedido.CGC_TRANSPORTADORA.Keys("r");
+  Aliases.SIDI.PesquisaFornecedor.wwIncrementalSearch1.Keys(transp+"[Enter]");
 }
 
 function insereCliente(cliente)
 {
   Aliases.SIDI.frmPrincipal.MDIClient.TelaPedidos.PageControl.tsdados.gbCliente.CGC_CLIENTE.Keys("d");
-  Aliases.SIDI.SelecionaCliente.wwIncrementalSearch1.Keys(cliente+"[Enter]");
+  Aliases.SIDI.PesquisaFornecedor.wwIncrementalSearch1.Keys(cliente+"[Enter]");
 }
 
 function confirma()

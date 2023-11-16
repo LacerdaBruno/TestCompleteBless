@@ -85,10 +85,23 @@ function insereGrade()
   Aliases.SIDI.frmInformarGradeVolume.Panel3.btnContinuar.ClickButton();
 }
 
-function insereProduto(produto, cor, codigo){
-  let i = 0;
-    let produtoAtual = Aliases.SIDI.frmPrincipal.MDIClient.TelaPedidos.PageControl.tsitems_pedido.dbgPedido.Fields(2).Text;
-  while(aqString.Find(produtoAtual,produto) == -1){
+function insereProduto(){
+
+  var gdItemPedido = Aliases.SIDI.frmPrincipal.MDIClient.TelaPedidos.PageControl.tsitems_pedido.dbgPedido;   
+  var produto = Project.Variables.Produto.referencia(0);
+  var cor = Project.Variables.Produto.cor(0);  
+  
+  gdItemPedido.Keys(produto + "[Enter]");
+  Delay(2000);
+  gdItemPedido.Keys(cor + "[Enter]");
+  gdItemPedido.Keys("[F10]");
+
+  
+}
+
+ /* let i = 0;
+    let produtoAtual = Aliases.SIDI.frmPrincipal.MDIClient.TelaPedidos.PageControl.tsitems_pedido.dbgPedido.Keys();
+  while(aqString.Find(produtoAtual,produto) == -1){ 
     // Volta para o campo do produto antes de inserir novamente -- [REF - PRODUTO - COMBINAÇÃO/COR - CÓDIGO PROD]
     if(i > 0){
      Aliases.SIDI.frmPrincipal.MDIClient.TelaPedidos.PageControl.tsitems_pedido.dbgPedido.Keys("[Left][Left]" + produto + "[Tab]");
@@ -101,8 +114,9 @@ function insereProduto(produto, cor, codigo){
     }
     produtoAtual = Aliases.SIDI.frmPrincipal.MDIClient.TelaPedidos.PageControl.tsitems_pedido.dbgPedido.Fields(2).Text;
     i++; 
-  }
-}
+  }*/
+  
+
 
 function pesquisaPedido(pedido)
 {
@@ -258,20 +272,23 @@ function alteraAba(aba)
 function insereRepresentante(repres)
 {
   Aliases.SIDI.frmPrincipal.MDIClient.TelaPedidos.PageControl.tsdados.gbCliente.PanelDadosPedido.CGC_REPRESENTANTE.Keys("r");
-  Aliases.SIDI.SelecionaCliente.wwIncrementalSearch1.Keys(repres+"[Enter]");
-  Aliases.SIDI.TMessageForm3.OK.ClickButton();
+  Aliases.SIDI.PesquisaFornecedor.wwIncrementalSearch1.Keys(repres+"[Enter]");
+  if(Aliases.SIDI.TMessageForm3.Exists){
+    Aliases.SIDI.TMessageForm3.OK.ClickButton();
+  }
+  
 }
 
 function insereTransportadora(transp)
 {
-  Aliases.SIDI.frmPrincipal.MDIClient.TelaPedidos.PageControl.tsdados.gbCliente.CGC_TRANSPORTADORA.Keys("r");
-  Aliases.SIDI.SelecionaCliente.wwIncrementalSearch1.Keys(transp+"[Enter]");
+  Aliases.SIDI.frmPrincipal.MDIClient.TelaPedidos.PageControl.tsdados.gbCliente.PanelDadosPedido.CGC_TRANSPORTADORA.Keys("r");
+  Aliases.SIDI.PesquisaFornecedor.wwIncrementalSearch1.Keys(transp+"[Enter]");
 }
 
 function insereCliente(cliente)
 {
   Aliases.SIDI.frmPrincipal.MDIClient.TelaPedidos.PageControl.tsdados.gbCliente.CGC_CLIENTE.Keys("d");
-  Aliases.SIDI.SelecionaCliente.wwIncrementalSearch1.Keys(cliente+"[Enter]");
+  Aliases.SIDI.PesquisaFornecedor.wwIncrementalSearch1.Keys(cliente+"[Enter]");
 }
 
 function confirma()
@@ -489,7 +506,6 @@ function selecionaAba(aba)
   Aliases.SIDI.frmPrincipal.MDIClient.frmPesquisaAvancadaPedido.Paginas2.ClickTab(aba);
 }
 
-
 /*
 *   Clica com botão direirto e marca todos os pedidos
 */
@@ -575,8 +591,7 @@ function clicaCheckBoxPesquisaAvancada(cb)
 
 
 function pesquisaAvancadaFechar()
-{ 
-  
+{   
   
   if(Validacoes.CheckExists(Aliases.SIDI.frmPrincipal.MDIClient.frmPesquisaAvancadaPedido.PainelInferior.Botoes.PanelFaturamento.btnFecharFaturamento, 200))
   {
@@ -585,82 +600,82 @@ function pesquisaAvancadaFechar()
   else if(Validacoes.CheckExists(Aliases.SIDI.frmPrincipal.MDIClient.frmPesquisaAvancadaPedido.PainelInferior.Botoes.PanelPedido.btnFechar, 200)) 
   {
    Aliases.SIDI.frmPrincipal.MDIClient.frmPesquisaAvancadaPedido.PainelInferior.Botoes.PanelPedido.btnFechar.ClickButton(); 
-  }
-  
+  }  
   
 }
 
 function visualizaRelatoriosAbaPedido(){
   Visualizacoes.visualizarBotaoModelo(consumo, 'Modelo I');
-    Visualizacoes.visualizarBotaoModelo(consumo, 'Modelo II');   
+  Visualizacoes.visualizarBotaoModelo(consumo, 'Modelo II');   
     
-    Visualizacoes.visualizarBotaoModelo(pedido, 'Para Produção');
-    Visualizacoes.visualizarBotaoModelo(pedido, 'Para Faturamento');
-    Visualizacoes.visualizarBotaoModelo(pedido, 'Para Cliente');
-    Visualizacoes.visualizarBotaoModelo(pedido, 'Para Exportação|Lista de Embarque');
-    Visualizacoes.visualizarBotaoModelo(pedido, 'Para Faturamento');
-    Visualizacoes.visualizarBotaoModelo(pedido, 'Para Cliente');
-    Visualizacoes.visualizarBotaoModelo(pedido, 'Para Exportação|Lista de Embarque');
-    Visualizacoes.visualizarBotaoModelo(pedido, 'Para Exportação|Fatura Comercial');
-    Visualizacoes.visualizarBotaoModelo(pedido, 'Para Distribuição');
-    Visualizacoes.visualizarBotaoModelo(pedido, 'Para Produção');
+  Visualizacoes.visualizarBotaoModelo(pedido, 'Para Produção');
+  Visualizacoes.visualizarBotaoModelo(pedido, 'Para Faturamento');
+  Visualizacoes.visualizarBotaoModelo(pedido, 'Para Cliente');
+  Visualizacoes.visualizarBotaoModelo(pedido, 'Para Exportação|Lista de Embarque');
+  Visualizacoes.visualizarBotaoModelo(pedido, 'Para Faturamento');
+  Visualizacoes.visualizarBotaoModelo(pedido, 'Para Cliente');
+  Visualizacoes.visualizarBotaoModelo(pedido, 'Para Exportação|Lista de Embarque');
+  Visualizacoes.visualizarBotaoModelo(pedido, 'Para Exportação|Fatura Comercial');
+  Visualizacoes.visualizarBotaoModelo(pedido, 'Para Distribuição');
+  Visualizacoes.visualizarBotaoModelo(pedido, 'Para Produção');
     
-    Visualizacoes.visualizarBotaoModelo(relacao, 'Modelo I');
-    Visualizacoes.visualizarBotaoModelo(relacao, 'Modelo II');
-    Visualizacoes.visualizarBotaoModelo(relacao, 'Peso Líquido/Bruto');
+  Visualizacoes.visualizarBotaoModelo(relacao, 'Modelo I');
+  Visualizacoes.visualizarBotaoModelo(relacao, 'Modelo II');
+  Visualizacoes.visualizarBotaoModelo(relacao, 'Peso Líquido/Bruto');
 }
 
 function teste(){
-  
-   var consumo =  Aliases.SIDI.frmPrincipal.MDIClient.frmPesquisaAvancadaPedido.PainelInferior.Botoes.PanelPedido.btnConsumo;
-   var pedido = Aliases.SIDI.frmPrincipal.MDIClient.frmPesquisaAvancadaPedido.PainelInferior.Botoes.PanelPedido.btnPedido;
-   var relacao =  Aliases.SIDI.frmPrincipal.MDIClient.frmPesquisaAvancadaPedido.PainelInferior.Botoes.PanelPedido.btnRelacao;
-   var visualizafaturamento = Aliases.SIDI.frmPrincipal.MDIClient.frmPesquisaAvancadaPedido.PainelInferior.Botoes.PanelFaturamento.btnVisualizarFaturamento;
-   var i = 0;
-    Visualizacoes.visualizarBotaoModelo(visualizafaturamento, 'Por Representante|Simples');
-    Visualizacoes.visualizarBotaoModelo(visualizafaturamento, 'Por Representante|Diário|Pela data do pedido');
-    Visualizacoes.visualizarBotaoModelo(visualizafaturamento, 'Por Representante|Diário|Pela data de emissão NF');
-    Visualizacoes.visualizarBotaoModelo(visualizafaturamento, 'Por Representante|Semanal');
-    Visualizacoes.visualizarBotaoModelo(visualizafaturamento, 'Por Representante|Mensal|Pela data do pedido');
-    Visualizacoes.visualizarBotaoModelo(visualizafaturamento, 'Por Representante|Mensal|Pela data do cadastro');
-    Visualizacoes.visualizarBotaoModelo(visualizafaturamento, 'Por Representante|Mensal|Pela data de emissão NF');
-    Visualizacoes.visualizarBotaoModelo(visualizafaturamento, 'Por Representante|Mensal|Pela data de entrega');
-    Visualizacoes.visualizarBotaoModelo(visualizafaturamento, 'Por Representante|Mês/Semana|Pela data do pedido');
-    Visualizacoes.visualizarBotaoModelo(visualizafaturamento, 'Por Representante|Mês/Semana|Pela data do cadastro');
-    Visualizacoes.visualizarBotaoModelo(visualizafaturamento, 'Por Representante|Mês/Semana|Pela data de emissão NF');
-    Visualizacoes.visualizarBotaoModelo(visualizafaturamento, 'Por Representante|Mês/Semana|Pela data de entrega');
-    Visualizacoes.visualizarBotaoModelo(visualizafaturamento, 'Por Representante|Mensal/Cliente|Pela data do pedido');
-    Visualizacoes.visualizarBotaoModelo(visualizafaturamento, 'Por Representante|Mensal/Cliente|Pela data do cadastro');
-    Visualizacoes.visualizarBotaoModelo(visualizafaturamento, 'Por Representante|Mensal/Cliente|Pela data de emissão NF');
-    Visualizacoes.visualizarBotaoModelo(visualizafaturamento, 'Por Representante|Mensal/Cliente|Pela data de entrega');
-    Visualizacoes.visualizarBotaoModelo(visualizafaturamento, 'Por Representante|Mensal/Representante/Linha|Pela data do pedido');
-    Visualizacoes.visualizarBotaoModelo(visualizafaturamento, 'Por Representante|Mensal/Representante/Linha|Pela data do cadastro');
-    Visualizacoes.visualizarBotaoModelo(visualizafaturamento, 'Por Representante|Mensal/Representante/Linha|Pela data de emissão NF');
-    Visualizacoes.visualizarBotaoModelo(visualizafaturamento, 'Por Representante|Mensal/Representante/Linha|Pela data de entrega');
-    Visualizacoes.visualizarBotaoModelo(visualizafaturamento, 'Por Representante|Mensal/Representante/Produto|Pela data do pedido');
-    Visualizacoes.visualizarBotaoModelo(visualizafaturamento, 'Por Representante|Mensal/Representante/Produto|Pela data do cadastro');
-    Visualizacoes.visualizarBotaoModelo(visualizafaturamento, 'Por Representante|Mensal/Representante/Produto|Pela data de emissão NF');
-    Visualizacoes.visualizarBotaoModelo(visualizafaturamento, 'Por Representante|Mensal/Representante/Produto|Pela data de entrega');
-    Visualizacoes.visualizarBotaoModelo(visualizafaturamento, 'Por Representante|Mensal/Representante/Cidade|Pela data do pedido');
-    Visualizacoes.visualizarBotaoModelo(visualizafaturamento, 'Por Representante|Mensal/Representante/Cidade|Pela data do cadastro');
-    Visualizacoes.visualizarBotaoModelo(visualizafaturamento, 'Por Representante|Mensal/Representante/Cidade|Pela data de emissão NF');
-    Visualizacoes.visualizarBotaoModelo(visualizafaturamento, 'Por Representante|Mensal/Representante/Cidade|Pela data de entrega');
-    Visualizacoes.visualizarBotaoModelo(visualizafaturamento, 'Por Representante|Anual|Pela data do pedido');
-    Visualizacoes.visualizarBotaoModelo(visualizafaturamento, 'Por Representante|Anual|Pela data do cadastro');
-    Visualizacoes.visualizarBotaoModelo(visualizafaturamento, 'Por Representante|Anual|Pela data de emissão NF');
-    Visualizacoes.visualizarBotaoModelo(visualizafaturamento, 'Por Representante|Anual|Pela data de entrega');
-    Visualizacoes.visualizarBotaoModelo(visualizafaturamento, 'Por Representante|Cota mês representante');
-    Visualizacoes.visualizarBotaoModelo(visualizafaturamento, 'Por Representante|Representante/Estado');
-    Visualizacoes.visualizarBotaoModelo(visualizafaturamento, 'Por Representante|Representante/Cliente');
-    Visualizacoes.visualizarBotaoModelo(visualizafaturamento, 'Por Representante|Representante/Cliente/Pedido');
-    Visualizacoes.visualizarBotaoModelo(visualizafaturamento, 'Por Representante|Representante/Cliente/Comissão');
-    Visualizacoes.visualizarBotaoModelo(visualizafaturamento, 'Por Representante|Representante/Referência');
-    Visualizacoes.visualizarBotaoModelo(visualizafaturamento, 'Por Representante|Representante/Grupo');
-    Visualizacoes.visualizarBotaoModelo(visualizafaturamento, 'Por Representante|Representante/Emissão NF');
-    Visualizacoes.visualizarBotaoModelo(visualizafaturamento, 'Por Representante|Representante/Cidade');
-    Visualizacoes.visualizarBotaoModelo(visualizafaturamento, 'Por Representante|Representante/Referência/Pedido');
-    Visualizacoes.visualizarBotaoModelo(visualizafaturamento, 'Por Representante|Representante/Cliente/Coleção');
-    Visualizacoes.visualizarBotaoModelo(visualizafaturamento, 'Por Representante|Resumo Comparativo');
+
+  var consumo =  Aliases.SIDI.frmPrincipal.MDIClient.frmPesquisaAvancadaPedido.PainelInferior.Botoes.PanelPedido.btnConsumo;
+  var pedido = Aliases.SIDI.frmPrincipal.MDIClient.frmPesquisaAvancadaPedido.PainelInferior.Botoes.PanelPedido.btnPedido;
+  var relacao =  Aliases.SIDI.frmPrincipal.MDIClient.frmPesquisaAvancadaPedido.PainelInferior.Botoes.PanelPedido.btnRelacao;
+  var visualizafaturamento = Aliases.SIDI.frmPrincipal.MDIClient.frmPesquisaAvancadaPedido.PainelInferior.Botoes.PanelFaturamento.btnVisualizarFaturamento;
+  var i = 0;
+ 
+  Visualizacoes.visualizarBotaoModelo(visualizafaturamento, 'Por Representante|Simples');
+  Visualizacoes.visualizarBotaoModelo(visualizafaturamento, 'Por Representante|Diário|Pela data do pedido');
+  Visualizacoes.visualizarBotaoModelo(visualizafaturamento, 'Por Representante|Diário|Pela data de emissão NF');
+  Visualizacoes.visualizarBotaoModelo(visualizafaturamento, 'Por Representante|Semanal');
+  Visualizacoes.visualizarBotaoModelo(visualizafaturamento, 'Por Representante|Mensal|Pela data do pedido');
+  Visualizacoes.visualizarBotaoModelo(visualizafaturamento, 'Por Representante|Mensal|Pela data do cadastro');
+  Visualizacoes.visualizarBotaoModelo(visualizafaturamento, 'Por Representante|Mensal|Pela data de emissão NF');
+  Visualizacoes.visualizarBotaoModelo(visualizafaturamento, 'Por Representante|Mensal|Pela data de entrega');
+  Visualizacoes.visualizarBotaoModelo(visualizafaturamento, 'Por Representante|Mês/Semana|Pela data do pedido');
+  Visualizacoes.visualizarBotaoModelo(visualizafaturamento, 'Por Representante|Mês/Semana|Pela data do cadastro');
+  Visualizacoes.visualizarBotaoModelo(visualizafaturamento, 'Por Representante|Mês/Semana|Pela data de emissão NF');
+  Visualizacoes.visualizarBotaoModelo(visualizafaturamento, 'Por Representante|Mês/Semana|Pela data de entrega');
+  Visualizacoes.visualizarBotaoModelo(visualizafaturamento, 'Por Representante|Mensal/Cliente|Pela data do pedido');
+  Visualizacoes.visualizarBotaoModelo(visualizafaturamento, 'Por Representante|Mensal/Cliente|Pela data do cadastro');
+  Visualizacoes.visualizarBotaoModelo(visualizafaturamento, 'Por Representante|Mensal/Cliente|Pela data de emissão NF');
+  Visualizacoes.visualizarBotaoModelo(visualizafaturamento, 'Por Representante|Mensal/Cliente|Pela data de entrega');
+  Visualizacoes.visualizarBotaoModelo(visualizafaturamento, 'Por Representante|Mensal/Representante/Linha|Pela data do pedido');
+  Visualizacoes.visualizarBotaoModelo(visualizafaturamento, 'Por Representante|Mensal/Representante/Linha|Pela data do cadastro');
+  Visualizacoes.visualizarBotaoModelo(visualizafaturamento, 'Por Representante|Mensal/Representante/Linha|Pela data de emissão NF');
+  Visualizacoes.visualizarBotaoModelo(visualizafaturamento, 'Por Representante|Mensal/Representante/Linha|Pela data de entrega');
+  Visualizacoes.visualizarBotaoModelo(visualizafaturamento, 'Por Representante|Mensal/Representante/Produto|Pela data do pedido');
+  Visualizacoes.visualizarBotaoModelo(visualizafaturamento, 'Por Representante|Mensal/Representante/Produto|Pela data do cadastro');
+  Visualizacoes.visualizarBotaoModelo(visualizafaturamento, 'Por Representante|Mensal/Representante/Produto|Pela data de emissão NF');
+  Visualizacoes.visualizarBotaoModelo(visualizafaturamento, 'Por Representante|Mensal/Representante/Produto|Pela data de entrega');
+  Visualizacoes.visualizarBotaoModelo(visualizafaturamento, 'Por Representante|Mensal/Representante/Cidade|Pela data do pedido');
+  Visualizacoes.visualizarBotaoModelo(visualizafaturamento, 'Por Representante|Mensal/Representante/Cidade|Pela data do cadastro');
+  Visualizacoes.visualizarBotaoModelo(visualizafaturamento, 'Por Representante|Mensal/Representante/Cidade|Pela data de emissão NF');
+  Visualizacoes.visualizarBotaoModelo(visualizafaturamento, 'Por Representante|Mensal/Representante/Cidade|Pela data de entrega');
+  Visualizacoes.visualizarBotaoModelo(visualizafaturamento, 'Por Representante|Anual|Pela data do pedido');
+  Visualizacoes.visualizarBotaoModelo(visualizafaturamento, 'Por Representante|Anual|Pela data do cadastro');
+  Visualizacoes.visualizarBotaoModelo(visualizafaturamento, 'Por Representante|Anual|Pela data de emissão NF');
+  Visualizacoes.visualizarBotaoModelo(visualizafaturamento, 'Por Representante|Anual|Pela data de entrega');
+  Visualizacoes.visualizarBotaoModelo(visualizafaturamento, 'Por Representante|Cota mês representante');
+  Visualizacoes.visualizarBotaoModelo(visualizafaturamento, 'Por Representante|Representante/Estado');
+  Visualizacoes.visualizarBotaoModelo(visualizafaturamento, 'Por Representante|Representante/Cliente');
+  Visualizacoes.visualizarBotaoModelo(visualizafaturamento, 'Por Representante|Representante/Cliente/Pedido');
+  Visualizacoes.visualizarBotaoModelo(visualizafaturamento, 'Por Representante|Representante/Cliente/Comissão');
+  Visualizacoes.visualizarBotaoModelo(visualizafaturamento, 'Por Representante|Representante/Referência');
+  Visualizacoes.visualizarBotaoModelo(visualizafaturamento, 'Por Representante|Representante/Grupo');
+  Visualizacoes.visualizarBotaoModelo(visualizafaturamento, 'Por Representante|Representante/Emissão NF');
+  Visualizacoes.visualizarBotaoModelo(visualizafaturamento, 'Por Representante|Representante/Cidade');
+  Visualizacoes.visualizarBotaoModelo(visualizafaturamento, 'Por Representante|Representante/Referência/Pedido');
+  Visualizacoes.visualizarBotaoModelo(visualizafaturamento, 'Por Representante|Representante/Cliente/Coleção');
+  Visualizacoes.visualizarBotaoModelo(visualizafaturamento, 'Por Representante|Resumo Comparativo');
 }
 
 
