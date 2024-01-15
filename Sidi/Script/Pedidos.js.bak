@@ -16,48 +16,32 @@ function testaPedidos()
 }
 
 function getNumeroPedido(){
-  //return Aliases.SIDI.frmPrincipal.MDIClient.TelaPedidos.PageControl.tsitems_pedido.PanelPedido.NUMERO_CLIENTE.Text;
   return Aliases.SIDI.frmPrincipal.MDIClient.TelaPedidos.PageControl.tsitems_pedido.PanelPedido.NUMERO_CLIENTE_PROD.Text;
 }
 
 function cadastraPedido(){
   total = 0;  
 
-  razaoSocial = Project.Variables.DadosPessoasServicos.nome(Project.Variables.ContDados)  
-
-   abrePedidos()
-  
+  razaoSocial = Project.Variables.DadosPessoasServicos.nome(Project.Variables.ContDados) 
+  abrePedidos();  
   Principal.clicaNovo();
-
-  insereCliente(razaoSocial);
-  
-  insereRepresentante(razaoSocial);
-  
+  insereCliente(razaoSocial);  
+  insereRepresentante(razaoSocial);  
   insereTransportadora(razaoSocial);
   
   alteraAba("produtos");
   
- // for(p = 0; p < Project.Variables.Produto.RowCount; p++){
-    //if(p>0){
-      //  Aliases.SIDI.frmPrincipal.MDIClient.TelaPedidos.PageControl.tsitems_pedido.dbgPedido.Keys("[Down]");
-    //}
     p =0;
     insereProduto(Project.Variables.Produto.referencia(p), Project.Variables.Produto.cor(p), p + 1);
-    Aliases.SIDI.frmPrincipal.MDIClient.TelaPedidos.PageControl.tsitems_pedido.dbgPedido.Fields(8).SetText(1);
     insereGrade();
-    total += validaValores();
-  //}
+    //total += validaValores();
+
   confirma();
   Principal.clicaEditar();
   confirma();
   
-  // Faz a validação do valor total do pedido com o somatorio dos itens
   totalPedido = Aliases.SIDI.frmPrincipal.MDIClient.TelaPedidos.PageControl.tsitems_pedido.PanelTotais.gbTotais.editVrCalculado.Text;
-  /*if(aqConvert.StrToFloat(totalPedido) != aqConvert.StrToFloat(total)){
-    Log.Warning("Valor total do pedido difere do somatorio dos itens total esperado: " + total + " valo calculado: " + totalPedido);
-  }else{
-    Log.Checkpoint("Valores calculados no pedido validados");
-  }*/
+
 }
 
 function validaValores()
@@ -65,7 +49,7 @@ function validaValores()
   qte = Aliases.SIDI.frmPrincipal.MDIClient.TelaPedidos.PageControl.tsitems_pedido.dbgPedido.Fields(7).Value;
   unit = Aliases.SIDI.frmPrincipal.MDIClient.TelaPedidos.PageControl.tsitems_pedido.dbgPedido.Fields(9).Value;
   totalItem = Aliases.SIDI.frmPrincipal.MDIClient.TelaPedidos.PageControl.tsitems_pedido.dbgPedido.Fields(10).Value;
-  //Arredondamentos
+
   totalEsperado = aqString.Format("%0.2f", qte * unit);
   totalItem = aqString.Format("%0.2f", totalItem);
   
@@ -77,10 +61,10 @@ function validaValores()
 
 function insereGrade()
 {
-  Aliases.SIDI.frmPrincipal.MDIClient.TelaPedidos.PageControl.tsitems_pedido.dbgPedido.Keys("[F10]");
-  Aliases.SIDI.frmInformarGradeVolume.Panel1.gbItens.GRID_ITENS.Keys("[Right]")
-  for(i = 0; i < Project.Variables.grade.RowCount; i++){
-    Aliases.SIDI.frmInformarGradeVolume.Panel1.gbItens.GRID_ITENS.Keys(Project.Variables.grade.qte(i) + "[Right]");
+  //Aliases.SIDI.frmPrincipal.MDIClient.TelaPedidos.PageControl.tsitems_pedido.dbgPedido.Keys("[F10]");
+  Aliases.SIDI.frmInformarGradeVolume.Panel1.gbItens.Panel6.GRID_ITENS_GRADE.Keys("[Right]")
+  for(i = 0; i < Project.Variables.Grade.RowCount; i++){
+    Aliases.SIDI.frmInformarGradeVolume.Panel1.gbItens.Panel6.GRID_ITENS_GRADE.Keys(Project.Variables.Grade.quantidade(i) + "[Right]");
   }
   Aliases.SIDI.frmInformarGradeVolume.Panel3.btnContinuar.ClickButton();
 }
@@ -91,32 +75,17 @@ function insereProduto(){
   var produto = Project.Variables.Produto.referencia(0);
   var cor = Project.Variables.Produto.cor(0);  
   
-  gdItemPedido.Keys(produto + "[Enter]");
-  Delay(2000);
-  gdItemPedido.Keys(cor + "[Enter]");
+  gdItemPedido.Keys(produto);
+  Delay(1000);  
+  gdItemPedido.Keys("[Enter]");
+  gdItemPedido.Keys(cor);
+  Delay(1000);
+  gdItemPedido.Keys("[Enter]");
+  gdItemPedido.LookupEmbalagem.Keys("PCT PADRAO");
+  gdItemPedido.LookupEmbalagem.Keys("[Enter]");
   gdItemPedido.Keys("[F10]");
-
   
 }
-
- /* let i = 0;
-    let produtoAtual = Aliases.SIDI.frmPrincipal.MDIClient.TelaPedidos.PageControl.tsitems_pedido.dbgPedido.Keys();
-  while(aqString.Find(produtoAtual,produto) == -1){ 
-    // Volta para o campo do produto antes de inserir novamente -- [REF - PRODUTO - COMBINAÇÃO/COR - CÓDIGO PROD]
-    if(i > 0){
-     Aliases.SIDI.frmPrincipal.MDIClient.TelaPedidos.PageControl.tsitems_pedido.dbgPedido.Keys("[Left][Left]" + produto + "[Tab]");
-     Aliases.SIDI.frmPrincipal.MDIClient.TelaPedidos.PageControl.tsitems_pedido.dbgPedido.Keys(cor + "[Tab]");
-    }else{
-      Aliases.SIDI.frmPrincipal.MDIClient.TelaPedidos.PageControl.tsitems_pedido.dbgPedido.Keys(produto + "[Tab]");
-      Aliases.SIDI.frmPrincipal.MDIClient.TelaPedidos.PageControl.tsitems_pedido.dbgPedido.Click();
-      Aliases.SIDI.frmPrincipal.MDIClient.TelaPedidos.PageControl.tsitems_pedido.dbgPedido.Keys(cor+"[Tab]");
-      Aliases.SIDI.frmPrincipal.MDIClient.TelaPedidos.PageControl.tsitems_pedido.dbgPedido.Click();
-    }
-    produtoAtual = Aliases.SIDI.frmPrincipal.MDIClient.TelaPedidos.PageControl.tsitems_pedido.dbgPedido.Fields(2).Text;
-    i++; 
-  }*/
-  
-
 
 function pesquisaPedido(pedido)
 {
@@ -129,7 +98,6 @@ function pesquisaPedido(pedido)
 function fazEntrega(){
   // Faz a entrega
   alteraAba("Entregas");
-  Principal.clicaEditar();
   Aliases.SIDI.frmPrincipal.MDIClient.TelaPedidos.PageControl.tsEntregas.gbEntregas.pnlEntrega.pnlEntregaTitulo.btnEntrega.ClickButton();
   Aliases.SIDI.frmPrincipal.MDIClient.TelaPedidos.Panel1.PanelBotoes.btnConfirma.ClickButton();
   
@@ -175,7 +143,6 @@ function gerarParcelas()
   
   
   //Valida numero NF e Serie
- // numPedido = Aliases.SIDI.frmPrincipal.MDIClient.TelaPedidos.PageControl.tsitems_pedido.PanelPedido.NUMERO.Text;
   numPedido = Aliases.SIDI.frmPrincipal.MDIClient.TelaPedidos.PageControl.tsitems_pedido.PanelPedido.NUMERO_PROD.Text;
   alteraAba("Dados basicos");
   numNF = Aliases.SIDI.frmPrincipal.MDIClient.TelaPedidos.PageControl.tsdados.dbacompanhamento.NOTA_FISCAL.Text;
@@ -190,9 +157,8 @@ function gerarParcelas()
   
 }
 
-/*
-* Pesquisa o pedido e retorna a situação
-*/
+//Pesquisa o pedido e retorna a situação
+
 function getSituacao()
 {  
   alteraAba("dados basicos");
@@ -464,11 +430,8 @@ function pesquisaAvancadaVisualizaRelatorios()
   }
 }
 
+// Insere data inicial e fim para filrar os pedidos 
 
-
-/*
-*  Insere data inicial e fim para filrar os pedidos 
-*/
 function setDataCadastro(dataIni, dataFim)
 {
   var objeto;
@@ -480,45 +443,39 @@ function setDataCadastro(dataIni, dataFim)
   objeto.DataCadastroFim.Keys(dataFim);
 }
 
+//  Aplica Criterios na pesquisa avançada
 
-/*
-*   Aplica Criterios na pesquisa avançada
-*/
 function aplicaCriterios()
 {
   Aliases.SIDI.frmPrincipal.MDIClient.frmPesquisaAvancadaPedido.Filtros.btnAplicarCriterios.ClickButton();
 }
 
-/*
-*   Altera o Classificar Por da pesquisa avançada
-*/
+
+//  Altera o Classificar Por da pesquisa avançada
+
 function classificarPor(classificar)
 {
   Aliases.SIDI.frmPrincipal.MDIClient.frmPesquisaAvancadaPedido.Filtros.FiltrosPesquisa.PainelFiltros.gbClassificarPor.CLASSIFICAR_POR.Edit.Keys(classificar);
   Aliases.SIDI.frmPrincipal.MDIClient.frmPesquisaAvancadaPedido.Filtros.FiltrosPesquisa.PainelFiltros.gbClassificarPor.CLASSIFICAR_POR.Edit.Keys("[Tab]");
 }
 
-/*
-*   Altera a aba dos resultados da pesquisa
-*/
+//   Altera a aba dos resultados da pesquisa
+
 function selecionaAba(aba)
 {
   Aliases.SIDI.frmPrincipal.MDIClient.frmPesquisaAvancadaPedido.Paginas2.ClickTab(aba);
 }
 
-/*
-*   Clica com botão direirto e marca todos os pedidos
-*/
+//  Clica com botão direirto e marca todos os pedidos
+
 function marcaTodos()
 {
   Aliases.SIDI.frmPrincipal.MDIClient.frmPesquisaAvancadaPedido.Paginas2.tsPedidos.dbgResultado.ClickR();
   Aliases.SIDI.frmPrincipal.MDIClient.frmPesquisaAvancadaPedido.Paginas2.tsPedidos.dbgResultado.PopupMenu.Click("Marcar Todos");
 }
 
+//  Recebe o nome do CheckBox e marca se estiver desmarcado ou caso contrarios desmarca
 
-/*
-*   Recebe o nome do CheckBox e marca se estiver desmarcado ou caso contrarios desmarca
-*/
 function clicaCheckBoxPesquisaAvancada(cb)
 {
   var painel;

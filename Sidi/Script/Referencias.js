@@ -17,20 +17,14 @@ function testaReferencias()
 
 function cadastraReferencia(referencia)
 {
-  abreTela();
-  
-  Principal.clicaNovo();
-  
-  insereDescricao(referencia);
-  
-  insereGrade("38 AO 43");
-  
-  insereNumeracao("38 AO 43");
-  
-  insereLinha("Adulto");
-  
+  abreTela();  
+  Principal.clicaNovo();  
+  insereDescricao(referencia);  
+  insereGrade("38 AO 43");  
+  insereNumeracao("38 AO 43");  
+  insereLinha("Adulto");  
   abreAbaCordenacoes();
-  
+  if(Project.Variables.ControleSistema) 
   insereForma("Forma padrao");
   
 }

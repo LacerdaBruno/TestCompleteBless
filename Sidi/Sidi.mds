@@ -211,7 +211,7 @@
 				<Variable Name="Produto" Type="{4AD4881B-176C-4C96-8288-FBBB7E3D1FE3}" Local="False">
 					<DefValue RowCount="1" ColumnCount="8">
 						<Columns ColumnName0="descricao" ColumnName1="referencia" ColumnName2="unitario_Vista" ColumnName3="unitario" ColumnName4="pesoLiquido" ColumnName5="pesoBruto" ColumnName6="cor" ColumnName7="unit_volume" />
-						<Row No="0" Cell0="5400450053005400450030003100" Cell1="5400450053005400450030003100" Cell2="31003000" Cell3="31003000" Cell4="31003500" Cell5="31003500" Cell6="41005A0055004C00" Cell7="33003800200041004F0020003400330020002D00200043004100490058004100200043004F004D00200031003200200050004100520045005300200033003800200041004F00200034003300" />
+						<Row No="0" Cell0="5400450053005400450030003100" Cell1="5400450053005400450030003100" Cell2="31003000" Cell3="31003000" Cell4="31003500" Cell5="31003500" Cell6="41005A0055004C00" Cell7="31003200200050004500C7004100530020002D0020005A00200033003800200041004F00200034003300" />
 					</DefValue>
 				</Variable>
 				<Variable Name="UnidadeMedidas" Type="{4AD4881B-176C-4C96-8288-FBBB7E3D1FE3}" Local="False">
@@ -319,6 +319,11 @@
 				<Variable Name="CodigoMateriais" Type="{8ECBD24A-6DA1-4476-A473-EE3A52F06A83}" Local="False">
 					<DefValue Kind="{002E9C22-1E7F-4CEC-AFD0-5C1ACCB5BA1F}">
 						<ConnectionInfo ConnectionString="Provider=MSDASQL.1;Persist Security Info=False;Extended Properties=&quot;DSN=SIDI;Driver=Firebird/InterBase(r) driver;Dbname=C:\bless\Bin\Data\SIDI\DADOS\DADOS.FDB;CHARSET=NONE;UID=SYSDBA;Client=C:\Program Files\Firebird\Firebird_4_0\fbclient.dll&quot;" Login="SYSDBA" Psw="A0B0153E2BCA20676AF1096E0BC206B76FD97E5B0503C954F449" Query="SELECT CODIGO_USUARIO FROM ITEM_ESTOQUE" />
+					</DefValue>
+				</Variable>
+				<Variable Name="ControleSistema" Type="{8ECBD24A-6DA1-4476-A473-EE3A52F06A83}" Local="False">
+					<DefValue Kind="{002E9C22-1E7F-4CEC-AFD0-5C1ACCB5BA1F}">
+						<ConnectionInfo ConnectionString="Provider=MSDASQL.1;Persist Security Info=False;Extended Properties=&quot;DSN=SIDI;Driver=Firebird/InterBase(r) driver;Dbname=C:\bless\Bin\Data\SIDI\DADOS\DADOS.FDB;CHARSET=NONE;UID=SYSDBA;Client=C:\Program Files\Firebird\Firebird_4_0\fbclient.dll&quot;" Login="SYSDBA" Psw="A0B0153E2BCA20676AF1096E0BC206B76FD97E5B0503C954F449" Query="select CONSIDERA_GRADE_COORDENACAO&#32;&#32;from controle_sistema" />
 					</DefValue>
 				</Variable>
 			</Items>

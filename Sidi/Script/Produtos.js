@@ -12,7 +12,8 @@ function testaProdutos()
                     Project.Variables.Produto.descricao(y), 
                     Project.Variables.Produto.unit_volume(y),
                     Project.Variables.Produto.unitario(y),
-                    Project.Variables.Produto.unitario_Vista(y));
+                    Project.Variables.Produto.unitario_Vista(y),
+                    Project.Variables.Produto.cor(y));
   
     insereCor(Project.Variables.Produto.cor(y)
     , "Solado", "Palmilha", "marca");
@@ -67,7 +68,7 @@ function insereCor(cor, solado, palmilha, marca)
   confirma();
 }
 
-function cadastraProduto(referencia, descricao, unitVolume, custo, custoVista)
+function cadastraProduto(referencia, descricao, unitVolume, custo, custoVista, cor)
 {
   Principal.alteraAba("Produção")  
 
@@ -84,6 +85,10 @@ function cadastraProduto(referencia, descricao, unitVolume, custo, custoVista)
   insereCusto(custo);
   
   insereCustoVista(custoVista);
+  
+  abreAbaCores();
+  
+  insereDescCor(cor);
   
   confirma();
   Principal.clicaEditar();
@@ -118,19 +123,18 @@ function insereDescricao(descricao)
 
 function insereUnidadeVolume(un)
 {
-  Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsDadosModelos.ModelosCadastro.CalcUnidadesVolume.Keys(" ");  
-  Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsDadosModelos.ModelosCadastro.CalcUnidadesVolume.Keys(un);
-  Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsDadosModelos.ModelosCadastro.CalcUnidadesVolume.Keys("[Enter]");  
+  var unidadeVolume = Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsDadosModelos.ModelosCadastro.CalcUnidadesVolume;
+  Principal.insereDropDownValue(unidadeVolume, un);
 }
 
 function insereCusto(custo)
 {
-  Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsDadosModelos.ModelosCadastro.PanelProdutoNF.PRECO_VENDA.Keys(custo);
+  Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsDadosModelos.ModelosCadastro.PageControl2.lsGeral2.PRECO_VENDA.Keys(custo);
 }
 
 function insereCustoVista(custo)
 {
-  Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsDadosModelos.ModelosCadastro.PanelProdutoNF.PRECO_VENDA_NF.Keys(custo);
+  Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsDadosModelos.ModelosCadastro.PageControl2.lsGeral2.PRECO_VENDA_NF.Keys(custo);
 }
 function confirma()
 {
@@ -145,7 +149,32 @@ function abreAbaCores()
 
 function insereDescCor(cor)
 {
-  Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsVersao.PageControlCores.tsDadosVersao.dbEditDescVersao.SetText(cor);
+  var btnCadastrarCombinacao = Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.btnCadastrarCombinacao;
+  var corCombinacao = Aliases.SIDI.frmPrincipal.MDIClient.frmCombinacao.PageControlCombinacao.tsPesquisa.PanelGridCombinacao;
+  if (btnCadastrarCombinacao.Exists) 
+  {
+    btnCadastrarCombinacao.Click();
+    corCombinacao.Keys("[Tab]");
+    corCombinacao.Keys(cor);
+    corCombinacao.Keys("[Enter]");     
+  }
+  else{
+    Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsVersao.PageControlCores.tsDadosVersao.dbEditDescVersao.SetText(cor);
+  } 
+  
+  Principal.confirma(Aliases.SIDI.frmPrincipal.MDIClient.frmCombinacao.PainelConfirmaCombinacao.PanelBotoesCombinacao.btnConfirma, "Combinação");
+  Principal.verificaConfirmado(Aliases.SIDI.frmPrincipal.MDIClient.frmCombinacao.PainelConfirmaCombinacao.PanelBotoesCombinacao.btnConfirma, "Combinação");
+  Principal.fechaTela();
+  Aliases.SIDI.TMessageForm2.Yes.Click();
+  
+  if (btnCadastrarCombinacao.Exists) 
+  {
+  Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsVersao.PageControlCores.tsDadosVersao.dbDescVersao.Keys(cor);  
+  }
+  else
+  {
+  Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsVersao.PageControlCores.tsDadosVersao.dbEditDescVersao.SetText(cor);  
+  }  
 }
 
 function insereCorBase(corb)
