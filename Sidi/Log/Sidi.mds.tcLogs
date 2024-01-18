@@ -23,174 +23,30 @@
 		<Node name="logs">
 			<Node name="log idx=0000">
 				<Prp name="caption" type="S" value=""/>
-				<Prp name="datetime" type="D" value="45243.6633116898"/>
+				<Prp name="datetime" type="D" value="45306.7082354745"/>
 				<Prp name="description" type="S" value=""/>
-				<Prp name="key" type="S" value="{866A5E55-DBDD-49AD-9881-918E3377E3FC}"/>
-				<Prp name="nameofroot" type="S" value="Script Test Log [Pedidos\testaPedidos]"/>
-				<Prp name="relpath" type="S" value="13_11_2023_15_55_10_130\Description.tcLog"/>
+				<Prp name="key" type="S" value="{E6367539-3095-4C84-9A2D-C342B007E260}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [Produtos\testaProdutos]"/>
+				<Prp name="relpath" type="S" value="15_01_2024_16_59_51_545\Description.tcLog"/>
 				<Prp name="status" type="I" value="2"/>
 			</Node>
 			<Node name="log idx=0001">
 				<Prp name="caption" type="S" value=""/>
-				<Prp name="datetime" type="D" value="45243.6661049537"/>
+				<Prp name="datetime" type="D" value="45306.7177467014"/>
 				<Prp name="description" type="S" value=""/>
-				<Prp name="key" type="S" value="{8F405AC5-387D-42A9-A005-E9639BDB1D2E}"/>
-				<Prp name="nameofroot" type="S" value="Script Test Log [Pedidos\testaPedidos]"/>
-				<Prp name="relpath" type="S" value="13_11_2023_15_59_11_468\Description.tcLog"/>
+				<Prp name="key" type="S" value="{44AAA328-83FE-4633-96A5-27B7D41DD185}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [Produtos\testaProdutos]"/>
+				<Prp name="relpath" type="S" value="15_01_2024_17_13_33_315\Description.tcLog"/>
 				<Prp name="status" type="I" value="2"/>
 			</Node>
 			<Node name="log idx=0002">
 				<Prp name="caption" type="S" value=""/>
-				<Prp name="datetime" type="D" value="45243.6773122338"/>
+				<Prp name="datetime" type="D" value="45306.7186904167"/>
 				<Prp name="description" type="S" value=""/>
-				<Prp name="key" type="S" value="{B9150F91-EAA6-4559-95DD-C67E467D1009}"/>
-				<Prp name="nameofroot" type="S" value="Script Test Log [Pedidos\testaPedidos]"/>
-				<Prp name="relpath" type="S" value="13_11_2023_16_15_19_777\Description.tcLog"/>
+				<Prp name="key" type="S" value="{B4CCA445-1081-4BEA-A499-0D7921088BF3}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [Produtos\testaProdutos]"/>
+				<Prp name="relpath" type="S" value="15_01_2024_17_14_54_852\Description.tcLog"/>
 				<Prp name="status" type="I" value="2"/>
-			</Node>
-			<Node name="log idx=0003">
-				<Prp name="caption" type="S" value=""/>
-				<Prp name="datetime" type="D" value="45243.6788103125"/>
-				<Prp name="description" type="S" value=""/>
-				<Prp name="key" type="S" value="{D6B15ED0-A302-4872-8C99-CF8BD9041197}"/>
-				<Prp name="nameofroot" type="S" value="Script Test Log [Pedidos\testaPedidos]"/>
-				<Prp name="relpath" type="S" value="13_11_2023_16_17_29_211\Description.tcLog"/>
-				<Prp name="status" type="I" value="2"/>
-			</Node>
-			<Node name="log idx=0004">
-				<Prp name="caption" type="S" value=""/>
-				<Prp name="datetime" type="D" value="45243.6914964931"/>
-				<Prp name="description" type="S" value=""/>
-				<Prp name="key" type="S" value="{2A7BD0F6-19B8-4E80-B940-C9353D2B3F4D}"/>
-				<Prp name="nameofroot" type="S" value="Script Test Log [Pedidos\testaPedidos]"/>
-				<Prp name="relpath" type="S" value="13_11_2023_16_35_45_297\Description.tcLog"/>
-				<Prp name="status" type="I" value="2"/>
-			</Node>
-			<Node name="log idx=0005">
-				<Prp name="caption" type="S" value=""/>
-				<Prp name="datetime" type="D" value="45243.6937932755"/>
-				<Prp name="description" type="S" value=""/>
-				<Prp name="key" type="S" value="{24959D8E-C4C5-4F04-BC6B-5968CBE04C18}"/>
-				<Prp name="nameofroot" type="S" value="Script Test Log [Pedidos\testaPedidos]"/>
-				<Prp name="relpath" type="S" value="13_11_2023_16_39_03_739\Description.tcLog"/>
-				<Prp name="status" type="I" value="2"/>
-			</Node>
-			<Node name="log idx=0006">
-				<Prp name="caption" type="S" value=""/>
-				<Prp name="datetime" type="D" value="45243.6945852315"/>
-				<Prp name="description" type="S" value=""/>
-				<Prp name="key" type="S" value="{C98D4FA8-59E4-4744-BDE8-91EFE772B851}"/>
-				<Prp name="nameofroot" type="S" value="Script Test Log [Pedidos\testaPedidos]"/>
-				<Prp name="relpath" type="S" value="13_11_2023_16_40_12_164\Description.tcLog"/>
-				<Prp name="status" type="I" value="2"/>
-			</Node>
-			<Node name="log idx=0007">
-				<Prp name="caption" type="S" value=""/>
-				<Prp name="datetime" type="D" value="45243.6959537384"/>
-				<Prp name="description" type="S" value=""/>
-				<Prp name="key" type="S" value="{84EE0393-2E39-49C8-8030-B63C0D22FF7C}"/>
-				<Prp name="nameofroot" type="S" value="Script Test Log [Pedidos\insereProduto]"/>
-				<Prp name="relpath" type="S" value="13_11_2023_16_42_10_403\Description.tcLog"/>
-				<Prp name="status" type="I" value="2"/>
-			</Node>
-			<Node name="log idx=0008">
-				<Prp name="caption" type="S" value=""/>
-				<Prp name="datetime" type="D" value="45243.6962682407"/>
-				<Prp name="description" type="S" value=""/>
-				<Prp name="key" type="S" value="{4897A405-CCC4-4EA4-9BE4-2E4B04CEB855}"/>
-				<Prp name="nameofroot" type="S" value="Script Test Log [Pedidos\insereProduto]"/>
-				<Prp name="relpath" type="S" value="13_11_2023_16_42_37_576\Description.tcLog"/>
-				<Prp name="status" type="I" value="1"/>
-			</Node>
-			<Node name="log idx=0009">
-				<Prp name="caption" type="S" value=""/>
-				<Prp name="datetime" type="D" value="45243.6969485532"/>
-				<Prp name="description" type="S" value=""/>
-				<Prp name="key" type="S" value="{5B7A2DEA-FC3E-48D2-8B36-AB204523CC05}"/>
-				<Prp name="nameofroot" type="S" value="Script Test Log [Pedidos\testaPedidos]"/>
-				<Prp name="relpath" type="S" value="13_11_2023_16_43_36_355\Description.tcLog"/>
-				<Prp name="status" type="I" value="2"/>
-			</Node>
-			<Node name="log idx=0010">
-				<Prp name="caption" type="S" value=""/>
-				<Prp name="datetime" type="D" value="45243.6979937963"/>
-				<Prp name="description" type="S" value=""/>
-				<Prp name="key" type="S" value="{DDB346B6-25C0-4A05-8B6C-38BC7FEBD6CE}"/>
-				<Prp name="nameofroot" type="S" value="Script Test Log [Pedidos\insereProduto]"/>
-				<Prp name="relpath" type="S" value="13_11_2023_16_45_06_664\Description.tcLog"/>
-				<Prp name="status" type="I" value="1"/>
-			</Node>
-			<Node name="log idx=0011">
-				<Prp name="caption" type="S" value=""/>
-				<Prp name="datetime" type="D" value="45243.698712338"/>
-				<Prp name="description" type="S" value=""/>
-				<Prp name="key" type="S" value="{073D5CF9-3A18-4056-ADB7-2A7DC8F6C852}"/>
-				<Prp name="nameofroot" type="S" value="Script Test Log [Pedidos\insereProduto]"/>
-				<Prp name="relpath" type="S" value="13_11_2023_16_46_08_746\Description.tcLog"/>
-				<Prp name="status" type="I" value="1"/>
-			</Node>
-			<Node name="log idx=0012">
-				<Prp name="caption" type="S" value=""/>
-				<Prp name="datetime" type="D" value="45243.7022652431"/>
-				<Prp name="description" type="S" value=""/>
-				<Prp name="key" type="S" value="{D70F7B76-1DB0-4B2D-929A-EFADF1005AE0}"/>
-				<Prp name="nameofroot" type="S" value="Script Test Log [Pedidos\insereProduto]"/>
-				<Prp name="relpath" type="S" value="13_11_2023_16_51_15_717\Description.tcLog"/>
-				<Prp name="status" type="I" value="1"/>
-			</Node>
-			<Node name="log idx=0013">
-				<Prp name="caption" type="S" value=""/>
-				<Prp name="datetime" type="D" value="45243.7051952778"/>
-				<Prp name="description" type="S" value=""/>
-				<Prp name="key" type="S" value="{E20D2DCB-BC66-4BEC-9BA1-458DC4D43BE8}"/>
-				<Prp name="nameofroot" type="S" value="Script Test Log [Pedidos\insereProduto]"/>
-				<Prp name="relpath" type="S" value="13_11_2023_16_55_28_872\Description.tcLog"/>
-				<Prp name="status" type="I" value="1"/>
-			</Node>
-			<Node name="log idx=0014">
-				<Prp name="caption" type="S" value=""/>
-				<Prp name="datetime" type="D" value="45243.7068910185"/>
-				<Prp name="description" type="S" value=""/>
-				<Prp name="key" type="S" value="{BF26702D-5425-45DE-961E-762783AAB390}"/>
-				<Prp name="nameofroot" type="S" value="Script Test Log [Pedidos\insereProduto]"/>
-				<Prp name="relpath" type="S" value="13_11_2023_16_57_55_384\Description.tcLog"/>
-				<Prp name="status" type="I" value="1"/>
-			</Node>
-			<Node name="log idx=0015">
-				<Prp name="caption" type="S" value=""/>
-				<Prp name="datetime" type="D" value="45243.7074551852"/>
-				<Prp name="description" type="S" value=""/>
-				<Prp name="key" type="S" value="{8B2D5E51-D0BE-4AFB-B6AF-8D87458518BB}"/>
-				<Prp name="nameofroot" type="S" value="Script Test Log [Pedidos\validaValores]"/>
-				<Prp name="relpath" type="S" value="13_11_2023_16_58_44_128\Description.tcLog"/>
-				<Prp name="status" type="I" value="2"/>
-			</Node>
-			<Node name="log idx=0016">
-				<Prp name="caption" type="S" value=""/>
-				<Prp name="datetime" type="D" value="45243.7076394676"/>
-				<Prp name="description" type="S" value=""/>
-				<Prp name="key" type="S" value="{7BF25F77-612D-4B0D-9866-F042AE38A052}"/>
-				<Prp name="nameofroot" type="S" value="Script Test Log [Pedidos\insereProduto]"/>
-				<Prp name="relpath" type="S" value="13_11_2023_16_59_00_50\Description.tcLog"/>
-				<Prp name="status" type="I" value="2"/>
-			</Node>
-			<Node name="log idx=0017">
-				<Prp name="caption" type="S" value=""/>
-				<Prp name="datetime" type="D" value="45243.7082068056"/>
-				<Prp name="description" type="S" value=""/>
-				<Prp name="key" type="S" value="{D96BDD36-8C87-449B-8741-0C8ACA79C5FF}"/>
-				<Prp name="nameofroot" type="S" value="Script Test Log [Pedidos\insereProduto]"/>
-				<Prp name="relpath" type="S" value="13_11_2023_16_59_49_68\Description.tcLog"/>
-				<Prp name="status" type="I" value="1"/>
-			</Node>
-			<Node name="log idx=0018">
-				<Prp name="caption" type="S" value=""/>
-				<Prp name="datetime" type="D" value="45243.7085251389"/>
-				<Prp name="description" type="S" value=""/>
-				<Prp name="key" type="S" value="{0C746AD8-F26D-412A-8F79-5BF6AFDB4EC6}"/>
-				<Prp name="nameofroot" type="S" value="Script Test Log [Pedidos\insereProduto]"/>
-				<Prp name="relpath" type="S" value="13_11_2023_17_00_16_572\Description.tcLog"/>
-				<Prp name="status" type="I" value="1"/>
 			</Node>
 		</Node>
 		<Prp name="signature" type="S" value="{681DCC69-A39F-4C4D-8E7D-B2D9362FAF4F}"/>

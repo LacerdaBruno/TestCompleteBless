@@ -23,6 +23,12 @@
 			<Node name="{24b6fa0b-0143-461a-9758-aeb9e9a9428b}">
 				<Prp name="default project" type="S" value="{AF427052-55EC-4B73-86EC-91EBAD1C1E73}"/>
 			</Node>
+			<Node name="{502b3972-fb5f-4ed0-b0fb-334d541f1b7e}">
+				<Prp name="relpath" type="S" value="Sidi_Web\Sidi_Web.mds.tcLS"/>
+			</Node>
+			<Node name="{67cbf482-04a9-45c1-896e-12aa0082b6ad}">
+				<Prp name="relpath" type="S" value="Sidi_Web\Sidi_Web.mds.tcLS"/>
+			</Node>
 			<Node name="{af427052-55ec-4b73-86ec-91ebad1c1e73}">
 				<Prp name="relpath" type="S" value="Sidi\Sidi.mds.tcLS"/>
 			</Node>

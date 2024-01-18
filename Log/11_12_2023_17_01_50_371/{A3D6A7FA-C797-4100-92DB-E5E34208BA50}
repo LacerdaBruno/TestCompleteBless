@@ -1,0 +1,1882 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="message 25">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object right" type="I" value="1362"/>
+					<Prp name="object top" type="I" value="184"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="line #" type="I" value="27"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="object left" type="I" value="4"/>
+					<Prp name="object name" type="S" value="Aliases.SIDI.frmPrincipal.MDIClient.frmGrupoMateriais.PageControlGrupoMateriais.tsPesquisaGrupoMateriais.PanelGridGrupoMateriais.dbGridGrupoMateriais"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="datetime" type="D" value="45271.8395875231"/>
+					<Prp name="object bottom" type="I" value="652"/>
+					<Prp name="image file name" type="S" value="visImage586.png"/>
+				</Node>
+			</Node>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="remarks" type="S" value="'[Right]' was sent as a keyboard input to the following window or control.&#xA;&#xA;Tested object:&#xA;Aliases.SIDI.frmPrincipal.MDIClient.frmGrupoMateriais.PageControlGrupoMateriais.tsPesquisaGrupoMateriais.PanelGridGrupoMateriais.dbGridGrupoMateriais&#xA;(Sys.Process(&quot;SIDI&quot;).VCLObject(&quot;frmPrincipal&quot;).Window(&quot;MDIClient&quot;, &quot;&quot;, 1).VCLObject(&quot;frmGrupoManut&quot;).VCLObject(&quot;PageControl1&quot;).VCLObject(&quot;tsPesquisa&quot;).VCLObject(&quot;PanelGrid&quot;).VCLObject(&quot;dbGridPesquisa&quot;))"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="message" type="S" value="Keyboard input."/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="25"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="date" type="D" value="45271.7145882176"/>
+			<Prp name="line no" type="I" value="27"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 47">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object right" type="I" value="1362"/>
+					<Prp name="object top" type="I" value="184"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="line #" type="I" value="29"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="object left" type="I" value="4"/>
+					<Prp name="object name" type="S" value="Aliases.SIDI.frmPrincipal.MDIClient.frmGrupoMateriais.PageControlGrupoMateriais.tsPesquisaGrupoMateriais.PanelGridGrupoMateriais.dbGridGrupoMateriais"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="datetime" type="D" value="45271.8396748611"/>
+					<Prp name="object bottom" type="I" value="652"/>
+					<Prp name="image file name" type="S" value="visImage608.png"/>
+				</Node>
+			</Node>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="remarks" type="S" value="'[Down]' was sent as a keyboard input to the following window or control.&#xA;&#xA;Tested object:&#xA;Aliases.SIDI.frmPrincipal.MDIClient.frmGrupoMateriais.PageControlGrupoMateriais.tsPesquisaGrupoMateriais.PanelGridGrupoMateriais.dbGridGrupoMateriais&#xA;(Sys.Process(&quot;SIDI&quot;).VCLObject(&quot;frmPrincipal&quot;).Window(&quot;MDIClient&quot;, &quot;&quot;, 1).VCLObject(&quot;frmGrupoManut&quot;).VCLObject(&quot;PageControl1&quot;).VCLObject(&quot;tsPesquisa&quot;).VCLObject(&quot;PanelGrid&quot;).VCLObject(&quot;dbGridPesquisa&quot;))"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="message" type="S" value="Keyboard input."/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="47"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="date" type="D" value="45271.7146761343"/>
+			<Prp name="line no" type="I" value="29"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 50">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object right" type="I" value="1261"/>
+					<Prp name="object top" type="I" value="663"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="line #" type="I" value="52"/>
+					<Prp name="click point x" type="I" value="1221"/>
+					<Prp name="click point y" type="I" value="675"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="object left" type="I" value="1181"/>
+					<Prp name="object name" type="S" value="Aliases.SIDI.frmPrincipal.MDIClient.frmGrupoMateriais.PanelBotoes.PanelBotoesGrupoMateriais.btnConfirma"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="datetime" type="D" value="45271.8396826389"/>
+					<Prp name="object bottom" type="I" value="688"/>
+					<Prp name="image file name" type="S" value="visImage611.png"/>
+				</Node>
+			</Node>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="remarks" type="S" value="Tested object:&#xA;Aliases.SIDI.frmPrincipal.MDIClient.frmGrupoMateriais.PanelBotoes.PanelBotoesGrupoMateriais.btnConfirma&#xA;(Sys.Process(&quot;SIDI&quot;).VCLObject(&quot;frmPrincipal&quot;).Window(&quot;MDIClient&quot;, &quot;&quot;, 1).VCLObject(&quot;frmGrupoManut&quot;).VCLObject(&quot;Panel1&quot;).VCLObject(&quot;PanelBotoes&quot;).VCLObject(&quot;btnConfirma&quot;))"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="message" type="S" value="The button was clicked with the left mouse button."/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="50"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="date" type="D" value="45271.7146835648"/>
+			<Prp name="line no" type="I" value="52"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 35">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object right" type="I" value="1362"/>
+					<Prp name="object top" type="I" value="184"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="line #" type="I" value="29"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="object left" type="I" value="4"/>
+					<Prp name="object name" type="S" value="Aliases.SIDI.frmPrincipal.MDIClient.frmGrupoMateriais.PageControlGrupoMateriais.tsPesquisaGrupoMateriais.PanelGridGrupoMateriais.dbGridGrupoMateriais"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="datetime" type="D" value="45271.8396316898"/>
+					<Prp name="object bottom" type="I" value="652"/>
+					<Prp name="image file name" type="S" value="visImage596.png"/>
+				</Node>
+			</Node>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="remarks" type="S" value="'[Down]' was sent as a keyboard input to the following window or control.&#xA;&#xA;Tested object:&#xA;Aliases.SIDI.frmPrincipal.MDIClient.frmGrupoMateriais.PageControlGrupoMateriais.tsPesquisaGrupoMateriais.PanelGridGrupoMateriais.dbGridGrupoMateriais&#xA;(Sys.Process(&quot;SIDI&quot;).VCLObject(&quot;frmPrincipal&quot;).Window(&quot;MDIClient&quot;, &quot;&quot;, 1).VCLObject(&quot;frmGrupoManut&quot;).VCLObject(&quot;PageControl1&quot;).VCLObject(&quot;tsPesquisa&quot;).VCLObject(&quot;PanelGrid&quot;).VCLObject(&quot;dbGridPesquisa&quot;))"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="message" type="S" value="Keyboard input."/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="35"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="date" type="D" value="45271.7146327315"/>
+			<Prp name="line no" type="I" value="29"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 40">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object right" type="I" value="1362"/>
+					<Prp name="object top" type="I" value="184"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="line #" type="I" value="26"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="object left" type="I" value="4"/>
+					<Prp name="object name" type="S" value="Aliases.SIDI.frmPrincipal.MDIClient.frmGrupoMateriais.PageControlGrupoMateriais.tsPesquisaGrupoMateriais.PanelGridGrupoMateriais.dbGridGrupoMateriais"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="datetime" type="D" value="45271.8396512847"/>
+					<Prp name="object bottom" type="I" value="652"/>
+					<Prp name="image file name" type="S" value="visImage601.png"/>
+				</Node>
+			</Node>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="remarks" type="S" value="'[Home]' was sent as a keyboard input to the following window or control.&#xA;&#xA;Tested object:&#xA;Aliases.SIDI.frmPrincipal.MDIClient.frmGrupoMateriais.PageControlGrupoMateriais.tsPesquisaGrupoMateriais.PanelGridGrupoMateriais.dbGridGrupoMateriais&#xA;(Sys.Process(&quot;SIDI&quot;).VCLObject(&quot;frmPrincipal&quot;).Window(&quot;MDIClient&quot;, &quot;&quot;, 1).VCLObject(&quot;frmGrupoManut&quot;).VCLObject(&quot;PageControl1&quot;).VCLObject(&quot;tsPesquisa&quot;).VCLObject(&quot;PanelGrid&quot;).VCLObject(&quot;dbGridPesquisa&quot;))"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="message" type="S" value="Keyboard input."/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="40"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="date" type="D" value="45271.7146522106"/>
+			<Prp name="line no" type="I" value="26"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 45">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object right" type="I" value="1362"/>
+					<Prp name="object top" type="I" value="184"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="line #" type="I" value="27"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="object left" type="I" value="4"/>
+					<Prp name="object name" type="S" value="Aliases.SIDI.frmPrincipal.MDIClient.frmGrupoMateriais.PageControlGrupoMateriais.tsPesquisaGrupoMateriais.PanelGridGrupoMateriais.dbGridGrupoMateriais"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="datetime" type="D" value="45271.8396655787"/>
+					<Prp name="object bottom" type="I" value="652"/>
+					<Prp name="image file name" type="S" value="visImage606.png"/>
+				</Node>
+			</Node>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="remarks" type="S" value="'[Right]' was sent as a keyboard input to the following window or control.&#xA;&#xA;Tested object:&#xA;Aliases.SIDI.frmPrincipal.MDIClient.frmGrupoMateriais.PageControlGrupoMateriais.tsPesquisaGrupoMateriais.PanelGridGrupoMateriais.dbGridGrupoMateriais&#xA;(Sys.Process(&quot;SIDI&quot;).VCLObject(&quot;frmPrincipal&quot;).Window(&quot;MDIClient&quot;, &quot;&quot;, 1).VCLObject(&quot;frmGrupoManut&quot;).VCLObject(&quot;PageControl1&quot;).VCLObject(&quot;tsPesquisa&quot;).VCLObject(&quot;PanelGrid&quot;).VCLObject(&quot;dbGridPesquisa&quot;))"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="message" type="S" value="Keyboard input."/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="45"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="date" type="D" value="45271.7146662731"/>
+			<Prp name="line no" type="I" value="27"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 4">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object right" type="I" value="1362"/>
+					<Prp name="object top" type="I" value="184"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="line #" type="I" value="26"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="object left" type="I" value="4"/>
+					<Prp name="object name" type="S" value="Aliases.SIDI.frmPrincipal.MDIClient.frmGrupoMateriais.PageControlGrupoMateriais.tsPesquisaGrupoMateriais.PanelGridGrupoMateriais.dbGridGrupoMateriais"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="datetime" type="D" value="45271.8395098958"/>
+					<Prp name="object bottom" type="I" value="652"/>
+					<Prp name="image file name" type="S" value="visImage565.png"/>
+				</Node>
+			</Node>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="remarks" type="S" value="'[Home]' was sent as a keyboard input to the following window or control.&#xA;&#xA;Tested object:&#xA;Aliases.SIDI.frmPrincipal.MDIClient.frmGrupoMateriais.PageControlGrupoMateriais.tsPesquisaGrupoMateriais.PanelGridGrupoMateriais.dbGridGrupoMateriais&#xA;(Sys.Process(&quot;SIDI&quot;).VCLObject(&quot;frmPrincipal&quot;).Window(&quot;MDIClient&quot;, &quot;&quot;, 1).VCLObject(&quot;frmGrupoManut&quot;).VCLObject(&quot;PageControl1&quot;).VCLObject(&quot;tsPesquisa&quot;).VCLObject(&quot;PanelGrid&quot;).VCLObject(&quot;dbGridPesquisa&quot;))"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="message" type="S" value="Keyboard input."/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="4"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="date" type="D" value="45271.7145105903"/>
+			<Prp name="line no" type="I" value="26"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 43">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object right" type="I" value="1362"/>
+					<Prp name="object top" type="I" value="184"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="line #" type="I" value="29"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="object left" type="I" value="4"/>
+					<Prp name="object name" type="S" value="Aliases.SIDI.frmPrincipal.MDIClient.frmGrupoMateriais.PageControlGrupoMateriais.tsPesquisaGrupoMateriais.PanelGridGrupoMateriais.dbGridGrupoMateriais"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="datetime" type="D" value="45271.8396612731"/>
+					<Prp name="object bottom" type="I" value="652"/>
+					<Prp name="image file name" type="S" value="visImage604.png"/>
+				</Node>
+			</Node>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="remarks" type="S" value="'[Down]' was sent as a keyboard input to the following window or control.&#xA;&#xA;Tested object:&#xA;Aliases.SIDI.frmPrincipal.MDIClient.frmGrupoMateriais.PageControlGrupoMateriais.tsPesquisaGrupoMateriais.PanelGridGrupoMateriais.dbGridGrupoMateriais&#xA;(Sys.Process(&quot;SIDI&quot;).VCLObject(&quot;frmPrincipal&quot;).Window(&quot;MDIClient&quot;, &quot;&quot;, 1).VCLObject(&quot;frmGrupoManut&quot;).VCLObject(&quot;PageControl1&quot;).VCLObject(&quot;tsPesquisa&quot;).VCLObject(&quot;PanelGrid&quot;).VCLObject(&quot;dbGridPesquisa&quot;))"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="message" type="S" value="Keyboard input."/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="43"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="date" type="D" value="45271.7146623148"/>
+			<Prp name="line no" type="I" value="29"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 12">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object right" type="I" value="1362"/>
+					<Prp name="object top" type="I" value="184"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="line #" type="I" value="26"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="object left" type="I" value="4"/>
+					<Prp name="object name" type="S" value="Aliases.SIDI.frmPrincipal.MDIClient.frmGrupoMateriais.PageControlGrupoMateriais.tsPesquisaGrupoMateriais.PanelGridGrupoMateriais.dbGridGrupoMateriais"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="datetime" type="D" value="45271.8395395718"/>
+					<Prp name="object bottom" type="I" value="652"/>
+					<Prp name="image file name" type="S" value="visImage573.png"/>
+				</Node>
+			</Node>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="remarks" type="S" value="'[Home]' was sent as a keyboard input to the following window or control.&#xA;&#xA;Tested object:&#xA;Aliases.SIDI.frmPrincipal.MDIClient.frmGrupoMateriais.PageControlGrupoMateriais.tsPesquisaGrupoMateriais.PanelGridGrupoMateriais.dbGridGrupoMateriais&#xA;(Sys.Process(&quot;SIDI&quot;).VCLObject(&quot;frmPrincipal&quot;).Window(&quot;MDIClient&quot;, &quot;&quot;, 1).VCLObject(&quot;frmGrupoManut&quot;).VCLObject(&quot;PageControl1&quot;).VCLObject(&quot;tsPesquisa&quot;).VCLObject(&quot;PanelGrid&quot;).VCLObject(&quot;dbGridPesquisa&quot;))"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="message" type="S" value="Keyboard input."/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="12"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="date" type="D" value="45271.7145403009"/>
+			<Prp name="line no" type="I" value="26"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 21">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object right" type="I" value="1362"/>
+					<Prp name="object top" type="I" value="184"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="line #" type="I" value="27"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="object left" type="I" value="4"/>
+					<Prp name="object name" type="S" value="Aliases.SIDI.frmPrincipal.MDIClient.frmGrupoMateriais.PageControlGrupoMateriais.tsPesquisaGrupoMateriais.PanelGridGrupoMateriais.dbGridGrupoMateriais"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="datetime" type="D" value="45271.8395660764"/>
+					<Prp name="object bottom" type="I" value="652"/>
+					<Prp name="image file name" type="S" value="visImage582.png"/>
+				</Node>
+			</Node>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="remarks" type="S" value="'[Right]' was sent as a keyboard input to the following window or control.&#xA;&#xA;Tested object:&#xA;Aliases.SIDI.frmPrincipal.MDIClient.frmGrupoMateriais.PageControlGrupoMateriais.tsPesquisaGrupoMateriais.PanelGridGrupoMateriais.dbGridGrupoMateriais&#xA;(Sys.Process(&quot;SIDI&quot;).VCLObject(&quot;frmPrincipal&quot;).Window(&quot;MDIClient&quot;, &quot;&quot;, 1).VCLObject(&quot;frmGrupoManut&quot;).VCLObject(&quot;PageControl1&quot;).VCLObject(&quot;tsPesquisa&quot;).VCLObject(&quot;PanelGrid&quot;).VCLObject(&quot;dbGridPesquisa&quot;))"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="message" type="S" value="Keyboard input."/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="21"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="date" type="D" value="45271.7145670023"/>
+			<Prp name="line no" type="I" value="27"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 17">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object right" type="I" value="1362"/>
+					<Prp name="object top" type="I" value="184"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="line #" type="I" value="27"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="object left" type="I" value="4"/>
+					<Prp name="object name" type="S" value="Aliases.SIDI.frmPrincipal.MDIClient.frmGrupoMateriais.PageControlGrupoMateriais.tsPesquisaGrupoMateriais.PanelGridGrupoMateriais.dbGridGrupoMateriais"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="datetime" type="D" value="45271.8395537731"/>
+					<Prp name="object bottom" type="I" value="652"/>
+					<Prp name="image file name" type="S" value="visImage578.png"/>
+				</Node>
+			</Node>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="remarks" type="S" value="'[Right]' was sent as a keyboard input to the following window or control.&#xA;&#xA;Tested object:&#xA;Aliases.SIDI.frmPrincipal.MDIClient.frmGrupoMateriais.PageControlGrupoMateriais.tsPesquisaGrupoMateriais.PanelGridGrupoMateriais.dbGridGrupoMateriais&#xA;(Sys.Process(&quot;SIDI&quot;).VCLObject(&quot;frmPrincipal&quot;).Window(&quot;MDIClient&quot;, &quot;&quot;, 1).VCLObject(&quot;frmGrupoManut&quot;).VCLObject(&quot;PageControl1&quot;).VCLObject(&quot;tsPesquisa&quot;).VCLObject(&quot;PanelGrid&quot;).VCLObject(&quot;dbGridPesquisa&quot;))"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="message" type="S" value="Keyboard input."/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="17"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="date" type="D" value="45271.7145545833"/>
+			<Prp name="line no" type="I" value="27"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 19">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object right" type="I" value="1362"/>
+					<Prp name="object top" type="I" value="184"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="line #" type="I" value="29"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="object left" type="I" value="4"/>
+					<Prp name="object name" type="S" value="Aliases.SIDI.frmPrincipal.MDIClient.frmGrupoMateriais.PageControlGrupoMateriais.tsPesquisaGrupoMateriais.PanelGridGrupoMateriais.dbGridGrupoMateriais"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="datetime" type="D" value="45271.8395614352"/>
+					<Prp name="object bottom" type="I" value="652"/>
+					<Prp name="image file name" type="S" value="visImage580.png"/>
+				</Node>
+			</Node>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="remarks" type="S" value="'[Down]' was sent as a keyboard input to the following window or control.&#xA;&#xA;Tested object:&#xA;Aliases.SIDI.frmPrincipal.MDIClient.frmGrupoMateriais.PageControlGrupoMateriais.tsPesquisaGrupoMateriais.PanelGridGrupoMateriais.dbGridGrupoMateriais&#xA;(Sys.Process(&quot;SIDI&quot;).VCLObject(&quot;frmPrincipal&quot;).Window(&quot;MDIClient&quot;, &quot;&quot;, 1).VCLObject(&quot;frmGrupoManut&quot;).VCLObject(&quot;PageControl1&quot;).VCLObject(&quot;tsPesquisa&quot;).VCLObject(&quot;PanelGrid&quot;).VCLObject(&quot;dbGridPesquisa&quot;))"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="message" type="S" value="Keyboard input."/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="19"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="date" type="D" value="45271.7145625926"/>
+			<Prp name="line no" type="I" value="29"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 16">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object right" type="I" value="1362"/>
+					<Prp name="object top" type="I" value="184"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="line #" type="I" value="26"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="object left" type="I" value="4"/>
+					<Prp name="object name" type="S" value="Aliases.SIDI.frmPrincipal.MDIClient.frmGrupoMateriais.PageControlGrupoMateriais.tsPesquisaGrupoMateriais.PanelGridGrupoMateriais.dbGridGrupoMateriais"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="datetime" type="D" value="45271.839551794"/>
+					<Prp name="object bottom" type="I" value="652"/>
+					<Prp name="image file name" type="S" value="visImage577.png"/>
+				</Node>
+			</Node>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="remarks" type="S" value="'[Home]' was sent as a keyboard input to the following window or control.&#xA;&#xA;Tested object:&#xA;Aliases.SIDI.frmPrincipal.MDIClient.frmGrupoMateriais.PageControlGrupoMateriais.tsPesquisaGrupoMateriais.PanelGridGrupoMateriais.dbGridGrupoMateriais&#xA;(Sys.Process(&quot;SIDI&quot;).VCLObject(&quot;frmPrincipal&quot;).Window(&quot;MDIClient&quot;, &quot;&quot;, 1).VCLObject(&quot;frmGrupoManut&quot;).VCLObject(&quot;PageControl1&quot;).VCLObject(&quot;tsPesquisa&quot;).VCLObject(&quot;PanelGrid&quot;).VCLObject(&quot;dbGridPesquisa&quot;))"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="message" type="S" value="Keyboard input."/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="16"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="date" type="D" value="45271.7145526157"/>
+			<Prp name="line no" type="I" value="26"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 20">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object right" type="I" value="1362"/>
+					<Prp name="object top" type="I" value="184"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="line #" type="I" value="26"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="object left" type="I" value="4"/>
+					<Prp name="object name" type="S" value="Aliases.SIDI.frmPrincipal.MDIClient.frmGrupoMateriais.PageControlGrupoMateriais.tsPesquisaGrupoMateriais.PanelGridGrupoMateriais.dbGridGrupoMateriais"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="datetime" type="D" value="45271.8395640972"/>
+					<Prp name="object bottom" type="I" value="652"/>
+					<Prp name="image file name" type="S" value="visImage581.png"/>
+				</Node>
+			</Node>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="remarks" type="S" value="'[Home]' was sent as a keyboard input to the following window or control.&#xA;&#xA;Tested object:&#xA;Aliases.SIDI.frmPrincipal.MDIClient.frmGrupoMateriais.PageControlGrupoMateriais.tsPesquisaGrupoMateriais.PanelGridGrupoMateriais.dbGridGrupoMateriais&#xA;(Sys.Process(&quot;SIDI&quot;).VCLObject(&quot;frmPrincipal&quot;).Window(&quot;MDIClient&quot;, &quot;&quot;, 1).VCLObject(&quot;frmGrupoManut&quot;).VCLObject(&quot;PageControl1&quot;).VCLObject(&quot;tsPesquisa&quot;).VCLObject(&quot;PanelGrid&quot;).VCLObject(&quot;dbGridPesquisa&quot;))"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="message" type="S" value="Keyboard input."/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="20"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="date" type="D" value="45271.7145649074"/>
+			<Prp name="line no" type="I" value="26"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 13">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object right" type="I" value="1362"/>
+					<Prp name="object top" type="I" value="184"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="line #" type="I" value="27"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="object left" type="I" value="4"/>
+					<Prp name="object name" type="S" value="Aliases.SIDI.frmPrincipal.MDIClient.frmGrupoMateriais.PageControlGrupoMateriais.tsPesquisaGrupoMateriais.PanelGridGrupoMateriais.dbGridGrupoMateriais"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="datetime" type="D" value="45271.8395414583"/>
+					<Prp name="object bottom" type="I" value="652"/>
+					<Prp name="image file name" type="S" value="visImage574.png"/>
+				</Node>
+			</Node>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="remarks" type="S" value="'[Right]' was sent as a keyboard input to the following window or control.&#xA;&#xA;Tested object:&#xA;Aliases.SIDI.frmPrincipal.MDIClient.frmGrupoMateriais.PageControlGrupoMateriais.tsPesquisaGrupoMateriais.PanelGridGrupoMateriais.dbGridGrupoMateriais&#xA;(Sys.Process(&quot;SIDI&quot;).VCLObject(&quot;frmPrincipal&quot;).Window(&quot;MDIClient&quot;, &quot;&quot;, 1).VCLObject(&quot;frmGrupoManut&quot;).VCLObject(&quot;PageControl1&quot;).VCLObject(&quot;tsPesquisa&quot;).VCLObject(&quot;PanelGrid&quot;).VCLObject(&quot;dbGridPesquisa&quot;))"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="message" type="S" value="Keyboard input."/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="13"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="date" type="D" value="45271.7145421528"/>
+			<Prp name="line no" type="I" value="27"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 29">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object right" type="I" value="1362"/>
+					<Prp name="object top" type="I" value="184"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="line #" type="I" value="27"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="object left" type="I" value="4"/>
+					<Prp name="object name" type="S" value="Aliases.SIDI.frmPrincipal.MDIClient.frmGrupoMateriais.PageControlGrupoMateriais.tsPesquisaGrupoMateriais.PanelGridGrupoMateriais.dbGridGrupoMateriais"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="datetime" type="D" value="45271.8396027546"/>
+					<Prp name="object bottom" type="I" value="652"/>
+					<Prp name="image file name" type="S" value="visImage590.png"/>
+				</Node>
+			</Node>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="remarks" type="S" value="'[Right]' was sent as a keyboard input to the following window or control.&#xA;&#xA;Tested object:&#xA;Aliases.SIDI.frmPrincipal.MDIClient.frmGrupoMateriais.PageControlGrupoMateriais.tsPesquisaGrupoMateriais.PanelGridGrupoMateriais.dbGridGrupoMateriais&#xA;(Sys.Process(&quot;SIDI&quot;).VCLObject(&quot;frmPrincipal&quot;).Window(&quot;MDIClient&quot;, &quot;&quot;, 1).VCLObject(&quot;frmGrupoManut&quot;).VCLObject(&quot;PageControl1&quot;).VCLObject(&quot;tsPesquisa&quot;).VCLObject(&quot;PanelGrid&quot;).VCLObject(&quot;dbGridPesquisa&quot;))"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="message" type="S" value="Keyboard input."/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="29"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="date" type="D" value="45271.7146035648"/>
+			<Prp name="line no" type="I" value="27"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 26">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object right" type="I" value="1362"/>
+					<Prp name="object top" type="I" value="184"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="line #" type="I" value="28"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="object left" type="I" value="4"/>
+					<Prp name="object name" type="S" value="Aliases.SIDI.frmPrincipal.MDIClient.frmGrupoMateriais.PageControlGrupoMateriais.tsPesquisaGrupoMateriais.PanelGridGrupoMateriais.dbGridGrupoMateriais"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="datetime" type="D" value="45271.8395897222"/>
+					<Prp name="object bottom" type="I" value="652"/>
+					<Prp name="image file name" type="S" value="visImage587.png"/>
+				</Node>
+			</Node>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="remarks" type="S" value="'ENTRETELAS' was sent as a keyboard input to the following window or control.&#xA;&#xA;Tested object:&#xA;Aliases.SIDI.frmPrincipal.MDIClient.frmGrupoMateriais.PageControlGrupoMateriais.tsPesquisaGrupoMateriais.PanelGridGrupoMateriais.dbGridGrupoMateriais&#xA;(Sys.Process(&quot;SIDI&quot;).VCLObject(&quot;frmPrincipal&quot;).Window(&quot;MDIClient&quot;, &quot;&quot;, 1).VCLObject(&quot;frmGrupoManut&quot;).VCLObject(&quot;PageControl1&quot;).VCLObject(&quot;tsPesquisa&quot;).VCLObject(&quot;PanelGrid&quot;).VCLObject(&quot;dbGridPesquisa&quot;))"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="message" type="S" value="Keyboard input."/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="26"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="date" type="D" value="45271.7145970486"/>
+			<Prp name="line no" type="I" value="28"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 27">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object right" type="I" value="1362"/>
+					<Prp name="object top" type="I" value="184"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="line #" type="I" value="29"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="object left" type="I" value="4"/>
+					<Prp name="object name" type="S" value="Aliases.SIDI.frmPrincipal.MDIClient.frmGrupoMateriais.PageControlGrupoMateriais.tsPesquisaGrupoMateriais.PanelGridGrupoMateriais.dbGridGrupoMateriais"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="datetime" type="D" value="45271.8395981944"/>
+					<Prp name="object bottom" type="I" value="652"/>
+					<Prp name="image file name" type="S" value="visImage588.png"/>
+				</Node>
+			</Node>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="remarks" type="S" value="'[Down]' was sent as a keyboard input to the following window or control.&#xA;&#xA;Tested object:&#xA;Aliases.SIDI.frmPrincipal.MDIClient.frmGrupoMateriais.PageControlGrupoMateriais.tsPesquisaGrupoMateriais.PanelGridGrupoMateriais.dbGridGrupoMateriais&#xA;(Sys.Process(&quot;SIDI&quot;).VCLObject(&quot;frmPrincipal&quot;).Window(&quot;MDIClient&quot;, &quot;&quot;, 1).VCLObject(&quot;frmGrupoManut&quot;).VCLObject(&quot;PageControl1&quot;).VCLObject(&quot;tsPesquisa&quot;).VCLObject(&quot;PanelGrid&quot;).VCLObject(&quot;dbGridPesquisa&quot;))"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="message" type="S" value="Keyboard input."/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="27"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="date" type="D" value="45271.7145992361"/>
+			<Prp name="line no" type="I" value="29"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 6">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object right" type="I" value="1362"/>
+					<Prp name="object top" type="I" value="184"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="line #" type="I" value="28"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="object left" type="I" value="4"/>
+					<Prp name="object name" type="S" value="Aliases.SIDI.frmPrincipal.MDIClient.frmGrupoMateriais.PageControlGrupoMateriais.tsPesquisaGrupoMateriais.PanelGridGrupoMateriais.dbGridGrupoMateriais"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="datetime" type="D" value="45271.8395140625"/>
+					<Prp name="object bottom" type="I" value="652"/>
+					<Prp name="image file name" type="S" value="visImage567.png"/>
+				</Node>
+			</Node>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="remarks" type="S" value="'MALHAS' was sent as a keyboard input to the following window or control.&#xA;&#xA;Tested object:&#xA;Aliases.SIDI.frmPrincipal.MDIClient.frmGrupoMateriais.PageControlGrupoMateriais.tsPesquisaGrupoMateriais.PanelGridGrupoMateriais.dbGridGrupoMateriais&#xA;(Sys.Process(&quot;SIDI&quot;).VCLObject(&quot;frmPrincipal&quot;).Window(&quot;MDIClient&quot;, &quot;&quot;, 1).VCLObject(&quot;frmGrupoManut&quot;).VCLObject(&quot;PageControl1&quot;).VCLObject(&quot;tsPesquisa&quot;).VCLObject(&quot;PanelGrid&quot;).VCLObject(&quot;dbGridPesquisa&quot;))"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="message" type="S" value="Keyboard input."/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="6"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="date" type="D" value="45271.714518588"/>
+			<Prp name="line no" type="I" value="28"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 1">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object right" type="I" value="30"/>
+					<Prp name="object top" type="I" value="67"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="line #" type="I" value="7"/>
+					<Prp name="click point x" type="I" value="18"/>
+					<Prp name="click point y" type="I" value="78"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="object left" type="I" value="6"/>
+					<Prp name="object name" type="S" value="Aliases.SIDI.frmPrincipal.btnGrupoMateriais"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="datetime" type="D" value="45271.8395002662"/>
+					<Prp name="object bottom" type="I" value="89"/>
+					<Prp name="image file name" type="S" value="visImage563.png"/>
+				</Node>
+			</Node>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="remarks" type="S" value="A click at point (12, 11) with no key pressed.&#xA;&#xA;Tested object:&#xA;Aliases.SIDI.frmPrincipal.btnGrupoMateriais&#xA;(Sys.Process(&quot;SIDI&quot;).VCLObject(&quot;frmPrincipal&quot;).VCLObject(&quot;btnGrupoMateriais&quot;))"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="message" type="S" value="The window was clicked with the left mouse button."/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="1"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="date" type="D" value="45271.7145013079"/>
+			<Prp name="line no" type="I" value="7"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 0">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object right" type="I" value="1366"/>
+					<Prp name="object top" type="I" value="43"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="line #" type="I" value="100"/>
+					<Prp name="click point x" type="I" value="96"/>
+					<Prp name="click point y" type="I" value="54"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="object left" type="I" value="0"/>
+					<Prp name="object name" type="S" value="Aliases.SIDI.frmPrincipal.Panel2.PageControl1"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="datetime" type="D" value="45271.8394932986"/>
+					<Prp name="object bottom" type="I" value="93"/>
+					<Prp name="image file name" type="S" value="visImage562.png"/>
+				</Node>
+			</Node>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="remarks" type="S" value="Tested object:&#xA;Aliases.SIDI.frmPrincipal.Panel2.PageControl1&#xA;(Sys.Process(&quot;SIDI&quot;).VCLObject(&quot;frmPrincipal&quot;).VCLObject(&quot;Panel2&quot;).VCLObject(&quot;PageControl1&quot;))"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="message" type="S" value="The tab control page 'Suprimentos' was selected with the left mouse button."/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="0"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="date" type="D" value="45271.7144941088"/>
+			<Prp name="line no" type="I" value="100"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="stack"/>
+		<Node name="message 31">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object right" type="I" value="1362"/>
+					<Prp name="object top" type="I" value="184"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="line #" type="I" value="29"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="object left" type="I" value="4"/>
+					<Prp name="object name" type="S" value="Aliases.SIDI.frmPrincipal.MDIClient.frmGrupoMateriais.PageControlGrupoMateriais.tsPesquisaGrupoMateriais.PanelGridGrupoMateriais.dbGridGrupoMateriais"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="datetime" type="D" value="45271.839613206"/>
+					<Prp name="object bottom" type="I" value="652"/>
+					<Prp name="image file name" type="S" value="visImage592.png"/>
+				</Node>
+			</Node>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="remarks" type="S" value="'[Down]' was sent as a keyboard input to the following window or control.&#xA;&#xA;Tested object:&#xA;Aliases.SIDI.frmPrincipal.MDIClient.frmGrupoMateriais.PageControlGrupoMateriais.tsPesquisaGrupoMateriais.PanelGridGrupoMateriais.dbGridGrupoMateriais&#xA;(Sys.Process(&quot;SIDI&quot;).VCLObject(&quot;frmPrincipal&quot;).Window(&quot;MDIClient&quot;, &quot;&quot;, 1).VCLObject(&quot;frmGrupoManut&quot;).VCLObject(&quot;PageControl1&quot;).VCLObject(&quot;tsPesquisa&quot;).VCLObject(&quot;PanelGrid&quot;).VCLObject(&quot;dbGridPesquisa&quot;))"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="message" type="S" value="Keyboard input."/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="31"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="date" type="D" value="45271.7146143634"/>
+			<Prp name="line no" type="I" value="29"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 44">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object right" type="I" value="1362"/>
+					<Prp name="object top" type="I" value="184"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="line #" type="I" value="26"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="object left" type="I" value="4"/>
+					<Prp name="object name" type="S" value="Aliases.SIDI.frmPrincipal.MDIClient.frmGrupoMateriais.PageControlGrupoMateriais.tsPesquisaGrupoMateriais.PanelGridGrupoMateriais.dbGridGrupoMateriais"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="datetime" type="D" value="45271.8396638194"/>
+					<Prp name="object bottom" type="I" value="652"/>
+					<Prp name="image file name" type="S" value="visImage605.png"/>
+				</Node>
+			</Node>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="remarks" type="S" value="'[Home]' was sent as a keyboard input to the following window or control.&#xA;&#xA;Tested object:&#xA;Aliases.SIDI.frmPrincipal.MDIClient.frmGrupoMateriais.PageControlGrupoMateriais.tsPesquisaGrupoMateriais.PanelGridGrupoMateriais.dbGridGrupoMateriais&#xA;(Sys.Process(&quot;SIDI&quot;).VCLObject(&quot;frmPrincipal&quot;).Window(&quot;MDIClient&quot;, &quot;&quot;, 1).VCLObject(&quot;frmGrupoManut&quot;).VCLObject(&quot;PageControl1&quot;).VCLObject(&quot;tsPesquisa&quot;).VCLObject(&quot;PanelGrid&quot;).VCLObject(&quot;dbGridPesquisa&quot;))"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="message" type="S" value="Keyboard input."/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="44"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="date" type="D" value="45271.7146645139"/>
+			<Prp name="line no" type="I" value="26"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 23">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object right" type="I" value="1362"/>
+					<Prp name="object top" type="I" value="184"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="line #" type="I" value="29"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="object left" type="I" value="4"/>
+					<Prp name="object name" type="S" value="Aliases.SIDI.frmPrincipal.MDIClient.frmGrupoMateriais.PageControlGrupoMateriais.tsPesquisaGrupoMateriais.PanelGridGrupoMateriais.dbGridGrupoMateriais"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="datetime" type="D" value="45271.8395827778"/>
+					<Prp name="object bottom" type="I" value="652"/>
+					<Prp name="image file name" type="S" value="visImage584.png"/>
+				</Node>
+			</Node>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="remarks" type="S" value="'[Down]' was sent as a keyboard input to the following window or control.&#xA;&#xA;Tested object:&#xA;Aliases.SIDI.frmPrincipal.MDIClient.frmGrupoMateriais.PageControlGrupoMateriais.tsPesquisaGrupoMateriais.PanelGridGrupoMateriais.dbGridGrupoMateriais&#xA;(Sys.Process(&quot;SIDI&quot;).VCLObject(&quot;frmPrincipal&quot;).Window(&quot;MDIClient&quot;, &quot;&quot;, 1).VCLObject(&quot;frmGrupoManut&quot;).VCLObject(&quot;PageControl1&quot;).VCLObject(&quot;tsPesquisa&quot;).VCLObject(&quot;PanelGrid&quot;).VCLObject(&quot;dbGridPesquisa&quot;))"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="message" type="S" value="Keyboard input."/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="23"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="date" type="D" value="45271.7145839352"/>
+			<Prp name="line no" type="I" value="29"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 14">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object right" type="I" value="1362"/>
+					<Prp name="object top" type="I" value="184"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="line #" type="I" value="28"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="object left" type="I" value="4"/>
+					<Prp name="object name" type="S" value="Aliases.SIDI.frmPrincipal.MDIClient.frmGrupoMateriais.PageControlGrupoMateriais.tsPesquisaGrupoMateriais.PanelGridGrupoMateriais.dbGridGrupoMateriais"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="datetime" type="D" value="45271.8395435532"/>
+					<Prp name="object bottom" type="I" value="652"/>
+					<Prp name="image file name" type="S" value="visImage575.png"/>
+				</Node>
+			</Node>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="remarks" type="S" value="'RIBANA' was sent as a keyboard input to the following window or control.&#xA;&#xA;Tested object:&#xA;Aliases.SIDI.frmPrincipal.MDIClient.frmGrupoMateriais.PageControlGrupoMateriais.tsPesquisaGrupoMateriais.PanelGridGrupoMateriais.dbGridGrupoMateriais&#xA;(Sys.Process(&quot;SIDI&quot;).VCLObject(&quot;frmPrincipal&quot;).Window(&quot;MDIClient&quot;, &quot;&quot;, 1).VCLObject(&quot;frmGrupoManut&quot;).VCLObject(&quot;PageControl1&quot;).VCLObject(&quot;tsPesquisa&quot;).VCLObject(&quot;PanelGrid&quot;).VCLObject(&quot;dbGridPesquisa&quot;))"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="message" type="S" value="Keyboard input."/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="14"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="date" type="D" value="45271.714547963"/>
+			<Prp name="line no" type="I" value="28"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 38">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object right" type="I" value="1362"/>
+					<Prp name="object top" type="I" value="184"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="line #" type="I" value="28"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="object left" type="I" value="4"/>
+					<Prp name="object name" type="S" value="Aliases.SIDI.frmPrincipal.MDIClient.frmGrupoMateriais.PageControlGrupoMateriais.tsPesquisaGrupoMateriais.PanelGridGrupoMateriais.dbGridGrupoMateriais"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="datetime" type="D" value="45271.8396386343"/>
+					<Prp name="object bottom" type="I" value="652"/>
+					<Prp name="image file name" type="S" value="visImage599.png"/>
+				</Node>
+			</Node>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="remarks" type="S" value="'USO E CONSUMO' was sent as a keyboard input to the following window or control.&#xA;&#xA;Tested object:&#xA;Aliases.SIDI.frmPrincipal.MDIClient.frmGrupoMateriais.PageControlGrupoMateriais.tsPesquisaGrupoMateriais.PanelGridGrupoMateriais.dbGridGrupoMateriais&#xA;(Sys.Process(&quot;SIDI&quot;).VCLObject(&quot;frmPrincipal&quot;).Window(&quot;MDIClient&quot;, &quot;&quot;, 1).VCLObject(&quot;frmGrupoManut&quot;).VCLObject(&quot;PageControl1&quot;).VCLObject(&quot;tsPesquisa&quot;).VCLObject(&quot;PanelGrid&quot;).VCLObject(&quot;dbGridPesquisa&quot;))"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="message" type="S" value="Keyboard input."/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="38"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="date" type="D" value="45271.7146474537"/>
+			<Prp name="line no" type="I" value="28"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 15">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object right" type="I" value="1362"/>
+					<Prp name="object top" type="I" value="184"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="line #" type="I" value="29"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="object left" type="I" value="4"/>
+					<Prp name="object name" type="S" value="Aliases.SIDI.frmPrincipal.MDIClient.frmGrupoMateriais.PageControlGrupoMateriais.tsPesquisaGrupoMateriais.PanelGridGrupoMateriais.dbGridGrupoMateriais"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="datetime" type="D" value="45271.8395491204"/>
+					<Prp name="object bottom" type="I" value="652"/>
+					<Prp name="image file name" type="S" value="visImage576.png"/>
+				</Node>
+			</Node>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="remarks" type="S" value="'[Down]' was sent as a keyboard input to the following window or control.&#xA;&#xA;Tested object:&#xA;Aliases.SIDI.frmPrincipal.MDIClient.frmGrupoMateriais.PageControlGrupoMateriais.tsPesquisaGrupoMateriais.PanelGridGrupoMateriais.dbGridGrupoMateriais&#xA;(Sys.Process(&quot;SIDI&quot;).VCLObject(&quot;frmPrincipal&quot;).Window(&quot;MDIClient&quot;, &quot;&quot;, 1).VCLObject(&quot;frmGrupoManut&quot;).VCLObject(&quot;PageControl1&quot;).VCLObject(&quot;tsPesquisa&quot;).VCLObject(&quot;PanelGrid&quot;).VCLObject(&quot;dbGridPesquisa&quot;))"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="message" type="S" value="Keyboard input."/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="15"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="date" type="D" value="45271.7145502778"/>
+			<Prp name="line no" type="I" value="29"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 3">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object right" type="I" value="86"/>
+					<Prp name="object top" type="I" value="100"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="line #" type="I" value="36"/>
+					<Prp name="click point x" type="I" value="48"/>
+					<Prp name="click point y" type="I" value="112"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="object left" type="I" value="11"/>
+					<Prp name="object name" type="S" value="Aliases.SIDI.frmPrincipal.sbNovo"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="datetime" type="D" value="45271.8395067477"/>
+					<Prp name="object bottom" type="I" value="124"/>
+					<Prp name="image file name" type="S" value="visImage564.png"/>
+				</Node>
+			</Node>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="remarks" type="S" value="A click at point (37, 12) with no key pressed.&#xA;&#xA;Tested object:&#xA;Aliases.SIDI.frmPrincipal.sbNovo&#xA;(Sys.Process(&quot;SIDI&quot;).VCLObject(&quot;frmPrincipal&quot;).VCLObject(&quot;sbNovo&quot;))"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="message" type="S" value="The window was clicked with the left mouse button."/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="3"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="date" type="D" value="45271.7145076968"/>
+			<Prp name="line no" type="I" value="36"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 18">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object right" type="I" value="1362"/>
+					<Prp name="object top" type="I" value="184"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="line #" type="I" value="28"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="object left" type="I" value="4"/>
+					<Prp name="object name" type="S" value="Aliases.SIDI.frmPrincipal.MDIClient.frmGrupoMateriais.PageControlGrupoMateriais.tsPesquisaGrupoMateriais.PanelGridGrupoMateriais.dbGridGrupoMateriais"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="datetime" type="D" value="45271.8395559722"/>
+					<Prp name="object bottom" type="I" value="652"/>
+					<Prp name="image file name" type="S" value="visImage579.png"/>
+				</Node>
+			</Node>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="remarks" type="S" value="'TECIDO' was sent as a keyboard input to the following window or control.&#xA;&#xA;Tested object:&#xA;Aliases.SIDI.frmPrincipal.MDIClient.frmGrupoMateriais.PageControlGrupoMateriais.tsPesquisaGrupoMateriais.PanelGridGrupoMateriais.dbGridGrupoMateriais&#xA;(Sys.Process(&quot;SIDI&quot;).VCLObject(&quot;frmPrincipal&quot;).Window(&quot;MDIClient&quot;, &quot;&quot;, 1).VCLObject(&quot;frmGrupoManut&quot;).VCLObject(&quot;PageControl1&quot;).VCLObject(&quot;tsPesquisa&quot;).VCLObject(&quot;PanelGrid&quot;).VCLObject(&quot;dbGridPesquisa&quot;))"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="message" type="S" value="Keyboard input."/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="18"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="date" type="D" value="45271.7145602778"/>
+			<Prp name="line no" type="I" value="28"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 48">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object right" type="I" value="1261"/>
+					<Prp name="object top" type="I" value="663"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="line #" type="I" value="52"/>
+					<Prp name="click point x" type="I" value="1221"/>
+					<Prp name="click point y" type="I" value="675"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="object left" type="I" value="1181"/>
+					<Prp name="object name" type="S" value="Aliases.SIDI.frmPrincipal.MDIClient.frmGrupoMateriais.PanelBotoes.PanelBotoesGrupoMateriais.btnConfirma"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="datetime" type="D" value="45271.8396782176"/>
+					<Prp name="object bottom" type="I" value="688"/>
+					<Prp name="image file name" type="S" value="visImage609.png"/>
+				</Node>
+			</Node>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="remarks" type="S" value="Tested object:&#xA;Aliases.SIDI.frmPrincipal.MDIClient.frmGrupoMateriais.PanelBotoes.PanelBotoesGrupoMateriais.btnConfirma&#xA;(Sys.Process(&quot;SIDI&quot;).VCLObject(&quot;frmPrincipal&quot;).Window(&quot;MDIClient&quot;, &quot;&quot;, 1).VCLObject(&quot;frmGrupoManut&quot;).VCLObject(&quot;Panel1&quot;).VCLObject(&quot;PanelBotoes&quot;).VCLObject(&quot;btnConfirma&quot;))"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="message" type="S" value="The button was clicked with the left mouse button."/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="48"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="date" type="D" value="45271.714678912"/>
+			<Prp name="line no" type="I" value="52"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="units">
+			<Prp name="unit 0" type="S" value="{A812C9B4-A487-4B08-8F0F-F1353D0E9CC0}"/>
+			<Prp name="unit 1" type="S" value="{2752B4CC-2B3B-4883-8793-BAB5660F1B60}"/>
+		</Node>
+		<Node name="message 11">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object right" type="I" value="1362"/>
+					<Prp name="object top" type="I" value="184"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="line #" type="I" value="29"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="object left" type="I" value="4"/>
+					<Prp name="object name" type="S" value="Aliases.SIDI.frmPrincipal.MDIClient.frmGrupoMateriais.PageControlGrupoMateriais.tsPesquisaGrupoMateriais.PanelGridGrupoMateriais.dbGridGrupoMateriais"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="datetime" type="D" value="45271.8395370255"/>
+					<Prp name="object bottom" type="I" value="652"/>
+					<Prp name="image file name" type="S" value="visImage572.png"/>
+				</Node>
+			</Node>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="remarks" type="S" value="'[Down]' was sent as a keyboard input to the following window or control.&#xA;&#xA;Tested object:&#xA;Aliases.SIDI.frmPrincipal.MDIClient.frmGrupoMateriais.PageControlGrupoMateriais.tsPesquisaGrupoMateriais.PanelGridGrupoMateriais.dbGridGrupoMateriais&#xA;(Sys.Process(&quot;SIDI&quot;).VCLObject(&quot;frmPrincipal&quot;).Window(&quot;MDIClient&quot;, &quot;&quot;, 1).VCLObject(&quot;frmGrupoManut&quot;).VCLObject(&quot;PageControl1&quot;).VCLObject(&quot;tsPesquisa&quot;).VCLObject(&quot;PanelGrid&quot;).VCLObject(&quot;dbGridPesquisa&quot;))"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="message" type="S" value="Keyboard input."/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="11"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="date" type="D" value="45271.7145380671"/>
+			<Prp name="line no" type="I" value="29"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 36">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object right" type="I" value="1362"/>
+					<Prp name="object top" type="I" value="184"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="line #" type="I" value="26"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="object left" type="I" value="4"/>
+					<Prp name="object name" type="S" value="Aliases.SIDI.frmPrincipal.MDIClient.frmGrupoMateriais.PageControlGrupoMateriais.tsPesquisaGrupoMateriais.PanelGridGrupoMateriais.dbGridGrupoMateriais"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="datetime" type="D" value="45271.8396342361"/>
+					<Prp name="object bottom" type="I" value="652"/>
+					<Prp name="image file name" type="S" value="visImage597.png"/>
+				</Node>
+			</Node>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="remarks" type="S" value="'[Home]' was sent as a keyboard input to the following window or control.&#xA;&#xA;Tested object:&#xA;Aliases.SIDI.frmPrincipal.MDIClient.frmGrupoMateriais.PageControlGrupoMateriais.tsPesquisaGrupoMateriais.PanelGridGrupoMateriais.dbGridGrupoMateriais&#xA;(Sys.Process(&quot;SIDI&quot;).VCLObject(&quot;frmPrincipal&quot;).Window(&quot;MDIClient&quot;, &quot;&quot;, 1).VCLObject(&quot;frmGrupoManut&quot;).VCLObject(&quot;PageControl1&quot;).VCLObject(&quot;tsPesquisa&quot;).VCLObject(&quot;PanelGrid&quot;).VCLObject(&quot;dbGridPesquisa&quot;))"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="message" type="S" value="Keyboard input."/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="36"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="date" type="D" value="45271.714635162"/>
+			<Prp name="line no" type="I" value="26"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 5">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object right" type="I" value="1362"/>
+					<Prp name="object top" type="I" value="184"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="line #" type="I" value="27"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="object left" type="I" value="4"/>
+					<Prp name="object name" type="S" value="Aliases.SIDI.frmPrincipal.MDIClient.frmGrupoMateriais.PageControlGrupoMateriais.tsPesquisaGrupoMateriais.PanelGridGrupoMateriais.dbGridGrupoMateriais"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="datetime" type="D" value="45271.8395117477"/>
+					<Prp name="object bottom" type="I" value="652"/>
+					<Prp name="image file name" type="S" value="visImage566.png"/>
+				</Node>
+			</Node>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="remarks" type="S" value="'[Right]' was sent as a keyboard input to the following window or control.&#xA;&#xA;Tested object:&#xA;Aliases.SIDI.frmPrincipal.MDIClient.frmGrupoMateriais.PageControlGrupoMateriais.tsPesquisaGrupoMateriais.PanelGridGrupoMateriais.dbGridGrupoMateriais&#xA;(Sys.Process(&quot;SIDI&quot;).VCLObject(&quot;frmPrincipal&quot;).Window(&quot;MDIClient&quot;, &quot;&quot;, 1).VCLObject(&quot;frmGrupoManut&quot;).VCLObject(&quot;PageControl1&quot;).VCLObject(&quot;tsPesquisa&quot;).VCLObject(&quot;PanelGrid&quot;).VCLObject(&quot;dbGridPesquisa&quot;))"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="message" type="S" value="Keyboard input."/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="5"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="date" type="D" value="45271.7145125579"/>
+			<Prp name="line no" type="I" value="27"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 49">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object right" type="I" value="161"/>
+					<Prp name="object top" type="I" value="100"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="line #" type="I" value="46"/>
+					<Prp name="click point x" type="I" value="123"/>
+					<Prp name="click point y" type="I" value="112"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="object left" type="I" value="86"/>
+					<Prp name="object name" type="S" value="Aliases.SIDI.frmPrincipal.sbEditar"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="datetime" type="D" value="45271.8396802083"/>
+					<Prp name="object bottom" type="I" value="124"/>
+					<Prp name="image file name" type="S" value="visImage610.png"/>
+				</Node>
+			</Node>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="remarks" type="S" value="A click at point (37, 12) with no key pressed.&#xA;&#xA;Tested object:&#xA;Aliases.SIDI.frmPrincipal.sbEditar&#xA;(Sys.Process(&quot;SIDI&quot;).VCLObject(&quot;frmPrincipal&quot;).VCLObject(&quot;sbEditar&quot;))"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="message" type="S" value="The window was clicked with the left mouse button."/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="49"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="date" type="D" value="45271.7146811343"/>
+			<Prp name="line no" type="I" value="46"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 34">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object right" type="I" value="1362"/>
+					<Prp name="object top" type="I" value="184"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="line #" type="I" value="28"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="object left" type="I" value="4"/>
+					<Prp name="object name" type="S" value="Aliases.SIDI.frmPrincipal.MDIClient.frmGrupoMateriais.PageControlGrupoMateriais.tsPesquisaGrupoMateriais.PanelGridGrupoMateriais.dbGridGrupoMateriais"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="datetime" type="D" value="45271.8396199769"/>
+					<Prp name="object bottom" type="I" value="652"/>
+					<Prp name="image file name" type="S" value="visImage595.png"/>
+				</Node>
+			</Node>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="remarks" type="S" value="'PRODUTO ACABADO' was sent as a keyboard input to the following window or control.&#xA;&#xA;Tested object:&#xA;Aliases.SIDI.frmPrincipal.MDIClient.frmGrupoMateriais.PageControlGrupoMateriais.tsPesquisaGrupoMateriais.PanelGridGrupoMateriais.dbGridGrupoMateriais&#xA;(Sys.Process(&quot;SIDI&quot;).VCLObject(&quot;frmPrincipal&quot;).Window(&quot;MDIClient&quot;, &quot;&quot;, 1).VCLObject(&quot;frmGrupoManut&quot;).VCLObject(&quot;PageControl1&quot;).VCLObject(&quot;tsPesquisa&quot;).VCLObject(&quot;PanelGrid&quot;).VCLObject(&quot;dbGridPesquisa&quot;))"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="message" type="S" value="Keyboard input."/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="34"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="date" type="D" value="45271.7146305324"/>
+			<Prp name="line no" type="I" value="28"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 33">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object right" type="I" value="1362"/>
+					<Prp name="object top" type="I" value="184"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="line #" type="I" value="27"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="object left" type="I" value="4"/>
+					<Prp name="object name" type="S" value="Aliases.SIDI.frmPrincipal.MDIClient.frmGrupoMateriais.PageControlGrupoMateriais.tsPesquisaGrupoMateriais.PanelGridGrupoMateriais.dbGridGrupoMateriais"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="datetime" type="D" value="45271.8396177778"/>
+					<Prp name="object bottom" type="I" value="652"/>
+					<Prp name="image file name" type="S" value="visImage594.png"/>
+				</Node>
+			</Node>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="remarks" type="S" value="'[Right]' was sent as a keyboard input to the following window or control.&#xA;&#xA;Tested object:&#xA;Aliases.SIDI.frmPrincipal.MDIClient.frmGrupoMateriais.PageControlGrupoMateriais.tsPesquisaGrupoMateriais.PanelGridGrupoMateriais.dbGridGrupoMateriais&#xA;(Sys.Process(&quot;SIDI&quot;).VCLObject(&quot;frmPrincipal&quot;).Window(&quot;MDIClient&quot;, &quot;&quot;, 1).VCLObject(&quot;frmGrupoManut&quot;).VCLObject(&quot;PageControl1&quot;).VCLObject(&quot;tsPesquisa&quot;).VCLObject(&quot;PanelGrid&quot;).VCLObject(&quot;dbGridPesquisa&quot;))"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="message" type="S" value="Keyboard input."/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="33"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="date" type="D" value="45271.714618588"/>
+			<Prp name="line no" type="I" value="27"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 30">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object right" type="I" value="1362"/>
+					<Prp name="object top" type="I" value="184"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="line #" type="I" value="28"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="object left" type="I" value="4"/>
+					<Prp name="object name" type="S" value="Aliases.SIDI.frmPrincipal.MDIClient.frmGrupoMateriais.PageControlGrupoMateriais.tsPesquisaGrupoMateriais.PanelGridGrupoMateriais.dbGridGrupoMateriais"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="datetime" type="D" value="45271.8396049537"/>
+					<Prp name="object bottom" type="I" value="652"/>
+					<Prp name="image file name" type="S" value="visImage591.png"/>
+				</Node>
+			</Node>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="remarks" type="S" value="'EMBALAGENS' was sent as a keyboard input to the following window or control.&#xA;&#xA;Tested object:&#xA;Aliases.SIDI.frmPrincipal.MDIClient.frmGrupoMateriais.PageControlGrupoMateriais.tsPesquisaGrupoMateriais.PanelGridGrupoMateriais.dbGridGrupoMateriais&#xA;(Sys.Process(&quot;SIDI&quot;).VCLObject(&quot;frmPrincipal&quot;).Window(&quot;MDIClient&quot;, &quot;&quot;, 1).VCLObject(&quot;frmGrupoManut&quot;).VCLObject(&quot;PageControl1&quot;).VCLObject(&quot;tsPesquisa&quot;).VCLObject(&quot;PanelGrid&quot;).VCLObject(&quot;dbGridPesquisa&quot;))"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="message" type="S" value="Keyboard input."/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="30"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="date" type="D" value="45271.7146120486"/>
+			<Prp name="line no" type="I" value="28"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 7">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object right" type="I" value="1362"/>
+					<Prp name="object top" type="I" value="184"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="line #" type="I" value="29"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="object left" type="I" value="4"/>
+					<Prp name="object name" type="S" value="Aliases.SIDI.frmPrincipal.MDIClient.frmGrupoMateriais.PageControlGrupoMateriais.tsPesquisaGrupoMateriais.PanelGridGrupoMateriais.dbGridGrupoMateriais"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="datetime" type="D" value="45271.8395198611"/>
+					<Prp name="object bottom" type="I" value="652"/>
+					<Prp name="image file name" type="S" value="visImage568.png"/>
+				</Node>
+			</Node>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="remarks" type="S" value="'[Down]' was sent as a keyboard input to the following window or control.&#xA;&#xA;Tested object:&#xA;Aliases.SIDI.frmPrincipal.MDIClient.frmGrupoMateriais.PageControlGrupoMateriais.tsPesquisaGrupoMateriais.PanelGridGrupoMateriais.dbGridGrupoMateriais&#xA;(Sys.Process(&quot;SIDI&quot;).VCLObject(&quot;frmPrincipal&quot;).Window(&quot;MDIClient&quot;, &quot;&quot;, 1).VCLObject(&quot;frmGrupoManut&quot;).VCLObject(&quot;PageControl1&quot;).VCLObject(&quot;tsPesquisa&quot;).VCLObject(&quot;PanelGrid&quot;).VCLObject(&quot;dbGridPesquisa&quot;))"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="message" type="S" value="Keyboard input."/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="7"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="date" type="D" value="45271.7145210185"/>
+			<Prp name="line no" type="I" value="29"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 37">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object right" type="I" value="1362"/>
+					<Prp name="object top" type="I" value="184"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="line #" type="I" value="27"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="object left" type="I" value="4"/>
+					<Prp name="object name" type="S" value="Aliases.SIDI.frmPrincipal.MDIClient.frmGrupoMateriais.PageControlGrupoMateriais.tsPesquisaGrupoMateriais.PanelGridGrupoMateriais.dbGridGrupoMateriais"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="datetime" type="D" value="45271.8396363194"/>
+					<Prp name="object bottom" type="I" value="652"/>
+					<Prp name="image file name" type="S" value="visImage598.png"/>
+				</Node>
+			</Node>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="remarks" type="S" value="'[Right]' was sent as a keyboard input to the following window or control.&#xA;&#xA;Tested object:&#xA;Aliases.SIDI.frmPrincipal.MDIClient.frmGrupoMateriais.PageControlGrupoMateriais.tsPesquisaGrupoMateriais.PanelGridGrupoMateriais.dbGridGrupoMateriais&#xA;(Sys.Process(&quot;SIDI&quot;).VCLObject(&quot;frmPrincipal&quot;).Window(&quot;MDIClient&quot;, &quot;&quot;, 1).VCLObject(&quot;frmGrupoManut&quot;).VCLObject(&quot;PageControl1&quot;).VCLObject(&quot;tsPesquisa&quot;).VCLObject(&quot;PanelGrid&quot;).VCLObject(&quot;dbGridPesquisa&quot;))"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="message" type="S" value="Keyboard input."/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="37"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="date" type="D" value="45271.7146372454"/>
+			<Prp name="line no" type="I" value="27"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 10">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object right" type="I" value="1362"/>
+					<Prp name="object top" type="I" value="184"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="line #" type="I" value="28"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="object left" type="I" value="4"/>
+					<Prp name="object name" type="S" value="Aliases.SIDI.frmPrincipal.MDIClient.frmGrupoMateriais.PageControlGrupoMateriais.tsPesquisaGrupoMateriais.PanelGridGrupoMateriais.dbGridGrupoMateriais"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="datetime" type="D" value="45271.8395284491"/>
+					<Prp name="object bottom" type="I" value="652"/>
+					<Prp name="image file name" type="S" value="visImage571.png"/>
+				</Node>
+			</Node>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="remarks" type="S" value="'AVIAMENTOS' was sent as a keyboard input to the following window or control.&#xA;&#xA;Tested object:&#xA;Aliases.SIDI.frmPrincipal.MDIClient.frmGrupoMateriais.PageControlGrupoMateriais.tsPesquisaGrupoMateriais.PanelGridGrupoMateriais.dbGridGrupoMateriais&#xA;(Sys.Process(&quot;SIDI&quot;).VCLObject(&quot;frmPrincipal&quot;).Window(&quot;MDIClient&quot;, &quot;&quot;, 1).VCLObject(&quot;frmGrupoManut&quot;).VCLObject(&quot;PageControl1&quot;).VCLObject(&quot;tsPesquisa&quot;).VCLObject(&quot;PanelGrid&quot;).VCLObject(&quot;dbGridPesquisa&quot;))"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="message" type="S" value="Keyboard input."/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="10"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="date" type="D" value="45271.7145357523"/>
+			<Prp name="line no" type="I" value="28"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 46">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object right" type="I" value="1362"/>
+					<Prp name="object top" type="I" value="184"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="line #" type="I" value="28"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="object left" type="I" value="4"/>
+					<Prp name="object name" type="S" value="Aliases.SIDI.frmPrincipal.MDIClient.frmGrupoMateriais.PageControlGrupoMateriais.tsPesquisaGrupoMateriais.PanelGridGrupoMateriais.dbGridGrupoMateriais"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="datetime" type="D" value="45271.8396677778"/>
+					<Prp name="object bottom" type="I" value="652"/>
+					<Prp name="image file name" type="S" value="visImage607.png"/>
+				</Node>
+			</Node>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="remarks" type="S" value="'PALMILHA' was sent as a keyboard input to the following window or control.&#xA;&#xA;Tested object:&#xA;Aliases.SIDI.frmPrincipal.MDIClient.frmGrupoMateriais.PageControlGrupoMateriais.tsPesquisaGrupoMateriais.PanelGridGrupoMateriais.dbGridGrupoMateriais&#xA;(Sys.Process(&quot;SIDI&quot;).VCLObject(&quot;frmPrincipal&quot;).Window(&quot;MDIClient&quot;, &quot;&quot;, 1).VCLObject(&quot;frmGrupoManut&quot;).VCLObject(&quot;PageControl1&quot;).VCLObject(&quot;tsPesquisa&quot;).VCLObject(&quot;PanelGrid&quot;).VCLObject(&quot;dbGridPesquisa&quot;))"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="message" type="S" value="Keyboard input."/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="46"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="date" type="D" value="45271.7146737037"/>
+			<Prp name="line no" type="I" value="28"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="child data"/>
+		<Node name="message 32">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object right" type="I" value="1362"/>
+					<Prp name="object top" type="I" value="184"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="line #" type="I" value="26"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="object left" type="I" value="4"/>
+					<Prp name="object name" type="S" value="Aliases.SIDI.frmPrincipal.MDIClient.frmGrupoMateriais.PageControlGrupoMateriais.tsPesquisaGrupoMateriais.PanelGridGrupoMateriais.dbGridGrupoMateriais"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="datetime" type="D" value="45271.839615787"/>
+					<Prp name="object bottom" type="I" value="652"/>
+					<Prp name="image file name" type="S" value="visImage593.png"/>
+				</Node>
+			</Node>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="remarks" type="S" value="'[Home]' was sent as a keyboard input to the following window or control.&#xA;&#xA;Tested object:&#xA;Aliases.SIDI.frmPrincipal.MDIClient.frmGrupoMateriais.PageControlGrupoMateriais.tsPesquisaGrupoMateriais.PanelGridGrupoMateriais.dbGridGrupoMateriais&#xA;(Sys.Process(&quot;SIDI&quot;).VCLObject(&quot;frmPrincipal&quot;).Window(&quot;MDIClient&quot;, &quot;&quot;, 1).VCLObject(&quot;frmGrupoManut&quot;).VCLObject(&quot;PageControl1&quot;).VCLObject(&quot;tsPesquisa&quot;).VCLObject(&quot;PanelGrid&quot;).VCLObject(&quot;dbGridPesquisa&quot;))"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="message" type="S" value="Keyboard input."/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="32"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="date" type="D" value="45271.7146165972"/>
+			<Prp name="line no" type="I" value="26"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 51">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object right" type="I" value="820"/>
+					<Prp name="object top" type="I" value="100"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="line #" type="I" value="94"/>
+					<Prp name="click point x" type="I" value="784"/>
+					<Prp name="click point y" type="I" value="112"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="object left" type="I" value="748"/>
+					<Prp name="object name" type="S" value="Aliases.SIDI.frmPrincipal.sbSair"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="datetime" type="D" value="45271.8396850694"/>
+					<Prp name="object bottom" type="I" value="124"/>
+					<Prp name="image file name" type="S" value="visImage612.png"/>
+				</Node>
+			</Node>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="remarks" type="S" value="A click at point (36, 12) with no key pressed.&#xA;&#xA;Tested object:&#xA;Aliases.SIDI.frmPrincipal.sbSair&#xA;(Sys.Process(&quot;SIDI&quot;).VCLObject(&quot;frmPrincipal&quot;).VCLObject(&quot;sbSair&quot;))"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="message" type="S" value="The window was clicked with the left mouse button."/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="51"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="date" type="D" value="45271.7146859954"/>
+			<Prp name="line no" type="I" value="94"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 41">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object right" type="I" value="1362"/>
+					<Prp name="object top" type="I" value="184"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="line #" type="I" value="27"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="object left" type="I" value="4"/>
+					<Prp name="object name" type="S" value="Aliases.SIDI.frmPrincipal.MDIClient.frmGrupoMateriais.PageControlGrupoMateriais.tsPesquisaGrupoMateriais.PanelGridGrupoMateriais.dbGridGrupoMateriais"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="datetime" type="D" value="45271.8396533681"/>
+					<Prp name="object bottom" type="I" value="652"/>
+					<Prp name="image file name" type="S" value="visImage602.png"/>
+				</Node>
+			</Node>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="remarks" type="S" value="'[Right]' was sent as a keyboard input to the following window or control.&#xA;&#xA;Tested object:&#xA;Aliases.SIDI.frmPrincipal.MDIClient.frmGrupoMateriais.PageControlGrupoMateriais.tsPesquisaGrupoMateriais.PanelGridGrupoMateriais.dbGridGrupoMateriais&#xA;(Sys.Process(&quot;SIDI&quot;).VCLObject(&quot;frmPrincipal&quot;).Window(&quot;MDIClient&quot;, &quot;&quot;, 1).VCLObject(&quot;frmGrupoManut&quot;).VCLObject(&quot;PageControl1&quot;).VCLObject(&quot;tsPesquisa&quot;).VCLObject(&quot;PanelGrid&quot;).VCLObject(&quot;dbGridPesquisa&quot;))"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="message" type="S" value="Keyboard input."/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="41"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="date" type="D" value="45271.7146541782"/>
+			<Prp name="line no" type="I" value="27"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 2">
+			<Prp name="link" type="S" value=""/>
+			<Prp name="remarks" type="S" value="The elapsed time 40 (ms) is less than MaxExecTime 3000 (ms)."/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="message" type="S" value="The checkpoint 'A tela de Grupo de Materiais abriu em 40ms.' for the performance counter 'DefaultCounter' passed."/>
+			<Prp name="as html" type="B" value="-1"/>
+			<Prp name="id" type="I" value="2"/>
+			<Prp name="type" type="I" value="7"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="date" type="D" value="45271.714506169"/>
+			<Prp name="line no" type="I" value="17"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 24">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object right" type="I" value="1362"/>
+					<Prp name="object top" type="I" value="184"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="line #" type="I" value="26"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="object left" type="I" value="4"/>
+					<Prp name="object name" type="S" value="Aliases.SIDI.frmPrincipal.MDIClient.frmGrupoMateriais.PageControlGrupoMateriais.tsPesquisaGrupoMateriais.PanelGridGrupoMateriais.dbGridGrupoMateriais"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="datetime" type="D" value="45271.8395854398"/>
+					<Prp name="object bottom" type="I" value="652"/>
+					<Prp name="image file name" type="S" value="visImage585.png"/>
+				</Node>
+			</Node>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="remarks" type="S" value="'[Home]' was sent as a keyboard input to the following window or control.&#xA;&#xA;Tested object:&#xA;Aliases.SIDI.frmPrincipal.MDIClient.frmGrupoMateriais.PageControlGrupoMateriais.tsPesquisaGrupoMateriais.PanelGridGrupoMateriais.dbGridGrupoMateriais&#xA;(Sys.Process(&quot;SIDI&quot;).VCLObject(&quot;frmPrincipal&quot;).Window(&quot;MDIClient&quot;, &quot;&quot;, 1).VCLObject(&quot;frmGrupoManut&quot;).VCLObject(&quot;PageControl1&quot;).VCLObject(&quot;tsPesquisa&quot;).VCLObject(&quot;PanelGrid&quot;).VCLObject(&quot;dbGridPesquisa&quot;))"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="message" type="S" value="Keyboard input."/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="24"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="date" type="D" value="45271.7145863657"/>
+			<Prp name="line no" type="I" value="26"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 39">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object right" type="I" value="1362"/>
+					<Prp name="object top" type="I" value="184"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="line #" type="I" value="29"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="object left" type="I" value="4"/>
+					<Prp name="object name" type="S" value="Aliases.SIDI.frmPrincipal.MDIClient.frmGrupoMateriais.PageControlGrupoMateriais.tsPesquisaGrupoMateriais.PanelGridGrupoMateriais.dbGridGrupoMateriais"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="datetime" type="D" value="45271.8396486227"/>
+					<Prp name="object bottom" type="I" value="652"/>
+					<Prp name="image file name" type="S" value="visImage600.png"/>
+				</Node>
+			</Node>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="remarks" type="S" value="'[Down]' was sent as a keyboard input to the following window or control.&#xA;&#xA;Tested object:&#xA;Aliases.SIDI.frmPrincipal.MDIClient.frmGrupoMateriais.PageControlGrupoMateriais.tsPesquisaGrupoMateriais.PanelGridGrupoMateriais.dbGridGrupoMateriais&#xA;(Sys.Process(&quot;SIDI&quot;).VCLObject(&quot;frmPrincipal&quot;).Window(&quot;MDIClient&quot;, &quot;&quot;, 1).VCLObject(&quot;frmGrupoManut&quot;).VCLObject(&quot;PageControl1&quot;).VCLObject(&quot;tsPesquisa&quot;).VCLObject(&quot;PanelGrid&quot;).VCLObject(&quot;dbGridPesquisa&quot;))"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="message" type="S" value="Keyboard input."/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="39"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="date" type="D" value="45271.7146497801"/>
+			<Prp name="line no" type="I" value="29"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 9">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object right" type="I" value="1362"/>
+					<Prp name="object top" type="I" value="184"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="line #" type="I" value="27"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="object left" type="I" value="4"/>
+					<Prp name="object name" type="S" value="Aliases.SIDI.frmPrincipal.MDIClient.frmGrupoMateriais.PageControlGrupoMateriais.tsPesquisaGrupoMateriais.PanelGridGrupoMateriais.dbGridGrupoMateriais"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="datetime" type="D" value="45271.8395245139"/>
+					<Prp name="object bottom" type="I" value="652"/>
+					<Prp name="image file name" type="S" value="visImage570.png"/>
+				</Node>
+			</Node>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="remarks" type="S" value="'[Right]' was sent as a keyboard input to the following window or control.&#xA;&#xA;Tested object:&#xA;Aliases.SIDI.frmPrincipal.MDIClient.frmGrupoMateriais.PageControlGrupoMateriais.tsPesquisaGrupoMateriais.PanelGridGrupoMateriais.dbGridGrupoMateriais&#xA;(Sys.Process(&quot;SIDI&quot;).VCLObject(&quot;frmPrincipal&quot;).Window(&quot;MDIClient&quot;, &quot;&quot;, 1).VCLObject(&quot;frmGrupoManut&quot;).VCLObject(&quot;PageControl1&quot;).VCLObject(&quot;tsPesquisa&quot;).VCLObject(&quot;PanelGrid&quot;).VCLObject(&quot;dbGridPesquisa&quot;))"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="message" type="S" value="Keyboard input."/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="9"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="date" type="D" value="45271.7145270602"/>
+			<Prp name="line no" type="I" value="27"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 8">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object right" type="I" value="1362"/>
+					<Prp name="object top" type="I" value="184"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="line #" type="I" value="26"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="object left" type="I" value="4"/>
+					<Prp name="object name" type="S" value="Aliases.SIDI.frmPrincipal.MDIClient.frmGrupoMateriais.PageControlGrupoMateriais.tsPesquisaGrupoMateriais.PanelGridGrupoMateriais.dbGridGrupoMateriais"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="datetime" type="D" value="45271.8395225231"/>
+					<Prp name="object bottom" type="I" value="652"/>
+					<Prp name="image file name" type="S" value="visImage569.png"/>
+				</Node>
+			</Node>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="remarks" type="S" value="'[Home]' was sent as a keyboard input to the following window or control.&#xA;&#xA;Tested object:&#xA;Aliases.SIDI.frmPrincipal.MDIClient.frmGrupoMateriais.PageControlGrupoMateriais.tsPesquisaGrupoMateriais.PanelGridGrupoMateriais.dbGridGrupoMateriais&#xA;(Sys.Process(&quot;SIDI&quot;).VCLObject(&quot;frmPrincipal&quot;).Window(&quot;MDIClient&quot;, &quot;&quot;, 1).VCLObject(&quot;frmGrupoManut&quot;).VCLObject(&quot;PageControl1&quot;).VCLObject(&quot;tsPesquisa&quot;).VCLObject(&quot;PanelGrid&quot;).VCLObject(&quot;dbGridPesquisa&quot;))"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="message" type="S" value="Keyboard input."/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="8"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="date" type="D" value="45271.7145234491"/>
+			<Prp name="line no" type="I" value="26"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 42">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object right" type="I" value="1362"/>
+					<Prp name="object top" type="I" value="184"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="line #" type="I" value="28"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="object left" type="I" value="4"/>
+					<Prp name="object name" type="S" value="Aliases.SIDI.frmPrincipal.MDIClient.frmGrupoMateriais.PageControlGrupoMateriais.tsPesquisaGrupoMateriais.PanelGridGrupoMateriais.dbGridGrupoMateriais"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="datetime" type="D" value="45271.8396556018"/>
+					<Prp name="object bottom" type="I" value="652"/>
+					<Prp name="image file name" type="S" value="visImage603.png"/>
+				</Node>
+			</Node>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="remarks" type="S" value="'SOLADO' was sent as a keyboard input to the following window or control.&#xA;&#xA;Tested object:&#xA;Aliases.SIDI.frmPrincipal.MDIClient.frmGrupoMateriais.PageControlGrupoMateriais.tsPesquisaGrupoMateriais.PanelGridGrupoMateriais.dbGridGrupoMateriais&#xA;(Sys.Process(&quot;SIDI&quot;).VCLObject(&quot;frmPrincipal&quot;).Window(&quot;MDIClient&quot;, &quot;&quot;, 1).VCLObject(&quot;frmGrupoManut&quot;).VCLObject(&quot;PageControl1&quot;).VCLObject(&quot;tsPesquisa&quot;).VCLObject(&quot;PanelGrid&quot;).VCLObject(&quot;dbGridPesquisa&quot;))"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="message" type="S" value="Keyboard input."/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="42"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="date" type="D" value="45271.7146601157"/>
+			<Prp name="line no" type="I" value="28"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 28">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object right" type="I" value="1362"/>
+					<Prp name="object top" type="I" value="184"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="line #" type="I" value="26"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="object left" type="I" value="4"/>
+					<Prp name="object name" type="S" value="Aliases.SIDI.frmPrincipal.MDIClient.frmGrupoMateriais.PageControlGrupoMateriais.tsPesquisaGrupoMateriais.PanelGridGrupoMateriais.dbGridGrupoMateriais"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="datetime" type="D" value="45271.8396007407"/>
+					<Prp name="object bottom" type="I" value="652"/>
+					<Prp name="image file name" type="S" value="visImage589.png"/>
+				</Node>
+			</Node>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="remarks" type="S" value="'[Home]' was sent as a keyboard input to the following window or control.&#xA;&#xA;Tested object:&#xA;Aliases.SIDI.frmPrincipal.MDIClient.frmGrupoMateriais.PageControlGrupoMateriais.tsPesquisaGrupoMateriais.PanelGridGrupoMateriais.dbGridGrupoMateriais&#xA;(Sys.Process(&quot;SIDI&quot;).VCLObject(&quot;frmPrincipal&quot;).Window(&quot;MDIClient&quot;, &quot;&quot;, 1).VCLObject(&quot;frmGrupoManut&quot;).VCLObject(&quot;PageControl1&quot;).VCLObject(&quot;tsPesquisa&quot;).VCLObject(&quot;PanelGrid&quot;).VCLObject(&quot;dbGridPesquisa&quot;))"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="message" type="S" value="Keyboard input."/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="28"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="date" type="D" value="45271.7146015972"/>
+			<Prp name="line no" type="I" value="26"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 22">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object right" type="I" value="1362"/>
+					<Prp name="object top" type="I" value="184"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="line #" type="I" value="28"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="object left" type="I" value="4"/>
+					<Prp name="object name" type="S" value="Aliases.SIDI.frmPrincipal.MDIClient.frmGrupoMateriais.PageControlGrupoMateriais.tsPesquisaGrupoMateriais.PanelGridGrupoMateriais.dbGridGrupoMateriais"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="datetime" type="D" value="45271.8395683912"/>
+					<Prp name="object bottom" type="I" value="652"/>
+					<Prp name="image file name" type="S" value="visImage583.png"/>
+				</Node>
+			</Node>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="remarks" type="S" value="'PRODUTO EM PROCESSO' was sent as a keyboard input to the following window or control.&#xA;&#xA;Tested object:&#xA;Aliases.SIDI.frmPrincipal.MDIClient.frmGrupoMateriais.PageControlGrupoMateriais.tsPesquisaGrupoMateriais.PanelGridGrupoMateriais.dbGridGrupoMateriais&#xA;(Sys.Process(&quot;SIDI&quot;).VCLObject(&quot;frmPrincipal&quot;).Window(&quot;MDIClient&quot;, &quot;&quot;, 1).VCLObject(&quot;frmGrupoManut&quot;).VCLObject(&quot;PageControl1&quot;).VCLObject(&quot;tsPesquisa&quot;).VCLObject(&quot;PanelGrid&quot;).VCLObject(&quot;dbGridPesquisa&quot;))"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="message" type="S" value="Keyboard input."/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="22"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="date" type="D" value="45271.7145816204"/>
+			<Prp name="line no" type="I" value="28"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Prp name="status" type="I" value="0"/>
+	</Node>
+</Nodes>
