@@ -25,9 +25,13 @@
 				<Node name="{8ee82d46-af98-4371-988c-39e367c94873}"/>
 			</Node>
 			<Node name="{24b6fa0b-0143-461a-9758-aeb9e9a9428b}">
-				<Prp name="activity" type="S" value="{20EA13E4-7805-45FA-B78C-9715BED7AF3B}"/>
+				<Prp name="activity" type="S" value="{AF427052-55EC-4B73-86EC-91EBAD1C1E73}"/>
 			</Node>
-			<Node name="{2c786620-2489-4cbb-9c1e-1a94437a9245}"/>
+			<Node name="{2c786620-2489-4cbb-9c1e-1a94437a9245}">
+				<Node name="{aaa0867d-244d-42a8-be88-04cd1e4871f2}">
+					<Prp name="hash" type="I" value="1"/>
+				</Node>
+			</Node>
 			<Node name="{415b5aa1-c6ac-4d4d-9a53-063a521a45ab}">
 				<Node name="workspace">
 					<Node name="0">
@@ -61,12 +65,15 @@
 					</Node>
 					<Node name="2">
 						<Node name="editor">
+							<Node name="{18d21374-749a-4b12-9591-aeba7c5332a9}"/>
 							<Node name="{531ace08-e68e-400b-9eb9-e24763725fd8}">
 								<Prp name="key" type="S" value="{01846C5B-C648-4F49-ADF6-E6F63D61881A}"/>
 							</Node>
 							<Node name="{9185a4c3-0780-497d-b02d-ad3af4e9cf98}">
 								<Prp name="key" type="S" value="{B8A8805A-3C28-443A-9EC9-D2A6A8CFC4B5}"/>
 							</Node>
+							<Node name="{98f67204-5328-4e0e-99f5-6d1b1e6d4971}"/>
+							<Node name="{d26a70c5-94dd-4095-922f-2de8d44eae70}"/>
 							<Prp name="editor" type="S" value="{7E3D554A-B632-4727-90CE-CF791BD7E4D8}"/>
 							<Prp name="focused" type="S" value="{B8A8805A-3C28-443A-9EC9-D2A6A8CFC4B5}"/>
 						</Node>
@@ -2032,9 +2039,8 @@
 					<Node name="sidi">
 						<Node name="advanced">
 							<Node name="script">
-								<Node name="cadastros"/>
+								<Node name="financeiro"/>
 								<Node name="producao"/>
-								<Node name="teste"/>
 							</Node>
 						</Node>
 					</Node>

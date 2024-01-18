@@ -125,6 +125,31 @@
 							</testItem>
 						</children>
 					</testItem>
+					<testItem name="Producao" key="{19AAA66C-4E08-4D51-B26E-D88A001215B6}" group="True" enabled="True" testMoniker="" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+						<testParameters />
+						<children>
+							<testItem name="TestarLinha" key="{73D5574A-21DB-49E5-97D9-4346A0F6358E}" group="False" enabled="True" testMoniker="{40F4D983-C0E3-4197-B805-5FD5E1184611}testaLinhas" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="TestarReferencia" key="{CC83EFBD-3E6B-4A96-9E7D-A122985A259F}" group="False" enabled="True" testMoniker="{05140779-086A-4BB4-ACA6-F5F58ED6CAD6}testaReferencias" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="TestarProduto" key="{C55ACC4F-AAF4-4867-8E0C-337A1BF26BB5}" group="False" enabled="True" testMoniker="{20EA13E4-7805-45FA-B78C-9715BED7AF3B}testaProdutos" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+							<testItem name="TestarPedido" key="{7A04C270-480D-46B2-B89B-DCB7D3D5E4ED}" group="False" enabled="True" testMoniker="{EA51107C-A13F-4D4C-AC84-C392AD62C4CA}testaPedidos" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
+						</children>
+					</testItem>
+					<testItem name="Financeiro" key="{0496622F-DD07-4902-96F7-EDBD0B7E86D9}" group="True" enabled="True" testMoniker="" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+						<testParameters />
+						<children />
+					</testItem>
 				</children>
 			</testItem>
 		</children>
