@@ -169,7 +169,7 @@ function insereDescCor(cor)
   
   if (btnCadastrarCombinacao.Exists) 
   {
-  Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsVersao.PageControlCores.tsDadosVersao.dbDescVersao.Click(cor);  
+  Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsVersao.PageControlCores.tsDadosVersao.dbDescVersao.Keys(cor);  
   }
   else
   {

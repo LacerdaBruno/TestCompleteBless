@@ -151,26 +151,24 @@ function insereDescCor(cor)
 {
   var btnCadastrarCombinacao = Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.btnCadastrarCombinacao;
   var corCombinacao = Aliases.SIDI.frmPrincipal.MDIClient.frmCombinacao.PageControlCombinacao.tsPesquisa.PanelGridCombinacao;
+  
   if (btnCadastrarCombinacao.Exists) 
   {
     btnCadastrarCombinacao.Click();
     corCombinacao.Keys("[Tab]");
     corCombinacao.Keys(cor);
-    corCombinacao.Keys("[Enter]");     
+    corCombinacao.Keys("[Enter]"); 
+      
+    Principal.confirma(Aliases.SIDI.frmPrincipal.MDIClient.frmCombinacao.PainelConfirmaCombinacao.PanelBotoesCombinacao.btnConfirma, "Combinação");
+    Principal.verificaConfirmado(Aliases.SIDI.frmPrincipal.MDIClient.frmCombinacao.PainelConfirmaCombinacao.PanelBotoesCombinacao.btnConfirma, "Combinação");
+    Principal.fechaTela();
+    Aliases.SIDI.TMessageForm2.Yes.Click();    
   }
-  else{
-    Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsVersao.PageControlCores.tsDadosVersao.dbEditDescVersao.SetText(cor);
-  } 
   
-  Principal.confirma(Aliases.SIDI.frmPrincipal.MDIClient.frmCombinacao.PainelConfirmaCombinacao.PanelBotoesCombinacao.btnConfirma, "Combinação");
-  Principal.verificaConfirmado(Aliases.SIDI.frmPrincipal.MDIClient.frmCombinacao.PainelConfirmaCombinacao.PanelBotoesCombinacao.btnConfirma, "Combinação");
-  Principal.fechaTela();
-  Aliases.SIDI.TMessageForm2.Yes.Click();
-  
-  if (btnCadastrarCombinacao.Exists) 
-  {
-  Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsVersao.PageControlCores.tsDadosVersao.dbDescVersao.Keys(cor);  
-  }
+    if (btnCadastrarCombinacao.Exists) 
+    {
+    Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsVersao.PageControlCores.tsDadosVersao.dbDescVersao.Keys(cor);  
+    }
   else
   {
   Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsVersao.PageControlCores.tsDadosVersao.dbEditDescVersao.SetText(cor);  
