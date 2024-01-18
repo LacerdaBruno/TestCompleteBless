@@ -48,6 +48,15 @@
 				<Prp name="relpath" type="S" value="15_01_2024_17_14_54_852\Description.tcLog"/>
 				<Prp name="status" type="I" value="2"/>
 			</Node>
+			<Node name="log idx=0003">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="45309.5983449769"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{D6A30C24-6799-43B2-AB35-56015519D2D0}"/>
+				<Prp name="nameofroot" type="S" value="TestarValidarLogin"/>
+				<Prp name="relpath" type="S" value="18_01_2024_14_21_37_6\Description.tcLog"/>
+				<Prp name="status" type="I" value="0"/>
+			</Node>
 		</Node>
 		<Prp name="signature" type="S" value="{681DCC69-A39F-4C4D-8E7D-B2D9362FAF4F}"/>
 		<Prp name="version" type="S" value="11.0"/>
