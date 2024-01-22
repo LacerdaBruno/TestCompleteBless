@@ -5,24 +5,25 @@ var Visualizacoes = require("Visualizacoes");
 var Materiais = require("Materiais");
 
 function testarCompra(){
-
-  var contDados = 0;   
-  while (contDados <= Project.Variables.ContDados) { 
-  var fornecedor = Project.Variables.DadosPessoasServicos.nome(contDados);
-  var transportadora = Project.Variables.DadosPessoasServicos.nome(contDados);  
   
-  cadastraCompra(fornecedor, transportadora, contDados); 
+  var dadosBasicos = Aliases.SIDI.frmPrincipal.MDIClient.frmCompra.PageControlCompras.tsDadosBasicosCompra.PanelDadosBasicosCompra;
+  var mensagem = Aliases.SIDI.TMessageForm2;
+  for (let conteFonecedor = 0; conteFonecedor < Project.Variables.DadosPessoasServicos.RowCount;) {
+  var fornecedor = Project.Variables.DadosPessoasServicos.nome(conteFonecedor);
+  var transportadora = Project.Variables.DadosPessoasServicos.nome(conteFonecedor);  
+  
+  cadastraCompra(dadosBasicos, mensagem, fornecedor, transportadora, conteFonecedor); 
   Principal.fechaTela();
   
-  contDados++;
+  conteFonecedor++
+  
   }
   gerarCopiaCompra();
   Principal.fechaTela();
 }
 
-function cadastraCompra(fornecedor, transportadora, contDados) { 
-  var dadosBasicos = Aliases.SIDI.frmPrincipal.MDIClient.frmCompra.PageControlCompras.tsDadosBasicosCompra.PanelDadosBasicosCompra;
-  var mensagem = Aliases.SIDI.TMessageForm2;
+function cadastraCompra(dadosBasicos, mensagem, fornecedor, transportadora, conteFonecedor) { 
+
 	abreTela(); 
 	Principal.clicaNovo();
 	Principal.insereDropDownValue(dadosBasicos.FORNECEDOR, fornecedor);
@@ -35,7 +36,7 @@ function cadastraCompra(fornecedor, transportadora, contDados) {
 	dadosBasicos.TIPO_COBRANCA.Keys("BANCARIA" + "[Enter]");
   dadosBasicos.Panel8.GERAR_MOVTO_FISCAL.Click();
   //Isenrir uma compra como prestação de serviço
-  if (contDados > 3){
+  if (i > 3){
     Principal.insereDropDownValue(dadosBasicos.PREST_SERVICO, "SIM" + "[Enter]");
   }
 	insereMaterial();

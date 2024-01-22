@@ -8855,6 +8855,70 @@
 																			</Child>
 																		</Children>
 																	</Child>
+																	<Child Name="grupoCoordenacaoGrade" Key="{094FAC18-1BFA-4378-B911-F501BA655A76}" ParallelWalk="True">
+																		<Image FileName="166379973" Left="12" Top="160" Right="1370" Bottom="660" />
+																		<TypeInfo Item0="{B133E503-EF8C-43F6-AD54-7E43333645DC}" />
+																		<Properties>
+																			<Property Name="ClassName">
+																				<Value PropertyType="0" Value="TGroupBox" Type="5" />
+																			</Property>
+																			<Property Name="ObjectIdentifier">
+																				<Value PropertyType="0" Value="GroupBox2" Type="5" />
+																			</Property>
+																		</Properties>
+																		<Children>
+																			<Child Name="gridCoordenacao" Key="{F69E361E-DF3D-4C67-B829-256F8D01F634}" ParallelWalk="True">
+																				<Image FileName="166379973" Left="14" Top="209" Right="1368" Bottom="658" />
+																				<TypeInfo Item0="{2EE004DC-6673-4998-AC96-88B3EBD87BED}" />
+																				<Properties>
+																					<Property Name="ClassName">
+																						<Value PropertyType="0" Value="TwwDBGrid" Type="5" />
+																					</Property>
+																					<Property Name="ObjectIdentifier">
+																						<Value PropertyType="0" Value="dbgCoordenacao" Type="5" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="painelGrade" Key="{CB2F1517-E389-4178-8FF0-C1773FEB8EE8}" ParallelWalk="True">
+																				<Image FileName="166379973" Left="14" Top="175" Right="1368" Bottom="209" />
+																				<TypeInfo Item0="{B133E503-EF8C-43F6-AD54-7E43333645DC}" />
+																				<Properties>
+																					<Property Name="ClassName">
+																						<Value PropertyType="0" Value="TPanel" Type="5" />
+																					</Property>
+																					<Property Name="ObjectIdentifier">
+																						<Value PropertyType="0" Value="pnlGrade" Type="5" />
+																					</Property>
+																				</Properties>
+																				<Children>
+																					<Child Name="btnAdicionaGrade" Key="{3D8EF742-5CF1-4316-B39D-13102A122D17}" ParallelWalk="True">
+																						<Image FileName="166379973" Left="218" Top="180" Right="358" Bottom="204" />
+																						<TypeInfo Item0="{F0640855-35C8-4BAE-82AE-DD5B774EE982}" />
+																						<Properties>
+																							<Property Name="ClassName">
+																								<Value PropertyType="0" Value="TButton" Type="5" />
+																							</Property>
+																							<Property Name="ObjectIdentifier">
+																								<Value PropertyType="0" Value="btnAdicionaGrade" Type="5" />
+																							</Property>
+																						</Properties>
+																					</Child>
+																					<Child Name="comboGrade" Key="{48E35497-CF06-4E61-A699-EB33B28B9361}" ParallelWalk="True">
+																						<Image FileName="166379973" Left="64" Top="181" Right="214" Bottom="202" />
+																						<TypeInfo Item0="{2EE004DC-6673-4998-AC96-88B3EBD87BED}" />
+																						<Properties>
+																							<Property Name="ClassName">
+																								<Value PropertyType="0" Value="TwwDBLookupCombo" Type="5" />
+																							</Property>
+																							<Property Name="ObjectIdentifier">
+																								<Value PropertyType="0" Value="GRADE" Type="5" />
+																							</Property>
+																						</Properties>
+																					</Child>
+																				</Children>
+																			</Child>
+																		</Children>
+																	</Child>
 																</Children>
 															</Child>
 														</Children>
@@ -11812,6 +11876,13 @@
 								<Child Name="gbForma" Owner="{62F4F751-D325-42B7-AEFE-AF014EB9135E}">
 									<Child Name="Panel2" Owner="{C3DCED17-F6C2-480C-B06C-F057D7EC67C3}">
 										<Child Name="lcForma" Owner="{D948F4CA-DFD9-4E4D-8E8A-E61C1999FB12}" />
+									</Child>
+								</Child>
+								<Child Name="grupoCoordenacaoGrade" Owner="{094FAC18-1BFA-4378-B911-F501BA655A76}">
+									<Child Name="gridCoordenacao" Owner="{F69E361E-DF3D-4C67-B829-256F8D01F634}" />
+									<Child Name="painelGrade" Owner="{CB2F1517-E389-4178-8FF0-C1773FEB8EE8}">
+										<Child Name="btnAdicionaGrade" Owner="{3D8EF742-5CF1-4316-B39D-13102A122D17}" />
+										<Child Name="comboGrade" Owner="{48E35497-CF06-4E61-A699-EB33B28B9361}" />
 									</Child>
 								</Child>
 							</Child>

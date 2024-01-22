@@ -8,21 +8,21 @@ function testarCompra(){
   
   var dadosBasicos = Aliases.SIDI.frmPrincipal.MDIClient.frmCompra.PageControlCompras.tsDadosBasicosCompra.PanelDadosBasicosCompra;
   var mensagem = Aliases.SIDI.TMessageForm2;
-  var contDados = 0;   
-  while (contDados <= Project.Variables.ContDados) { 
-  var fornecedor = Project.Variables.DadosPessoasServicos.nome(contDados);
-  var transportadora = Project.Variables.DadosPessoasServicos.nome(contDados);  
+  for (let conteFonecedor = 0; conteFonecedor < Project.Variables.DadosPessoasServicos.RowCount;) {
+  var fornecedor = Project.Variables.DadosPessoasServicos.nome(conteFonecedor);
+  var transportadora = Project.Variables.DadosPessoasServicos.nome(conteFonecedor);  
   
-  cadastraCompra(dadosBasicos, mensagem, fornecedor, transportadora, contDados); 
+  cadastraCompra(dadosBasicos, mensagem, fornecedor, transportadora, conteFonecedor); 
   Principal.fechaTela();
   
-  contDados++;
+  conteFonecedor++
+  
   }
   gerarCopiaCompra();
   Principal.fechaTela();
 }
 
-function cadastraCompra(dadosBasicos, mensagem, fornecedor, transportadora, contDados) { 
+function cadastraCompra(dadosBasicos, mensagem, fornecedor, transportadora, conteFonecedor) { 
 
 	abreTela(); 
 	Principal.clicaNovo();
@@ -36,7 +36,7 @@ function cadastraCompra(dadosBasicos, mensagem, fornecedor, transportadora, cont
 	dadosBasicos.TIPO_COBRANCA.Keys("BANCARIA" + "[Enter]");
   dadosBasicos.Panel8.GERAR_MOVTO_FISCAL.Click();
   //Isenrir uma compra como prestação de serviço
-  if (contDados > 3){
+  if (conteFonecedor > 3){
     Principal.insereDropDownValue(dadosBasicos.PREST_SERVICO, "SIM" + "[Enter]");
   }
 	insereMaterial();
