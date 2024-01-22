@@ -4,6 +4,7 @@ var Validacoes = require("Validacoes");
 var App = require("App");
 var Principal = require("Principal");
 var Visualizacoes = require("Visualizacoes");
+var ConsideraGradeCoordenacao = Project.Variables.ConsideraGradeCoordenacao.Value("CONSIDERA_GRADE_COORDENACAO");
 
 function testaReferencias()
 {
@@ -24,9 +25,13 @@ function cadastraReferencia(referencia)
   insereNumeracao("38 AO 43");  
   insereLinha("Adulto");  
   abreAbaCordenacoes();
-  if(Project.Variables.ControleSistema) 
-  insereForma("Forma padrao");
-  
+  if(ConsideraGradeCoordenacao == "F")
+  {
+   insereForma("Forma padrao"); 
+  }else
+  {
+   insereGradeCoordenacao("38 AO 43");  
+  }  
 }
 
 function abreTela()
@@ -78,6 +83,17 @@ function insereForma(forma)
   Aliases.SIDI.frmPrincipal.MDIClient.frmReferencias.PageControl1.tsCoordenacao.gbForma.Panel2.lcForma.Keys(forma);
   confirma();
   Aliases.SIDI.dlgAten_o.btnSim.ClickButton();
+}
+function insereGradeCoordenacao(grade)
+{
+  var frmReferencia = Aliases.SIDI.frmPrincipal.MDIClient.frmReferencias.PageControl1.tsCoordenacao.grupoCoordenacaoGrade.painelGrade; 
+    frmReferencia.comboGrade.Keys(grade+"[Tab]");
+    frmReferencia.btnAdicionaGrade.Click();
+    confirma();
+    if (Aliases.SIDI.dlgAten_o.btnSim.Exists)
+    {
+      Aliases.SIDI.dlgAten_o.btnSim.ClickButton();
+    }    
 }
 module.exports.testaReferencias = testaReferencias;
 module.exports.abreTela = abreTela;
