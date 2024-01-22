@@ -30,7 +30,7 @@
 			<testItem name="Sidi" key="{2AC8EFB5-24EB-49CD-9DCA-2E4C9EADC735}" group="True" enabled="True" testMoniker="" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
 				<testParameters />
 				<children>
-					<testItem name="Outros" key="{1E84D8C3-0D8A-4B4C-9DDF-223715E12E1E}" group="True" enabled="False" testMoniker="" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+					<testItem name="Outros" key="{1E84D8C3-0D8A-4B4C-9DDF-223715E12E1E}" group="True" enabled="True" testMoniker="" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
 						<testParameters />
 						<children>
 							<testItem name="TestarValidarLogin" key="{A14EFE13-D334-4C88-AF86-08A5975C6EB7}" group="False" enabled="True" testMoniker="{523414B8-5D61-4CC0-B8C6-C59FDB2428C0}validaLogin" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
@@ -39,7 +39,7 @@
 							</testItem>
 						</children>
 					</testItem>
-					<testItem name="Cadastro" key="{ACE03BA3-D91F-4EDF-B3E8-E79A192F3BB3}" group="True" enabled="False" testMoniker="" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+					<testItem name="Cadastro" key="{ACE03BA3-D91F-4EDF-B3E8-E79A192F3BB3}" group="True" enabled="True" testMoniker="" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
 						<testParameters />
 						<children>
 							<testItem name="TestarFabrica" key="{7B6C2CCE-1B9E-4BD3-A57B-4950D5D23EE3}" group="False" enabled="True" testMoniker="{2F96AC4A-5B10-4C32-8949-9624A21970FD}testaFabrica" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
@@ -104,7 +104,7 @@
 							</testItem>
 						</children>
 					</testItem>
-					<testItem name="Suprimentos" key="{2B35F785-5274-40FE-8035-4367A1991709}" group="True" enabled="False" testMoniker="" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+					<testItem name="Suprimentos" key="{2B35F785-5274-40FE-8035-4367A1991709}" group="True" enabled="True" testMoniker="" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
 						<testParameters />
 						<children>
 							<testItem name="TestarGrupoMateriais" key="{128C74F5-FE5C-496D-A3D7-BD69D61F5E86}" group="False" enabled="True" testMoniker="{2752B4CC-2B3B-4883-8793-BAB5660F1B60}cadastrarGrupoDeMateriais" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
