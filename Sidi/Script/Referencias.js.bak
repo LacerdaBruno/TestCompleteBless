@@ -4,11 +4,11 @@ var Validacoes = require("Validacoes");
 var App = require("App");
 var Principal = require("Principal");
 var Visualizacoes = require("Visualizacoes");
-var ConsideraGradeCoordenacao = Project.Variables.ConsideraGradeCoordenacao.Value("CONSIDERA_GRADE_COORDENACAO");
+var ConsideraGradeCoordenacao = Project.Variables.ControleSistema.Value("CONSIDERA_GRADE_COORDENACAO");
 
 function testaReferencias()
 {
-  for(i = 0; i < Project.Variables.Produto.RowCount; i++){
+  for(i = 1; i < Project.Variables.Produto.RowCount; i++){
    cadastraReferencia(Project.Variables.Produto.referencia(i)); 
   }
   Principal.clicaEditar();
