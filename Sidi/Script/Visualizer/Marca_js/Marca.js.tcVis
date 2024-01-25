@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Root signature="{42D2222C-ACA2-405F-8E67-05D5C42EB839}" version="2">
+	<data key="{E24DBA5F-5127-4D14-81BD-E816F05C2642}">
+		<item typeId="{87B03792-E854-4F5D-9F33-165F1F874209}" version="2" lineNo="2" kind="0" dateTime="45313.7846412037" objectName="Aliases.SIDI.frmPrincipal" objectLeft="-8" objectTop="-8" objectRight="1374" objectBottom="746" clickPointX="-1" clickPointY="-1" imageFileName="tcvi264243125135845.png" storageFileName="" needUpdate="False" rectColor="255" />
+		<item typeId="{87B03792-E854-4F5D-9F33-165F1F874209}" version="2" lineNo="3" kind="0" dateTime="45313.7846643519" objectName="Aliases.SIDI.frmPrincipal.sbNovo" objectLeft="11" objectTop="100" objectRight="86" objectBottom="124" clickPointX="40" clickPointY="116" imageFileName="tcvi2642456871358410.png" storageFileName="" needUpdate="False" rectColor="255" />
+		<item typeId="{87B03792-E854-4F5D-9F33-165F1F874209}" version="2" lineNo="8" kind="0" dateTime="45313.7848148148" objectName="Aliases.SIDI.frmPrincipal.sbSair" objectLeft="748" objectTop="100" objectRight="820" objectBottom="124" clickPointX="801" clickPointY="114" imageFileName="tcvi2642584371358416.png" storageFileName="" needUpdate="False" rectColor="255" />
+	</data>
+</Root>

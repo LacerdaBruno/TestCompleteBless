@@ -90,7 +90,10 @@ function insereGradeCoordenacao(grade)
     frmReferencia.comboGrade.Keys(grade+"[Tab]");
     frmReferencia.btnAdicionaGrade.Click();
     confirma();
-    Aliases.SIDI.dlgAten_o.btnSim.ClickButton();
+    if (Aliases.SIDI.dlgAten_o.btnSim.Exists)
+    {
+      Aliases.SIDI.dlgAten_o.btnSim.ClickButton();
+    }    
 }
 module.exports.testaReferencias = testaReferencias;
 module.exports.abreTela = abreTela;

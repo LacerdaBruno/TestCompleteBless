@@ -1,0 +1,9 @@
+﻿function cadastrarMarca()
+{
+  Aliases.SIDI.frmPrincipal.MainMenu.Click("Cadastros|Marcas");
+  Aliases.SIDI.frmPrincipal.sbNovo.Click();
+  Aliases.SIDI.frmPrincipal.MDIClient.frmMarcaManut.PageControl1.ClickTab("&Dados Básicos");
+  Aliases.SIDI.frmPrincipal.MDIClient.frmMarcaManut.PageControl1.tsDados.NOME_MARCA.Keys("marca");
+  Aliases.SIDI.frmPrincipal.MDIClient.frmMarcaManut.Panel1.PanelBotoes.btnConfirma.ClickButton();
+  Aliases.SIDI.frmPrincipal.sbSair.Click();
+}
