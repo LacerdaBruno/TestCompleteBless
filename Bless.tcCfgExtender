@@ -27,7 +27,11 @@
 			<Node name="{24b6fa0b-0143-461a-9758-aeb9e9a9428b}">
 				<Prp name="activity" type="S" value="{20EA13E4-7805-45FA-B78C-9715BED7AF3B}"/>
 			</Node>
-			<Node name="{2c786620-2489-4cbb-9c1e-1a94437a9245}"/>
+			<Node name="{2c786620-2489-4cbb-9c1e-1a94437a9245}">
+				<Node name="{aaa0867d-244d-42a8-be88-04cd1e4871f2}">
+					<Prp name="hash" type="I" value="1"/>
+				</Node>
+			</Node>
 			<Node name="{415b5aa1-c6ac-4d4d-9a53-063a521a45ab}">
 				<Node name="workspace">
 					<Node name="0">
@@ -52,7 +56,7 @@
 					<Node name="1">
 						<Node name="editor">
 							<Node name="{93765269-c25d-4cd5-b6bf-5d7454869c93}">
-								<Prp name="key" type="S" value="{7CB2CE91-906E-494F-BB91-D858459C271A}"/>
+								<Prp name="key" type="S" value="{4ADC9DF7-6F4A-4909-A23E-3CE5DCF527B0}"/>
 							</Node>
 							<Prp name="editor" type="S" value="{0F76BB6A-A64A-4E8D-8C58-589684A2B6C7}"/>
 							<Prp name="focused" type="S" value="{7CB2CE91-906E-494F-BB91-D858459C271A}"/>
@@ -61,12 +65,15 @@
 					</Node>
 					<Node name="2">
 						<Node name="editor">
+							<Node name="{18d21374-749a-4b12-9591-aeba7c5332a9}"/>
 							<Node name="{531ace08-e68e-400b-9eb9-e24763725fd8}">
 								<Prp name="key" type="S" value="{2C61ED3F-0D92-4CD3-9CA5-1E324B06A07D}"/>
 							</Node>
 							<Node name="{9185a4c3-0780-497d-b02d-ad3af4e9cf98}">
 								<Prp name="key" type="S" value="{646A5149-E263-479E-A5A3-03BD2E78DC91}"/>
 							</Node>
+							<Node name="{98f67204-5328-4e0e-99f5-6d1b1e6d4971}"/>
+							<Node name="{d26a70c5-94dd-4095-922f-2de8d44eae70}"/>
 							<Prp name="editor" type="S" value="{7E3D554A-B632-4727-90CE-CF791BD7E4D8}"/>
 							<Prp name="focused" type="S" value="{646A5149-E263-479E-A5A3-03BD2E78DC91}"/>
 						</Node>
@@ -124,6 +131,16 @@
 					<Prp name="enabled" type="B" value="-1"/>
 					<Prp name="expression" type="S" value="i"/>
 					<Prp name="index" type="I" value="7"/>
+				</Node>
+				<Node name="item_8">
+					<Prp name="enabled" type="B" value="-1"/>
+					<Prp name="expression" type="S" value="Project.Variables.CodigoMateriais.IsEOF()"/>
+					<Prp name="index" type="I" value="8"/>
+				</Node>
+				<Node name="item_9">
+					<Prp name="enabled" type="B" value="-1"/>
+					<Prp name="expression" type="S" value="materiaisFichaTecnica.Value(&quot;GERAR_MOVTO_PELA_GRADE&quot;)"/>
+					<Prp name="index" type="I" value="9"/>
 				</Node>
 				<Prp name="history" type="S" value=""/>
 			</Node>
@@ -2070,13 +2087,10 @@
 					<Node name="sidi">
 						<Node name="advanced">
 							<Node name="script">
-								<Node name="cadastros"/>
 								<Node name="producao"/>
-								<Node name="suprimentos"/>
 								<Node name="teste"/>
 							</Node>
 						</Node>
-						<Node name="keywordtests"/>
 					</Node>
 				</Node>
 				<Node name="bless logs">

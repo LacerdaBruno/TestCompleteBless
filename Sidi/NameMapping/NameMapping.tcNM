@@ -5521,6 +5521,9 @@
 																							<Property Name="ObjectIdentifier">
 																								<Value PropertyType="0" Value="GridFichaTecnica" Type="5" />
 																							</Property>
+																							<Property Name="Index">
+																								<Value PropertyType="0" Value="1" Type="0" />
+																							</Property>
 																						</Properties>
 																					</Child>
 																				</Children>

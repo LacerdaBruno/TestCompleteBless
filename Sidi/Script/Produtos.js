@@ -41,34 +41,39 @@ function pesquisaProdutoPorReferencia(ref)
 
 function insereFichaTecnica()
 {
-  abreFichaTecnica();
-  
+  var materiaisFichaTecnica = Project.Variables.CodigoMateriais;
+  abreFichaTecnica();  
   Principal.clicaEditar();
-  var x = 0; 
-  while(x < Project.Variables.CodigoMateriais.ColumnCount){
+
+  while(!materiaisFichaTecnica.IsEOF()){
   
-    incluirMaterial(Project.Variables.CodigoMateriais.Value("CODIGO_USUARIO"));
+    incluirMaterial(materiaisFichaTecnica.Value("CODIGO_USUARIO"));
     //Se o consumo do item for com grade abre a tela Ver Consumos.
     //Se não insere o consumo direto no grid.
-    if(Project.Variables.CodigoMateriais.Value("CODIGO_USUARIO") == 1 || CodigoMateriais.Value("CODIGO_USUARIO") == 2)
-    {    
-    Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsVersao.PageControlCores.tsFichaMateriais.GridFichaTecnica.Keys("^o");
-    Aliases.SIDI.frmModeloConsumoManut.Panel2.btnOpcoes.ClickButton();
-    Aliases.SIDI.frmModeloConsumoManut.Panel2.btnOpcoes.PopupMenu.Click("Atualiza grade");
+    if(materiaisFichaTecnica.Value("GERAR_MOVTO_PELA_GRADE") == "T")
+    { 
+            
+      Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsVersao.PageControlCores.tsFichaMateriais.GridFichaTecnica.Keys("^o");
+      Aliases.SIDI.frmModeloConsumoManut.Panel2.btnOpcoes.ClickButton();
+      Aliases.SIDI.frmModeloConsumoManut.Panel2.btnOpcoes.PopupMenu.Click("Atualiza grade");
     
-    for(i = 0; i < Project.Variables.grade.RowCount; i++ ){
-    Aliases.SIDI.frmModeloConsumoManut.dbgConsumos.Keys(1+"[Down]");
-
-    Aliases.SIDI.frmModeloConsumo.PanelModeloConsumo.btnConfirmaConsumo.Click();
-    }  
-        
+      for(i = 0; i < Project.Variables.Grade.RowCount; i++ ){
+      Aliases.SIDI.frmModeloConsumoManut.dbgConsumos.Keys(1+"[Down]");    
+      } 
+      Aliases.SIDI.frmModeloConsumo.PanelModeloConsumo.btnConfirmaConsumo.Click();
+             
     }else{
       let grid = Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsVersao.PageControlCores.tsFichaMateriais.GridFichaTecnica;
-      grid.Keys("[Tab]");
-      grid.Keys("[Tab]");
-      grid.Keys(qte);    
+      grid.Keys("[Home]");
+      grid.Keys("[Right]");
+      grid.Keys("[Right]");
+      grid.Keys("[Right]");
+      grid.Keys("[Right]");
+      grid.Keys("1");     
+          
     }
-    x++;
+     Project.Variables.CodigoMateriais.Next();
+
   }
   confirma();
   
@@ -234,6 +239,7 @@ function incluirMaterial(mat)
   grid.Keys("[Down]");  
   grid.Keys("[Tab]");
   grid.Keys(mat);
+  grid.Keys("[Tab]");
     
 }
 
