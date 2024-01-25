@@ -109,6 +109,9 @@
 		<child name="Pedidos" key="{EA51107C-A13F-4D4C-AC84-C392AD62C4CA}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
 			<data path="Pedidos.js" />
 		</child>
+		<child name="Marca" key="{E24DBA5F-5127-4D14-81BD-E816F05C2642}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="Marca.js" />
+		</child>
 	</children>
 	<folders>
 		<folder caption="Cadastros" description="A logical folder that is used to organize project items and elements." moniker="">
@@ -128,6 +131,7 @@
 				<ref key="{F7894DC7-A3EE-41B0-AAA2-8F975B2DB120}" />
 				<ref key="{391265AB-D1AC-4A3B-95B1-49F1A77CCDFA}" />
 				<ref key="{82EE076C-5125-4F46-AE50-B7114D00E5C6}" />
+				<ref key="{E24DBA5F-5127-4D14-81BD-E816F05C2642}" />
 			</references>
 		</folder>
 		<folder caption="Teste" description="A logical folder that is used to organize project items and elements." moniker="">

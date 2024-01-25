@@ -4,7 +4,7 @@ var Validacoes = require("Validacoes");
 var App = require("App");
 var Principal = require("Principal");
 var Visualizacoes = require("Visualizacoes");
-var ConsideraGradeCoordenacao = Project.Variables.ConsideraGradeCoordenacao.Value("CONSIDERA_GRADE_COORDENACAO");
+var ConsideraGradeCoordenacao = Project.Variables.ControleSistema.Value("CONSIDERA_GRADE_COORDENACAO");
 
 function testaReferencias()
 {

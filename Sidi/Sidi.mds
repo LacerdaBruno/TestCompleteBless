@@ -46,6 +46,10 @@
 								<testParameters />
 								<children />
 							</testItem>
+							<testItem name="TestarCadastroMarca" key="{46B410A8-11F7-44C7-88FC-DC619217A795}" group="False" enabled="True" testMoniker="{E24DBA5F-5127-4D14-81BD-E816F05C2642}cadastrarMarca" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+								<testParameters />
+								<children />
+							</testItem>
 							<testItem name="TestarSetores" key="{1007CA41-3275-4545-A7F1-32943A89EA0A}" group="False" enabled="True" testMoniker="{4DCC9650-EEA8-4156-BC1F-426B4D6FBEE0}insereSetores" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
 								<testParameters />
 								<children />
@@ -128,11 +132,11 @@
 					<testItem name="Producao" key="{19AAA66C-4E08-4D51-B26E-D88A001215B6}" group="True" enabled="True" testMoniker="" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
 						<testParameters />
 						<children>
-							<testItem name="TestarLinha" key="{73D5574A-21DB-49E5-97D9-4346A0F6358E}" group="False" enabled="False" testMoniker="{40F4D983-C0E3-4197-B805-5FD5E1184611}testaLinhas" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+							<testItem name="TestarLinha" key="{73D5574A-21DB-49E5-97D9-4346A0F6358E}" group="False" enabled="True" testMoniker="{40F4D983-C0E3-4197-B805-5FD5E1184611}testaLinhas" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
 								<testParameters />
 								<children />
 							</testItem>
-							<testItem name="TestarReferencia" key="{CC83EFBD-3E6B-4A96-9E7D-A122985A259F}" group="False" enabled="False" testMoniker="{05140779-086A-4BB4-ACA6-F5F58ED6CAD6}testaReferencias" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+							<testItem name="TestarReferencia" key="{CC83EFBD-3E6B-4A96-9E7D-A122985A259F}" group="False" enabled="True" testMoniker="{05140779-086A-4BB4-ACA6-F5F58ED6CAD6}testaReferencias" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
 								<testParameters />
 								<children />
 							</testItem>
@@ -140,7 +144,7 @@
 								<testParameters />
 								<children />
 							</testItem>
-							<testItem name="TestarPedido" key="{7A04C270-480D-46B2-B89B-DCB7D3D5E4ED}" group="False" enabled="False" testMoniker="{EA51107C-A13F-4D4C-AC84-C392AD62C4CA}testaPedidos" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+							<testItem name="TestarPedido" key="{7A04C270-480D-46B2-B89B-DCB7D3D5E4ED}" group="False" enabled="True" testMoniker="{EA51107C-A13F-4D4C-AC84-C392AD62C4CA}testaPedidos" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
 								<testParameters />
 								<children />
 							</testItem>
@@ -233,9 +237,9 @@
 					</DefValue>
 				</Variable>
 				<Variable Name="Produto" Type="{4AD4881B-176C-4C96-8288-FBBB7E3D1FE3}" Local="False">
-					<DefValue RowCount="1" ColumnCount="8">
-						<Columns ColumnName0="descricao" ColumnName1="referencia" ColumnName2="unitario_Vista" ColumnName3="unitario" ColumnName4="pesoLiquido" ColumnName5="pesoBruto" ColumnName6="cor" ColumnName7="unit_volume" />
-						<Row No="0" Cell0="5400450053005400450030003100" Cell1="5400450053005400450030003100" Cell2="31003000" Cell3="31003000" Cell4="31003500" Cell5="31003500" Cell6="41005A0055004C00" Cell7="31003200200050004500C7004100530020002D0020005A00200033003800200041004F00200034003300" />
+					<DefValue RowCount="1" ColumnCount="9">
+						<Columns ColumnName0="descricao" ColumnName1="referencia" ColumnName2="unitario_Vista" ColumnName3="unitario" ColumnName4="pesoLiquido" ColumnName5="pesoBruto" ColumnName6="cor" ColumnName7="unit_volume" ColumnName8="marca" />
+						<Row No="0" Cell0="5400450053005400450030003100" Cell1="5400450053005400450030003100" Cell2="31003000" Cell3="31003000" Cell4="31003500" Cell5="31003500" Cell6="41005A0055004C00" Cell7="31003200200050004500C7004100530020002D0020005A00200033003800200041004F00200034003300" Cell8="4D004100520043004100" />
 					</DefValue>
 				</Variable>
 				<Variable Name="UnidadeMedidas" Type="{4AD4881B-176C-4C96-8288-FBBB7E3D1FE3}" Local="False">
@@ -345,9 +349,9 @@
 						<ConnectionInfo ConnectionString="Provider=MSDASQL.1;Persist Security Info=False;Extended Properties=&quot;DSN=SIDI;Driver=Firebird/InterBase(r) driver;Dbname=C:\bless\Bin\Data\SIDI\DADOS\DADOS.FDB;CHARSET=NONE;UID=SYSDBA;Client=C:\Program Files\Firebird\Firebird_4_0\fbclient.dll&quot;" Login="SYSDBA" Psw="A0B0153E2BCA20676AF1096E0BC206B76FD97E5B0503C954F449" Query="SELECT CODIGO_USUARIO FROM ITEM_ESTOQUE" />
 					</DefValue>
 				</Variable>
-				<Variable Name="ConsideraGradeCoordenacao" Type="{8ECBD24A-6DA1-4476-A473-EE3A52F06A83}" Local="False">
+				<Variable Name="ControleSistema" Type="{8ECBD24A-6DA1-4476-A473-EE3A52F06A83}" Local="False">
 					<DefValue Kind="{002E9C22-1E7F-4CEC-AFD0-5C1ACCB5BA1F}">
-						<ConnectionInfo ConnectionString="Provider=MSDASQL.1;Persist Security Info=False;Extended Properties=&quot;DSN=SIDI;Driver=Firebird/InterBase(r) driver;Dbname=C:\bless\Bin\Data\SIDI\DADOS\DADOS.FDB;CHARSET=NONE;UID=SYSDBA;Client=C:\Program Files\Firebird\Firebird_4_0\fbclient.dll&quot;" Login="SYSDBA" Psw="A0B0153E2BCA20676AF1096E0BC206B76FD97E5B0503C954F449" Query="select CONSIDERA_GRADE_COORDENACAO&#32;&#32;from controle_sistema" />
+						<ConnectionInfo ConnectionString="Provider=MSDASQL.1;Persist Security Info=False;Extended Properties=&quot;DSN=SIDI;Driver=Firebird/InterBase(r) driver;Dbname=C:\bless\Bin\Data\SIDI\DADOS\DADOS.FDB;CHARSET=NONE;UID=SYSDBA;Client=C:\Program Files\Firebird\Firebird_4_0\fbclient.dll&quot;" Login="SYSDBA" Psw="A0B0153E2BCA20676AF1096E0BC206B76FD97E5B0503C954F449" Query="select CONSIDERA_GRADE_COORDENACAO, EXIBIR_PECA&#32;&#32;from controle_sistema" />
 					</DefValue>
 				</Variable>
 			</Items>
