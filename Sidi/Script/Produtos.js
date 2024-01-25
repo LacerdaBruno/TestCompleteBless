@@ -182,29 +182,13 @@ function abreAbaCores()
 function insereDescCor(cor)
 {
   var btnCadastrarCombinacao = Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.btnCadastrarCombinacao;
-  var corCombinacao = Aliases.SIDI.frmPrincipal.MDIClient.frmCombinacao.PageControlCombinacao.tsPesquisa.PanelGridCombinacao;
-  
-  if (btnCadastrarCombinacao.Exists) 
-  {
-    btnCadastrarCombinacao.Click();
-    corCombinacao.Keys("[Tab]");
-    corCombinacao.Keys(cor);
-    corCombinacao.Keys("[Enter]"); 
-      
-    Principal.confirma(Aliases.SIDI.frmPrincipal.MDIClient.frmCombinacao.PainelConfirmaCombinacao.PanelBotoesCombinacao.btnConfirma, "Combinação");
-    Principal.verificaConfirmado(Aliases.SIDI.frmPrincipal.MDIClient.frmCombinacao.PainelConfirmaCombinacao.PanelBotoesCombinacao.btnConfirma, "Combinação");
-    Principal.fechaTela();
-    Aliases.SIDI.TMessageForm2.Yes.Click();    
-  }
-  
+
     if (btnCadastrarCombinacao.Exists) 
     {
     Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsVersao.PageControlCores.tsDadosVersao.dbDescVersao.Keys(cor);  
-    }
-  else
-  {
-  Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsVersao.PageControlCores.tsDadosVersao.dbEditDescVersao.SetText(cor);  
-  }  
+    }else{
+          Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsVersao.PageControlCores.tsDadosVersao.dbEditDescVersao.SetText(cor);  
+         }  
 }
 
 function insereCorBase(corb)
@@ -261,6 +245,29 @@ function insereSetor()
   Aliases.SIDI.MensagemConfirmacao.btnSim.ClickButton();
 }
 
+function inserirCombinacao() 
+{
+    var conexao = ADO.CreateADOConnection();    
+    var produtoCor = "";
+    var insertCombinacao = "";
+   
+    conexao.ConnectionString ="Provider=MSDASQL.1;Persist Security Info=False;Extended Properties=\"DSN=SIDI;Driver=Firebird/InterBase(r) driver;Dbname=C:\\bless\\Bin\\Data\\SIDI\\DADOS\\DADOS.FDB;CHARSET=NONE;UID=SYSDBA;PWD=pmpsyfwr;Client=C:\\Program Files\\Firebird\\Firebird_4_0\\fbclient.dll\"";
+    conexao.LoginPrompt = false;
+    
+    conexao.Open();
+
+    for(z = 0; z < Project.Variables.Produto.RowCount; z++)
+    {
+    produtoCor = Project.Variables.Produto.cor(z);
+    
+    var codigoCombinacao = z + 1.0;
+    
+    insertCombinacao = "INSERT INTO combinacao (CODIGO, DESCRICAO, CODIGO_COMBINACAO) VALUES ('"+codigoCombinacao+"','"+produtoCor+"','"+codigoCombinacao+"')";
+
+    conexao.Execute_(insertCombinacao);
+    }
+    conexao.Close();
+}
 
 module.exports.testaProdutos = testaProdutos;
 module.exports.cadastraProduto = cadastraProduto;
