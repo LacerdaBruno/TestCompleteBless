@@ -16,8 +16,7 @@ function testaProdutos()
                     Project.Variables.Produto.unitario(y),
                     Project.Variables.Produto.unitario_Vista(y),
                     Project.Variables.Produto.cor(y),
-                    Project.Variables.Produto.marca(y));
-  
+                    Project.Variables.Produto.marca(y));  
     
   if(Calcado == "N")
   {
@@ -182,29 +181,13 @@ function abreAbaCores()
 function insereDescCor(cor)
 {
   var btnCadastrarCombinacao = Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.btnCadastrarCombinacao;
-  var corCombinacao = Aliases.SIDI.frmPrincipal.MDIClient.frmCombinacao.PageControlCombinacao.tsPesquisa.PanelGridCombinacao;
-  
-  if (btnCadastrarCombinacao.Exists) 
-  {
-    btnCadastrarCombinacao.Click();
-    corCombinacao.Keys("[Tab]");
-    corCombinacao.Keys(cor);
-    corCombinacao.Keys("[Enter]"); 
-      
-    Principal.confirma(Aliases.SIDI.frmPrincipal.MDIClient.frmCombinacao.PainelConfirmaCombinacao.PanelBotoesCombinacao.btnConfirma, "Combinação");
-    Principal.verificaConfirmado(Aliases.SIDI.frmPrincipal.MDIClient.frmCombinacao.PainelConfirmaCombinacao.PanelBotoesCombinacao.btnConfirma, "Combinação");
-    Principal.fechaTela();
-    Aliases.SIDI.TMessageForm2.Yes.Click();    
-  }
-  
+
     if (btnCadastrarCombinacao.Exists) 
     {
     Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsVersao.PageControlCores.tsDadosVersao.dbDescVersao.Keys(cor);  
-    }
-  else
-  {
-  Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsVersao.PageControlCores.tsDadosVersao.dbEditDescVersao.SetText(cor);  
-  }  
+    }else{
+          Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsVersao.PageControlCores.tsDadosVersao.dbEditDescVersao.SetText(cor);  
+         }  
 }
 
 function insereCorBase(corb)

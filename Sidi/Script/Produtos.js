@@ -16,8 +16,7 @@ function testaProdutos()
                     Project.Variables.Produto.unitario(y),
                     Project.Variables.Produto.unitario_Vista(y),
                     Project.Variables.Produto.cor(y),
-                    Project.Variables.Produto.marca(y));
-  
+                    Project.Variables.Produto.marca(y));  
     
   if(Calcado == "N")
   {
@@ -81,6 +80,7 @@ function insereFichaTecnica()
 
 function insereCor(cor, solado, palmilha, marca)
 {  
+  inserirCombinacao() 
   abreAbaCores();
   
   Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsVersao.PanelVersao.NavegaVersao.AddVersao.Click();
