@@ -80,6 +80,7 @@ function insereFichaTecnica()
 
 function insereCor(cor, solado, palmilha, marca)
 {  
+  inserirCombinacao() 
   abreAbaCores();
   
   Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsVersao.PanelVersao.NavegaVersao.AddVersao.Click();
@@ -248,6 +249,7 @@ function inserirCombinacao()
 {
     var conexao = ADO.CreateADOConnection();    
     var produtoCor = "";
+    var validaCombinacao = "";
     var insertCombinacao = "";
    
     conexao.ConnectionString ="Provider=MSDASQL.1;Persist Security Info=False;Extended Properties=\"DSN=SIDI;Driver=Firebird/InterBase(r) driver;Dbname=C:\\bless\\Bin\\Data\\SIDI\\DADOS\\DADOS.FDB;CHARSET=NONE;UID=SYSDBA;PWD=pmpsyfwr;Client=C:\\Program Files\\Firebird\\Firebird_4_0\\fbclient.dll\"";
@@ -261,6 +263,10 @@ function inserirCombinacao()
     
     var codigoCombinacao = z + 1.0;
     
+    validaCombinacao = ("SELECT CODIGO, DESCRICAO, CODIGO_COMBINACAO from COMBINACAO");
+    
+    validaCombinacao = conexao.Execute_(validaCombinacao);
+        
     insertCombinacao = "INSERT INTO combinacao (CODIGO, DESCRICAO, CODIGO_COMBINACAO) VALUES ('"+codigoCombinacao+"','"+produtoCor+"','"+codigoCombinacao+"')";
 
     conexao.Execute_(insertCombinacao);

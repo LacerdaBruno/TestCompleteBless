@@ -260,8 +260,7 @@ function inserirCombinacao()
     {
     produtoCor = Project.Variables.Produto.cor(z);
     
-    var codigoCombinacao = z + 1.0;
-    
+    var codigoCombinacao = z + 1.0;        
     insertCombinacao = "INSERT INTO combinacao (CODIGO, DESCRICAO, CODIGO_COMBINACAO) VALUES ('"+codigoCombinacao+"','"+produtoCor+"','"+codigoCombinacao+"')";
 
     conexao.Execute_(insertCombinacao);
