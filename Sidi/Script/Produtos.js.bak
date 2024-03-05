@@ -9,6 +9,9 @@ var Calcado = Project.Variables.ControleSistema.Value("EXIBIR_PECA");
 
 function testaProdutos()
 {
+  //Preenche a tabela de combinações antes de começar o cadastro
+  inserirCombinacao();   
+
   for(y = 0; y < Project.Variables.Produto.RowCount;){
     cadastraProduto(Project.Variables.Produto.referencia(y), 
                     Project.Variables.Produto.descricao(y), 
@@ -23,8 +26,7 @@ function testaProdutos()
     insereCor(Project.Variables.Produto.cor(y)
     , "Solado", "Palmilha", "marca");
   }
-    insereFichaTecnica();
-    
+   
     y++
     
   }
@@ -43,6 +45,7 @@ function insereFichaTecnica()
   var materiaisFichaTecnica = Project.Variables.CodigoMateriais;
   abreFichaTecnica();  
   Principal.clicaEditar();
+  materiaisFichaTecnica.Reset();
 
   while(!materiaisFichaTecnica.IsEOF()){
   
@@ -80,7 +83,6 @@ function insereFichaTecnica()
 
 function insereCor(cor, solado, palmilha, marca)
 {  
-  inserirCombinacao() 
   abreAbaCores();
   
   Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsVersao.PanelVersao.NavegaVersao.AddVersao.Click();
@@ -122,6 +124,8 @@ function cadastraProduto(referencia, descricao, unitVolume, custo, custoVista, c
   insereCor(cor);
   
   insereSetor();
+  
+  insereFichaTecnica();
   
   Principal.clicaEditar();
   confirma();
@@ -249,28 +253,29 @@ function inserirCombinacao()
 {
     var conexao = ADO.CreateADOConnection();    
     var produtoCor = "";
-    var validaCombinacao = "";
     var insertCombinacao = "";
+    var selectCombinacao = "";
    
     conexao.ConnectionString ="Provider=MSDASQL.1;Persist Security Info=False;Extended Properties=\"DSN=SIDI;Driver=Firebird/InterBase(r) driver;Dbname=C:\\bless\\Bin\\Data\\SIDI\\DADOS\\DADOS.FDB;CHARSET=NONE;UID=SYSDBA;PWD=pmpsyfwr;Client=C:\\Program Files\\Firebird\\Firebird_4_0\\fbclient.dll\"";
     conexao.LoginPrompt = false;
     
     conexao.Open();
+    
+    selectCombinacao = "select * from COMBINACAO";
+    //verifica se existe combinações cadastradas
+    if (selectCombinacao.length > 0){
+      
+    }else{
+      for(z = 0; z < Project.Variables.Produto.RowCount; z++)
+      {
+      produtoCor = Project.Variables.Produto.cor(z);
+    
+      var codigoCombinacao = z + 1.0;        
+      insertCombinacao = "INSERT INTO combinacao (CODIGO, DESCRICAO, CODIGO_COMBINACAO) VALUES ('"+codigoCombinacao+"','"+produtoCor+"','"+codigoCombinacao+"')";
 
-    for(z = 0; z < Project.Variables.Produto.RowCount; z++)
-    {
-    produtoCor = Project.Variables.Produto.cor(z);
-    
-    var codigoCombinacao = z + 1.0;
-    
-    validaCombinacao = ("SELECT CODIGO, DESCRICAO, CODIGO_COMBINACAO from COMBINACAO");
-    
-    validaCombinacao = conexao.Execute_(validaCombinacao);
-        
-    insertCombinacao = "INSERT INTO combinacao (CODIGO, DESCRICAO, CODIGO_COMBINACAO) VALUES ('"+codigoCombinacao+"','"+produtoCor+"','"+codigoCombinacao+"')";
-
-    conexao.Execute_(insertCombinacao);
-    }
+      conexao.Execute_(insertCombinacao);
+      }
+    }    
     conexao.Close();
 }
 

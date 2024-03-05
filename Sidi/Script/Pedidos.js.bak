@@ -98,7 +98,7 @@ function pesquisaPedido(pedido)
 function fazEntrega(){
   // Faz a entrega
   alteraAba("Entregas");
-  Aliases.SIDI.frmPrincipal.MDIClient.TelaPedidos.PageControl.tsEntregas.gbEntregas.pnlEntrega.pnlEntregaTitulo.btnEntrega.ClickButton();
+  Aliases.SIDI.frmPrincipal.MDIClient.TelaPedidos.PageControl.tsEntregas.gbEntregas.pnlEntrega.pnlEntregaTitulo.pnlEntregaTitulo.btnEntrega.ClickButton();
   Aliases.SIDI.frmPrincipal.MDIClient.TelaPedidos.Panel1.PanelBotoes.btnConfirma.ClickButton();
   
   //Valida a situação do pedido

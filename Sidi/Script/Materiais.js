@@ -40,6 +40,7 @@ function cadastraMateriais(){
     Principal.insereDropDownValue(materiais.CODIGO_SUB_GRUPO, subGrupo);
     Principal.insereDropDownValue(materiais.DESCRICAO, descricao);
     materiais.CODIGO_COR.Keys(cor + "[Enter]");
+    Principal.insereDropDownValue(materiais.CODIGO_SETOR, setor);
     materiais.UNIDADES_VOLUME.Keys(" "+unidadeVolume + "[Tab]");
     materiais.gbCusto.CUSTO_UNIT.Keys(custoUnit + "[Tab]");
     materiais.gbCusto.ALQ_ICMS.Keys(aliqICMS + "[Tab]");
