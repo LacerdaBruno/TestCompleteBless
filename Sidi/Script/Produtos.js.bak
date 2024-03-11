@@ -25,8 +25,7 @@ function testaProdutos()
   {
     insereCor(Project.Variables.Produto.cor(y)
     , "Solado", "Palmilha", "marca");
-  }
-   
+  }   
     y++
     
   }
@@ -49,11 +48,12 @@ function insereFichaTecnica()
 
   while(!materiaisFichaTecnica.IsEOF()){
   
-    incluirMaterial(materiaisFichaTecnica.Value("CODIGO_USUARIO"));
+    
     //Se o consumo do item for com grade abre a tela Ver Consumos.
     //Se não insere o consumo direto no grid.
     if(materiaisFichaTecnica.Value("GERAR_MOVTO_PELA_GRADE") == "T")
     { 
+      incluirMaterial(materiaisFichaTecnica.Value("CODIGO_USUARIO"));    
             
       Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsVersao.PageControlCores.tsFichaMateriais.GridFichaTecnica.Keys("^o");
       Aliases.SIDI.frmModeloConsumoManut.Panel2.btnOpcoes.ClickButton();
@@ -65,20 +65,25 @@ function insereFichaTecnica()
       Aliases.SIDI.frmModeloConsumo.PanelModeloConsumo.btnConfirmaConsumo.Click();
              
     }else{
-      let grid = Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsVersao.PageControlCores.tsFichaMateriais.GridFichaTecnica;
-      grid.Keys("[Home]");
-      grid.Keys("[Right]");
-      grid.Keys("[Right]");
-      grid.Keys("[Right]");
-      grid.Keys("[Right]");
-      grid.Keys("1");     
-          
+      incluirMaterial(materiaisFichaTecnica.Value("CODIGO_USUARIO"));   
+      Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsVersao.PageControlCores.tsFichaMateriais.GridFichaTecnica.Keys(1+"[Down]");   
     }
      Project.Variables.CodigoMateriais.Next();
-
   }
   confirma();
   
+}
+
+function incluirMaterial(mat)
+{
+let grid = Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsVersao.PageControlCores.tsFichaMateriais.GridFichaTecnica;
+  grid.Keys("[Home]");
+  grid.Keys("[Right]");
+  grid.Keys("[Right]");
+  Principal.insereDropDownValue(grid.CODIGO_INTERNO,mat);
+  grid.Keys("[Right]");
+ 
+    
 }
 
 function insereCor(cor, solado, palmilha, marca)
@@ -221,16 +226,6 @@ function abreFichaTecnica()
   Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsVersao.PageControlCores.ClickTab("Ficha Técnica");
 }
 
-function incluirMaterial(mat)
-{
-  let grid = Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsVersao.PageControlCores.tsFichaMateriais.GridFichaTecnica;
-  grid.Keys("[Down]");  
-  grid.Keys("[Tab]");
-  grid.Keys(mat);
-  grid.Keys("[Tab]");
-    
-}
-
 function getProdutoNF()
 {
   return Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsDadosModelos.ModelosCadastro.dbProduto.Text;
@@ -249,33 +244,36 @@ function insereSetor()
   Aliases.SIDI.MensagemConfirmacao.btnSim.ClickButton();
 }
 
-function inserirCombinacao() 
-{
-    var conexao = ADO.CreateADOConnection();    
+function inserirCombinacao() {
+    var conexao = ADO.CreateADOConnection();
     var produtoCor = "";
     var insertCombinacao = "";
     var selectCombinacao = "";
-   
-    conexao.ConnectionString ="Provider=MSDASQL.1;Persist Security Info=False;Extended Properties=\"DSN=SIDI;Driver=Firebird/InterBase(r) driver;Dbname=C:\\bless\\Bin\\Data\\SIDI\\DADOS\\DADOS.FDB;CHARSET=NONE;UID=SYSDBA;PWD=pmpsyfwr;Client=C:\\Program Files\\Firebird\\Firebird_4_0\\fbclient.dll\"";
-    conexao.LoginPrompt = false;
-    
-    conexao.Open();
-    
-    selectCombinacao = "select * from COMBINACAO";
-    //verifica se existe combinações cadastradas
-    if (selectCombinacao.length > 0){
-      
-    }else{
-      for(z = 0; z < Project.Variables.Produto.RowCount; z++)
-      {
-      produtoCor = Project.Variables.Produto.cor(z);
-    
-      var codigoCombinacao = z + 1.0;        
-      insertCombinacao = "INSERT INTO combinacao (CODIGO, DESCRICAO, CODIGO_COMBINACAO) VALUES ('"+codigoCombinacao+"','"+produtoCor+"','"+codigoCombinacao+"')";
+    var resultadoSelect;
+    var registrosCombinacao = "";
 
-      conexao.Execute_(insertCombinacao);
-      }
-    }    
+    conexao.ConnectionString = "Provider=MSDASQL.1;Persist Security Info=False;Extended Properties=\"DSN=SIDI;Driver=Firebird/InterBase(r) driver;Dbname=C:\\bless\\Bin\\Data\\SIDI\\DADOS\\DADOS.FDB;CHARSET=NONE;UID=SYSDBA;PWD=pmpsyfwr;Client=C:\\Program Files\\Firebird\\Firebird_4_0\\fbclient.dll\"";
+    conexao.LoginPrompt = false;
+
+    conexao.Open();
+
+    selectCombinacao = "select codigo from COMBINACAO";
+    resultadoSelect = conexao.Execute_(selectCombinacao); // Executa o select e guarda o resultado em "resultadoSelect"
+    registrosCombinacao = resultadoSelect.RecordCount; // Obtém o número de registros retornados pelo select
+
+    // Verifica se existe combinações cadastradas
+    if (registrosCombinacao > 0) {
+        Log.Message("Existem combinações cadastradas.");
+    } else {
+        for (var z = 0; z < Project.Variables.Produto.RowCount; z++) {
+            produtoCor = Project.Variables.Produto.cor(z);
+
+            var codigoCombinacao = z + 1.0;
+            insertCombinacao = "INSERT INTO combinacao (CODIGO, DESCRICAO, CODIGO_COMBINACAO) VALUES ('" + codigoCombinacao + "','" + produtoCor + "','" + codigoCombinacao + "')";
+
+            conexao.Execute_(insertCombinacao);
+        }
+    }
     conexao.Close();
 }
 
