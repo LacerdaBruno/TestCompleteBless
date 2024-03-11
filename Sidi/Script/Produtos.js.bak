@@ -32,13 +32,6 @@ function testaProdutos()
   Principal.fechaTela();
 }
 
-function pesquisaProdutoPorReferencia(ref)
-{
-  Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.ClickTab("Pes&quisa");
-  Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsPesquisa.PanelPesquisa.PanelCriterio.cbPesquisarPor.Keys("re[Enter]");
-  Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsPesquisa.PanelPesquisa.PanelProcurar.edValor.Keys(ref+"[Enter]");
-}
-
 function insereFichaTecnica() {
     var materiaisFichaTecnica = Project.Variables.CodigoMateriais;
     abreFichaTecnica();
@@ -187,7 +180,7 @@ function insereDescCor(cor)
 
     if (btnCadastrarCombinacao.Exists) 
     {
-    Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsVersao.PageControlCores.tsDadosVersao.dbDescVersao.Keys(cor);  
+    Principal.insereDropDownValue(Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsVersao.PageControlCores.tsDadosVersao.dbDescVersao,cor);  
     }else{
           Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsVersao.PageControlCores.tsDadosVersao.dbEditDescVersao.SetText(cor);  
          }  
@@ -293,8 +286,9 @@ module.exports.incluirMaterial = incluirMaterial;
 module.exports.pesquisaProdutoPorReferencia = pesquisaProdutoPorReferencia;
 module.exports.getProdutoNF = getProdutoNF;
 
-function gerarProdutoNF(ref)
+function gerarProdutoNF()
 {
+  var ref = "TESTE01";
   pesquisaProdutoPorReferencia(ref);
   Principal.clicaEditar();
   Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.ClickTab("&Cores");
@@ -329,4 +323,12 @@ function gerarProdutoNF(ref)
   
   Principal.fechaTela();
 }
+
+function pesquisaProdutoPorReferencia(ref)
+{
+  Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.ClickTab("Pes&quisa");
+  Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsPesquisa.PanelPesquisa.PanelCriterio.cbPesquisarPor.Keys("re[Enter]");
+  Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsPesquisa.PanelPesquisa.PanelProcurar.edValor.Keys(ref+"[Enter]");
+}
+
 module.exports.gerarProdutoNF = gerarProdutoNF;

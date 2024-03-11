@@ -32,13 +32,6 @@ function testaProdutos()
   Principal.fechaTela();
 }
 
-function pesquisaProdutoPorReferencia(ref)
-{
-  Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.ClickTab("Pes&quisa");
-  Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsPesquisa.PanelPesquisa.PanelCriterio.cbPesquisarPor.Keys("re[Enter]");
-  Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsPesquisa.PanelPesquisa.PanelProcurar.edValor.Keys(ref+"[Enter]");
-}
-
 function insereFichaTecnica() {
     var materiaisFichaTecnica = Project.Variables.CodigoMateriais;
     abreFichaTecnica();
@@ -293,20 +286,22 @@ module.exports.incluirMaterial = incluirMaterial;
 module.exports.pesquisaProdutoPorReferencia = pesquisaProdutoPorReferencia;
 module.exports.getProdutoNF = getProdutoNF;
 
-function gerarProdutoNF(ref)
+function gerarProdutoNF()
 {
+  var ref = "TESTE01";
+  var pageControlCores = Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsVersao.PageControlCores;
   pesquisaProdutoPorReferencia(ref);
   Principal.clicaEditar();
   Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.ClickTab("&Cores");
   // importa a grade
-  Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsVersao.PageControlCores.ClickTab("Código EAN/GTIN");
-  Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.sbGerar.Click(105, 9);
-  Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsVersao.PageControlCores.tsEAN.Panel11.tblGtin.PopupMenu.Click("Importar grade");
+  pageControlCores.ClickTab("Código EAN/GTIN");
+  Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.sbGerar.Click();
+  pageControlCores.tsEAN.Panel11.tblGtin.PopupMenu.Click("Importar grade");
   confirma();
   //Gera produtos NF
-  Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsVersao.PageControlCores.ClickTab("Código EAN/GTIN");
-  Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsVersao.PageControlCores.tsEAN.dbgFT_EAN.ClickR();
-  Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsVersao.PageControlCores.tsEAN.dbgFT_EAN.PopupMenu.Click("Gerar produto NF-e");
+  pageControlCores.ClickTab("Código EAN/GTIN");
+  pageControlCores.tsEAN.dbgFT_EAN.ClickR();
+  pageControlCores.tsEAN.dbgFT_EAN.PopupMenu.Click("Gerar produto NF-e");
   Aliases.SIDI.frmModeloGTINConsulta.Panel1.PageProduto.tsEan.pnlCondicoes.GroupBox3.GridGTIN.VScroll.Pos = 0;
   Aliases.SIDI.frmModeloGTINConsulta.Panel1.PageProduto.ClickTab("Listagem das cores de produtos");
   Aliases.SIDI.frmModeloGTINConsulta.Panel1.PageProduto.tsEan.pnlCondicoes.GroupBox3.GridGTIN.ClickR(111, 215);
@@ -315,8 +310,8 @@ function gerarProdutoNF(ref)
   Aliases.SIDI.TMessageForm.OK.ClickButton();
   Aliases.SIDI.frmModeloGTINConsulta.Panel3.Panel4.btnFechar.ClickButton();
   
-  Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsVersao.PageControlCores.tsEAN.dbgFT_EAN.ClickR();
-  Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsVersao.PageControlCores.tsEAN.dbgFT_EAN.PopupMenu.Click("Gerar produto NF-e Integral");
+  pageControlCores.tsEAN.dbgFT_EAN.ClickR();
+  pageControlCores.tsEAN.dbgFT_EAN.PopupMenu.Click("Gerar produto NF-e Integral");
   Aliases.SIDI.frmModeloGTINConsulta.Panel1.PageProduto.tsEan.pnlCondicoes.GroupBox3.GridGTIN.VScroll.Pos = 0;
   Aliases.SIDI.frmModeloGTINConsulta.Panel1.PageProduto.ClickTab("Listagem das cores de produtos");
   Aliases.SIDI.frmModeloGTINConsulta.Panel1.PageProduto.tsEan.pnlCondicoes.GroupBox3.GridGTIN.ClickR(67, 200);
@@ -329,4 +324,12 @@ function gerarProdutoNF(ref)
   
   Principal.fechaTela();
 }
+
+function pesquisaProdutoPorReferencia(ref)
+{
+  Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.ClickTab("Pes&quisa");
+  Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsPesquisa.PanelPesquisa.PanelCriterio.cbPesquisarPor.Keys("re[Enter]");
+  Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsPesquisa.PanelPesquisa.PanelProcurar.edValor.Keys(ref+"[Enter]");
+}
+
 module.exports.gerarProdutoNF = gerarProdutoNF;
