@@ -39,52 +39,45 @@ function pesquisaProdutoPorReferencia(ref)
   Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsPesquisa.PanelPesquisa.PanelProcurar.edValor.Keys(ref+"[Enter]");
 }
 
-function insereFichaTecnica()
-{
-  var materiaisFichaTecnica = Project.Variables.CodigoMateriais;
-  abreFichaTecnica();  
-  Principal.clicaEditar();
-  materiaisFichaTecnica.Reset();
+function insereFichaTecnica() {
+    var materiaisFichaTecnica = Project.Variables.CodigoMateriais;
+    abreFichaTecnica();
+    Principal.clicaEditar();
+    materiaisFichaTecnica.Reset();
 
-  while(!materiaisFichaTecnica.IsEOF()){
-  
-    
-    //Se o consumo do item for com grade abre a tela Ver Consumos.
-    //Se não insere o consumo direto no grid.
-    if(materiaisFichaTecnica.Value("GERAR_MOVTO_PELA_GRADE") == "T")
-    { 
-      incluirMaterial(materiaisFichaTecnica.Value("CODIGO_USUARIO"));    
-            
-      Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsVersao.PageControlCores.tsFichaMateriais.GridFichaTecnica.Keys("^o");
-      Aliases.SIDI.frmModeloConsumoManut.Panel2.btnOpcoes.ClickButton();
-      Aliases.SIDI.frmModeloConsumoManut.Panel2.btnOpcoes.PopupMenu.Click("Atualiza grade");
-    
-      for(i = 0; i < Project.Variables.Grade.RowCount; i++ ){
-      Aliases.SIDI.frmModeloConsumoManut.dbgConsumos.Keys(1+"[Down]");    
-      } 
-      Aliases.SIDI.frmModeloConsumo.PanelModeloConsumo.btnConfirmaConsumo.Click();
-             
-    }else{
-      incluirMaterial(materiaisFichaTecnica.Value("CODIGO_USUARIO"));   
-      Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsVersao.PageControlCores.tsFichaMateriais.GridFichaTecnica.Keys(1+"[Down]");   
+    while (!materiaisFichaTecnica.IsEOF()) {
+
+        // Se o consumo do item for com grade, abre a tela Ver Consumos. Se não, insere o consumo direto no grid.
+        if (materiaisFichaTecnica.Value("GERAR_MOVTO_PELA_GRADE") == "T") {
+            incluirMaterial(materiaisFichaTecnica.Value("CODIGO_USUARIO"));
+            Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsVersao.PageControlCores.tsFichaMateriais.GridFichaTecnica.Keys("^o");
+            Aliases.SIDI.frmModeloConsumoManut.Panel2.btnOpcoes.ClickButton();
+            Aliases.SIDI.frmModeloConsumoManut.Panel2.btnOpcoes.PopupMenu.Click("Atualiza grade");
+
+            for (var i = 0; i < Project.Variables.Grade.RowCount; i++) {
+                Aliases.SIDI.frmModeloConsumoManut.dbgConsumos.Keys(1+"[Down]");
+            }
+            Aliases.SIDI.frmModeloConsumo.PanelModeloConsumo.btnConfirmaConsumo.Click();
+
+        } else {
+            incluirMaterial(materiaisFichaTecnica.Value("CODIGO_USUARIO"));
+            Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsVersao.PageControlCores.tsFichaMateriais.GridFichaTecnica.Keys(1);
+        }
+        Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsVersao.PageControlCores.tsFichaMateriais.GridFichaTecnica.Keys("[Down]");
+        Project.Variables.CodigoMateriais.Next();
     }
-     Project.Variables.CodigoMateriais.Next();
-  }
-  confirma();
-  
+    confirma();
 }
 
-function incluirMaterial(mat)
-{
-let grid = Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsVersao.PageControlCores.tsFichaMateriais.GridFichaTecnica;
-  grid.Keys("[Home]");
-  grid.Keys("[Right]");
-  grid.Keys("[Right]");
-  Principal.insereDropDownValue(grid.CODIGO_INTERNO,mat);
-  grid.Keys("[Right]");
- 
-    
+function incluirMaterial(mat) {
+    let grid = Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsVersao.PageControlCores.tsFichaMateriais.GridFichaTecnica;
+    grid.Keys("[Home]");
+    grid.Keys("[Right]");
+    grid.Keys("[Right]");
+    Principal.insereDropDownValue(grid.CODIGO_INTERNO, mat);
+    grid.Keys("[Right]");
 }
+
 
 function insereCor(cor, solado, palmilha, marca)
 {  
