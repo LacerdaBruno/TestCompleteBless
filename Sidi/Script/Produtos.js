@@ -263,34 +263,31 @@ function inserirCombinacao() {
     conexao.Close();
 }
 
-module.exports.testaProdutos = testaProdutos;
-module.exports.cadastraProduto = cadastraProduto;
-module.exports.abreTela = abreTela;
-module.exports.insereFichaTecnica = insereFichaTecnica;
-module.exports.insereCor = insereCor;
-module.exports.insereReferencia = insereReferencia;
-module.exports.abreAbaDadosBasicos = abreAbaDadosBasicos;
-module.exports.insereDescricao = insereDescricao;
-module.exports.insereUnidadeVolume = insereUnidadeVolume;
-module.exports.insereCusto = insereCusto;
-module.exports.insereCustoVista = insereCustoVista;
-module.exports.confirma = confirma;
-module.exports.abreAbaCores = abreAbaCores;
-module.exports.insereDescCor = insereDescCor;
-module.exports.insereCorBase = insereCorBase;
-module.exports.insereSolado = insereSolado;
-module.exports.inserePalmilha = inserePalmilha;
-module.exports.insereMarca = insereMarca;
-module.exports.abreFichaTecnica = abreFichaTecnica;
-module.exports.incluirMaterial = incluirMaterial;
-module.exports.pesquisaProdutoPorReferencia = pesquisaProdutoPorReferencia;
-module.exports.getProdutoNF = getProdutoNF;
 
-function gerarProdutoNF()
-{
-  var ref = "TESTE01";
-  var pageControlCores = Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsVersao.PageControlCores;
-  pesquisaProdutoPorReferencia(ref);
+function gerarProdutoNF() {
+    var pageControlCores = Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsVersao.PageControlCores;
+    var frmModelos = Aliases.SIDI.frmPrincipal.MDIClient.frmModelos;
+
+    // Lista para os produtos a serem inseridos
+    var produtosNFE = ["_PRODUTO NEF", "_PRODUTO NEF INT", "_PRODUTO LD"];
+    var btnProdutosNFE = [frmModelos.btnCadastrarProdutoNF, frmModelos.btnCadastrarProdutoNFInt, frmModelos.btnCadastrarProdutoNFLD];
+
+    for (var i = 0; i < Project.Variables.Produto.RowCount; i++) {
+        var ref = Project.Variables.Produto.referencia(i);
+
+        pesquisaProdutoPorReferencia(ref);
+        Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.ClickTab("&Dados Básicos");
+
+        // Itera sobre a lista e insere os produtos correspondentes
+        for (var x = 0; x < produtosNFE.length; x++) {
+            btnProdutosNFE[x].Click(); // Corrigido o acesso aos botões aqui
+            inserirProdutoFinanceiro(ref + produtosNFE[x]);
+        }
+    }
+
+
+  
+  
   Principal.clicaEditar();
   Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.ClickTab("&Cores");
   // importa a grade
@@ -332,4 +329,62 @@ function pesquisaProdutoPorReferencia(ref)
   Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsPesquisa.PanelPesquisa.PanelProcurar.edValor.Keys(ref+"[Enter]");
 }
 
+function inserirProdutoFinanceiro(ref) {
+    var tsdadosProdutoFiscal = Aliases.SIDI.frmPrincipal.MDIClient.frmProdutoFiscal.PageControlProdutoFiscal.tsdados;
+
+    // Defina constantes para valores mágicos
+    const UNIDADE_MEDIDA = "PR";
+    const CST_ICMS = "000";
+    const CST_IPI = "049";
+    const CLASSIFICACAO_FISCAL = "62064000";
+    const ORIGEM_MERCADORIA = "0 - NACIONAL";
+    const VENDA_UNIT = "15";
+    const VENDA_PRAZO_UNIT = "17";
+    const COMPRA_UNIT = "5";
+    const COMPRA_PRAZO_UNIT = "7";
+    const PESO_BRUTO = "0,250";
+    const PESO_LIQUIDO = "0,250";
+
+    // Preencha os campos com os valores
+    tsdadosProdutoFiscal.DESCRICAO.Keys(ref);
+    Principal.insereDropDownValue(tsdadosProdutoFiscal.UNIDADE_MEDIDA, UNIDADE_MEDIDA);
+    Principal.insereDropDownValue(tsdadosProdutoFiscal.CST_ICMS, CST_ICMS);
+    Principal.insereDropDownValue(tsdadosProdutoFiscal.CST_IPI, CST_IPI);
+    Principal.insereDropDownValue(tsdadosProdutoFiscal.CLASSIFICACAO_FISCAL, CLASSIFICACAO_FISCAL);
+    Principal.insereDropDownValue(tsdadosProdutoFiscal.ORIGEM_MERCADORIA, ORIGEM_MERCADORIA);
+    tsdadosProdutoFiscal.gbValoresVenda.VENDA_UNIT.Keys(VENDA_UNIT);
+    tsdadosProdutoFiscal.gbValoresVenda.VENDA_PRAZO_UNIT.Keys(VENDA_PRAZO_UNIT);
+    tsdadosProdutoFiscal.gbValoresCompra.COMPRA_UNIT.Keys(COMPRA_UNIT);
+    tsdadosProdutoFiscal.gbValoresCompra.COMPRA_PRAZO_UNIT.Keys(COMPRA_PRAZO_UNIT);
+    tsdadosProdutoFiscal.gbPeso.PESO_BRUTO.Keys(PESO_BRUTO);
+    tsdadosProdutoFiscal.gbPeso.PESO_LIQUIDO.Keys(PESO_LIQUIDO);
+
+    // Confirme e feche a tela
+    Principal.confirma(Aliases.SIDI.frmPrincipal.MDIClient.frmProdutoFiscal.Panel1.PanelBotoes.btnConfirma, "produto NF");
+    Aliases.SIDI.MensagemConfirmacao.btnSim.Click();
+    Principal.fechaTela();
+}
+
+module.exports.testaProdutos = testaProdutos;
+module.exports.cadastraProduto = cadastraProduto;
+module.exports.abreTela = abreTela;
+module.exports.insereFichaTecnica = insereFichaTecnica;
+module.exports.insereCor = insereCor;
+module.exports.insereReferencia = insereReferencia;
+module.exports.abreAbaDadosBasicos = abreAbaDadosBasicos;
+module.exports.insereDescricao = insereDescricao;
+module.exports.insereUnidadeVolume = insereUnidadeVolume;
+module.exports.insereCusto = insereCusto;
+module.exports.insereCustoVista = insereCustoVista;
+module.exports.confirma = confirma;
+module.exports.abreAbaCores = abreAbaCores;
+module.exports.insereDescCor = insereDescCor;
+module.exports.insereCorBase = insereCorBase;
+module.exports.insereSolado = insereSolado;
+module.exports.inserePalmilha = inserePalmilha;
+module.exports.insereMarca = insereMarca;
+module.exports.abreFichaTecnica = abreFichaTecnica;
+module.exports.incluirMaterial = incluirMaterial;
+module.exports.pesquisaProdutoPorReferencia = pesquisaProdutoPorReferencia;
+module.exports.getProdutoNF = getProdutoNF;
 module.exports.gerarProdutoNF = gerarProdutoNF;
