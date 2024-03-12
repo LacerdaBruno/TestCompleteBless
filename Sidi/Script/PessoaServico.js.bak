@@ -138,8 +138,8 @@ function insereEmail(email)
 function confirma()
 {
   Principal.confirma(Aliases.SIDI.frmPrincipal.MDIClient.frmPessoasServicos.PanelPessoasServicos1.PanelBotoes.btnConfirma, "Pessoas e serviços");
-  var mensagem = Aliases.SIDI.MensagemConfirmacaoImpostosCliente;
-  if (Aliases.SIDI.MensagemConfirmacaoImpostosCliente.Exists){
+  var mensagem = Aliases.SIDI.MensagemConfirmacao;
+  if (Aliases.SIDI.MensagemConfirmacao.Exists){
     mensagem.btnSim.Click();
   }
 }

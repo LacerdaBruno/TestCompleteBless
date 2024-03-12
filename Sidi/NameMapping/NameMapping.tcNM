@@ -5525,6 +5525,29 @@
 																								<Value PropertyType="0" Value="1" Type="0" />
 																							</Property>
 																						</Properties>
+																						<Children>
+																							<Child Name="CODIGO_INTERNO" Key="{D981EB77-8A4B-4365-ABA9-8FD21CF14589}" ParallelWalk="True">
+																								<Image FileName="-829349769" Left="154" Top="303" Right="206" Bottom="319" />
+																								<TypeInfo Item0="{2EE004DC-6673-4998-AC96-88B3EBD87BED}" />
+																								<Properties>
+																									<Property Name="ClassName">
+																										<Value PropertyType="0" Value="TwwDBLookupCombo" Type="5" />
+																									</Property>
+																									<Property Name="ObjectIdentifier">
+																										<Value PropertyType="0" Value="lkcCODIGO_INTERNO" Type="5" />
+																									</Property>
+																								</Properties>
+																							</Child>
+																							<Child Name="ConsumoFichaTecnica" Key="{BB151950-5CC0-46FE-A1DE-2F8841DBEF65}" ParallelWalk="True">
+																								<Image FileName="360348101" Left="602" Top="303" Right="666" Bottom="319" />
+																								<TypeInfo Item0="{2EE004DC-6673-4998-AC96-88B3EBD87BED}" />
+																								<Properties>
+																									<Property Name="WndClass">
+																										<Value PropertyType="0" Value="TwwInplaceEdit" Type="5" />
+																									</Property>
+																								</Properties>
+																							</Child>
+																						</Children>
 																					</Child>
 																				</Children>
 																			</Child>
@@ -6109,6 +6132,42 @@
 															</Property>
 															<Property Name="ObjectIdentifier">
 																<Value PropertyType="0" Value="sbImportarSetores" Type="5" />
+															</Property>
+														</Properties>
+													</Child>
+													<Child Name="btnCadastrarProdutoNF" Key="{93AB4DBD-21A2-4754-9D47-83C2880D8E8E}" ParallelWalk="True">
+														<Image FileName="1610640915" Left="527" Top="277" Right="550" Bottom="297" />
+														<TypeInfo Item0="{7609E520-B2A1-487D-9396-54ACA352B214}" />
+														<Properties>
+															<Property Name="ClassName">
+																<Value PropertyType="0" Value="TSpeedButton" Type="5" />
+															</Property>
+															<Property Name="ObjectIdentifier">
+																<Value PropertyType="0" Value="btnCadastrarProdutoNF" Type="5" />
+															</Property>
+														</Properties>
+													</Child>
+													<Child Name="btnCadastrarProdutoNFInt" Key="{DC331AFE-9D79-47CF-9643-06E42D337478}" ParallelWalk="True">
+														<Image FileName="1610640915" Left="527" Top="299" Right="550" Bottom="319" />
+														<TypeInfo Item0="{7609E520-B2A1-487D-9396-54ACA352B214}" />
+														<Properties>
+															<Property Name="ClassName">
+																<Value PropertyType="0" Value="TSpeedButton" Type="5" />
+															</Property>
+															<Property Name="ObjectIdentifier">
+																<Value PropertyType="0" Value="btnCadastrarProdutoNFInt" Type="5" />
+															</Property>
+														</Properties>
+													</Child>
+													<Child Name="btnCadastrarProdutoNFLD" Key="{7EA2D767-4FAA-476B-9CEE-F31CCE056E75}" ParallelWalk="True">
+														<Image FileName="1610640915" Left="527" Top="321" Right="550" Bottom="341" />
+														<TypeInfo Item0="{7609E520-B2A1-487D-9396-54ACA352B214}" />
+														<Properties>
+															<Property Name="ClassName">
+																<Value PropertyType="0" Value="TSpeedButton" Type="5" />
+															</Property>
+															<Property Name="ObjectIdentifier">
+																<Value PropertyType="0" Value="btnCadastrarProdutoNFLD" Type="5" />
 															</Property>
 														</Properties>
 													</Child>
@@ -11719,7 +11778,10 @@
 										</Child>
 									</Child>
 									<Child Name="tsFichaMateriais" Owner="{EF2C77A0-6C57-4320-9BCB-0FFE91CD4012}">
-										<Child Name="GridFichaTecnica" Owner="{F9291C2E-F371-49DC-9ADB-969DA6BFFBD8}" />
+										<Child Name="GridFichaTecnica" Owner="{F9291C2E-F371-49DC-9ADB-969DA6BFFBD8}">
+											<Child Name="CODIGO_INTERNO" Owner="{D981EB77-8A4B-4365-ABA9-8FD21CF14589}" />
+											<Child Name="ConsumoFichaTecnica" Owner="{BB151950-5CC0-46FE-A1DE-2F8841DBEF65}" />
+										</Child>
 									</Child>
 									<Child Name="tsSetoresCor" Owner="{70993682-B1F3-4E31-8367-8ECA5A047B5C}">
 										<Child Name="GridSetores" Owner="{649F3B91-AD59-4A48-BBBF-4981B8964F24}">
@@ -11781,6 +11843,9 @@
 						</Child>
 						<Child Name="btnCadastrarCombinacao" Owner="{61037D71-2505-4F51-9B30-78DC58A9ADDD}" />
 						<Child Name="sbImportarSetores" Owner="{96C4FB77-4E63-4652-B213-1873FA9D7129}" />
+						<Child Name="btnCadastrarProdutoNF" Owner="{93AB4DBD-21A2-4754-9D47-83C2880D8E8E}" />
+						<Child Name="btnCadastrarProdutoNFInt" Owner="{DC331AFE-9D79-47CF-9643-06E42D337478}" />
+						<Child Name="btnCadastrarProdutoNFLD" Owner="{7EA2D767-4FAA-476B-9CEE-F31CCE056E75}" />
 					</Child>
 					<Child Name="frmUnidadeMedidas" Owner="{57BCF8FC-38A0-479C-8A1E-06D1E2C8D213}">
 						<Child Name="PageControlUnidadeMedidas" Owner="{61E17A14-3D30-44BF-84B7-435CEA275742}">

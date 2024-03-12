@@ -99,6 +99,9 @@ function marcaCliente()
 function insereCGC(cgc)
 {
   cadastroPessoasServicos.CGC.Keys(cgc+"[Tab]");
+  if (Aliases.SIDI.TMessageForm4.Exists){
+    Aliases.SIDI.TMessageForm4.OK.Click();
+  }
 }
 
 function insereUF(uf)

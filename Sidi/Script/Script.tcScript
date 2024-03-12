@@ -112,6 +112,9 @@
 		<child name="Marca" key="{E24DBA5F-5127-4D14-81BD-E816F05C2642}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
 			<data path="Marca.js" />
 		</child>
+		<child name="Limpar_Tabelas" key="{A25BF7AA-0853-4727-AAAB-1052A083F533}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="Limpar_Tabelas.js" />
+		</child>
 	</children>
 	<folders>
 		<folder caption="Cadastros" description="A logical folder that is used to organize project items and elements." moniker="">
@@ -146,6 +149,7 @@
 				<ref key="{51C47889-BC0A-4664-8E9D-2C0384BCCC2A}" />
 				<ref key="{523414B8-5D61-4CC0-B8C6-C59FDB2428C0}" />
 				<ref key="{B3796CA5-88C9-4A10-ACE6-8CBCD49F2571}" />
+				<ref key="{A25BF7AA-0853-4727-AAAB-1052A083F533}" />
 			</references>
 		</folder>
 		<folder caption="Suprimentos" description="A logical folder that is used to organize project items and elements." moniker="">
