@@ -23,21 +23,21 @@
 		<Node name="logs">
 			<Node name="log idx=0000">
 				<Prp name="caption" type="S" value=""/>
-				<Prp name="datetime" type="D" value="45434.5852334375"/>
-				<Prp name="description" type="S" value="Sidi"/>
-				<Prp name="key" type="S" value="{63F55B96-95E2-4BC1-8431-911782B2C0CF}"/>
-				<Prp name="nameofroot" type="S" value="Sidi"/>
-				<Prp name="relpath" type="S" value="22_05_2024_14_02_44_169\Description.tcLog"/>
-				<Prp name="status" type="I" value="2"/>
+				<Prp name="datetime" type="D" value="45448.6483885417"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{ACE609B8-3090-4693-B60D-7688DC6B174F}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [Pedidos\cadastrarPedido]"/>
+				<Prp name="relpath" type="S" value="05_06_2024_15_33_40_770\Description.tcLog"/>
+				<Prp name="status" type="I" value="0"/>
 			</Node>
 			<Node name="log idx=0001">
 				<Prp name="caption" type="S" value=""/>
-				<Prp name="datetime" type="D" value="45434.5892851157"/>
+				<Prp name="datetime" type="D" value="45448.6489952662"/>
 				<Prp name="description" type="S" value=""/>
-				<Prp name="key" type="S" value="{5ED598CE-1A0B-4C89-AB2B-CB615A89BB1B}"/>
-				<Prp name="nameofroot" type="S" value="Sidi"/>
-				<Prp name="relpath" type="S" value="22_05_2024_14_08_34_234\Description.tcLog"/>
-				<Prp name="status" type="I" value="2"/>
+				<Prp name="key" type="S" value="{BFEA53E8-21B4-48E3-8E50-00984FC6DADE}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [Pedidos\cadastrarPedido]"/>
+				<Prp name="relpath" type="S" value="05_06_2024_15_34_33_191\Description.tcLog"/>
+				<Prp name="status" type="I" value="0"/>
 			</Node>
 		</Node>
 		<Prp name="signature" type="S" value="{681DCC69-A39F-4C4D-8E7D-B2D9362FAF4F}"/>

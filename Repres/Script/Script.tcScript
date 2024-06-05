@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Root signature="{9252F941-DB23-4FCA-AA50-858B33BB4A19}" version="11.40">
+	<children>
+		<child name="App" key="{C55CF2C0-CAC6-4A7B-A677-2DCED8775B2F}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="App.js" />
+		</child>
+		<child name="Conexao" key="{2F597AA2-6B17-4966-81FC-A5724787A3E3}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="Conexao.js" />
+		</child>
+		<child name="Data" key="{B4821179-812B-4EDC-9316-F4229E2A8173}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="Data.js" />
+		</child>
+		<child name="Principal" key="{83378EA8-2E6A-4497-884B-8D79AB42DA3A}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="Principal.js" />
+		</child>
+		<child name="Relatorios" key="{08716D38-8079-4F6D-933F-3AD6D6D7AFBD}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="Relatorios.js" />
+		</child>
+		<child name="TesteGeral" key="{2DAA1B74-DD11-4AFB-B44D-9CCACABB07C6}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="TesteGeral.js" />
+		</child>
+		<child name="Unit1" key="{EB46E441-54FD-4467-9ADD-D2E71D6FBE7A}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="Unit1.js" />
+		</child>
+		<child name="Validacoes" key="{4BA695C7-B2F4-47EA-B9AB-CFD6E6535E0F}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="Validacoes.js" />
+		</child>
+		<child name="ValidaLogin" key="{BDBCEE41-F7DB-4B26-A00A-9097B3D7AFC6}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="ValidaLogin.js" />
+		</child>
+		<child name="Video" key="{1296BBBF-C950-4E3C-8B12-731E7CA32ED8}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="Video.js" />
+		</child>
+		<child name="Visualizacoes" key="{B6374B88-BA47-4001-A34D-99344643F3F9}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="Visualizacoes.js" />
+		</child>
+		<child name="Pedidos" key="{B96E26CA-C353-44C1-A46B-B55D2BDE1158}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="Pedidos.js" />
+		</child>
+	</children>
+	<folders>
+		<folder caption="App" description="A logical folder that is used to organize project items and elements." moniker="">
+			<references>
+				<ref key="{C55CF2C0-CAC6-4A7B-A677-2DCED8775B2F}" />
+				<ref key="{2F597AA2-6B17-4966-81FC-A5724787A3E3}" />
+				<ref key="{B4821179-812B-4EDC-9316-F4229E2A8173}" />
+				<ref key="{83378EA8-2E6A-4497-884B-8D79AB42DA3A}" />
+				<ref key="{08716D38-8079-4F6D-933F-3AD6D6D7AFBD}" />
+				<ref key="{2DAA1B74-DD11-4AFB-B44D-9CCACABB07C6}" />
+				<ref key="{EB46E441-54FD-4467-9ADD-D2E71D6FBE7A}" />
+				<ref key="{4BA695C7-B2F4-47EA-B9AB-CFD6E6535E0F}" />
+				<ref key="{BDBCEE41-F7DB-4B26-A00A-9097B3D7AFC6}" />
+				<ref key="{1296BBBF-C950-4E3C-8B12-731E7CA32ED8}" />
+				<ref key="{B6374B88-BA47-4001-A34D-99344643F3F9}" />
+			</references>
+		</folder>
+		<folder caption="Financeiro" description="A logical folder that is used to organize project items and elements." moniker="">
+			<references>
+				<ref key="{B96E26CA-C353-44C1-A46B-B55D2BDE1158}" />
+			</references>
+		</folder>
+	</folders>
+</Root>

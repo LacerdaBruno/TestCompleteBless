@@ -4,11 +4,15 @@
 		<child name="Sidi" key="{AF427052-55EC-4B73-86EC-91EBAD1C1E73}" type="Project" typeId="{362A8EE5-675E-43A9-869D-06ECE80B0CB4}" pluginName="">
 			<data path="Sidi\Sidi.mds" />
 		</child>
+		<child name="Repres" key="{2497E604-3EA2-4BCA-AF93-84885A34E598}" type="Project" typeId="{362A8EE5-675E-43A9-869D-06ECE80B0CB4}" pluginName="">
+			<data path="Repres\Repres.mds" />
+		</child>
 	</children>
 	<folders />
 	<testItems key="{93340D1B-B870-4BEC-9605-437C349A6A86}">
 		<children>
 			<testItem key="{AF427052-55EC-4B73-86EC-91EBAD1C1E73}" enabled="True" timeout="0" stopOnError="True" description="" />
+			<testItem key="{2497E604-3EA2-4BCA-AF93-84885A34E598}" enabled="True" timeout="0" stopOnError="True" description="" />
 		</children>
 	</testItems>
 	<variables key="{B77D9176-4B27-4603-A514-917D9411446F}">
