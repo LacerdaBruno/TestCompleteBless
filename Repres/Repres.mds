@@ -44,12 +44,12 @@
 			<Items>
 				<Variable Name="PESSOA" Type="{8ECBD24A-6DA1-4476-A473-EE3A52F06A83}" Local="False">
 					<DefValue Kind="{002E9C22-1E7F-4CEC-AFD0-5C1ACCB5BA1F}">
-						<ConnectionInfo ConnectionString="Provider=MSDASQL.1;Persist Security Info=False;Extended Properties=&quot;DSN=REPRES;Driver=Firebird/InterBase(r) driver;Dbname=C:\bless\Bin\Data\REPRES\DADOS\DADOS.FDB;CHARSET=WIN1252;UID=SYSDBA;&quot;" Query="SELECT CODIGO, CGC, RAZAO_SOCIAL from PESSOA&#13;&#10;where pessoa.BLOQUEADO = &apos;N&apos;" />
+						<ConnectionInfo ConnectionString="Provider=MSDASQL.1;Persist Security Info=False;Extended Properties=&quot;DSN=REPRES;Driver=Firebird/InterBase(r) driver;Dbname=C:\bless\Bin\Data\REPRES\DADOS\DADOS.FDB;CHARSET=WIN1252;UID=SYSDBA;Client=C:\Program Files\Firebird\Firebird_4_0\fbclient.dll&quot;" Query="SELECT CODIGO, CGC, RAZAO_SOCIAL from PESSOA&#13;&#10;where pessoa.BLOQUEADO = &apos;N&apos;" />
 					</DefValue>
 				</Variable>
 				<Variable Name="PRODUTO_ESTOQUE" Type="{8ECBD24A-6DA1-4476-A473-EE3A52F06A83}" Local="False">
 					<DefValue Kind="{002E9C22-1E7F-4CEC-AFD0-5C1ACCB5BA1F}">
-						<ConnectionInfo ConnectionString="Provider=MSDASQL.1;Persist Security Info=False;Extended Properties=&quot;DSN=REPRES;Driver=Firebird/InterBase(r) driver;Dbname=C:\bless\Bin\Data\REPRES\DADOS\DADOS.FDB;CHARSET=WIN1252;UID=SYSDBA;&quot;" Query="SELECT PRODUTO,&#32;&#32;COR, TAMANHO, ATIVO FROM PRODUTO_ESTOQUE&#13;&#10;INNER JOIN PRODUTO ON (PRODUTO_ESTOQUE.PRODUTO = PRODUTO.CODIGO)&#13;&#10;WHERE QTE_ESTOQUE &gt; 0&#32;&#32;AND ATIVO = &apos;T&apos;&#13;&#10;ORDER BY PRODUTO" />
+						<ConnectionInfo ConnectionString="Provider=MSDASQL.1;Persist Security Info=False;Extended Properties=&quot;DSN=REPRES;Driver=Firebird/InterBase(r) driver;Dbname=C:\bless\Bin\Data\REPRES\DADOS\DADOS.FDB;CHARSET=WIN1252;UID=SYSDBA;Client=C:\Program Files\Firebird\Firebird_4_0\fbclient.dll&quot;" Query="SELECT PRODUTO,&#32;&#32;COR, TAMANHO, ATIVO FROM PRODUTO_ESTOQUE&#13;&#10;INNER JOIN PRODUTO ON (PRODUTO_ESTOQUE.PRODUTO = PRODUTO.CODIGO)&#13;&#10;WHERE QTE_ESTOQUE &gt; 0&#32;&#32;AND ATIVO = &apos;T&apos;&#13;&#10;ORDER BY PRODUTO" />
 					</DefValue>
 				</Variable>
 			</Items>
