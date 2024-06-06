@@ -20,53 +20,7 @@
 <Nodes version="1">
 	<Node name="root">
 		<Node name="folders"/>
-		<Node name="logs">
-			<Node name="log idx=0000">
-				<Prp name="caption" type="S" value=""/>
-				<Prp name="datetime" type="D" value="45313.7209261343"/>
-				<Prp name="description" type="S" value=""/>
-				<Prp name="key" type="S" value="{0C7CF182-F0B6-40C4-9A13-9E8E7FEFB16C}"/>
-				<Prp name="nameofroot" type="S" value="Script Test Log [Produtos\testaProdutos]"/>
-				<Prp name="relpath" type="S" value="22_01_2024_17_18_08_18\Description.tcLog"/>
-				<Prp name="status" type="I" value="2"/>
-			</Node>
-			<Node name="log idx=0001">
-				<Prp name="caption" type="S" value=""/>
-				<Prp name="datetime" type="D" value="45313.7269649653"/>
-				<Prp name="description" type="S" value=""/>
-				<Prp name="key" type="S" value="{1B5D89BA-3D94-43DE-8654-6EA395762E6F}"/>
-				<Prp name="nameofroot" type="S" value="Script Test Log [Produtos\insereFichaTecnica]"/>
-				<Prp name="relpath" type="S" value="22_01_2024_17_26_49_773\Description.tcLog"/>
-				<Prp name="status" type="I" value="2"/>
-			</Node>
-			<Node name="log idx=0002">
-				<Prp name="caption" type="S" value=""/>
-				<Prp name="datetime" type="D" value="45313.7273102546"/>
-				<Prp name="description" type="S" value=""/>
-				<Prp name="key" type="S" value="{16755A2C-4BAC-4AB4-815D-5DFAE13E72BA}"/>
-				<Prp name="nameofroot" type="S" value="Script Test Log [Produtos\insereFichaTecnica]"/>
-				<Prp name="relpath" type="S" value="22_01_2024_17_27_19_606\Description.tcLog"/>
-				<Prp name="status" type="I" value="2"/>
-			</Node>
-			<Node name="log idx=0003">
-				<Prp name="caption" type="S" value=""/>
-				<Prp name="datetime" type="D" value="45313.7278271528"/>
-				<Prp name="description" type="S" value="Script Test Log [Produtos\insereFichaTecnica]"/>
-				<Prp name="key" type="S" value="{BE8D6070-2793-4ED5-954B-3C1AFB6EBC0B}"/>
-				<Prp name="nameofroot" type="S" value="Script Test Log [Produtos\insereFichaTecnica]"/>
-				<Prp name="relpath" type="S" value="22_01_2024_17_28_04_266\Description.tcLog"/>
-				<Prp name="status" type="I" value="2"/>
-			</Node>
-			<Node name="log idx=0004">
-				<Prp name="caption" type="S" value=""/>
-				<Prp name="datetime" type="D" value="45313.7290404861"/>
-				<Prp name="description" type="S" value=""/>
-				<Prp name="key" type="S" value="{E855FF46-EEB6-4D8C-A537-0C5D1E0056A7}"/>
-				<Prp name="nameofroot" type="S" value="Script Test Log [Produtos\insereFichaTecnica]"/>
-				<Prp name="relpath" type="S" value="22_01_2024_17_29_49_98\Description.tcLog"/>
-				<Prp name="status" type="I" value="2"/>
-			</Node>
-		</Node>
+		<Node name="logs"/>
 		<Prp name="signature" type="S" value="{681DCC69-A39F-4C4D-8E7D-B2D9362FAF4F}"/>
 		<Prp name="version" type="S" value="11.0"/>
 	</Node>

@@ -28,6 +28,7 @@ function insereDropDownValue(dropDown, value)
 {
     dropDown.Click();
     dropDown.Keys(value);
+    Delay(300);
     dropDown.Keys("[Tab]");   
 
 }

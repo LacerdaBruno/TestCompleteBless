@@ -43,6 +43,7 @@ function cadastrarPedido(){
                 +"[Tab]"+"[Tab]"+"[Tab]"+"[Tab]"+"[Tab]"+"[Tab]");
  gridItens.Keys("12");
  frmPedido.Panel1.PanelBotoes.btnSalvar.click();
+
   
 }
 

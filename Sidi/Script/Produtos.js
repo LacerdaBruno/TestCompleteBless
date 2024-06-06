@@ -9,6 +9,9 @@ var Calcado = Project.Variables.ControleSistema.Value("EXIBIR_PECA");
 
 function testaProdutos()
 {
+  //Preenche a tabela de combinações antes de começar o cadastro
+  inserirCombinacao();   
+
   for(y = 0; y < Project.Variables.Produto.RowCount;){
     cadastraProduto(Project.Variables.Produto.referencia(y), 
                     Project.Variables.Produto.descricao(y), 
@@ -16,63 +19,58 @@ function testaProdutos()
                     Project.Variables.Produto.unitario(y),
                     Project.Variables.Produto.unitario_Vista(y),
                     Project.Variables.Produto.cor(y),
-                    Project.Variables.Produto.marca(y));
-  
+                    Project.Variables.Produto.marca(y));  
     
   if(Calcado == "N")
   {
     insereCor(Project.Variables.Produto.cor(y)
     , "Solado", "Palmilha", "marca");
-  }
-    insereFichaTecnica();
-    
+  }   
     y++
     
   }
   Principal.fechaTela();
 }
 
-function pesquisaProdutoPorReferencia(ref)
-{
-  Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.ClickTab("Pes&quisa");
-  Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsPesquisa.PanelPesquisa.PanelCriterio.cbPesquisarPor.Keys("re[Enter]");
-  Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsPesquisa.PanelPesquisa.PanelProcurar.edValor.Keys(ref+"[Enter]");
-}
+function insereFichaTecnica() {
+    var materiaisFichaTecnica = Project.Variables.CodigoMateriais;
+    abreFichaTecnica();
+    Principal.clicaEditar();
+    materiaisFichaTecnica.Reset();
 
-function insereFichaTecnica()
-{
-  abreFichaTecnica();
-  
-  Principal.clicaEditar();
-  var x = 0; 
-  while(x < Project.Variables.CodigoMateriais.ColumnCount){
-  
-    incluirMaterial(Project.Variables.CodigoMateriais.Value("CODIGO_USUARIO"));
-    //Se o consumo do item for com grade abre a tela Ver Consumos.
-    //Se não insere o consumo direto no grid.
-    if(Project.Variables.CodigoMateriais.Value("CODIGO_USUARIO") == 1 || CodigoMateriais.Value("CODIGO_USUARIO") == 2)
-    {    
-    Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsVersao.PageControlCores.tsFichaMateriais.GridFichaTecnica.Keys("^o");
-    Aliases.SIDI.frmModeloConsumoManut.Panel2.btnOpcoes.ClickButton();
-    Aliases.SIDI.frmModeloConsumoManut.Panel2.btnOpcoes.PopupMenu.Click("Atualiza grade");
-    
-    for(i = 0; i < Project.Variables.grade.RowCount; i++ ){
-    Aliases.SIDI.frmModeloConsumoManut.dbgConsumos.Keys(1+"[Down]");
+    while (!materiaisFichaTecnica.IsEOF()) {
 
-    Aliases.SIDI.frmModeloConsumo.PanelModeloConsumo.btnConfirmaConsumo.Click();
-    }  
-        
-    }else{
-      let grid = Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsVersao.PageControlCores.tsFichaMateriais.GridFichaTecnica;
-      grid.Keys("[Tab]");
-      grid.Keys("[Tab]");
-      grid.Keys(qte);    
+        // Se o consumo do item for com grade, abre a tela Ver Consumos. Se não, insere o consumo direto no grid.
+        if (materiaisFichaTecnica.Value("GERAR_MOVTO_PELA_GRADE") == "T") {
+            incluirMaterial(materiaisFichaTecnica.Value("CODIGO_USUARIO"));
+            Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsVersao.PageControlCores.tsFichaMateriais.GridFichaTecnica.Keys("^o");
+            Aliases.SIDI.frmModeloConsumoManut.Panel2.btnOpcoes.ClickButton();
+            Aliases.SIDI.frmModeloConsumoManut.Panel2.btnOpcoes.PopupMenu.Click("Atualiza grade");
+
+            for (var i = 0; i < Project.Variables.Grade.RowCount; i++) {
+                Aliases.SIDI.frmModeloConsumoManut.dbgConsumos.Keys(1+"[Down]");
+            }
+            Aliases.SIDI.frmModeloConsumo.PanelModeloConsumo.btnConfirmaConsumo.Click();
+
+        } else {
+            incluirMaterial(materiaisFichaTecnica.Value("CODIGO_USUARIO"));
+            Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsVersao.PageControlCores.tsFichaMateriais.GridFichaTecnica.Keys(1);
+        }
+        Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsVersao.PageControlCores.tsFichaMateriais.GridFichaTecnica.Keys("[Down]");
+        Project.Variables.CodigoMateriais.Next();
     }
-    x++;
-  }
-  confirma();
-  
+    confirma();
 }
+
+function incluirMaterial(mat) {
+    let grid = Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsVersao.PageControlCores.tsFichaMateriais.GridFichaTecnica;
+    grid.Keys("[Home]");
+    grid.Keys("[Right]");
+    grid.Keys("[Right]");
+    Principal.insereDropDownValue(grid.CODIGO_INTERNO, mat);
+    grid.Keys("[Right]");
+}
+
 
 function insereCor(cor, solado, palmilha, marca)
 {  
@@ -117,6 +115,8 @@ function cadastraProduto(referencia, descricao, unitVolume, custo, custoVista, c
   insereCor(cor);
   
   insereSetor();
+  
+  insereFichaTecnica();
   
   Principal.clicaEditar();
   confirma();
@@ -177,29 +177,13 @@ function abreAbaCores()
 function insereDescCor(cor)
 {
   var btnCadastrarCombinacao = Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.btnCadastrarCombinacao;
-  var corCombinacao = Aliases.SIDI.frmPrincipal.MDIClient.frmCombinacao.PageControlCombinacao.tsPesquisa.PanelGridCombinacao;
-  
-  if (btnCadastrarCombinacao.Exists) 
-  {
-    btnCadastrarCombinacao.Click();
-    corCombinacao.Keys("[Tab]");
-    corCombinacao.Keys(cor);
-    corCombinacao.Keys("[Enter]"); 
-      
-    Principal.confirma(Aliases.SIDI.frmPrincipal.MDIClient.frmCombinacao.PainelConfirmaCombinacao.PanelBotoesCombinacao.btnConfirma, "Combinação");
-    Principal.verificaConfirmado(Aliases.SIDI.frmPrincipal.MDIClient.frmCombinacao.PainelConfirmaCombinacao.PanelBotoesCombinacao.btnConfirma, "Combinação");
-    Principal.fechaTela();
-    Aliases.SIDI.TMessageForm2.Yes.Click();    
-  }
-  
+
     if (btnCadastrarCombinacao.Exists) 
     {
-    Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsVersao.PageControlCores.tsDadosVersao.dbDescVersao.Keys(cor);  
-    }
-  else
-  {
-  Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsVersao.PageControlCores.tsDadosVersao.dbEditDescVersao.SetText(cor);  
-  }  
+    Principal.insereDropDownValue(Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsVersao.PageControlCores.tsDadosVersao.dbDescVersao,cor);  
+    }else{
+          Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsVersao.PageControlCores.tsDadosVersao.dbEditDescVersao.SetText(cor);  
+         }  
 }
 
 function insereCorBase(corb)
@@ -228,15 +212,6 @@ function abreFichaTecnica()
   Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsVersao.PageControlCores.ClickTab("Ficha Técnica");
 }
 
-function incluirMaterial(mat)
-{
-  let grid = Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsVersao.PageControlCores.tsFichaMateriais.GridFichaTecnica;
-  grid.Keys("[Down]");  
-  grid.Keys("[Tab]");
-  grid.Keys(mat);
-    
-}
-
 function getProdutoNF()
 {
   return Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsDadosModelos.ModelosCadastro.dbProduto.Text;
@@ -255,6 +230,140 @@ function insereSetor()
   Aliases.SIDI.MensagemConfirmacao.btnSim.ClickButton();
 }
 
+function inserirCombinacao() {
+    var conexao = ADO.CreateADOConnection();
+    var produtoCor = "";
+    var insertCombinacao = "";
+    var selectCombinacao = "";
+    var resultadoSelect;
+    var registrosCombinacao = "";
+
+    conexao.ConnectionString = "Provider=MSDASQL.1;Persist Security Info=False;Extended Properties=\"DSN=SIDI;Driver=Firebird/InterBase(r) driver;Dbname=C:\\bless\\Bin\\Data\\SIDI\\DADOS\\DADOS.FDB;CHARSET=NONE;UID=SYSDBA;PWD=pmpsyfwr;Client=C:\\Program Files\\Firebird\\Firebird_4_0\\fbclient.dll\"";
+    conexao.LoginPrompt = false;
+
+    conexao.Open();
+
+    selectCombinacao = "select codigo from COMBINACAO";
+    resultadoSelect = conexao.Execute_(selectCombinacao); // Executa o select e guarda o resultado em "resultadoSelect"
+    registrosCombinacao = resultadoSelect.RecordCount; // Obtém o número de registros retornados pelo select
+
+    // Verifica se existe combinações cadastradas
+    if (registrosCombinacao > 0) {
+        Log.Message("Existem combinações cadastradas.");
+    } else {
+        for (var z = 0; z < Project.Variables.Produto.RowCount; z++) {
+            produtoCor = Project.Variables.Produto.cor(z);
+
+            var codigoCombinacao = z + 1.0;
+            insertCombinacao = "INSERT INTO combinacao (CODIGO, DESCRICAO, CODIGO_COMBINACAO) VALUES ('" + codigoCombinacao + "','" + produtoCor + "','" + codigoCombinacao + "')";
+
+            conexao.Execute_(insertCombinacao);
+        }
+    }
+    conexao.Close();
+}
+
+
+function gerarProdutoNF() {
+    var pageControlCores = Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsVersao.PageControlCores;
+    var frmModelos = Aliases.SIDI.frmPrincipal.MDIClient.frmModelos;
+
+    // Lista para os produtos a serem inseridos
+    var produtosNFE = ["_PRODUTO NEF", "_PRODUTO NEF INT", "_PRODUTO LD"];
+    var btnProdutosNFE = [frmModelos.btnCadastrarProdutoNF, frmModelos.btnCadastrarProdutoNFInt, frmModelos.btnCadastrarProdutoNFLD];
+
+    for (var i = 0; i < Project.Variables.Produto.RowCount; i++) {
+        var ref = Project.Variables.Produto.referencia(i);
+
+        pesquisaProdutoPorReferencia(ref);
+        Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.ClickTab("&Dados Básicos");
+
+        // Itera sobre a lista e insere os produtos correspondentes
+        for (var x = 0; x < produtosNFE.length; x++) {
+            btnProdutosNFE[x].Click(); // Corrigido o acesso aos botões aqui
+            inserirProdutoFinanceiro(ref + produtosNFE[x]);
+        }
+    }
+
+
+  
+  
+  Principal.clicaEditar();
+  Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.ClickTab("&Cores");
+  // importa a grade
+  pageControlCores.ClickTab("Código EAN/GTIN");
+  Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.sbGerar.Click();
+  pageControlCores.tsEAN.Panel11.tblGtin.PopupMenu.Click("Importar grade");
+  confirma();
+  //Gera produtos NF
+  pageControlCores.ClickTab("Código EAN/GTIN");
+  pageControlCores.tsEAN.dbgFT_EAN.ClickR();
+  pageControlCores.tsEAN.dbgFT_EAN.PopupMenu.Click("Gerar produto NF-e");
+  Aliases.SIDI.frmModeloGTINConsulta.Panel1.PageProduto.tsEan.pnlCondicoes.GroupBox3.GridGTIN.VScroll.Pos = 0;
+  Aliases.SIDI.frmModeloGTINConsulta.Panel1.PageProduto.ClickTab("Listagem das cores de produtos");
+  Aliases.SIDI.frmModeloGTINConsulta.Panel1.PageProduto.tsEan.pnlCondicoes.GroupBox3.GridGTIN.ClickR(111, 215);
+  Aliases.SIDI.frmModeloGTINConsulta.Panel1.PageProduto.tsEan.pnlCondicoes.GroupBox3.GridGTIN.PopupMenu.Click("Marcar Todos");
+  Aliases.SIDI.frmModeloGTINConsulta.Panel3.Panel4.btnImportar.ClickButton();
+  Aliases.SIDI.TMessageForm.OK.ClickButton();
+  Aliases.SIDI.frmModeloGTINConsulta.Panel3.Panel4.btnFechar.ClickButton();
+  
+  pageControlCores.tsEAN.dbgFT_EAN.ClickR();
+  pageControlCores.tsEAN.dbgFT_EAN.PopupMenu.Click("Gerar produto NF-e Integral");
+  Aliases.SIDI.frmModeloGTINConsulta.Panel1.PageProduto.tsEan.pnlCondicoes.GroupBox3.GridGTIN.VScroll.Pos = 0;
+  Aliases.SIDI.frmModeloGTINConsulta.Panel1.PageProduto.ClickTab("Listagem das cores de produtos");
+  Aliases.SIDI.frmModeloGTINConsulta.Panel1.PageProduto.tsEan.pnlCondicoes.GroupBox3.GridGTIN.ClickR(67, 200);
+  Aliases.SIDI.frmModeloGTINConsulta.Panel1.PageProduto.tsEan.pnlCondicoes.GroupBox3.GridGTIN.PopupMenu.Click("Marcar Todos");
+  Aliases.SIDI.frmModeloGTINConsulta.Panel3.Panel4.btnImportar.ClickButton();
+  Aliases.SIDI.TMessageForm.OK.ClickButton();
+  Aliases.SIDI.frmModeloGTINConsulta.Panel3.Panel4.btnFechar.ClickButton();
+  
+  Log.Checkpoint("Produto NF e NF integral gerados corretamente",'', 500, null, Sys.Desktop);
+  
+  Principal.fechaTela();
+}
+
+function pesquisaProdutoPorReferencia(ref)
+{
+  Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.ClickTab("Pes&quisa");
+  Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsPesquisa.PanelPesquisa.PanelCriterio.cbPesquisarPor.Keys("re[Enter]");
+  Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsPesquisa.PanelPesquisa.PanelProcurar.edValor.Keys(ref+"[Enter]");
+}
+
+function inserirProdutoFinanceiro(ref) {
+    var tsdadosProdutoFiscal = Aliases.SIDI.frmPrincipal.MDIClient.frmProdutoFiscal.PageControlProdutoFiscal.tsdados;
+
+    // Defina constantes para valores mágicos
+    const UNIDADE_MEDIDA = "PR";
+    const CST_ICMS = "000";
+    const CST_IPI = "049";
+    const CLASSIFICACAO_FISCAL = "62064000";
+    const ORIGEM_MERCADORIA = "0 - NACIONAL";
+    const VENDA_UNIT = "15";
+    const VENDA_PRAZO_UNIT = "17";
+    const COMPRA_UNIT = "5";
+    const COMPRA_PRAZO_UNIT = "7";
+    const PESO_BRUTO = "0,250";
+    const PESO_LIQUIDO = "0,250";
+
+    // Preencha os campos com os valores
+    tsdadosProdutoFiscal.DESCRICAO.Keys(ref);
+    Principal.insereDropDownValue(tsdadosProdutoFiscal.UNIDADE_MEDIDA, UNIDADE_MEDIDA);
+    Principal.insereDropDownValue(tsdadosProdutoFiscal.CST_ICMS, CST_ICMS);
+    Principal.insereDropDownValue(tsdadosProdutoFiscal.CST_IPI, CST_IPI);
+    Principal.insereDropDownValue(tsdadosProdutoFiscal.CLASSIFICACAO_FISCAL, CLASSIFICACAO_FISCAL);
+    Principal.insereDropDownValue(tsdadosProdutoFiscal.ORIGEM_MERCADORIA, ORIGEM_MERCADORIA);
+    tsdadosProdutoFiscal.gbValoresVenda.VENDA_UNIT.Keys(VENDA_UNIT);
+    tsdadosProdutoFiscal.gbValoresVenda.VENDA_PRAZO_UNIT.Keys(VENDA_PRAZO_UNIT);
+    tsdadosProdutoFiscal.gbValoresCompra.COMPRA_UNIT.Keys(COMPRA_UNIT);
+    tsdadosProdutoFiscal.gbValoresCompra.COMPRA_PRAZO_UNIT.Keys(COMPRA_PRAZO_UNIT);
+    tsdadosProdutoFiscal.gbPeso.PESO_BRUTO.Keys(PESO_BRUTO);
+    tsdadosProdutoFiscal.gbPeso.PESO_LIQUIDO.Keys(PESO_LIQUIDO);
+
+    // Confirme e feche a tela
+    Principal.confirma(Aliases.SIDI.frmPrincipal.MDIClient.frmProdutoFiscal.Panel1.PanelBotoes.btnConfirma, "produto NF");
+    Aliases.SIDI.MensagemConfirmacao.btnSim.Click();
+    Principal.fechaTela();
+}
 
 module.exports.testaProdutos = testaProdutos;
 module.exports.cadastraProduto = cadastraProduto;
@@ -278,41 +387,4 @@ module.exports.abreFichaTecnica = abreFichaTecnica;
 module.exports.incluirMaterial = incluirMaterial;
 module.exports.pesquisaProdutoPorReferencia = pesquisaProdutoPorReferencia;
 module.exports.getProdutoNF = getProdutoNF;
-
-function gerarProdutoNF(ref)
-{
-  pesquisaProdutoPorReferencia(ref);
-  Principal.clicaEditar();
-  Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.ClickTab("&Cores");
-  // importa a grade
-  Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsVersao.PageControlCores.ClickTab("Código EAN/GTIN");
-  Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.sbGerar.Click(105, 9);
-  Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsVersao.PageControlCores.tsEAN.Panel11.tblGtin.PopupMenu.Click("Importar grade");
-  confirma();
-  //Gera produtos NF
-  Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsVersao.PageControlCores.ClickTab("Código EAN/GTIN");
-  Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsVersao.PageControlCores.tsEAN.dbgFT_EAN.ClickR();
-  Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsVersao.PageControlCores.tsEAN.dbgFT_EAN.PopupMenu.Click("Gerar produto NF-e");
-  Aliases.SIDI.frmModeloGTINConsulta.Panel1.PageProduto.tsEan.pnlCondicoes.GroupBox3.GridGTIN.VScroll.Pos = 0;
-  Aliases.SIDI.frmModeloGTINConsulta.Panel1.PageProduto.ClickTab("Listagem das cores de produtos");
-  Aliases.SIDI.frmModeloGTINConsulta.Panel1.PageProduto.tsEan.pnlCondicoes.GroupBox3.GridGTIN.ClickR(111, 215);
-  Aliases.SIDI.frmModeloGTINConsulta.Panel1.PageProduto.tsEan.pnlCondicoes.GroupBox3.GridGTIN.PopupMenu.Click("Marcar Todos");
-  Aliases.SIDI.frmModeloGTINConsulta.Panel3.Panel4.btnImportar.ClickButton();
-  Aliases.SIDI.TMessageForm.OK.ClickButton();
-  Aliases.SIDI.frmModeloGTINConsulta.Panel3.Panel4.btnFechar.ClickButton();
-  
-  Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsVersao.PageControlCores.tsEAN.dbgFT_EAN.ClickR();
-  Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsVersao.PageControlCores.tsEAN.dbgFT_EAN.PopupMenu.Click("Gerar produto NF-e Integral");
-  Aliases.SIDI.frmModeloGTINConsulta.Panel1.PageProduto.tsEan.pnlCondicoes.GroupBox3.GridGTIN.VScroll.Pos = 0;
-  Aliases.SIDI.frmModeloGTINConsulta.Panel1.PageProduto.ClickTab("Listagem das cores de produtos");
-  Aliases.SIDI.frmModeloGTINConsulta.Panel1.PageProduto.tsEan.pnlCondicoes.GroupBox3.GridGTIN.ClickR(67, 200);
-  Aliases.SIDI.frmModeloGTINConsulta.Panel1.PageProduto.tsEan.pnlCondicoes.GroupBox3.GridGTIN.PopupMenu.Click("Marcar Todos");
-  Aliases.SIDI.frmModeloGTINConsulta.Panel3.Panel4.btnImportar.ClickButton();
-  Aliases.SIDI.TMessageForm.OK.ClickButton();
-  Aliases.SIDI.frmModeloGTINConsulta.Panel3.Panel4.btnFechar.ClickButton();
-  
-  Log.Checkpoint("Produto NF e NF integral gerados corretamente",'', 500, null, Sys.Desktop);
-  
-  Principal.fechaTela();
-}
 module.exports.gerarProdutoNF = gerarProdutoNF;
