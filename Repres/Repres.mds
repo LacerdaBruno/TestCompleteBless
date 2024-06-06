@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <Root signature="{362A8EE5-675E-43A9-869D-06ECE80B0CB4}" version="12.0">
 	<children>
-		<child name="Events" key="{3B3C850E-9FB4-459C-BBEB-83D10825E265}" type="Events" typeId="{E7ABA87F-E873-4452-9921-6F4BAAEB2BCC}" pluginName="">
-			<data path="Events\Events.tcAX" />
-		</child>
 		<child name="Script" key="{F93DD62F-A91E-44BB-8922-0D45053EFC5C}" type="Script" typeId="{9252F941-DB23-4FCA-AA50-858B33BB4A19}" pluginName="Script">
 			<data path="Script\Script.tcScript" />
 		</child>
@@ -20,7 +17,6 @@
 	<folders>
 		<folder caption="Advanced" description="A logical folder that is used to organize project items and elements." moniker="{69583268-92F3-49FA-B573-C831F5ABC27B}">
 			<references>
-				<ref key="{3B3C850E-9FB4-459C-BBEB-83D10825E265}" />
 				<ref key="{F93DD62F-A91E-44BB-8922-0D45053EFC5C}" />
 			</references>
 		</folder>
@@ -39,7 +35,7 @@
 						<testParameters />
 						<children />
 					</testItem>
-				</children>		
+				</children>
 			</testItem>
 		</children>
 	</testItems>
