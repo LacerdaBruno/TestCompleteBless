@@ -25,13 +25,10 @@
 				<Node name="{8ee82d46-af98-4371-988c-39e367c94873}"/>
 			</Node>
 			<Node name="{24b6fa0b-0143-461a-9758-aeb9e9a9428b}">
-				<Prp name="activity" type="S" value="{B96E26CA-C353-44C1-A46B-B55D2BDE1158}"/>
+				<Prp name="activity" type="S" value="{2497E604-3EA2-4BCA-AF93-84885A34E598}"/>
 			</Node>
 			<Node name="{2c786620-2489-4cbb-9c1e-1a94437a9245}">
 				<Node name="{aaa0867d-244d-42a8-be88-04cd1e4871f2}">
-					<Prp name="hash" type="I" value="1"/>
-				</Node>
-				<Node name="{f93dd62f-a91e-44bb-8922-0d45053efc5c}">
 					<Prp name="hash" type="I" value="1"/>
 				</Node>
 			</Node>
@@ -2298,11 +2295,6 @@
 								<Node name="financeiro"/>
 							</Node>
 						</Node>
-						<Node name="keywordtests"/>
-						<Node name="testedapps"/>
-					</Node>
-					<Node name="sidi">
-						<Node name="advanced"/>
 						<Node name="keywordtests"/>
 						<Node name="testedapps"/>
 					</Node>
