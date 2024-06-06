@@ -14,36 +14,48 @@ function cadastrarPedido(){
 
  abreTelaPedidos();
   
+ var totalPedidos = 100;
+ var count = 0;
  var codigoCliente = Project.Variables.PESSOA.Value("CODIGO"); 
  var codigoProduto = Project.Variables.PRODUTO_ESTOQUE.Value("PRODUTO"); 
  var gridItens = Aliases.REPRES.frmPrincipal.MDIClient.frmPedidos.Paginas.tsitems_pedido.GridItens;
  
- frmPedido.sbNovoPedido.Click();
- frmPedido.Paginas.tsdadosDadosBasico.gbCliente.CLIENTE.Keys(codigoCliente);
- frmPedido.Paginas.tsdadosDadosBasico.gbCliente.CLIENTE.Keys("[Tab]");
- Delay(500);
+ while (count < totalPedidos){ 
+ var codigoCliente = Project.Variables.PESSOA.Value("CODIGO"); 
+ var codigoProduto = Project.Variables.PRODUTO_ESTOQUE.Value("PRODUTO");
+ 
+ 
+   frmPedido.sbNovoPedido.Click();
+   frmPedido.Paginas.tsdadosDadosBasico.gbCliente.CLIENTE.Keys(codigoCliente);
+   frmPedido.Paginas.tsdadosDadosBasico.gbCliente.CLIENTE.Keys("[Tab]");
+   Delay(500);
 
- if (Aliases.REPRES.frmObsPedido.Exists){
-  Aliases.REPRES.frmObsPedido.Close(); 
- }
+   if (Aliases.REPRES.frmObsPedido.Exists){
+    Aliases.REPRES.frmObsPedido.Close(); 
+   }
  
- frmPedido.Paginas.tsdadosDadosBasico.gbCliente.VENDEDOR.Keys(codigoCliente);
- frmPedido.Paginas.tsdadosDadosBasico.gbCliente.VENDEDOR.Keys("[Tab]");
+   frmPedido.Paginas.tsdadosDadosBasico.gbCliente.VENDEDOR.Keys(codigoCliente);
+   frmPedido.Paginas.tsdadosDadosBasico.gbCliente.VENDEDOR.Keys("[Tab]");
+   frmPedido.Paginas.tsdadosDadosBasico.gbCliente.CONDICAO_CLIENTE.Keys("1 DIA AVISTA" + "[Enter]" + "[Tab]");
+   
  
- frmPedido.Paginas.ClickTab("Itens do Pedido");
+   frmPedido.Paginas.ClickTab("Itens do Pedido");
     
- gridItens.Click();
- gridItens.Keys("[Home]");
- Delay(500);
+   gridItens.Click();
+   gridItens.Keys("[Home]");
+   Delay(500);
   
- gridItens.Keys(codigoProduto);
- gridItens.Keys("[Tab]"+"[Tab]"+"[Tab]"+"[Tab]"+"[Tab]"+"[Tab]"+"[Tab]"
-                +"[Tab]"+"[Tab]"+"[Tab]"+"[Tab]"+"[Tab]"+"[Tab]"+"[Tab]"
-                +"[Tab]"+"[Tab]"+"[Tab]"+"[Tab]"+"[Tab]"+"[Tab]"+"[Tab]"
-                +"[Tab]"+"[Tab]"+"[Tab]"+"[Tab]"+"[Tab]"+"[Tab]");
- gridItens.Keys("12");
- frmPedido.Panel1.PanelBotoes.btnSalvar.click();
-
+   gridItens.Keys(codigoProduto);
+   gridItens.Keys("[Tab]"+"[Tab]"+"[Tab]"+"[Tab]"+"[Tab]"+"[Tab]"+"[Tab]"
+                  +"[Tab]"+"[Tab]"+"[Tab]"+"[Tab]"+"[Tab]"+"[Tab]"+"[Tab]"
+                  +"[Tab]"+"[Tab]"+"[Tab]"+"[Tab]"+"[Tab]"+"[Tab]"+"[Tab]"
+                  +"[Tab]"+"[Tab]"+"[Tab]"+"[Tab]"+"[Tab]"+"[Tab]");
+   gridItens.Keys("12");
+   frmPedido.Panel1.PanelBotoes.btnSalvar.click();
+   
+   count++;
+   Project.Variables.PESSOA.Next();
+  }
   
 }
 
