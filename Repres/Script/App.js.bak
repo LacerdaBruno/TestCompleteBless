@@ -3,7 +3,7 @@
 function AbreRepres()
 {
   TestedApps.REPRES.Run();   
-  Delay(2000);
+  Delay(1000);
     
   if(!Validacoes.CheckExists(Aliases.REPRES.TMessageForm_Atualizacao, 200)){  
     Log.Warning("Informação não foi encontrada", "", 200, null, Sys.Desktop);
@@ -14,10 +14,5 @@ function AbreRepres()
   
 }
 
-function trocaBancos()
-{
-  TestedApps.TrocaBancos.Run();
-  Delay(2000);
-}
 module.exports.AbreRepres = AbreRepres;
 module.exports.trocaBancos = trocaBancos;

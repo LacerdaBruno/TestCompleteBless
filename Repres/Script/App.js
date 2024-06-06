@@ -15,4 +15,3 @@ function AbreRepres()
 }
 
 module.exports.AbreRepres = AbreRepres;
-module.exports.trocaBancos = trocaBancos;
