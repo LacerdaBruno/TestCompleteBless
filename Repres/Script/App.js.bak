@@ -19,5 +19,6 @@ function trocaBancos()
   TestedApps.TrocaBancos.Run();
   Delay(2000);
 }
+
 module.exports.AbreRepres = AbreRepres;
 module.exports.trocaBancos = trocaBancos;
