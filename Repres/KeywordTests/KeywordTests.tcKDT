@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <Root signature="{9576DAFD-0ADD-41A8-9897-C72F150AF6BB}" version="12.0">
-	<children />
+	<children>
+		<child name="Test" key="{03BF7F5B-53B5-433D-8C08-2FBF4886EB3D}" type="Keyword Test" typeId="{B9D9273E-7266-43E0-BF02-97F168593604}" pluginName="Keyword Testing">
+			<data path="Test.tcKDTest" />
+		</child>
+	</children>
 	<folders />
 </Root>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Root signature="{B9D9273E-7266-43E0-BF02-97F168593604}" version="12.0">
+	<TestData Description="" Key="{780E57F4-BF20-43DB-B44F-0E047FD4EA25}" Type="{79147B28-EE20-4294-B773-1D3787FBF37B}">
+		<Data>
+			<Extenders>
+				<NodeBitmaps />
+			</Extenders>
+		</Data>
+		<Children>
+			<Operation Type="{16DC8186-4DEC-41AF-80A0-F8C655838299}">
+				<Data Description="Runs a test from the project." TestName="AbreRepres" FullName="Script\App - AbreRepres" Path="Script|App" />
+			</Operation>
+		</Children>
+	</TestData>
+	<Variables Version="3" Key="{66F49051-1A75-48B3-BA3F-AED8C33560D2}" />
+	<Parameters Key="{0F6BBF30-BA63-4F02-A682-3FD758BC95DB}" />
+</Root>
