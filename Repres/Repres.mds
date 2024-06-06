@@ -24,7 +24,7 @@
 	<config language="{90F89436-9452-4F95-9882-6B5210079F13}" />
 	<testItems key="{8EF31219-EDE1-4135-86A2-7C120296DDB2}">
 		<children>
-			<testItem name="Repres" key="{E3A6541D-A983-4FC6-BD18-A3755421E46B}" group="True" enabled="True" testMoniker="" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
+			<testItem name="Repres" key="{E3A6541D-A983-4FC6-BD18-A3755421E46B}" group="True" enabled="False" testMoniker="" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
 				<testParameters />
 				<children>
 					<testItem name="App" key="{4164A3ED-C2C3-4A26-B84C-33FEB506F64D}" group="False" enabled="True" testMoniker="{C55CF2C0-CAC6-4A7B-A677-2DCED8775B2F}AbreRepres" count="1" timeout="0" stopOnError="2" stopOnException="2" description="">
