@@ -11,6 +11,9 @@ function abreTelaPedidos()
 }
 
 function cadastrarPedido(){
+
+ abreTelaPedidos();
+  
  var codigoCliente = Project.Variables.PESSOA.Value("CODIGO"); 
  var codigoProduto = Project.Variables.PRODUTO_ESTOQUE.Value("PRODUTO"); 
  var gridItens = Aliases.REPRES.frmPrincipal.MDIClient.frmPedidos.Paginas.tsitems_pedido.GridItens;
@@ -40,7 +43,7 @@ function cadastrarPedido(){
                 +"[Tab]"+"[Tab]"+"[Tab]"+"[Tab]"+"[Tab]"+"[Tab]");
  gridItens.Keys("12");
  frmPedido.Panel1.PanelBotoes.btnSalvar.click();
- 
- 
+
+  
 }
 
