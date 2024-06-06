@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="message 8">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="line #" type="I" value="32"/>
+					<Prp name="object right" type="I" value="1362"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object bottom" type="I" value="543"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="datetime" type="D" value="45448.7994715046"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="object top" type="I" value="179"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="object name" type="S" value="Aliases.REPRES.frmPrincipal.MDIClient.frmPedidos.Paginas.tsitems_pedido.GridItens"/>
+					<Prp name="image file name" type="S" value="visImage8.png"/>
+					<Prp name="object left" type="I" value="4"/>
+					<Prp name="storage file name" type="S" value=""/>
+				</Node>
+			</Node>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="message" type="S" value="Keyboard input."/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="32"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="id" type="I" value="8"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="date" type="D" value="45448.6744723148"/>
+			<Prp name="remarks" type="S" value="'[Home]' was sent as a keyboard input to the following window or control.&#xA;&#xA;Tested object:&#xA;Aliases.REPRES.frmPrincipal.MDIClient.frmPedidos.Paginas.tsitems_pedido.GridItens&#xA;(Sys.Process(&quot;REPRES&quot;).VCLObject(&quot;frmPrincipal&quot;).Window(&quot;MDIClient&quot;, &quot;&quot;, 1).VCLObject(&quot;frmPedidos&quot;).VCLObject(&quot;Paginas&quot;).VCLObject(&quot;tsitems_pedido&quot;).VCLObject(&quot;GridItens&quot;))"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="type" type="I" value="1"/>
+		</Node>
+		<Node name="message 11">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="line #" type="I" value="40"/>
+					<Prp name="object right" type="I" value="1362"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object bottom" type="I" value="543"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="datetime" type="D" value="45448.7995050116"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="object top" type="I" value="179"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="object name" type="S" value="Aliases.REPRES.frmPrincipal.MDIClient.frmPedidos.Paginas.tsitems_pedido.GridItens"/>
+					<Prp name="image file name" type="S" value="visImage11.png"/>
+					<Prp name="object left" type="I" value="4"/>
+					<Prp name="storage file name" type="S" value=""/>
+				</Node>
+			</Node>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="message" type="S" value="Keyboard input."/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="40"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="id" type="I" value="11"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="date" type="D" value="45448.6745065162"/>
+			<Prp name="remarks" type="S" value="'12' was sent as a keyboard input to the following window or control.&#xA;&#xA;Tested object:&#xA;Aliases.REPRES.frmPrincipal.MDIClient.frmPedidos.Paginas.tsitems_pedido.GridItens&#xA;(Sys.Process(&quot;REPRES&quot;).VCLObject(&quot;frmPrincipal&quot;).Window(&quot;MDIClient&quot;, &quot;&quot;, 1).VCLObject(&quot;frmPedidos&quot;).VCLObject(&quot;Paginas&quot;).VCLObject(&quot;tsitems_pedido&quot;).VCLObject(&quot;GridItens&quot;))"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="type" type="I" value="1"/>
+		</Node>
+		<Node name="stack"/>
+		<Node name="message 9">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="line #" type="I" value="35"/>
+					<Prp name="object right" type="I" value="1362"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object bottom" type="I" value="543"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="datetime" type="D" value="45448.7994795139"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="object top" type="I" value="179"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="object name" type="S" value="Aliases.REPRES.frmPrincipal.MDIClient.frmPedidos.Paginas.tsitems_pedido.GridItens"/>
+					<Prp name="image file name" type="S" value="visImage9.png"/>
+					<Prp name="object left" type="I" value="4"/>
+					<Prp name="storage file name" type="S" value=""/>
+				</Node>
+			</Node>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="message" type="S" value="Keyboard input."/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="35"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="id" type="I" value="9"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="date" type="D" value="45448.6744826389"/>
+			<Prp name="remarks" type="S" value="'235' was sent as a keyboard input to the following window or control.&#xA;&#xA;Tested object:&#xA;Aliases.REPRES.frmPrincipal.MDIClient.frmPedidos.Paginas.tsitems_pedido.GridItens&#xA;(Sys.Process(&quot;REPRES&quot;).VCLObject(&quot;frmPrincipal&quot;).Window(&quot;MDIClient&quot;, &quot;&quot;, 1).VCLObject(&quot;frmPedidos&quot;).VCLObject(&quot;Paginas&quot;).VCLObject(&quot;tsitems_pedido&quot;).VCLObject(&quot;GridItens&quot;))"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="type" type="I" value="1"/>
+		</Node>
+		<Node name="child data"/>
+		<Node name="message 4">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="line #" type="I" value="26"/>
+					<Prp name="object right" type="I" value="190"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object bottom" type="I" value="325"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="datetime" type="D" value="45448.7994613079"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="object top" type="I" value="304"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="object name" type="S" value="Aliases.REPRES.frmPrincipal.MDIClient.frmPedidos.Paginas.tsdadosDadosBasico.gbCliente.VENDEDOR"/>
+					<Prp name="image file name" type="S" value="visImage4.png"/>
+					<Prp name="object left" type="I" value="101"/>
+					<Prp name="storage file name" type="S" value=""/>
+				</Node>
+			</Node>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="message" type="S" value="Keyboard input."/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="26"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="id" type="I" value="4"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="date" type="D" value="45448.6744632755"/>
+			<Prp name="remarks" type="S" value="'1' was sent as a keyboard input to the following window or control.&#xA;&#xA;Tested object:&#xA;Aliases.REPRES.frmPrincipal.MDIClient.frmPedidos.Paginas.tsdadosDadosBasico.gbCliente.VENDEDOR&#xA;(Sys.Process(&quot;REPRES&quot;).VCLObject(&quot;frmPrincipal&quot;).Window(&quot;MDIClient&quot;, &quot;&quot;, 1).VCLObject(&quot;frmPedidos&quot;).VCLObject(&quot;Paginas&quot;).VCLObject(&quot;tsdados&quot;).VCLObject(&quot;gbCliente&quot;).VCLObject(&quot;VENDEDOR&quot;))"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="type" type="I" value="1"/>
+		</Node>
+		<Node name="message 1">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="line #" type="I" value="18"/>
+					<Prp name="object right" type="I" value="285"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object bottom" type="I" value="281"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="datetime" type="D" value="45448.799445162"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="object top" type="I" value="260"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="object name" type="S" value="Aliases.REPRES.frmPrincipal.MDIClient.frmPedidos.Paginas.tsdadosDadosBasico.gbCliente.CLIENTE"/>
+					<Prp name="image file name" type="S" value="visImage1.png"/>
+					<Prp name="object left" type="I" value="234"/>
+					<Prp name="storage file name" type="S" value=""/>
+				</Node>
+			</Node>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="message" type="S" value="Keyboard input."/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="18"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="id" type="I" value="1"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="date" type="D" value="45448.6744471296"/>
+			<Prp name="remarks" type="S" value="'1' was sent as a keyboard input to the following window or control.&#xA;&#xA;Tested object:&#xA;Aliases.REPRES.frmPrincipal.MDIClient.frmPedidos.Paginas.tsdadosDadosBasico.gbCliente.CLIENTE&#xA;(Sys.Process(&quot;REPRES&quot;).VCLObject(&quot;frmPrincipal&quot;).Window(&quot;MDIClient&quot;, &quot;&quot;, 1).VCLObject(&quot;frmPedidos&quot;).VCLObject(&quot;Paginas&quot;).VCLObject(&quot;tsdados&quot;).VCLObject(&quot;gbCliente&quot;).VCLObject(&quot;CLIENTE&quot;))"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="type" type="I" value="1"/>
+		</Node>
+		<Node name="message 10">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="line #" type="I" value="36"/>
+					<Prp name="object right" type="I" value="1362"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object bottom" type="I" value="543"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="datetime" type="D" value="45448.7994837963"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="object top" type="I" value="179"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="object name" type="S" value="Aliases.REPRES.frmPrincipal.MDIClient.frmPedidos.Paginas.tsitems_pedido.GridItens"/>
+					<Prp name="image file name" type="S" value="visImage10.png"/>
+					<Prp name="object left" type="I" value="4"/>
+					<Prp name="storage file name" type="S" value=""/>
+				</Node>
+			</Node>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="message" type="S" value="Keyboard input."/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="36"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="id" type="I" value="10"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="date" type="D" value="45448.6745031597"/>
+			<Prp name="remarks" type="S" value="'[Tab][Tab][Tab][Tab][Tab][Tab][Tab][Tab][Tab][Tab][Tab][Tab][Tab][Tab][Tab][Tab][Tab][Tab][Tab][Tab][Tab][Tab][Tab][Tab][Tab][Tab][Tab]' was sent as a keyboard input to the following window or control.&#xA;&#xA;Tested object:&#xA;Aliases.REPRES.frmPrincipal.MDIClient.frmPedidos.Paginas.tsitems_pedido.GridItens&#xA;(Sys.Process(&quot;REPRES&quot;).VCLObject(&quot;frmPrincipal&quot;).Window(&quot;MDIClient&quot;, &quot;&quot;, 1).VCLObject(&quot;frmPedidos&quot;).VCLObject(&quot;Paginas&quot;).VCLObject(&quot;tsitems_pedido&quot;).VCLObject(&quot;GridItens&quot;))"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="type" type="I" value="1"/>
+		</Node>
+		<Node name="message 0">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="line #" type="I" value="17"/>
+					<Prp name="object right" type="I" value="86"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object bottom" type="I" value="123"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="datetime" type="D" value="45448.7994384375"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="object top" type="I" value="100"/>
+					<Prp name="click point y" type="I" value="111"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="48"/>
+					<Prp name="object name" type="S" value="Aliases.REPRES.frmPrincipal.MDIClient.frmPedidos.sbNovoPedido"/>
+					<Prp name="image file name" type="S" value="visImage0.png"/>
+					<Prp name="object left" type="I" value="11"/>
+					<Prp name="storage file name" type="S" value=""/>
+				</Node>
+			</Node>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="message" type="S" value="The window was clicked with the left mouse button."/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="17"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="id" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="date" type="D" value="45448.6744400579"/>
+			<Prp name="remarks" type="S" value="A click at point (37, 11) with no key pressed.&#xA;&#xA;Tested object:&#xA;Aliases.REPRES.frmPrincipal.MDIClient.frmPedidos.sbNovoPedido&#xA;(Sys.Process(&quot;REPRES&quot;).VCLObject(&quot;frmPrincipal&quot;).Window(&quot;MDIClient&quot;, &quot;&quot;, 1).VCLObject(&quot;frmPedidos&quot;).VCLObject(&quot;sbNovo&quot;))"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="type" type="I" value="1"/>
+		</Node>
+		<Node name="message 3">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="line #" type="I" value="23"/>
+					<Prp name="object right" type="I" value="541"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object bottom" type="I" value="167"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="datetime" type="D" value="45448.7994595255"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="object top" type="I" value="0"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="object name" type="S" value="Aliases.REPRES.frmObsPedido"/>
+					<Prp name="image file name" type="S" value="visImage3.png"/>
+					<Prp name="object left" type="I" value="0"/>
+					<Prp name="storage file name" type="S" value=""/>
+				</Node>
+			</Node>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="message" type="S" value="The 'Observações do cliente' window was closed."/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="23"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="id" type="I" value="3"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="date" type="D" value="45448.6744603472"/>
+			<Prp name="remarks" type="S" value="Tested object:&#xA;Aliases.REPRES.frmObsPedido&#xA;(Sys.Process(&quot;REPRES&quot;).VCLObject(&quot;frmObsPedido&quot;))"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="type" type="I" value="1"/>
+		</Node>
+		<Node name="message 7">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="line #" type="I" value="31"/>
+					<Prp name="object right" type="I" value="1362"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object bottom" type="I" value="543"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="datetime" type="D" value="45448.7994696412"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="object top" type="I" value="179"/>
+					<Prp name="click point y" type="I" value="352"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="674"/>
+					<Prp name="object name" type="S" value="Aliases.REPRES.frmPrincipal.MDIClient.frmPedidos.Paginas.tsitems_pedido.GridItens"/>
+					<Prp name="image file name" type="S" value="visImage7.png"/>
+					<Prp name="object left" type="I" value="4"/>
+					<Prp name="storage file name" type="S" value=""/>
+				</Node>
+			</Node>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="message" type="S" value="The window was clicked with the left mouse button."/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="31"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="id" type="I" value="7"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="date" type="D" value="45448.6744703472"/>
+			<Prp name="remarks" type="S" value="A click at point (670, 173) with no key pressed.&#xA;&#xA;Tested object:&#xA;Aliases.REPRES.frmPrincipal.MDIClient.frmPedidos.Paginas.tsitems_pedido.GridItens&#xA;(Sys.Process(&quot;REPRES&quot;).VCLObject(&quot;frmPrincipal&quot;).Window(&quot;MDIClient&quot;, &quot;&quot;, 1).VCLObject(&quot;frmPedidos&quot;).VCLObject(&quot;Paginas&quot;).VCLObject(&quot;tsitems_pedido&quot;).VCLObject(&quot;GridItens&quot;))"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="type" type="I" value="1"/>
+		</Node>
+		<Node name="message 6">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="line #" type="I" value="29"/>
+					<Prp name="object right" type="I" value="1366"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object bottom" type="I" value="653"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="datetime" type="D" value="45448.7994667477"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="object top" type="I" value="126"/>
+					<Prp name="click point y" type="I" value="640"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="222"/>
+					<Prp name="object name" type="S" value="Aliases.REPRES.frmPrincipal.MDIClient.frmPedidos.Paginas"/>
+					<Prp name="image file name" type="S" value="visImage6.png"/>
+					<Prp name="object left" type="I" value="0"/>
+					<Prp name="storage file name" type="S" value=""/>
+				</Node>
+			</Node>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="message" type="S" value="The tab control page 'Itens do Pedido' was selected with the left mouse button."/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="29"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="id" type="I" value="6"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="date" type="D" value="45448.6744680208"/>
+			<Prp name="remarks" type="S" value="Tested object:&#xA;Aliases.REPRES.frmPrincipal.MDIClient.frmPedidos.Paginas&#xA;(Sys.Process(&quot;REPRES&quot;).VCLObject(&quot;frmPrincipal&quot;).Window(&quot;MDIClient&quot;, &quot;&quot;, 1).VCLObject(&quot;frmPedidos&quot;).VCLObject(&quot;Paginas&quot;))"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="type" type="I" value="1"/>
+		</Node>
+		<Node name="message 12">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="line #" type="I" value="41"/>
+					<Prp name="object right" type="I" value="1267"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object bottom" type="I" value="690"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="datetime" type="D" value="45448.7995080208"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="object top" type="I" value="665"/>
+					<Prp name="click point y" type="I" value="677"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="1224"/>
+					<Prp name="object name" type="S" value="Aliases.REPRES.frmPrincipal.MDIClient.frmPedidos.Panel1.PanelBotoes.btnSalvar"/>
+					<Prp name="image file name" type="S" value="visImage12.png"/>
+					<Prp name="object left" type="I" value="1182"/>
+					<Prp name="storage file name" type="S" value=""/>
+				</Node>
+			</Node>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="message" type="S" value="The window was clicked with the left mouse button."/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="41"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="id" type="I" value="12"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="date" type="D" value="45448.6745096412"/>
+			<Prp name="remarks" type="S" value="A click at point (42, 12) with no key pressed.&#xA;&#xA;Tested object:&#xA;Aliases.REPRES.frmPrincipal.MDIClient.frmPedidos.Panel1.PanelBotoes.btnSalvar&#xA;(Sys.Process(&quot;REPRES&quot;).VCLObject(&quot;frmPrincipal&quot;).Window(&quot;MDIClient&quot;, &quot;&quot;, 1).VCLObject(&quot;frmPedidos&quot;).VCLObject(&quot;Panel1&quot;).VCLObject(&quot;PanelBotoes&quot;).VCLObject(&quot;btnSalvar&quot;))"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="type" type="I" value="1"/>
+		</Node>
+		<Node name="units">
+			<Prp name="unit 0" type="S" value="{B96E26CA-C353-44C1-A46B-B55D2BDE1158}"/>
+		</Node>
+		<Node name="message 5">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="line #" type="I" value="27"/>
+					<Prp name="object right" type="I" value="190"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object bottom" type="I" value="325"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="datetime" type="D" value="45448.7994644329"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="object top" type="I" value="304"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="object name" type="S" value="Aliases.REPRES.frmPrincipal.MDIClient.frmPedidos.Paginas.tsdadosDadosBasico.gbCliente.VENDEDOR"/>
+					<Prp name="image file name" type="S" value="visImage5.png"/>
+					<Prp name="object left" type="I" value="101"/>
+					<Prp name="storage file name" type="S" value=""/>
+				</Node>
+			</Node>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="message" type="S" value="Keyboard input."/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="27"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="id" type="I" value="5"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="date" type="D" value="45448.6744651273"/>
+			<Prp name="remarks" type="S" value="'[Tab]' was sent as a keyboard input to the following window or control.&#xA;&#xA;Tested object:&#xA;Aliases.REPRES.frmPrincipal.MDIClient.frmPedidos.Paginas.tsdadosDadosBasico.gbCliente.VENDEDOR&#xA;(Sys.Process(&quot;REPRES&quot;).VCLObject(&quot;frmPrincipal&quot;).Window(&quot;MDIClient&quot;, &quot;&quot;, 1).VCLObject(&quot;frmPedidos&quot;).VCLObject(&quot;Paginas&quot;).VCLObject(&quot;tsdados&quot;).VCLObject(&quot;gbCliente&quot;).VCLObject(&quot;VENDEDOR&quot;))"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="type" type="I" value="1"/>
+		</Node>
+		<Node name="message 2">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="line #" type="I" value="19"/>
+					<Prp name="object right" type="I" value="285"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object bottom" type="I" value="281"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="datetime" type="D" value="45448.7994484028"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="object top" type="I" value="260"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="object name" type="S" value="Aliases.REPRES.frmPrincipal.MDIClient.frmPedidos.Paginas.tsdadosDadosBasico.gbCliente.CLIENTE"/>
+					<Prp name="image file name" type="S" value="visImage2.png"/>
+					<Prp name="object left" type="I" value="234"/>
+					<Prp name="storage file name" type="S" value=""/>
+				</Node>
+			</Node>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="message" type="S" value="Keyboard input."/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="19"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="id" type="I" value="2"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="date" type="D" value="45448.6744503704"/>
+			<Prp name="remarks" type="S" value="'[Tab]' was sent as a keyboard input to the following window or control.&#xA;&#xA;Tested object:&#xA;Aliases.REPRES.frmPrincipal.MDIClient.frmPedidos.Paginas.tsdadosDadosBasico.gbCliente.CLIENTE&#xA;(Sys.Process(&quot;REPRES&quot;).VCLObject(&quot;frmPrincipal&quot;).Window(&quot;MDIClient&quot;, &quot;&quot;, 1).VCLObject(&quot;frmPedidos&quot;).VCLObject(&quot;Paginas&quot;).VCLObject(&quot;tsdados&quot;).VCLObject(&quot;gbCliente&quot;).VCLObject(&quot;CLIENTE&quot;))"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="type" type="I" value="1"/>
+		</Node>
+		<Prp name="status" type="I" value="0"/>
+	</Node>
+</Nodes>

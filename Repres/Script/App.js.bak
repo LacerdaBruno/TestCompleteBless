@@ -2,10 +2,9 @@
 
 function AbreRepres()
 {
-  TestedApps.REPRES.Run(); 
-  
+  TestedApps.REPRES.Run(3,false,5000);   
   Delay(2000);
-  
+    
   if(!Validacoes.CheckExists(Aliases.REPRES.TMessageForm_Atualizacao, 200)){  
     Log.Warning("Informação não foi encontrada", "", 200, null, Sys.Desktop);
     }else {     

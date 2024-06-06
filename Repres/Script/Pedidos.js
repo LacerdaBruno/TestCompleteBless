@@ -34,9 +34,13 @@ function cadastrarPedido(){
  Delay(500);
   
  gridItens.Keys(codigoProduto);
- gridItens.Keys("[Tab]"+"[Tab]"+"[Tab]"+"[Tab]"+"[Tab]"+"[Tab]"+"[Tab]"+"[Tab]"+"[Tab]"+"[Tab]"+"[Tab]"+"[Tab]"+"[Tab]"+"[Tab]"+"[Tab]"+"[Tab]"+"[Tab]"+"[Tab]"
- +"[Tab]"+"[Tab]"+"[Tab]"+"[Tab]"+"[Tab]"+"[Tab]"+"[Tab]"+"[Tab]"+"[Tab]");
+ gridItens.Keys("[Tab]"+"[Tab]"+"[Tab]"+"[Tab]"+"[Tab]"+"[Tab]"+"[Tab]"
+                +"[Tab]"+"[Tab]"+"[Tab]"+"[Tab]"+"[Tab]"+"[Tab]"+"[Tab]"
+                +"[Tab]"+"[Tab]"+"[Tab]"+"[Tab]"+"[Tab]"+"[Tab]"+"[Tab]"
+                +"[Tab]"+"[Tab]"+"[Tab]"+"[Tab]"+"[Tab]"+"[Tab]");
  gridItens.Keys("12");
+ frmPedido.Panel1.PanelBotoes.btnSalvar.click();
+ 
  
 }
 

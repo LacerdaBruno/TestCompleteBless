@@ -7,10 +7,10 @@
 		<child key="{D6D38558-B8D3-476E-94D6-9E4CB8536435}" type="Tested Application" typeId="{FD30A383-63C2-4C25-948C-2595C0F81320}">
 			<config nodeName="REPRES" autorunOnRecording="True" enabled="True" count="1" useFeaturedRuntimeObject="True" userChangeName="False">
 				<runModeParams activeRunMode="Simple">
-					<param name="RunAs" parameters="" workFolder="" userName="" password="" domain="" />
-					<param name="Profile" parameters="" workFolder="" useProject="False" projectFileName="" overrideProfiler="False" profilerName="" profileRunMode="Silent" AQtimeVersion="0" forceRunMode="False" />
-					<param name="Debug" parameters="" workFolder="" />
-					<param name="Simple" fileName="REPRES.exe" filePath="C:\bless\REPRES\" parameters="" workFolder="" />
+					<param name="RunAs" parameters="/Usuario:SYSDBA /Senha:pmpsyfwr" workFolder="" userName="" password="" domain="" />
+					<param name="Profile" parameters="/Usuario:SYSDBA /Senha:pmpsyfwr" workFolder="" useProject="False" projectFileName="" overrideProfiler="False" profilerName="" profileRunMode="Silent" AQtimeVersion="0" forceRunMode="False" />
+					<param name="Debug" parameters="/Usuario:SYSDBA /Senha:pmpsyfwr" workFolder="" />
+					<param name="Simple" fileName="REPRES.exe" filePath="C:\bless\REPRES\" parameters="/Usuario:SYSDBA /Senha:pmpsyfwr" workFolder="" />
 				</runModeParams>
 			</config>
 			<testData />

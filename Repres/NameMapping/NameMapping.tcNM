@@ -845,6 +845,46 @@
 															</Property>
 														</Properties>
 													</Child>
+													<Child Name="Panel1" Key="{6EF147A5-303D-4C07-B9D8-FB8D36CAA7DE}" ParallelWalk="True">
+														<Image FileName="1221585370" Left="8" Top="661" Right="1374" Bottom="701" />
+														<TypeInfo Item0="{4BBA353F-FB8B-45AF-9149-789FB2322A1E}" />
+														<Properties>
+															<Property Name="ClassName">
+																<Value PropertyType="0" Value="TPanel" Type="5" />
+															</Property>
+															<Property Name="ObjectIdentifier">
+																<Value PropertyType="0" Value="Panel1" Type="5" />
+															</Property>
+														</Properties>
+														<Children>
+															<Child Name="PanelBotoes" Key="{FA7C5801-9867-42E0-8B0F-42A09667F224}" ParallelWalk="True">
+																<Image FileName="1221585370" Left="959" Top="667" Right="1374" Bottom="701" />
+																<TypeInfo Item0="{4BBA353F-FB8B-45AF-9149-789FB2322A1E}" />
+																<Properties>
+																	<Property Name="ClassName">
+																		<Value PropertyType="0" Value="TPanel" Type="5" />
+																	</Property>
+																	<Property Name="ObjectIdentifier">
+																		<Value PropertyType="0" Value="PanelBotoes" Type="5" />
+																	</Property>
+																</Properties>
+																<Children>
+																	<Child Name="btnSalvar" Key="{F02AC325-E667-44D9-9517-1628D6BA138D}" ParallelWalk="True">
+																		<Image FileName="1221585370" Left="1190" Top="673" Right="1275" Bottom="698" />
+																		<TypeInfo Item0="{AA6569AE-B7DB-4334-A726-BD24DD341A65}" />
+																		<Properties>
+																			<Property Name="ClassName">
+																				<Value PropertyType="0" Value="TBitBtn" Type="5" />
+																			</Property>
+																			<Property Name="ObjectIdentifier">
+																				<Value PropertyType="0" Value="btnSalvar" Type="5" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																</Children>
+															</Child>
+														</Children>
+													</Child>
 												</Children>
 											</Child>
 										</Children>
@@ -983,6 +1023,11 @@
 							</Child>
 						</Child>
 						<Child Name="sbNovoPedido" Owner="{DD22C3FC-5CA5-4A48-9CAF-C0A9A4AFA2AA}" />
+						<Child Name="Panel1" Owner="{6EF147A5-303D-4C07-B9D8-FB8D36CAA7DE}">
+							<Child Name="PanelBotoes" Owner="{FA7C5801-9867-42E0-8B0F-42A09667F224}">
+								<Child Name="btnSalvar" Owner="{F02AC325-E667-44D9-9517-1628D6BA138D}" />
+							</Child>
+						</Child>
 					</Child>
 				</Child>
 			</Child>
