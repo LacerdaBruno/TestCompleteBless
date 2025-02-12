@@ -412,6 +412,68 @@
 																			</Child>
 																		</Children>
 																	</Child>
+																	<Child Name="gbImprimir" Key="{CE080144-A6D9-4D0E-AED8-DC5750804581}" ParallelWalk="True">
+																		<Image FileName="1698106171" Left="19" Top="565" Right="462" Bottom="648" />
+																		<TypeInfo Item0="{B133E503-EF8C-43F6-AD54-7E43333645DC}" />
+																		<Properties>
+																			<Property Name="ClassName">
+																				<Value PropertyType="0" Value="TGroupBox" Type="5" />
+																			</Property>
+																			<Property Name="ObjectIdentifier">
+																				<Value PropertyType="0" Value="gbImprimir" Type="5" />
+																			</Property>
+																		</Properties>
+																		<Children>
+																			<Child Name="SAI_MATERIAIS_NO_RESUMO" Key="{B075591A-8819-47EA-8AE3-D25A059AE3E0}" ParallelWalk="True">
+																				<Image FileName="1698106171" Left="27" Top="581" Right="324" Bottom="598" />
+																				<TypeInfo Item0="{78E8F92F-0395-41CB-8A2A-AE081FAAA0E6}" />
+																				<Properties>
+																					<Property Name="ClassName">
+																						<Value PropertyType="0" Value="TDBCheckBox" Type="5" />
+																					</Property>
+																					<Property Name="ObjectIdentifier">
+																						<Value PropertyType="0" Value="SAI_MATERIAIS_NO_RESUMO" Type="5" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="SAI_EM_FICHA_ITENS_PEDIDO" Key="{E9805F4D-4C9A-4346-A7CB-10D91B704093}" ParallelWalk="True">
+																				<Image FileName="1698106171" Left="27" Top="596" Right="296" Bottom="613" />
+																				<TypeInfo Item0="{78E8F92F-0395-41CB-8A2A-AE081FAAA0E6}" />
+																				<Properties>
+																					<Property Name="ClassName">
+																						<Value PropertyType="0" Value="TDBCheckBox" Type="5" />
+																					</Property>
+																					<Property Name="ObjectIdentifier">
+																						<Value PropertyType="0" Value="SAI_EM_FICHA_ITENS_PEDIDO" Type="5" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="SAI_MATERIAIS_FICHA_PALMILHA" Key="{EB928B6D-C8A1-45FA-9675-8C5F822ED508}" ParallelWalk="True">
+																				<Image FileName="1698106171" Left="27" Top="611" Right="299" Bottom="628" />
+																				<TypeInfo Item0="{78E8F92F-0395-41CB-8A2A-AE081FAAA0E6}" />
+																				<Properties>
+																					<Property Name="ClassName">
+																						<Value PropertyType="0" Value="TDBCheckBox" Type="5" />
+																					</Property>
+																					<Property Name="ObjectIdentifier">
+																						<Value PropertyType="0" Value="SAI_MATERIAIS_FICHA_PALMILHA" Type="5" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="SAI_MATERIAIS_FICHA_SOLADO" Key="{8AD46394-BD5C-42EC-B92E-834118A95886}" ParallelWalk="True">
+																				<Image FileName="1698106171" Left="27" Top="626" Right="304" Bottom="643" />
+																				<TypeInfo Item0="{78E8F92F-0395-41CB-8A2A-AE081FAAA0E6}" />
+																				<Properties>
+																					<Property Name="ClassName">
+																						<Value PropertyType="0" Value="TDBCheckBox" Type="5" />
+																					</Property>
+																					<Property Name="ObjectIdentifier">
+																						<Value PropertyType="0" Value="SAI_MATERIAIS_FICHA_SOLADO" Type="5" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																		</Children>
+																	</Child>
 																</Children>
 															</Child>
 														</Children>
@@ -11209,6 +11271,12 @@
 									<Child Name="SEQ_IMPRIMIR_ANALITICO" Owner="{8269A892-3A2E-4088-AADC-6FB274BDB388}" />
 									<Child Name="SEQ_BAIXAR" Owner="{7C30F689-1239-4BFE-A5F3-3BAD02AD4B9B}" />
 									<Child Name="SEQ_LEAD_TIME" Owner="{7131B85C-61B3-41ED-A8DA-E73F14E301E8}" />
+								</Child>
+								<Child Name="gbImprimir" Owner="{CE080144-A6D9-4D0E-AED8-DC5750804581}">
+									<Child Name="SAI_MATERIAIS_NO_RESUMO" Owner="{B075591A-8819-47EA-8AE3-D25A059AE3E0}" />
+									<Child Name="SAI_EM_FICHA_ITENS_PEDIDO" Owner="{E9805F4D-4C9A-4346-A7CB-10D91B704093}" />
+									<Child Name="SAI_MATERIAIS_FICHA_PALMILHA" Owner="{EB928B6D-C8A1-45FA-9675-8C5F822ED508}" />
+									<Child Name="SAI_MATERIAIS_FICHA_SOLADO" Owner="{8AD46394-BD5C-42EC-B92E-834118A95886}" />
 								</Child>
 							</Child>
 						</Child>

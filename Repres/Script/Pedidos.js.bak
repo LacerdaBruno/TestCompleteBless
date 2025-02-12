@@ -14,27 +14,29 @@ function cadastrarPedido(){
 
  abreTelaPedidos();
   
- var totalPedidos = 3;
+ var totalPedidos = 100;
  var count = 0;
- var codigoCliente = Project.Variables.PESSOA.Value("CODIGO"); 
- var codigoProduto = Project.Variables.PRODUTO_ESTOQUE.Value("PRODUTO"); 
+ var codigoVendedor = 1;
  var gridItens = Aliases.REPRES.frmPrincipal.MDIClient.frmPedidos.Paginas.tsitems_pedido.GridItens;
  
  while (count < totalPedidos){ 
  var codigoCliente = Project.Variables.PESSOA.Value("CODIGO"); 
- var codigoProduto = Project.Variables.PRODUTO_ESTOQUE.Value("PRODUTO");
- 
+ var codigoProduto = Project.Variables.PRODUTO_ESTOQUE.Value("PRODUTO"); 
  
    frmPedido.sbNovoPedido.Click();
    frmPedido.Paginas.tsdadosDadosBasico.gbCliente.CLIENTE.Keys(codigoCliente);
    frmPedido.Paginas.tsdadosDadosBasico.gbCliente.CLIENTE.Keys("[Tab]");
    Delay(500);
 
+   if (Aliases.REPRES.TMessageForm.Exists){
+    Aliases.REPRES.TMessageForm.Yes.Click(); 
+   }
+   
    if (Aliases.REPRES.frmObsPedido.Exists){
     Aliases.REPRES.frmObsPedido.Close(); 
    }
  
-   frmPedido.Paginas.tsdadosDadosBasico.gbCliente.VENDEDOR.Keys(codigoCliente);
+   frmPedido.Paginas.tsdadosDadosBasico.gbCliente.VENDEDOR.Keys(codigoVendedor);
    frmPedido.Paginas.tsdadosDadosBasico.gbCliente.VENDEDOR.Keys("[Tab]");
    frmPedido.Paginas.tsdadosDadosBasico.gbCliente.CONDICAO_CLIENTE.Keys("1 DIA AVISTA" + "[Enter]" + "[Tab]");
    

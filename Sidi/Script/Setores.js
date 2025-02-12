@@ -26,11 +26,11 @@ function insereSetores()
     
     switch (Project.Variables.Setores.nome(i)){
       case "CORTE":
-        Aliases.SIDI.frmPrincipal.MDIClient.frmSetorManut.PageControlSetor.tsSetor.GroupBox2.SAI_MATERIAIS_NO_RESUMO.ClickButton(cbChecked);
+        Aliases.SIDI.frmPrincipal.MDIClient.frmSetorManut.PageControlSetor.tsSetor.gbImprimir.SAI_MATERIAIS_NO_RESUMO.ClickButton(cbChecked);
         break; 
       case "EXPEDICAO":
         marcaUltimoSetor();
-        Aliases.SIDI.frmPrincipal.MDIClient.frmSetorManut.PageControlSetor.tsSetor.GroupBox2.SAI_EM_FICHA_ITENS_PEDIDO.ClickButton(cbChecked);
+        Aliases.SIDI.frmPrincipal.MDIClient.frmSetorManut.PageControlSetor.tsSetor.gbImprimir.SAI_EM_FICHA_ITENS_PEDIDO.ClickButton(cbChecked);
         break;
       case "PESPONTO":
         marcaBanca();
