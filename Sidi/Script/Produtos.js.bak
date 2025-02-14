@@ -57,9 +57,11 @@ function insereFichaTecnica() {
             Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsVersao.PageControlCores.tsFichaMateriais.GridFichaTecnica.Keys(1);
         }
         Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsVersao.PageControlCores.tsFichaMateriais.GridFichaTecnica.Keys("[Down]");
-        Project.Variables.CodigoMateriais.Next();
+        confirma();
+        Project.Variables.CodigoMateriais.Next();        
     }
     confirma();
+   
 }
 
 function incluirMaterial(mat) {
@@ -361,6 +363,7 @@ function inserirProdutoFinanceiro(ref) {
 
     // Confirme e feche a tela
     Principal.confirma(Aliases.SIDI.frmPrincipal.MDIClient.frmProdutoFiscal.Panel1.PanelBotoes.btnConfirma, "produto NF");
+    Aliases.SIDI.MensagemConfirmacao.btnSim.Click();
     Principal.fechaTela();
 }
 

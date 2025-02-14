@@ -10,7 +10,7 @@ var dbgUnVolume = Aliases.SIDI.frmPrincipal.MDIClient.frmUnidadesVolume.PageUnid
 function cadastraUnidadePorVolume()
 {
   abreTela();  
-  Principal.clicaNovo();  
+  Principal.clicaNovo();
   insereUnidades("12");  
   insereGrade(" 38 AO 43");  
   insereDescricao("38 AO 43");

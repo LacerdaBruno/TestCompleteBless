@@ -31,7 +31,6 @@ function cadastraMateriais(){
 
 		if (Project.Variables.Materiais.descricao(i) == "SOLADO" ||
 			Project.Variables.Materiais.descricao(i) == "PALMILHA") {
-			insereUnidadeVolume("34 A 43");
 			marcaGerarMovtPelaGrade();
 		}
  

@@ -22,7 +22,7 @@ function getNumeroPedido(){
 function cadastraPedido(){
   total = 0;  
 
-  razaoSocial = Project.Variables.DadosPessoasServicos.nome() 
+  razaoSocial = Project.Variables.DadosPessoasServicos.CGC(0); 
   abrePedidos();  
   Principal.clicaNovo();
   insereCliente(razaoSocial);  

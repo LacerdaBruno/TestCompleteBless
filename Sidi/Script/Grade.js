@@ -9,7 +9,7 @@ function cadastraGrade()
 {
   abreTela();  
   Principal.clicaNovo();  
-  insereDescricao("Z", "38 AO 43");  
+  insereDescricao("Z", "28 AO 44");  
   insereGrade();  
   confirma();
   Principal.clicaEditar();

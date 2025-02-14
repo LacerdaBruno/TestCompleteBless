@@ -115,6 +115,9 @@
 		<child name="Limpar_Tabelas" key="{A25BF7AA-0853-4727-AAAB-1052A083F533}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
 			<data path="Limpar_Tabelas.js" />
 		</child>
+		<child name="TabelaPreco" key="{FDC04E99-D6AB-485C-BCB7-EECFF8F23480}" type="Script Unit" typeId="{291CAE9C-4D20-4F33-8B5F-D48B587F3D65}" pluginName="Script">
+			<data path="TabelaPreco.js" />
+		</child>
 	</children>
 	<folders>
 		<folder caption="Cadastros" description="A logical folder that is used to organize project items and elements." moniker="">
@@ -168,6 +171,7 @@
 				<ref key="{40F4D983-C0E3-4197-B805-5FD5E1184611}" />
 				<ref key="{05140779-086A-4BB4-ACA6-F5F58ED6CAD6}" />
 				<ref key="{EA51107C-A13F-4D4C-AC84-C392AD62C4CA}" />
+				<ref key="{FDC04E99-D6AB-485C-BCB7-EECFF8F23480}" />
 			</references>
 		</folder>
 		<folder caption="Financeiro" description="A logical folder that is used to organize project items and elements." moniker="">

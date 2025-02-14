@@ -57,9 +57,10 @@ function insereFichaTecnica() {
             Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsVersao.PageControlCores.tsFichaMateriais.GridFichaTecnica.Keys(1);
         }
         Aliases.SIDI.frmPrincipal.MDIClient.frmModelos.PageControlModelos.tsVersao.PageControlCores.tsFichaMateriais.GridFichaTecnica.Keys("[Down]");
-        Project.Variables.CodigoMateriais.Next();
+        Project.Variables.CodigoMateriais.Next();        
     }
     confirma();
+   
 }
 
 function incluirMaterial(mat) {
