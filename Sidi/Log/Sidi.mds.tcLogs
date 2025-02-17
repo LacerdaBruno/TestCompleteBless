@@ -23,12 +23,39 @@
 		<Node name="logs">
 			<Node name="log idx=0000">
 				<Prp name="caption" type="S" value=""/>
-				<Prp name="datetime" type="D" value="45702.6706711574"/>
+				<Prp name="datetime" type="D" value="45705.4708815741"/>
 				<Prp name="description" type="S" value=""/>
-				<Prp name="key" type="S" value="{CFC0685E-FC85-445C-84D8-3E647952C21C}"/>
-				<Prp name="nameofroot" type="S" value="Script Test Log [Pedidos\testaPedidos]"/>
-				<Prp name="relpath" type="S" value="14_02_2025_16_05_45_988\Description.tcLog"/>
+				<Prp name="key" type="S" value="{C8E7E971-2517-4C39-B964-81542EB0F5A2}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [CondicaoPagamento\TesteCadastros]"/>
+				<Prp name="relpath" type="S" value="17_02_2025_11_18_04_168\Description.tcLog"/>
 				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0001">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="45705.4756080671"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{53553359-D4FC-42DD-84B6-E4E7107BFF3C}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [CondicaoPagamento\TesteCadastros]"/>
+				<Prp name="relpath" type="S" value="17_02_2025_11_24_52_537\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0002">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="45705.478837037"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{92FD2C50-FEDF-4EF2-BAE8-BCBB1B8C20F1}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [CondicaoPagamento\TesteCadastros]"/>
+				<Prp name="relpath" type="S" value="17_02_2025_11_29_31_520\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0003">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="45705.4798605903"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{F2EEC710-C01D-4B43-8039-499ED187C03D}"/>
+				<Prp name="nameofroot" type="S" value=""/>
+				<Prp name="relpath" type="S" value="17_02_2025_11_30_59_955\Description.tcLog"/>
+				<Prp name="status" type="I" value="3"/>
 			</Node>
 		</Node>
 		<Prp name="signature" type="S" value="{681DCC69-A39F-4C4D-8E7D-B2D9362FAF4F}"/>

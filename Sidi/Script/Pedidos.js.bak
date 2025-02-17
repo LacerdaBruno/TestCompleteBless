@@ -22,7 +22,7 @@ function getNumeroPedido(){
 function cadastraPedido(){
   total = 0;  
 
-  razaoSocial = Project.Variables.DadosPessoasServicos.nome(0); 
+  razaoSocial = Project.Variables.DadosPessoasServicos.CGC(0); 
   abrePedidos();  
   Principal.clicaNovo();
   insereCliente(razaoSocial);  
@@ -81,8 +81,10 @@ function insereProduto(){
   gdItemPedido.Keys(cor);
   Delay(1000);
   gdItemPedido.Keys("[Enter]");
-  gdItemPedido.LookupEmbalagem.Keys("PCT PADRAO");
-  gdItemPedido.LookupEmbalagem.Keys("[Enter]");
+  if (gdItemPedido.LookupEmbalagem.Exists()) {
+    gdItemPedido.LookupEmbalagem.Keys("PCT PADRAO");
+    gdItemPedido.LookupEmbalagem.Keys("[Enter]");    
+  }
   gdItemPedido.Keys("[F10]");
   
 }

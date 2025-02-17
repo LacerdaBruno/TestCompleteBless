@@ -81,8 +81,8 @@ function insereProduto(){
   gdItemPedido.Keys(cor);
   Delay(1000);
   gdItemPedido.Keys("[Enter]");
-  gdItemPedido.LookupEmbalagem.Keys("PCT PADRAO");
-  gdItemPedido.LookupEmbalagem.Keys("[Enter]");
+  //gdItemPedido.LookupEmbalagem.Keys("PCT PADRAO");
+  //gdItemPedido.LookupEmbalagem.Keys("[Enter]");    
   gdItemPedido.Keys("[F10]");
   
 }

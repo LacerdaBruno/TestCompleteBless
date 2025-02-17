@@ -30,7 +30,7 @@
 						<Prp name="name" type="S" value="Setores"/>
 					</Node>
 					<Node name="var1">
-						<Prp name="name" type="S" value="quantidadeParcelas"/>
+						<Prp name="name" type="S" value="CondicaoPagamento"/>
 					</Node>
 					<Node name="var10">
 						<Prp name="name" type="S" value="UnidadeMedidas"/>

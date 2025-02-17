@@ -4,13 +4,19 @@ var Validacoes = require("Validacoes");
 var App = require("App");
 var Principal = require("Principal");
 var Visualizacoes = require("Visualizacoes");
-var descricao = "Teste Bless";
-var qteParcelas = 36;
-var intervalo = 30;
+var descricao = "";
+var qteParcelas = 0;
+var intervalo = 0;
 
 function TesteCadastros()
 {
-  CondicaoPagamento.cadastraCondicaoPagamento("Boa condicao", Project.Variables.quantidadeParcelas, 30);
+  for (var i = 0; i < Project.Variables.CondicaoPagamento.RowCount; i++){
+  descricao = Project.Variables.CondicaoPagamento.descricao(i);
+  qteParcelas = Project.Variables.CondicaoPagamento.parcelas(i);
+  intervalo = Project.Variables.CondicaoPagamento.itervalo(i);  
+
+  cadastraCondicaoPagamento(descricao, qteParcelas, intervalo);
+  }
 }
 
 
@@ -77,13 +83,12 @@ function cadastraCondicaoPagamento(descricao, qteParcelas, intervalo)
   objeto.DESCRICAO.Keys(descricao);
   
   
-  i=0;
+
   dias = 0;
   // Insere as parcelas
-  while(i < qteParcelas){
-      parcelas[i].SetText(aqConvert.IntToStr(dias));
-      dias += intervalo;
-      i++;
+  for(let i=0; i < qteParcelas; i++){
+    dias += intervalo; 
+    parcelas[i].SetText(aqConvert.IntToStr(dias));
   }
   
   // Confirma a condição

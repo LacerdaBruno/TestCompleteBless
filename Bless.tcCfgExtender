@@ -25,7 +25,7 @@
 				<Node name="{8ee82d46-af98-4371-988c-39e367c94873}"/>
 			</Node>
 			<Node name="{24b6fa0b-0143-461a-9758-aeb9e9a9428b}">
-				<Prp name="activity" type="S" value="{FDC04E99-D6AB-485C-BCB7-EECFF8F23480}"/>
+				<Prp name="activity" type="S" value="{908ED210-70E9-474E-BA9D-38D7EFCFF99E}"/>
 			</Node>
 			<Node name="{2c786620-2489-4cbb-9c1e-1a94437a9245}"/>
 			<Node name="{415b5aa1-c6ac-4d4d-9a53-063a521a45ab}">
@@ -2273,9 +2273,9 @@
 							<Node name="script">
 								<Node name="cadastros"/>
 								<Node name="producao"/>
+								<Node name="suprimentos"/>
 							</Node>
 						</Node>
-						<Node name="testedapps"/>
 					</Node>
 				</Node>
 				<Node name="bless logs">
